@@ -1,6 +1,9 @@
 # Credentials - NEVER commit
 .credentials.md
 
+# Private working files
+.topic-pool.md
+
 # OS files
 .DS_Store
 Thumbs.db
