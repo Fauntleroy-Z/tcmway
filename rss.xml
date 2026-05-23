@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TCM Way</title>
+    <description>Ancient Wisdom for Modern Life — Bringing authentic Chinese medicine philosophy to the English-speaking world</description>
+    <link>https://fauntleroy-z.github.io/tcmway/</link>
+    <atom:link href="https://fauntleroy-z.github.io/tcmway/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en</language>
+    <lastBuildDate>Sat, 24 May 2026 00:00:00 +0800</lastBuildDate>
+    <generator>TCM Way</generator>
+
+    <item>
+      <title>Why You're Exhausted Even After 8 Hours of Sleep</title>
+      <link>https://fauntleroy-z.github.io/tcmway/posts/02-exhausted-after-sleep.html</link>
+      <guid>https://fauntleroy-z.github.io/tcmway/posts/02-exhausted-after-sleep.html</guid>
+      <pubDate>Sat, 24 May 2026 00:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <p>You slept eight hours. You still feel wrecked. Traditional Chinese Medicine has a different answer — and it isn't "sleep more."</p>
+        <p>Discover the TCM Organ Clock, why your Liver and Spleen might be behind your exhaustion, and four practical things you can try starting tonight.</p>
+      ]]></description>
+    </item>
+
+    <item>
+      <title>Why I'm Sharing Ancient Chinese Wisdom with the West</title>
+      <link>https://fauntleroy-z.github.io/tcmway/posts/01-why-i-share-tcm-with-the-west.html</link>
+      <guid>https://fauntleroy-z.github.io/tcmway/posts/01-why-i-share-tcm-with-the-west.html</guid>
+      <pubDate>Sat, 24 May 2026 00:00:00 +0800</pubDate>
+      <description><![CDATA[
+        <p>In an age of accelerating AI and anxiety, the 1,800-year-old philosophy of the Shanghan Lun offers something our world desperately needs.</p>
+        <p>Why a full-time international trade professional started a blog about classical Chinese medicine — and why the timing matters.</p>
+      ]]></description>
+    </item>
+
+  </channel>
+</rss>
