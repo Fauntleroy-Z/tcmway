@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meet The TCM Owl — TCM Way</title>
+<meta name="description" content="Meet Ollie, the TCM Owl — your friendly guide to ancient Chinese medicine wisdom.">
+<style>
+  :root {
+    --bg: #fdfaf5;
+    --text: #2c2416;
+    --accent: #8b5e3c;
+    --light: #f5efe6;
+    --border: #d4c5b2;
+    --subtle: #6b5e4f;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  header {
+    text-align: center;
+    padding: 2rem 0 1.5rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2.5rem;
+  }
+  header h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+  }
+  nav { margin-top: 1rem; }
+  nav a {
+    color: var(--subtle);
+    text-decoration: none;
+    margin: 0 0.8rem;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: var(--accent); }
+
+  .owl-hero {
+    text-align: center;
+    margin: 2rem 0 3rem;
+  }
+  .owl-hero img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  .owl-hero .name {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-top: 1rem;
+    font-weight: normal;
+  }
+  .owl-hero .tagline {
+    color: var(--subtle);
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+  }
+
+  .stat-card {
+    background: var(--light);
+    border-radius: 8px;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0;
+  }
+  .stat-card h3 {
+    color: var(--accent);
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .stat-row {
+    display: flex;
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+  }
+  .stat-label {
+    color: var(--subtle);
+    min-width: 130px;
+    flex-shrink: 0;
+  }
+  .stat-value { color: var(--text); }
+
+  .personality-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .trait {
+    background: var(--light);
+    border-radius: 6px;
+    padding: 1.2rem;
+    text-align: center;
+  }
+  .trait .emoji { font-size: 1.8rem; display: block; margin-bottom: 0.4rem; }
+  .trait .label { color: var(--accent); font-weight: bold; font-size: 0.95rem; }
+  .trait .desc { color: var(--subtle); font-size: 0.85rem; margin-top: 0.3rem; line-height: 1.4; }
+
+  .comic-preview {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .comic-preview .panel {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    margin: 0 0.5rem;
+    vertical-align: top;
+    background: var(--light);
+    line-height: 120px;
+    color: var(--subtle);
+    font-size: 0.8rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--subtle);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+    margin-top: 3rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  blockquote {
+    background: var(--light);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--text);
+  }
+
+  .role-section {
+    margin: 2rem 0;
+  }
+  .role-section h3 {
+    color: var(--accent);
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  .role-section p { margin-bottom: 1rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>TCM Way</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="about.html">About</a>
+    <a href="about-owl.html">The Owl</a>
+    <a href="disclaimer.html">Disclaimer</a>
+  </nav>
+</header>
+
+<section class="owl-hero">
+  <img src="images/owl-mascot-v3.png" alt="Ollie the TCM Owl">
+  <div class="name">Ollie</div>
+  <div class="tagline">The TCM Owl — Your Guide to Ancient Wisdom</div>
+</section>
+
+<div class="stat-card">
+  <h3>Ollie's File</h3>
+  <div class="stat-row">
+    <span class="stat-label">Full Name</span>
+    <span class="stat-value">Ollie (short for "Owl" — he's not big on ceremony)</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Species</span>
+    <span class="stat-value">Wise Owl (<em>Athene noctua sapientiae</em>, if you must)</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Height</span>
+    <span class="stat-value">About the size of a mortar and pestle</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Favorite Thing</span>
+    <span class="stat-value">Brewing herbal tea while re-reading the Shanghan Lun</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Pet Peeve</span>
+    <span class="stat-value">When people say "it's just in your head"</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Signature Item</span>
+    <span class="stat-value">Yin-yang pendant (his grandmother's)</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Catchphrase</span>
+    <span class="stat-value">"Your body knows what it's doing. Let's listen."</span>
+  </div>
+</div>
+
+<h3 style="color: var(--accent); font-weight: normal; margin: 2rem 0 1rem; text-align: center;">Personality Traits</h3>
+
+<div class="personality-grid">
+  <div class="trait">
+    <span class="emoji">&#x1F9D0;</span>
+    <div class="label">Curious, Not Judgmental</div>
+    <div class="desc">He won't tell you you're living wrong. He'll wonder with you.</div>
+  </div>
+  <div class="trait">
+    <span class="emoji">&#x1F914;</span>
+    <div class="label">Explainer-in-Chief</div>
+    <div class="desc">Complex ideas become simple. Simple ideas become obvious.</div>
+  </div>
+  <div class="trait">
+    <span class="emoji">&#x1F4A4;</span>
+    <div class="label">Occasionally Sleepy</div>
+    <div class="desc">He's an owl. He falls asleep mid-sentence sometimes. It's charming.</div>
+  </div>
+  <div class="trait">
+    <span class="emoji">&#x1F375;</span>
+    <div class="label">Ginger Tea Enthusiast</div>
+    <div class="desc">Has strong opinions about ginger-to-water ratios. Will fight you.</div>
+  </div>
+  <div class="trait">
+    <span class="emoji">&#x1F3AF;</span>
+    <div class="label">Qi Debugger</div>
+    <div class="desc">Thinks of acupuncture as "manual Qi debugging." Programmers love him.</div>
+  </div>
+  <div class="trait">
+    <span class="emoji">&#x1FA90;</span>
+    <div class="label">Herb Nerd</div>
+    <div class="desc">Name any symptom. He'll suggest an herb. Then three alternatives.</div>
+  </div>
+</div>
+
+<div class="role-section">
+  <h3>How Ollie Appears in Every Article</h3>
+  <p>
+    Ollie isn't just a logo. He's the <strong>narrator</strong> — the friendly face who breaks down Chinese medicine concepts into plain English. 
+    Think of him as the translator between your body and your brain.
+  </p>
+  <p>In each article, you'll find him:</p>
+  <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text);">
+    <li style="margin-bottom: 0.4rem;">Pointing out the <strong>Daily Pain Point</strong> — with empathy, not judgment</li>
+    <li style="margin-bottom: 0.4rem;">Explaining the <strong>TCM lens</strong> — what the ancient texts actually say about your problem</li>
+    <li style="margin-bottom: 0.4rem;">Offering <strong>actionable tips</strong> — stuff you can try today, not philosophy essays</li>
+    <li style="margin-bottom: 0.4rem;">Wrapping up with a <strong>warm nudge</strong> — because nobody needs another lecture</li>
+  </ul>
+</div>
+
+<div class="role-section">
+  <h3>Why an Owl?</h3>
+  <p>
+    In the West, the owl symbolizes <strong>wisdom</strong> — Athena's companion, the creature that sees in the dark.
+  </p>
+  <p>
+    Traditional Chinese Medicine is exactly that: a way of <strong>seeing patterns</strong> where others see chaos. 
+    An owl doesn't need a floodlight. It just needs to pay attention.
+  </p>
+  <p>
+    Plus, owls are cute. And if we're going to talk about your liver Qi stagnation, 
+    we might as well have a cute owl do it.
+  </p>
+</div>
+
+<blockquote>
+  "The body doesn't speak English or Chinese. It speaks patterns. Ollie's here to translate."
+</blockquote>
+
+<div class="role-section" style="text-align: center;">
+  <h3>Visual Style Guide</h3>
+  <p style="color: var(--subtle);">
+    Hand-drawn simple line art &middot; Warm earth tones &middot; Caramel brown + sage green + cream white<br>
+    Always wears his yin-yang pendant &middot; Usually near his mortar and pestle<br>
+    Clean outlines, flat colors — like a friend's notebook doodles
+  </p>
+</div>
+
+<footer>
+  <p>&copy; 2026 TCM Way. All rights reserved.</p>
+  <p><a href="disclaimer.html">Medical Disclaimer</a></p>
+</footer>
+
+</body>
+</html>
