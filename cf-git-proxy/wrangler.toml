@@ -1,0 +1,7 @@
+name = "tcmway-git-proxy"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+
+routes = [
+  { pattern = "git.tcmway.org", custom_domain = true }
+]
