@@ -7,25 +7,36 @@
 <meta name="description" content="Your arms feel like lead. You've been called lazy your whole life. TCM says it's not willpower — it's your Spleen asking for help, not judgment.">
 <meta property="og:title" content="That Heavy Feeling in Your Limbs? It's Not Laziness — TCM Way">
 <meta property="og:description" content="Heavy limbs? Constant fatigue? TCM has a different diagnosis: your Spleen is tired, not your character. Here's what to do about it.">
-<meta property="og:image" content="https://tcmway.org/images/owl-mascot-v3.png">
+<meta property="og:image" content="https://tcmway.org/images/ollie-warm.svg">
 <meta property="og:url" content="https://tcmway.org/posts/06-that-heavy-feeling-its-not-laziness.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="TCM Way">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-  :root { --bg: #fdfaf5; --text: #2c2416; --accent: #8b5e3c; --light: #f5efe6; --border: #d4c5b2; --subtle: #6b5e4f; }
+  :root {
+    --bg: #fdf6ee;
+    --text: #3b2a1a;
+    --accent: #b83a2a;
+    --accent-warm: #e8a87c;
+    --light: #fef0e2;
+    --border: #e8d5c0;
+    --subtle: #8a6d54;
+    --gold: #c9a84c;
+  }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: Georgia, 'Times New Roman', serif; background: var(--bg); color: var(--text); line-height: 1.9; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
   header { text-align: center; padding: 2rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
   header h1 { font-size: 1.8rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
+  header h1::after { content: ""; display: block; width: 60%; height: 3px; margin: 6px auto 0; background: linear-gradient(90deg, transparent, #b83a2a 20%, #e8a87c 50%, #b83a2a 80%, transparent); border-radius: 2px; opacity: 0.7; }
   nav { margin-top: 1rem; }
   nav a { color: var(--subtle); text-decoration: none; margin: 0 0.8rem; font-size: 0.95rem; }
   nav a:hover { color: var(--accent); }
   article h1 { font-size: 1.8rem; font-weight: normal; color: var(--accent); margin-bottom: 0.5rem; line-height: 1.4; }
   .meta { color: var(--subtle); font-size: 0.9rem; margin-bottom: 2rem; }
-  h2 { font-weight: normal; color: var(--accent); margin: 2rem 0 1rem; font-size: 1.3rem; }
+  h2 {  font-weight: normal; color: var(--accent); margin: 2rem 0 1rem; font-size: 1.3rem;  border-left: 4px solid var(--accent-warm); padding-left: 0.8rem; }
   p { margin-bottom: 1.3rem; }
-  blockquote { border-left: 3px solid var(--accent); margin: 1.5rem 0; padding: 0.5rem 1.5rem; color: var(--subtle); font-style: italic; }
+  blockquote { border-left: none; margin: 1.5rem 0; padding: 1.2rem 1.5rem; color: var(--subtle); font-style: italic; background: var(--light); border-radius: 6px; position: relative; }
+  blockquote::before { content: "✦"; position: absolute; top: -10px; left: 16px; background: var(--light); padding: 0 6px; color: var(--accent); font-size: 1rem; }
   strong { color: var(--text); }
   ul, ol { padding-left: 1.5rem; margin-bottom: 1.3rem; }
   li { margin-bottom: 0.5rem; line-height: 1.7; }
@@ -33,13 +44,14 @@
   footer a { color: var(--accent); text-decoration: none; }
   .back { display: block; margin: 2rem 0 0; }
   .sign { display: block; text-align: right; color: var(--subtle); font-style: italic; margin: 1.5rem 0 1rem; font-size: 0.95rem; }
-  .checklist { background: var(--light); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; border-left: 3px solid var(--accent); }
+  .checklist { background: var(--light); border-radius: 8px; padding: 1.5rem; margin: 1.5rem 0; border-left: 3px solid var(--accent-warm); }
   .checklist p { margin-bottom: 0.8rem; font-weight: bold; color: var(--accent); font-family: -apple-system, sans-serif; font-size: 0.95rem; }
   .checklist ul { list-style: none; padding: 0; margin: 0; }
-  .checklist li { padding: 0.4rem 0; padding-left: 1.6rem; position: relative; font-size: 0.92rem; }
-  .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--border); }
-  .highlight-box { background: linear-gradient(135deg, #f5ede0 0%, #e8d5b7 100%); border-radius: 10px; padding: 1.8rem; margin: 2rem 0; text-align: center; }
-  .comic-break { display: block; margin: 2.5rem auto; max-width: 100%; height: auto; border-radius: 8px; }
+  .checklist li { padding: 0.4rem 0; padding-left: 1.6rem; position: relative; font-size: 0.92rem;  border-bottom: 1px dashed var(--border); }
+  .checklist li::before { content: "☽"; position: absolute; left: 0; color: var(--accent); font-size: 0.9rem; }
+  .highlight-box {  background: linear-gradient(135deg, #fef0e2 0%, #f5dcc4 100%); border-radius: 10px; padding: 1.8rem; margin: 2rem 0; text-align: center;  position: relative; overflow: hidden; }
+  .highlight-box::after { content: ""; position: absolute; top: -30px; right: -30px; width: 100px; height: 100px; border-radius: 50%; background: var(--accent-warm); opacity: 0.12; }
+  .comic-break { display: block; margin: 2.5rem auto; max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 12px rgba(184,58,42,0.12); }
 </style>
 <script>
 var _hmt = _hmt || [];
@@ -86,6 +98,17 @@ var _hmt = _hmt || [];
 <body>
 
 <header>
+  <svg class="brand-symbol" viewBox="0 0 80 80" width="64" height="64" style="display:block;margin:0 auto 1rem;">
+    <circle cx="40" cy="40" r="36" fill="none" stroke="#b83a2a" stroke-width="2" stroke-dasharray="4 3"/>
+    <ellipse cx="40" cy="44" rx="22" ry="20" fill="#e8a87c"/>
+    <circle cx="34" cy="36" r="4" fill="#b83a2a"/>
+    <circle cx="46" cy="36" r="4" fill="#b83a2a"/>
+    <polygon points="24,26 20,14 28,22" fill="#b83a2a" stroke="#b83a2a" stroke-width="1"/>
+    <polygon points="56,26 60,14 52,22" fill="#b83a2a" stroke="#b83a2a" stroke-width="1"/>
+    <path d="M36 48 Q40 54 44 48" fill="none" stroke="#b83a2a" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="40" cy="62" r="5" fill="#c9a84c" opacity="0.85" stroke="#b83a2a" stroke-width="1"/>
+    <path d="M38 62 L40 65 L42 62" fill="#b83a2a" opacity="0.5"/>
+  </svg>
   <h1>TCM Way</h1>
   <nav>
     <a href="/">Home</a>
@@ -211,7 +234,7 @@ var _hmt = _hmt || [];
   </div>
 </div>
 
-<div style="margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f5ede0 0%, #e8d5b7 100%); border-radius: 12px; text-align: center;">
+<div style="margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #fef0e2 0%, #f5dcc4 100%); border-radius: 12px; text-align: center;">
   <p style="font-size: 1.1rem; margin-bottom: 0.6rem;">💌 <strong>Write to Ollie</strong></p>
   <p style="margin-bottom: 1rem; color: var(--subtle); font-size: 0.95rem;">Ever been told you're "just lazy"?<br>Ollie wants to hear about it.</p>
   <a href="mailto:tcmway.ollie@outlook.com" style="display: inline-block; padding: 0.6rem 2rem; background: var(--accent); color: white; text-decoration: none; border-radius: 4px; font-family: -apple-system, sans-serif; font-size: 0.95rem;">📧 tcmway.ollie@outlook.com</a>

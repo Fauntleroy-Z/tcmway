@@ -7,21 +7,21 @@
 <meta name="description" content="You've heard the word 'Qi' a thousand times. It's not mystical energy — it's your body's most practical operating system, explained 2,200 years ago in the Huangdi Neijing.">
 <meta property="og:title" content="Qi Isn't Magic. It's Your Body's OS — Running Without Updates Since 200 BC — TCM Way">
 <meta property="og:description" content="You've heard the word 'Qi' a thousand times. It's not mystical energy — it's your body's most practical operating system.">
-<meta property="og:image" content="https://fauntleroy-z.github.io/tcmway/images/comic-03-qi.png">
-<meta property="og:url" content="https://fauntleroy-z.github.io/tcmway/posts/03-qi-is-not-magic.html">
+<meta property="og:image" content="https://tcmway.org/images/ollie-warm.svg">
+<meta property="og:url" content="https://tcmway.org/posts/03-qi-is-not-magic.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="TCM Way">
 <meta name="twitter:card" content="summary_large_image">
 <style>
   :root {
-    --bg: #fdfaf5;
-    --text: #2c2c2c;
-    --accent: #8b5e3c;
-    --light: #f5ede0;
-    --subtle: #888;
-    --sage: #7a9a7e;
-    --card: #fff;
-    --border: #e8dcc8;
+    --bg: #fdf6ee;
+    --text: #3b2a1a;
+    --accent: #b83a2a;
+    --accent-warm: #e8a87c;
+    --light: #fef0e2;
+    --border: #e8d5c0;
+    --subtle: #8a6d54;
+    --gold: #c9a84c;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -51,15 +51,8 @@
     padding-left: 1.2rem;
     margin: 2rem 0;
   }
-  blockquote {
-    background: var(--light);
-    border-left: 3px solid var(--accent);
-    padding: 1rem 1.5rem;
-    margin: 1.5rem 0;
-    font-style: italic;
-    color: #555;
-    border-radius: 0 6px 6px 0;
-  }
+  blockquote { border-left: none; margin: 1.5rem 0; padding: 1.2rem 1.5rem; color: var(--subtle); font-style: italic; background: var(--light); border-radius: 6px; position: relative; }
+  blockquote::before { content: "✦"; position: absolute; top: -10px; left: 16px; background: var(--light); padding: 0 6px; color: var(--accent); font-size: 1rem; }
   blockquote .source {
     display: block;
     margin-top: 0.5rem;
@@ -76,12 +69,13 @@
     border-radius: 8px;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   }
-  .highlight-box {
+  .highlight-box { 
     background: var(--light);
     padding: 1.5rem;
     border-radius: 8px;
     margin: 2rem 0;
-  }
+   position: relative; overflow: hidden; }
+  .highlight-box::after { content: ""; position: absolute; top: -30px; right: -30px; width: 100px; height: 100px; border-radius: 50%; background: var(--accent-warm); opacity: 0.12; }
   .highlight-box h3 { margin-top: 0; }
   table {
     width: 100%;
@@ -113,7 +107,7 @@
   .tip-card .emoji { font-size: 1.5rem; margin-right: 0.5rem; }
   .tip-card h3 { margin-top: 0; }
   .ollie-note {
-    background: linear-gradient(135deg, #f5ede0 0%, #e8d5b7 100%);
+    background: linear-gradient(135deg, #fef0e2 0%, #f5dcc4 100%);
     border-radius: 12px;
     padding: 1.5rem 1.8rem;
     margin: 2.5rem 0;
@@ -387,13 +381,13 @@ var _hmt = _hmt || [];
 <div style="text-align: center; margin: 2.5rem 0; padding: 1.5rem; background: var(--light); border-radius: 8px;">
   <p style="margin-bottom: 0.8rem; color: var(--subtle); font-size: 0.9rem;">If this changed how you think about your body, share it:</p>
   <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-    <a href="https://twitter.com/intent/tweet?url=https://fauntleroy-z.github.io/tcmway/posts/03-qi-is-not-magic.html&text=Qi%20Is%20Not%20Magic%20%E2%80%94%20your%20body%27s%20most%20practical%20operating%20system%2C%20explained%202200%20years%20ago" target="_blank" rel="noopener" style="display: inline-block; padding: 0.5rem 1.5rem; background: #1DA1F2; color: white; text-decoration: none; border-radius: 4px; font-family: -apple-system, sans-serif; font-size: 0.9rem;">Share on Twitter</a>
-    <a href="https://www.reddit.com/submit?url=https://fauntleroy-z.github.io/tcmway/posts/03-qi-is-not-magic.html&title=Qi%20Is%20Not%20Magic%3A%20A%20Practical%20Introduction" target="_blank" rel="noopener" style="display: inline-block; padding: 0.5rem 1.5rem; background: #FF4500; color: white; text-decoration: none; border-radius: 4px; font-family: -apple-system, sans-serif; font-size: 0.9rem;">Share on Reddit</a>
-    <a href="mailto:?subject=Qi Is Not Magic — A Practical Introduction&body=Thought you might find this interesting: https://fauntleroy-z.github.io/tcmway/posts/03-qi-is-not-magic.html" style="display: inline-block; padding: 0.5rem 1.5rem; background: #555; color: white; text-decoration: none; border-radius: 4px; font-family: -apple-system, sans-serif; font-size: 0.9rem;">Share by Email</a>
+    <a href="https://twitter.com/intent/tweet?url=https://tcmway.org/posts/03-qi-is-not-magic.html&text=Qi%20Is%20Not%20Magic%20%E2%80%94%20your%20body%27s%20most%20practical%20operating%20system%2C%20explained%202200%20years%20ago" target="_blank" rel="noopener" style="display: inline-block; padding: 0.5rem 1.5rem; background: #1DA1F2; color: white; text-decoration: none; border-radius: 4px; font-family: -apple-system, sans-serif; font-size: 0.9rem;">Share on Twitter</a>
+    <a href="https://www.reddit.com/submit?url=https://tcmway.org/posts/03-qi-is-not-magic.html&title=Qi%20Is%20Not%20Magic%3A%20A%20Practical%20Introduction" target="_blank" rel="noopener" style="display: inline-block; padding: 0.5rem 1.5rem; background: #FF4500; color: white; text-decoration: none; border-radius: 4px; font-family: -apple-system, sans-serif; font-size: 0.9rem;">Share on Reddit</a>
+    <a href="mailto:?subject=Qi Is Not Magic — A Practical Introduction&body=Thought you might find this interesting: https://tcmway.org/posts/03-qi-is-not-magic.html" style="display: inline-block; padding: 0.5rem 1.5rem; background: #555; color: white; text-decoration: none; border-radius: 4px; font-family: -apple-system, sans-serif; font-size: 0.9rem;">Share by Email</a>
   </div>
 </div>
 
-<div style="margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #f5ede0 0%, #e8d5b7 100%); border-radius: 12px; text-align: center;">
+<div style="margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #fef0e2 0%, #f5dcc4 100%); border-radius: 12px; text-align: center;">
   <p style="font-size: 1.1rem; margin-bottom: 0.6rem;">💌 <strong>Write to Ollie</strong></p>
   <p style="margin-bottom: 1rem; color: var(--subtle); font-size: 0.95rem;">Got a question? A story about your own health journey?<br>Or just want to say hi? Ollie reads every email.</p>
   <a href="mailto:tcmway.ollie@outlook.com" style="display: inline-block; padding: 0.6rem 2rem; background: var(--accent); color: white; text-decoration: none; border-radius: 4px; font-family: -apple-system, sans-serif; font-size: 0.95rem;">📧 tcmway.ollie@outlook.com</a>
