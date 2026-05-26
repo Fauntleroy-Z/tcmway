@@ -267,4 +267,122 @@ End with Ollie looking satisfied, sipping from a fresh steaming mug of ginger te
 
 ---
 
-*Document version: 1.0 | Created: May 24, 2026 | For: TCM Way Blog Sample Articles #04 & #05*
+*Document version: 1.1 | Updated: May 26, 2026 | For: TCM Way Blog Sample Articles #04, #05 & #07*
+
+---
+
+## Comic #07 — "The Check Engine Light Your Doctor Can't See"
+
+**Article:** `07-six-signs-of-health.html`
+**Core Concept:** Ni Haisha's 6 Signs of Health — a pre-lab-test checklist that catches what bloodwork misses
+**Target Image File:** `../images/comic-07-six-signs.webp`
+**Recommended Layout:** 2x2 grid (allows each panel to show one stage of the "checkup" narrative)
+
+---
+
+### Panel 1: The Setup — "Everything's Normal... Except You"
+
+**Visual Description:**
+Ollie is sitting on a examination table in a Western doctor's office (clinical white room, anatomical poster on wall, stethoscope hanging nearby). He's holding a piece of paper — lab results — with big bold text showing "ALL NORMAL" in green. But Ollie looks CONFUSED and slightly frustrated. One wing is scratching his head. His feet (talons) are noticeably cold — there are tiny ice crystal visual effects around them. A small thought bubble shows contradictory symptoms: a clock showing he woke up at 3 AM again, a rumbling-but-not-hungry stomach, and tired eyes.
+
+The doctor (could be a simple figure or just a white-coat arm handing him the paper) is off-panel saying "You're perfectly healthy!"
+
+**Background Details:**
+- Clinical but not cold — maybe a small potted plant on the windowsill that Ollie notices
+- The lab paper should be visually prominent — it's the irony anchor of the whole comic
+- Ollie's cold feet and tired expression contrast with the "ALL NORMAL" paper
+
+**Ollie's Dialogue / Caption:**
+> **Ollie:** "Your lab results came back 'normal.' Congrats! ...So why do your feet feel like popsicles? Why did you wake up at 3 AM again? And why does 'healthy' feel like a grade you got, not a way you FEEL?"
+
+**Mood:** The universal frustration of "the numbers say I'm fine but I'm clearly NOT fine."
+
+---
+
+### Panel 2: The Reveal — Meet the Real Checklist
+
+**Visual Description:**
+Scene shifts to Ollie standing confidently beside a BIG VISUAL CHECKLIST — like a pilot's pre-flight checklist or a race car driver's dashboard. This checklist has **6 items**, each with an icon and a simple checkbox-style layout:
+
+1. 😴 **Sleep through the night** → checkbox
+2. 🍽️ **Good appetite, normal thirst** → checkbox
+3. 💩 **Regular bathroom habits** → checkbox (can use subtle/PG icon)
+4. 💪 **Steady energy all day** → checkbox
+5. 🌡️ **Cool head, warm hands & feet** → checkbox ← this one has a red X next to it!
+6. 😤 **Sweat normally (not too much, not too little)** → checkbox
+
+Ollie is holding a clipboard or pointing to the list with one wing, wearing a tiny "TCM Inspector" badge or sash. Item #5 (cool head/warm extremities) is highlighted/red-marked to show "THIS ONE FAILED." The overall aesthetic should feel like a friendly health inspection, not a scary medical exam.
+
+**Background Details:**
+- Warm, inviting background (cream/peach tones) to contrast with clinical Panel 1
+- Each checklist item could have a tiny decorative element (a moon for sleep, a bowl for appetite, etc.)
+- The failed item (#5) should stand out subtly — maybe a gentle red glow or a small ❌ mark
+
+**Ollie's Dialogue / Caption:**
+> **Ollie:** "Before there were blood tests, there was THIS. Six signs. Developed over 2,000 years of observation. It won't tell you your cholesterol number — but it WILL tell you if your body's inner furnace is actually running."
+
+**Mood:** Empowering discovery — "finally, a checklist that asks the right questions."
+
+---
+
+### Panel 3: The Aha Moment — Your Body Talks, Are You Listening?
+
+**Visual Description:**
+Split into two halves:
+
+**Left half ("Before"):** A person (simplified silhouette) IGNORING their body's signals — walking past a "3 AM wake-up" sign, putting on extra socks instead of asking WHY feet are cold, drinking coffee to mask afternoon fatigue, pushing through "not quite right" feelings. Small ignored signal icons float around like ghost-bubbles.
+
+**Right half ("After"):** The same person NOW paying attention — checking each of the 6 signs like a daily ritual (morning routine style). They're looking at their hands (checking temperature), noticing their energy level, paying attention to thirst patterns. Small green ✅ checkmarks appear next to each observation.
+
+Ollie stands BETWEEN these two halves, gesturing from left to right, as if directing traffic from ignorance to awareness. His yin-yang necklace glows softly.
+
+**Background Details:**
+- Left side: cooler, gray-blue tones (disconnected state)
+- Right side: warmer, golden-peach tones (aware, connected state)
+- The transition should feel like dawn breaking — subtle but noticeable
+
+**Ollie's Dialogue / Caption:**
+> **Ollie:** "These six signs aren't a replacement for your doctor. They're a PRE-check. Like checking your oil before a road trip. Catch it early = easier fix. Ignore it until the warning light SCREAMS = harder road ahead."
+
+**Mood:** The crucial mindset shift from passive patient to active observer.
+
+---
+
+### Panel 4: The Payoff — 30 Seconds. Every Morning. That's It.
+
+**Visual Description:**
+Ollie is HAPPY and RELAXED — lounging comfortably on his mortar (药臼) with a warm mug of ginger tea, looking genuinely well-rested and content. Around him, arranged in a casual semi-circle, are **6 simple icon-cards** representing the morning self-check routine:
+
+1. 🌙 Did I sleep straight through? → ✅/❌
+2. 🍜 Am I hungry for breakfast? → ✅/❌
+3. 🚽 Everything moving OK? → ✅/❌
+4. ⚡ Do I have steady energy? → ✅/❌
+5. 🤚 Head cool, hands warm? → ✅/❌
+6. 💦 Sweating normally? → ✅/❌
+
+Below the icons, a simple text: **"30 seconds. Every morning. Your body's daily report card."**
+
+The final image should feel warm, achievable, and slightly cozy — like a friendly reminder, not a medical lecture. Maybe add a small calendar icon with a checkmark to show "daily habit" concept.
+
+**Ollie's Signature Line:**
+> **Ollie:** "You don't need a PhD to know if you're thriving. You need 30 seconds and honesty. Your body's been writing you letters every single day — time to start reading them."
+
+**Small signature tag at bottom-right corner:**
+> *(Ollie checks his own feet. Still slightly cool. Adds "more ginger tea" to tomorrow's list.)*
+
+**Mood:** Warm, achievable, gently empowering. Reader should think "I can do this tomorrow morning."
+
+---
+
+### Art Direction Notes for Comic #07:
+
+| Element | Specification |
+|---------|--------------|
+| Color palette | Base palette same as #04/#05; add clinical blue-white for Panel 1 (contrast), warm gold-peach for Panels 2-4 (resolution) |
+| Key visual motif | Checklist/dashboard imagery throughout — the 6 signs should become visually recognizable as a set |
+| Ollie's evolution | Panel 1: confused/concerned → Panel 2: confident/teaching → Panel 3: guiding → Panel 4: relaxed/content |
+| Text placement | Keep dialogue concise; the 6 signs themselves are the star, not Ollie's monologue |
+| Panel 1 contrast | Intentionally colder/more clinical than other comics to emphasize the Western medicine vs TCM contrast |
+| Overall tone | Not anti-doctor — pro-"additional toolkit." Respectful collaboration message |
+
+---
