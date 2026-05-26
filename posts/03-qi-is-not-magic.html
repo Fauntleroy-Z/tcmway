@@ -22,19 +22,27 @@
     --border: #e8d5c0;
     --subtle: #8a6d54;
     --gold: #c9a84c;
+    --sage: #7a9e7e;
+    --card: #f9f3eb;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: Georgia, 'Times New Roman', serif;
     background: var(--bg);
     color: var(--text);
-    line-height: 1.8;
+    line-height: 1.9;
     max-width: 720px;
     margin: 0 auto;
     padding: 2rem 1.5rem;
   }
-  h1 { font-size: 2rem; color: var(--accent); margin-bottom: 0.5rem; line-height: 1.3; }
-  h2 { font-size: 1.4rem; color: var(--accent); margin: 2.5rem 0 0.8rem; }
+  header { text-align: center; padding: 2rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
+  header h1 { font-size: 1.8rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
+  header h1::after { content: ""; display: block; width: 60%; height: 3px; margin: 6px auto 0; background: linear-gradient(90deg, transparent, #b83a2a 20%, #e8a87c 50%, #b83a2a 80%, transparent); border-radius: 2px; opacity: 0.7; }
+  nav { margin-top: 1rem; }
+  nav a { color: var(--subtle); text-decoration: none; margin: 0 0.8rem; font-size: 0.95rem; }
+  nav a:hover { color: var(--accent); }
+  article h1 { font-size: 1.8rem; font-weight: normal; color: var(--accent); margin-bottom: 0.5rem; line-height: 1.4; }
+  h2 { font-size: 1.3rem; font-weight: normal; color: var(--accent); margin: 2.5rem 0 1rem; border-left: 4px solid var(--accent-warm); padding-left: 0.8rem; }
   h3 { font-size: 1.1rem; color: var(--sage); margin: 1.5rem 0 0.5rem; }
   p { margin-bottom: 1.2rem; }
   .meta {
@@ -89,7 +97,7 @@
   }
   th {
     background: var(--sage);
-    color: white;
+    color: #fff;
     font-family: -apple-system, sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
@@ -121,19 +129,16 @@
     left: 1.5rem;
   }
   .ollie-note p { margin-bottom: 0.3rem; }
-  .back {
-    margin-top: 3rem;
-    font-family: -apple-system, sans-serif;
-    font-size: 0.9rem;
-  }
-  .back a { color: var(--accent); text-decoration: none; }
-  .back a:hover { text-decoration: underline; }
   code {
     background: var(--light);
     padding: 0.15em 0.4em;
     border-radius: 3px;
     font-size: 0.9em;
   }
+  strong { color: var(--text); }
+  footer { text-align: center; padding: 2rem 0; color: var(--subtle); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+  footer a { color: var(--accent); text-decoration: none; }
+  .back { display: block; margin: 2rem 0 0; }
 </style>
 <script>
 var _hmt = _hmt || [];
