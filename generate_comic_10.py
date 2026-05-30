@@ -11,9 +11,10 @@ from PIL import Image, ImageDraw, ImageFont
 # -- Config -----------------------------------------------------------
 OUT = "C:/Users/Administrator/tcmway-blog/images"
 FONT_PATHS = [
-    "C:/Windows/Fonts/msyh.ttc",
-    "C:/Windows/Fonts/simsun.ttc",
     "C:/Windows/Fonts/arial.ttf",
+    "C:/Windows/Fonts/calibri.ttf",
+    "C:/Windows/Fonts/segoeui.ttf",
+    "C:/Windows/Fonts/msyh.ttc",
 ]
 PANEL_W, PANEL_H = 480, 400
 MARGIN = 20
@@ -41,15 +42,15 @@ def draw_ollie(draw, cx, cy, scale=1.0):
     s = scale
     bx, by = cx - int(50*s), cy - int(30*s)
     bw, bh = int(100*s), int(90*s)
-    draw.ellipse([bx, by, bx+bw, by+bh], fill=(160, 120, 60), outline=LINE_COLOR, width=2)
+    draw.ellipse([bx, by, bx+bw, by+bh], fill=(160, 120, 60), outline=LINE_COLOR, width=1)
     draw.arc([bx-int(10*s), by+int(10*s), bx+int(60*s), by+int(80*s)],
-              30, 200, fill=(120, 90, 40), width=int(3*s))
+              30, 200, fill=(120, 90, 40), width=int(2*s))
     draw.arc([cx+int(10*s), by+int(10*s), cx+int(60*s), by+int(80*s)],
-              340, 160, fill=(120, 90, 40), width=int(3*s))
+              340, 160, fill=(120, 90, 40), width=int(2*s))
     for ex in [cx-int(18*s), cx+int(18*s)]:
         ey = cy - int(5*s)
         draw.ellipse([ex-int(12*s), ey-int(12*s), ex+int(12*s), ey+int(12*s)],
-                     fill=(80, 160, 60), outline=LINE_COLOR, width=2)
+                     fill=(80, 160, 60), outline=LINE_COLOR, width=1)
         draw.ellipse([ex-int(4*s), ey-int(4*s), ex+int(4*s), ey+int(4*s)],
                      fill=(255, 255, 255))
     draw.polygon([
@@ -64,13 +65,13 @@ def draw_ollie(draw, cx, cy, scale=1.0):
     draw.ellipse([px-int(2.5*s), py-int(9*s), px+int(2.5*s), py-int(4*s)], fill=(30, 30, 30))
     draw.ellipse([px-int(2.5*s), py+int(4*s), px+int(2.5*s), py+int(9*s)], fill=(220, 220, 220))
     draw.polygon([(cx-int(40*s), cy-int(25*s)), (cx-int(55*s), cy-int(65*s)), (cx-int(25*s), cy-int(40*s))],
-                 fill=(140, 100, 50), outline=LINE_COLOR, width=2)
+                 fill=(140, 100, 50), outline=LINE_COLOR, width=1)
     draw.polygon([(cx+int(40*s), cy-int(25*s)), (cx+int(55*s), cy-int(65*s)), (cx+int(25*s), cy-int(40*s))],
-                 fill=(140, 100, 50), outline=LINE_COLOR, width=2)
+                 fill=(140, 100, 50), outline=LINE_COLOR, width=1)
 
 def draw_panel(draw, x, y, w, h, title, text_lines, ollie_pos=None, scene_fn=None):
-    draw.rounded_rectangle([x, y, x+w, y+h], radius=12, fill=PANEL_BG, outline=LINE_COLOR, width=2)
-    draw.rounded_rectangle([x+4, y+4, x+w-4, y+32], radius=8, fill=(235, 225, 210))
+    draw.rounded_rectangle([x, y, x+w, y+h], radius=12, fill=PANEL_BG, outline=LINE_COLOR, width=1)
+    draw.rounded_rectangle([x+4, y+4, x+w-4, y+32], radius=8, fill=(240, 235, 225))
     try:
         f_title = get_font(15)
         draw.text((x+12, y+8), title, fill=OLIVE, font=f_title)
