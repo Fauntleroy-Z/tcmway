@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340">
+  <defs>
+    <style>
+      text { font-family: Georgia, 'Times New Roman', serif; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="340" fill="#fdf6ee" rx="12"/>
+  
+  <!-- Panel 1 -->
+  <g transform="translate(10,10)">
+    <rect width="285" height="320" fill="none" stroke="#e8d5c0" stroke-width="1.5" rx="6"/>
+    
+    <!-- Desk -->
+    <rect x="60" y="210" width="160" height="8" fill="#8a6d54" rx="2"/>
+    <rect x="100" y="218" width="8" height="40" fill="#8a6d54"/>
+    <rect x="180" y="218" width="8" height="40" fill="#8a6d54"/>
+    
+    <!-- Magnifying glass -->
+    <circle cx="165" cy="170" r="18" fill="none" stroke="#3b2a1a" stroke-width="2"/>
+    <line x1="178" y1="183" x2="195" y2="200" stroke="#3b2a1a" stroke-width="2.5"/>
+    
+    <!-- Character splitting -->
+    <text x="142" y="155" font-size="32" fill="#b83a2a" text-anchor="middle">藥</text>
+    <text x="115" y="105" font-size="22" fill="#b83a2a">艹</text>
+    <text x="90" y="155" font-size="14" fill="#8a6d54">herb</text>
+    <text x="175" y="105" font-size="22" fill="#c9a84c">+</text>
+    <text x="195" y="105" font-size="22" fill="#b83a2a">樂</text>
+    <text x="195" y="130" font-size="14" fill="#8a6d54">music</text>
+    
+    <!-- Ollie head -->
+    <ellipse cx="140" cy="250" rx="28" ry="26" fill="#b83a2a"/>
+    <ellipse cx="140" cy="258" rx="22" ry="18" fill="#e8a87c"/>
+    <circle cx="130" cy="245" r="8" fill="white"/>
+    <circle cx="150" cy="245" r="8" fill="white"/>
+    <circle cx="131" cy="245" r="3.5" fill="#3b2a1a"/>
+    <circle cx="151" cy="245" r="3.5" fill="#3b2a1a"/>
+    <polygon points="140,255 136,252 144,252" fill="#c9a84c"/>
+    
+    <text x="142" y="295" font-size="12" fill="#8a6d54" text-anchor="middle">Panel 1: 藥 = 艹 + 樂</text>
+  </g>
+  
+  <!-- Panel 2 -->
+  <g transform="translate(305,10)">
+    <rect width="285" height="320" fill="none" stroke="#e8d5c0" stroke-width="1.5" rx="6"/>
+    
+    <!-- Guqin -->
+    <rect x="70" y="220" width="150" height="12" fill="#8a6d54" rx="3"/>
+    <line x1="80" y1="220" x2="80" y2="260" stroke="#8a6d54" stroke-width="1"/>
+    <line x1="110" y1="220" x2="110" y2="255" stroke="#8a6d54" stroke-width="1"/>
+    <line x1="140" y1="220" x2="140" y2="255" stroke="#8a6d54" stroke-width="1"/>
+    <line x1="170" y1="220" x2="170" y2="258" stroke="#8a6d54" stroke-width="1"/>
+    <line x1="200" y1="220" x2="200" y2="260" stroke="#8a6d54" stroke-width="1"/>
+    
+    <!-- Ollie body -->
+    <ellipse cx="145" cy="195" rx="32" ry="40" fill="#e8a87c"/>
+    <ellipse cx="145" cy="160" rx="25" ry="23" fill="#b83a2a"/>
+    <circle cx="136" cy="155" r="7" fill="white"/>
+    <circle cx="154" cy="155" r="7" fill="white"/>
+    <circle cx="137" cy="155" r="3" fill="#3b2a1a"/>
+    <circle cx="155" cy="155" r="3" fill="#3b2a1a"/>
+    <polygon points="145,163 141,160 149,160" fill="#c9a84c"/>
+    <!-- Yin-yang pendant -->
+    <circle cx="145" cy="178" r="5" fill="#c9a84c"/>
+    
+    <!-- Musical notes -->
+    <text x="100" y="140" font-size="16" fill="#b83a2a">♪</text>
+    <text x="130" y="120" font-size="18" fill="#4a90d9">♫</text>
+    <text x="160" y="130" font-size="16" fill="#2d8a4e">♪</text>
+    <text x="190" y="115" font-size="18" fill="#c9a84c">♬</text>
+    <text x="115" y="100" font-size="14" fill="#9b59b6">♪</text>
+    
+    <!-- Translucent organs -->
+    <ellipse cx="220" cy="80" rx="15" ry="12" fill="#b83a2a" opacity="0.3"/>
+    <text x="220" y="100" font-size="8" fill="#b83a2a" text-anchor="middle" opacity="0.6">♥</text>
+    <ellipse cx="220" cy="120" rx="14" ry="10" fill="#2d8a4e" opacity="0.3"/>
+    <text x="220" y="138" font-size="8" fill="#2d8a4e" text-anchor="middle" opacity="0.6">肝</text>
+    <ellipse cx="220" cy="155" rx="12" ry="9" fill="#c9a84c" opacity="0.3"/>
+    <text x="220" y="170" font-size="8" fill="#c9a84c" text-anchor="middle" opacity="0.6">脾</text>
+    <ellipse cx="220" cy="188" rx="13" ry="11" fill="#ddd" opacity="0.3"/>
+    <text x="220" y="203" font-size="8" fill="#888" text-anchor="middle" opacity="0.6">肺</text>
+    <ellipse cx="220" cy="220" rx="11" ry="9" fill="#4a90d9" opacity="0.3"/>
+    <text x="220" y="235" font-size="8" fill="#4a90d9" text-anchor="middle" opacity="0.6">腎</text>
+    
+    <text x="142" y="295" font-size="12" fill="#8a6d54" text-anchor="middle">Panel 2: 五音通五脏</text>
+  </g>
+  
+  <!-- Panel 3 -->
+  <g transform="translate(600,10)">
+    <rect width="285" height="320" fill="none" stroke="#e8d5c0" stroke-width="1.5" rx="6"/>
+    
+    <!-- Person with headphones -->
+    <ellipse cx="140" cy="170" rx="28" ry="40" fill="#e8a87c"/>
+    <circle cx="140" cy="125" r="22" fill="#e8a87c"/>
+    <!-- Headphones -->
+    <rect x="108" y="100" width="20" height="35" fill="#3b2a1a" rx="8"/>
+    <rect x="152" y="100" width="20" height="35" fill="#3b2a1a" rx="8"/>
+    <path d="M 118,130 Q 140,85 162,130" fill="none" stroke="#3b2a1a" stroke-width="3"/>
+    <!-- Closed eyes -->
+    <path d="M 130,130 Q 135,125 138,130" fill="none" stroke="#3b2a1a" stroke-width="1.5"/>
+    <path d="M 142,130 Q 145,125 150,130" fill="none" stroke="#3b2a1a" stroke-width="1.5"/>
+    
+    <!-- Musical notes from headphones -->
+    <text x="120" y="90" font-size="14" fill="#b83a2a">♪</text>
+    <text x="150" y="82" font-size="16" fill="#4a90d9">♫</text>
+    <text x="165" y="90" font-size="14" fill="#2d8a4e">♪</text>
+    
+    <!-- Same organs -->
+    <ellipse cx="220" cy="80" rx="15" ry="12" fill="#b83a2a" opacity="0.3"/>
+    <text x="220" y="100" font-size="8" fill="#b83a2a" text-anchor="middle" opacity="0.6">♥</text>
+    <ellipse cx="220" cy="120" rx="14" ry="10" fill="#2d8a4e" opacity="0.3"/>
+    <ellipse cx="220" cy="155" rx="12" ry="9" fill="#c9a84c" opacity="0.3"/>
+    <ellipse cx="220" cy="188" rx="13" ry="11" fill="#ddd" opacity="0.3"/>
+    <ellipse cx="220" cy="220" rx="11" ry="9" fill="#4a90d9" opacity="0.3"/>
+    
+    <text x="140" y="295" font-size="12" fill="#8a6d54" text-anchor="middle">Panel 3: Same healing, today</text>
+  </g>
+  
+  <!-- Panel 4 -->
+  <g transform="translate(895,10)">
+    <rect width="285" height="320" fill="none" stroke="#e8d5c0" stroke-width="1.5" rx="6"/>
+    
+    <!-- Ollie winks -->
+    <ellipse cx="142" cy="160" rx="30" ry="28" fill="#b83a2a"/>
+    <ellipse cx="142" cy="168" rx="24" ry="20" fill="#e8a87c"/>
+    <circle cx="132" cy="154" r="7" fill="white"/>
+    <circle cx="152" cy="154" r="7" fill="white"/>
+    <circle cx="133" cy="154" r="3" fill="#3b2a1a"/>
+    <!-- Winking eye -->
+    <line x1="149" y1="152" x2="155" y2="156" stroke="#3b2a1a" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="142,165 138,162 146,162" fill="#c9a84c"/>
+    
+    <!-- Yin-yang pendant -->
+    <circle cx="142" cy="180" r="6" fill="#c9a84c"/>
+    
+    <!-- Speech bubble -->
+    <rect x="55" y="70" width="180" height="55" fill="white" stroke="#b83a2a" stroke-width="1.5" rx="8"/>
+    <polygon points="120,125 130,140 140,125" fill="white" stroke="#b83a2a" stroke-width="1.5"/>
+    <text x="145" y="92" font-size="11" fill="#3b2a1a" text-anchor="middle">"The ancients didn't</text>
+    <text x="145" y="108" font-size="11" fill="#3b2a1a" text-anchor="middle">have CT scans.</text>
+    <text x="145" y="108" font-size="11" fill="#3b2a1a" text-anchor="middle" visibility="hidden">placeholder</text>
+    
+    <!-- 藥 glowing -->
+    <text x="142" y="250" font-size="28" fill="#b83a2a" text-anchor="middle" opacity="0.8">藥</text>
+    
+    <text x="142" y="295" font-size="12" fill="#8a6d54" text-anchor="middle">Panel 4: They had ears.</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="20" font-size="14" fill="#8a6d54" text-anchor="middle" opacity="0.7">Article #13 Comic (Placeholder — AI version pending)</text>
+</svg>
