@@ -1,287 +1,298 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Write to Ollie — TCM Way</title>
-<meta name="description" content="Got a question for Ollie the TCM Owl? Drop him a line. He reads every email — seriously.">
-<meta property="og:title" content="Write to Ollie — TCM Way">
-<meta property="og:description" content="Got a question for Ollie the TCM Owl? Drop him a line. He reads every email.">
-<meta property="og:image" content="https://tcmway.org/images/ollie-warm.svg">
-<meta property="og:url" content="https://tcmway.org/contact.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="TCM Way">
-<meta name="twitter:card" content="summary">
-<style>
-  :root {
-    --bg: #fdf6ee;
-    --text: #3b2a1a;
-    --accent: #b83a2a;
-    --accent-warm: #e8a87c;
-    --light: #fef0e2;
-    --border: #e8d5c0;
-    --subtle: #8a6d54;
-    --gold: #c9a84c;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: Georgia, 'Times New Roman', serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.9;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-  }
-  header {
-    text-align: center;
-    padding: 2rem 0 2rem;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 2.5rem;
-  }
-  header h1 { font-size: 2rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
-  nav { margin-top: 1rem; }
-  nav a { color: var(--subtle); text-decoration: none; margin: 0 0.8rem; font-size: 0.95rem; transition: color 0.2s; }
-  nav a:hover { color: var(--accent); }
-  h2 { font-weight: normal; color: var(--accent); margin: 2.5rem 0 1rem; font-size: 1.3rem; }
-  p { margin-bottom: 1.3rem; }
-  .owl-spotlight {
-    text-align: center;
-    margin: 2rem 0 2.5rem;
-  }
-  .owl-spotlight img {
-    max-width: 180px;
-    border-radius: 50%;
-    border: 3px solid var(--border);
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  }
-  .ollie-message {
-    background: var(--light);
-    border-radius: 12px;
-    padding: 2rem;
-    margin: 2rem 0;
-    position: relative;
-  }
-  .ollie-message::before {
-    content: "🦉";
-    font-size: 2.2rem;
-    position: absolute;
-    top: -1.4rem;
-    left: 1.5rem;
-  }
-  .email-box {
-    background: white;
-    border: 2px dashed var(--accent);
-    border-radius: 8px;
-    padding: 1.5rem;
-    text-align: center;
-    margin: 2rem 0;
-  }
-  .email-box a {
-    color: var(--accent);
-    font-size: 1.2rem;
-    font-family: 'Courier New', monospace;
-    text-decoration: none;
-    word-break: break-all;
-  }
-  .email-box a:hover { text-decoration: underline; }
-  .email-box .hint {
-    font-size: 0.85rem;
-    color: var(--subtle);
-    margin-top: 0.5rem;
-  }
-  .bonus-box {
-    background: linear-gradient(135deg, #f5ede0 0%, #e8d5b7 100%);
-    border-radius: 12px;
-    padding: 1.5rem 1.8rem;
-    margin: 2.5rem 0;
-  }
-  .bonus-box h3 {
-    color: var(--accent);
-    font-weight: normal;
-    font-size: 1.1rem;
-    margin-bottom: 0.8rem;
-  }
-  .bonus-box ul {
-    list-style: none;
-    padding: 0;
-  }
-  .bonus-box li {
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    text-indent: -1.5rem;
-  }
-  .faq {
-    margin: 2.5rem 0;
-  }
-  .faq dt {
-    font-weight: bold;
-    color: var(--accent);
-    margin-top: 1.5rem;
-    margin-bottom: 0.3rem;
-  }
-  .faq dd {
-    margin-left: 0;
-    color: var(--subtle);
-    margin-bottom: 0.5rem;
-  }
-  footer {
-    text-align: center;
-    padding: 2rem 0;
-    color: var(--subtle);
-    font-size: 0.85rem;
-    border-top: 1px solid var(--border);
-    margin-top: 3rem;
-  }
-  footer a { color: var(--accent); text-decoration: none; }
-  .back { display: block; margin: 2rem 0 0; text-align: center; }
-  .back a { color: var(--accent); text-decoration: none; }
-  .back a:hover { text-decoration: underline; }
-
-  /* ===== Direction B: 赤縁·温暖手工感 ===== */
-  header h1 { position: relative; display: inline-block; }
-  header h1::after {
-    content: '';
-    position: absolute;
-    bottom: -4px; left: 0;
-    width: 100%; height: 3px;
-    background: linear-gradient(90deg, #b83a2a 0%, #e8a87c 60%, transparent 100%);
-    border-radius: 2px;
-  }
-  h2 { border-left: 4px solid var(--accent-warm); padding-left: 0.8rem !important; }
-  h3 { border-left: 3px solid var(--accent-warm); padding-left: 0.6rem; }
-  blockquote { 
-    background: var(--light); 
-    border-left: none; 
-    padding: 1rem 1.5rem 1rem 2rem; 
-    margin: 1.5rem 0; 
-    border-radius: 4px; 
-    position: relative; 
-  }
-  blockquote::before { content: "\270E"; color: var(--accent); font-size: 1.2rem; position: absolute; left: 0.6rem; top: 0.9rem; }
-  .warning { border-left-color: var(--accent) !important; }
-  .email-box { border-color: var(--accent) !important; }
-  .bonus-box { background: linear-gradient(135deg, #fef0e2 0%, #f8dcc8 100%) !important; }
-</style>
+1|<!DOCTYPE html>
+2|<html lang="en">
+3|<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G95528TPWH"></script>
 <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?44f28eb4eacca95fb6aeacca17dd57d5";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-G95528TPWH');
 </script>
-</head>
-<body>
 
-<header>
-  <h1>TCM Way</h1>
-  <svg class="brand-symbol" viewBox="0 0 80 80" width="64" height="64" style="display:block;margin:0 auto 1rem;">
-  <circle cx="40" cy="40" r="38" fill="none" stroke="#b83a2a" stroke-width="1.5" stroke-dasharray="4 3"/>
-  <circle cx="40" cy="28" r="10" fill="#b83a2a"/>
-  <ellipse cx="35" cy="26" rx="2.5" ry="3" fill="#fdf6ee"/>
-  <ellipse cx="45" cy="26" rx="2.5" ry="3" fill="#fdf6ee"/>
-  <path d="M38 29 Q40 32 42 29" stroke="#fdf6ee" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-  <path d="M30 22 Q40 14 50 22 L48 24 Q40 18 32 24 Z" fill="#e8a87c"/>
-  <path d="M30 34 Q40 44 50 34 L48 38 Q40 46 32 38 Z" fill="#e8a87c"/>
-  <ellipse cx="40" cy="36" rx="7" ry="9" fill="#e8a87c"/>
-  <path d="M37 33 L39 37 L35 36 Z" fill="#b83a2a"/>
-  <path d="M43 33 L41 37 L45 36 Z" fill="#b83a2a"/>
-  <circle cx="52" cy="54" r="5" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
-  <path d="M49 54 A3 3 0 1 1 55 54" fill="#c9a84c"/>
-  <path d="M55 51 A3 3 0 1 1 49 51" fill="#c9a84c"/>
-</svg>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="about-owl.html">The Owl</a>
-    <a href="contact.html">Contact</a>
-    <a href="disclaimer.html">Disclaimer</a>
-  </nav>
-</header>
 
-<div class="owl-spotlight">
-  <img src="images/ollie-mini-warm.svg" alt="Ollie the TCM Owl, ready to read your email" style="max-width:180px;">
-</div>
-
-<h1>Write to Ollie</h1>
-
-<p>Hi there. I'm Ollie. I write the TCM Way blog. And — this might surprise you — I actually read every single email that comes in.</p>
-
-<p>Not an auto-reply. Not a canned response. Me. The owl on the perch with the ginger tea. Really.</p>
-
-<div class="ollie-message">
-  <p style="margin-top: 0.6rem;">You can write to me about:</p>
-  <ul style="margin-left: 1.5rem; margin-bottom: 0;">
-    <li style="margin-bottom: 0.5rem;">A TCM topic you're curious about and want me to explore</li>
-    <li style="margin-bottom: 0.5rem;">Your own experience with Chinese medicine — good, bad, or confusing</li>
-    <li style="margin-bottom: 0.5rem;">A question the blog made you think about</li>
-    <li style="margin-bottom: 0.5rem;">Something in your daily life you suspect TCM might have an answer for</li>
-    <li>Or just to say hi. (Ollie likes those too.)</li>
-  </ul>
-</div>
-
-<p>No, I won't give you medical advice. (See the <a href="disclaimer.html" style="color: var(--accent);">Disclaimer</a>. I'm an owl with opinions, not a licensed physician.) But I <em>will</em> listen. I'll think about what you're describing. I might point you toward something I've written or suggest a direction to explore. And sometimes, just knowing someone heard you is already half the medicine.</p>
-
-<h2>Why Email?</h2>
-
-<p>Because I believe the best conversations happen one-on-one. Comments sections can feel like shouting into a crowd. An email feels like two people sitting down with a cup of tea. TCM is about depth, patience, and paying attention — and so is a good email exchange.</p>
-
-<p>Also, let's be honest: I'm a small blog. I don't have a comments section. When you write to me, you're not just leaving feedback — you're helping me understand what <em>you</em> want to know. That shapes what I write next.</p>
-
-<div class="email-box">
-  <p style="margin-bottom: 0.8rem; font-size: 1.1rem;">📧 Drop Ollie a line:</p>
-  <a href="mailto:tcmway.ollie@outlook.com">tcmway.ollie@outlook.com</a>
-  <p class="hint">I usually reply within 2–3 days. If you don't hear back, check your spam folder — Outlook and I are still getting acquainted.</p>
-</div>
-
-<h2>What Happens After You Hit Send</h2>
-
-<ol style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
-  <li style="margin-bottom: 0.5rem;">Your email lands in my inbox. (It's a real inbox. I log in with a password and everything.)</li>
-  <li style="margin-bottom: 0.5rem;">I read it. Usually with ginger tea. Sometimes at midnight — I am an owl, after all.</li>
-  <li style="margin-bottom: 0.5rem;">I reply. As myself. Not a bot. Not a template. A real owl who cares about what you said.</li>
-  <li>If you gave me a great idea, it might become a future post — always anonymized, never quoted without permission.</li>
-</ol>
-
-<div class="faq">
-  <h2>Quick FAQ</h2>
-  <dl>
-    <dt>Can I ask for health advice?</dt>
-    <dd>I can share TCM philosophy and general principles. I can't diagnose or prescribe — that's for your doctor or a licensed TCM practitioner. I'll always be upfront about the boundary.</dd>
-
-    <dt>Will you publish my email?</dt>
-    <dd>Never. Your email is private between you and me. If you share a story that I think would help other readers, I'll ask your permission before referencing it (anonymously).</dd>
-
-    <dt>Do you reply in languages other than English?</dt>
-    <dd>English is best, but I can muddle through Chinese (中文可以写,不过英文回复更流畅). For now, TCM Way is an English-first project.</dd>
-
-    <dt>How long does a reply take?</dt>
-    <dd>Usually 2–3 days. Sometimes faster. If you ask something really interesting, I might take longer — because I'll be researching before I answer.</dd>
-  </dl>
-</div>
-
-<!-- BONUS: Ollie's Ginger Tea Recipe -->
-<div class="bonus-box">
-  <h3>🫖 Ollie's Ginger Tea (Because You Made It This Far)</h3>
-  <p style="margin-bottom: 0.5rem;">This is the tea I'm probably drinking while reading your email. You should try it:</p>
-  <ul>
-    <li>🌿 3 thin slices of fresh ginger (skin on, washed)</li>
-    <li>🍯 1 teaspoon of honey (or skip it — ginger's already friendly)</li>
-    <li>🍋 Optional: a single slice of lemon</li>
-    <li>🫖 Steep in hot water for 5–8 minutes. Not boiling — you want warmth, not scalding.</li>
-    <li>🦉 Best enjoyed while reading TCM Way. (Coincidence? Maybe not.)</li>
-  </ul>
-  <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--subtle);">In TCM, ginger warms the middle — the Spleen and Stomach. A warm center means better digestion, clearer thinking, and — Ollie's favorite — less grumpiness.</p>
-</div>
-
-<p class="back"><a href="index.html">&larr; Back to Home</a></p>
-
-<footer>
-  <p>&copy; 2026 TCM Way. All rights reserved.</p>
-  <p><a href="disclaimer.html">Medical Disclaimer</a> &middot; <a href="contact.html">Contact</a></p>
-</footer>
-
-</body>
-</html>
+4|<meta charset="UTF-8">
+5|<meta name="viewport" content="width=device-width, initial-scale=1.0">
+6|<title>Write to Ollie — TCM Way</title>
+7|<meta name="description" content="Got a question for Ollie the TCM Owl? Drop him a line. He reads every email — seriously.">
+8|<meta property="og:title" content="Write to Ollie — TCM Way">
+9|<meta property="og:description" content="Got a question for Ollie the TCM Owl? Drop him a line. He reads every email.">
+10|<meta property="og:image" content="https://tcmway.org/images/ollie-warm.svg">
+11|<meta property="og:url" content="https://tcmway.org/contact.html">
+12|<meta property="og:type" content="website">
+13|<meta property="og:site_name" content="TCM Way">
+14|<meta name="twitter:card" content="summary">
+15|<style>
+16|  :root {
+17|    --bg: #fdf6ee;
+18|    --text: #3b2a1a;
+19|    --accent: #b83a2a;
+20|    --accent-warm: #e8a87c;
+21|    --light: #fef0e2;
+22|    --border: #e8d5c0;
+23|    --subtle: #8a6d54;
+24|    --gold: #c9a84c;
+25|  }
+26|  * { margin: 0; padding: 0; box-sizing: border-box; }
+27|  body {
+28|    font-family: Georgia, 'Times New Roman', serif;
+29|    background: var(--bg);
+30|    color: var(--text);
+31|    line-height: 1.9;
+32|    max-width: 720px;
+33|    margin: 0 auto;
+34|    padding: 2rem 1.5rem;
+35|  }
+36|  header {
+37|    text-align: center;
+38|    padding: 2rem 0 2rem;
+39|    border-bottom: 1px solid var(--border);
+40|    margin-bottom: 2.5rem;
+41|  }
+42|  header h1 { font-size: 2rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
+43|  nav { margin-top: 1rem; }
+44|  nav a { color: var(--subtle); text-decoration: none; margin: 0 0.8rem; font-size: 0.95rem; transition: color 0.2s; }
+45|  nav a:hover { color: var(--accent); }
+46|  h2 { font-weight: normal; color: var(--accent); margin: 2.5rem 0 1rem; font-size: 1.3rem; }
+47|  p { margin-bottom: 1.3rem; }
+48|  .owl-spotlight {
+49|    text-align: center;
+50|    margin: 2rem 0 2.5rem;
+51|  }
+52|  .owl-spotlight img {
+53|    max-width: 180px;
+54|    border-radius: 50%;
+55|    border: 3px solid var(--border);
+56|    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+57|  }
+58|  .ollie-message {
+59|    background: var(--light);
+60|    border-radius: 12px;
+61|    padding: 2rem;
+62|    margin: 2rem 0;
+63|    position: relative;
+64|  }
+65|  .ollie-message::before {
+66|    content: "🦉";
+67|    font-size: 2.2rem;
+68|    position: absolute;
+69|    top: -1.4rem;
+70|    left: 1.5rem;
+71|  }
+72|  .email-box {
+73|    background: white;
+74|    border: 2px dashed var(--accent);
+75|    border-radius: 8px;
+76|    padding: 1.5rem;
+77|    text-align: center;
+78|    margin: 2rem 0;
+79|  }
+80|  .email-box a {
+81|    color: var(--accent);
+82|    font-size: 1.2rem;
+83|    font-family: 'Courier New', monospace;
+84|    text-decoration: none;
+85|    word-break: break-all;
+86|  }
+87|  .email-box a:hover { text-decoration: underline; }
+88|  .email-box .hint {
+89|    font-size: 0.85rem;
+90|    color: var(--subtle);
+91|    margin-top: 0.5rem;
+92|  }
+93|  .bonus-box {
+94|    background: linear-gradient(135deg, #f5ede0 0%, #e8d5b7 100%);
+95|    border-radius: 12px;
+96|    padding: 1.5rem 1.8rem;
+97|    margin: 2.5rem 0;
+98|  }
+99|  .bonus-box h3 {
+100|    color: var(--accent);
+101|    font-weight: normal;
+102|    font-size: 1.1rem;
+103|    margin-bottom: 0.8rem;
+104|  }
+105|  .bonus-box ul {
+106|    list-style: none;
+107|    padding: 0;
+108|  }
+109|  .bonus-box li {
+110|    margin-bottom: 0.5rem;
+111|    padding-left: 1.5rem;
+112|    text-indent: -1.5rem;
+113|  }
+114|  .faq {
+115|    margin: 2.5rem 0;
+116|  }
+117|  .faq dt {
+118|    font-weight: bold;
+119|    color: var(--accent);
+120|    margin-top: 1.5rem;
+121|    margin-bottom: 0.3rem;
+122|  }
+123|  .faq dd {
+124|    margin-left: 0;
+125|    color: var(--subtle);
+126|    margin-bottom: 0.5rem;
+127|  }
+128|  footer {
+129|    text-align: center;
+130|    padding: 2rem 0;
+131|    color: var(--subtle);
+132|    font-size: 0.85rem;
+133|    border-top: 1px solid var(--border);
+134|    margin-top: 3rem;
+135|  }
+136|  footer a { color: var(--accent); text-decoration: none; }
+137|  .back { display: block; margin: 2rem 0 0; text-align: center; }
+138|  .back a { color: var(--accent); text-decoration: none; }
+139|  .back a:hover { text-decoration: underline; }
+140|
+141|  /* ===== Direction B: 赤縁·温暖手工感 ===== */
+142|  header h1 { position: relative; display: inline-block; }
+143|  header h1::after {
+144|    content: '';
+145|    position: absolute;
+146|    bottom: -4px; left: 0;
+147|    width: 100%; height: 3px;
+148|    background: linear-gradient(90deg, #b83a2a 0%, #e8a87c 60%, transparent 100%);
+149|    border-radius: 2px;
+150|  }
+151|  h2 { border-left: 4px solid var(--accent-warm); padding-left: 0.8rem !important; }
+152|  h3 { border-left: 3px solid var(--accent-warm); padding-left: 0.6rem; }
+153|  blockquote { 
+154|    background: var(--light); 
+155|    border-left: none; 
+156|    padding: 1rem 1.5rem 1rem 2rem; 
+157|    margin: 1.5rem 0; 
+158|    border-radius: 4px; 
+159|    position: relative; 
+160|  }
+161|  blockquote::before { content: "\270E"; color: var(--accent); font-size: 1.2rem; position: absolute; left: 0.6rem; top: 0.9rem; }
+162|  .warning { border-left-color: var(--accent) !important; }
+163|  .email-box { border-color: var(--accent) !important; }
+164|  .bonus-box { background: linear-gradient(135deg, #fef0e2 0%, #f8dcc8 100%) !important; }
+165|</style>
+166|<script>
+167|var _hmt = _hmt || [];
+168|(function() {
+169|  var hm = document.createElement("script");
+170|  hm.src = "https://hm.baidu.com/hm.js?44f28eb4eacca95fb6aeacca17dd57d5";
+171|  var s = document.getElementsByTagName("script")[0]; 
+172|  s.parentNode.insertBefore(hm, s);
+173|})();
+174|</script>
+175|</head>
+176|<body>
+177|
+178|<header>
+179|  <h1>TCM Way</h1>
+180|  <svg class="brand-symbol" viewBox="0 0 80 80" width="64" height="64" style="display:block;margin:0 auto 1rem;">
+181|  <circle cx="40" cy="40" r="38" fill="none" stroke="#b83a2a" stroke-width="1.5" stroke-dasharray="4 3"/>
+182|  <circle cx="40" cy="28" r="10" fill="#b83a2a"/>
+183|  <ellipse cx="35" cy="26" rx="2.5" ry="3" fill="#fdf6ee"/>
+184|  <ellipse cx="45" cy="26" rx="2.5" ry="3" fill="#fdf6ee"/>
+185|  <path d="M38 29 Q40 32 42 29" stroke="#fdf6ee" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+186|  <path d="M30 22 Q40 14 50 22 L48 24 Q40 18 32 24 Z" fill="#e8a87c"/>
+187|  <path d="M30 34 Q40 44 50 34 L48 38 Q40 46 32 38 Z" fill="#e8a87c"/>
+188|  <ellipse cx="40" cy="36" rx="7" ry="9" fill="#e8a87c"/>
+189|  <path d="M37 33 L39 37 L35 36 Z" fill="#b83a2a"/>
+190|  <path d="M43 33 L41 37 L45 36 Z" fill="#b83a2a"/>
+191|  <circle cx="52" cy="54" r="5" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
+192|  <path d="M49 54 A3 3 0 1 1 55 54" fill="#c9a84c"/>
+193|  <path d="M55 51 A3 3 0 1 1 49 51" fill="#c9a84c"/>
+194|</svg>
+195|  <nav>
+196|    <a href="index.html">Home</a>
+197|    <a href="about.html">About</a>
+198|    <a href="about-owl.html">The Owl</a>
+199|    <a href="contact.html">Contact</a>
+200|    <a href="disclaimer.html">Disclaimer</a>
+201|  </nav>
+202|</header>
+203|
+204|<div class="owl-spotlight">
+205|  <img src="images/ollie-mini-warm.svg" alt="Ollie the TCM Owl, ready to read your email" style="max-width:180px;">
+206|</div>
+207|
+208|<h1>Write to Ollie</h1>
+209|
+210|<p>Hi there. I'm Ollie. I write the TCM Way blog. And — this might surprise you — I actually read every single email that comes in.</p>
+211|
+212|<p>Not an auto-reply. Not a canned response. Me. The owl on the perch with the ginger tea. Really.</p>
+213|
+214|<div class="ollie-message">
+215|  <p style="margin-top: 0.6rem;">You can write to me about:</p>
+216|  <ul style="margin-left: 1.5rem; margin-bottom: 0;">
+217|    <li style="margin-bottom: 0.5rem;">A TCM topic you're curious about and want me to explore</li>
+218|    <li style="margin-bottom: 0.5rem;">Your own experience with Chinese medicine — good, bad, or confusing</li>
+219|    <li style="margin-bottom: 0.5rem;">A question the blog made you think about</li>
+220|    <li style="margin-bottom: 0.5rem;">Something in your daily life you suspect TCM might have an answer for</li>
+221|    <li>Or just to say hi. (Ollie likes those too.)</li>
+222|  </ul>
+223|</div>
+224|
+225|<p>No, I won't give you medical advice. (See the <a href="disclaimer.html" style="color: var(--accent);">Disclaimer</a>. I'm an owl with opinions, not a licensed physician.) But I <em>will</em> listen. I'll think about what you're describing. I might point you toward something I've written or suggest a direction to explore. And sometimes, just knowing someone heard you is already half the medicine.</p>
+226|
+227|<h2>Why Email?</h2>
+228|
+229|<p>Because I believe the best conversations happen one-on-one. Comments sections can feel like shouting into a crowd. An email feels like two people sitting down with a cup of tea. TCM is about depth, patience, and paying attention — and so is a good email exchange.</p>
+230|
+231|<p>Also, let's be honest: I'm a small blog. I don't have a comments section. When you write to me, you're not just leaving feedback — you're helping me understand what <em>you</em> want to know. That shapes what I write next.</p>
+232|
+233|<div class="email-box">
+234|  <p style="margin-bottom: 0.8rem; font-size: 1.1rem;">📧 Drop Ollie a line:</p>
+235|  <a href="mailto:tcmway.ollie@outlook.com">tcmway.ollie@outlook.com</a>
+236|  <p class="hint">I usually reply within 2–3 days. If you don't hear back, check your spam folder — Outlook and I are still getting acquainted.</p>
+237|</div>
+238|
+239|<h2>What Happens After You Hit Send</h2>
+240|
+241|<ol style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+242|  <li style="margin-bottom: 0.5rem;">Your email lands in my inbox. (It's a real inbox. I log in with a password and everything.)</li>
+243|  <li style="margin-bottom: 0.5rem;">I read it. Usually with ginger tea. Sometimes at midnight — I am an owl, after all.</li>
+244|  <li style="margin-bottom: 0.5rem;">I reply. As myself. Not a bot. Not a template. A real owl who cares about what you said.</li>
+245|  <li>If you gave me a great idea, it might become a future post — always anonymized, never quoted without permission.</li>
+246|</ol>
+247|
+248|<div class="faq">
+249|  <h2>Quick FAQ</h2>
+250|  <dl>
+251|    <dt>Can I ask for health advice?</dt>
+252|    <dd>I can share TCM philosophy and general principles. I can't diagnose or prescribe — that's for your doctor or a licensed TCM practitioner. I'll always be upfront about the boundary.</dd>
+253|
+254|    <dt>Will you publish my email?</dt>
+255|    <dd>Never. Your email is private between you and me. If you share a story that I think would help other readers, I'll ask your permission before referencing it (anonymously).</dd>
+256|
+257|    <dt>Do you reply in languages other than English?</dt>
+258|    <dd>English is best, but I can muddle through Chinese (中文可以写,不过英文回复更流畅). For now, TCM Way is an English-first project.</dd>
+259|
+260|    <dt>How long does a reply take?</dt>
+261|    <dd>Usually 2–3 days. Sometimes faster. If you ask something really interesting, I might take longer — because I'll be researching before I answer.</dd>
+262|  </dl>
+263|</div>
+264|
+265|<!-- BONUS: Ollie's Ginger Tea Recipe -->
+266|<div class="bonus-box">
+267|  <h3>🫖 Ollie's Ginger Tea (Because You Made It This Far)</h3>
+268|  <p style="margin-bottom: 0.5rem;">This is the tea I'm probably drinking while reading your email. You should try it:</p>
+269|  <ul>
+270|    <li>🌿 3 thin slices of fresh ginger (skin on, washed)</li>
+271|    <li>🍯 1 teaspoon of honey (or skip it — ginger's already friendly)</li>
+272|    <li>🍋 Optional: a single slice of lemon</li>
+273|    <li>🫖 Steep in hot water for 5–8 minutes. Not boiling — you want warmth, not scalding.</li>
+274|    <li>🦉 Best enjoyed while reading TCM Way. (Coincidence? Maybe not.)</li>
+275|  </ul>
+276|  <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--subtle);">In TCM, ginger warms the middle — the Spleen and Stomach. A warm center means better digestion, clearer thinking, and — Ollie's favorite — less grumpiness.</p>
+277|</div>
+278|
+279|<p class="back"><a href="index.html">&larr; Back to Home</a></p>
+280|
+281|<footer>
+282|  <p>&copy; 2026 TCM Way. All rights reserved.</p>
+283|  <p><a href="disclaimer.html">Medical Disclaimer</a> &middot; <a href="contact.html">Contact</a></p>
+284|</footer>
+285|
+286|</body>
+287|</html>
+288|

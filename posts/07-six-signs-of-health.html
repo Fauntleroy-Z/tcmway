@@ -1,673 +1,511 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>6 Signs You're Actually Healthy (And Why Your Lab Results Don't Tell the Whole Story) — TCM Way</title>
-<meta name="description" content="Your bloodwork came back 'normal.' So why do you still feel off? TCM has six health standards that catch problems years before any lab test would. Are you actually healthy?">
-<meta property="og:title" content="6 Signs You're Actually Healthy (And Why Your Lab Results Don't Tell the Whole Story) — TCM Way">
-<meta property="og:description" content="Your bloodwork came back 'normal.' So why do you still feel off? TCM has six health standards that catch problems years before any lab test would.">
-<meta property="og:image" content="https://tcmway.net/images/comic-07-six-signs-new.png?v=202605311035">
-<meta property="og:url" content="https://tcmway.org/posts/07-six-signs-of-health.html">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="TCM Way">
-<meta name="twitter:card" content="summary_large_image">
-<style>
-  :root {
-    --bg: #fdf6ee;
-    --text: #3b2a1a;
-    --accent: #b83a2a;
-    --accent-warm: #e8a87c;
-    --light: #fef0e2;
-    --border: #e8d5c0;
-    --subtle: #8a6d54;
-    --gold: #c9a84c;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: Georgia, 'Times New Roman', serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.85;
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-  }
-  header {
-    text-align: center;
-    padding: 2rem 0 1.5rem;
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 2.5rem;
-  }
-  header h1 { font-size: 2rem; font-weight: normal; color: var(--accent); }
-  header h1::after { content: ""; display: block; width: 60%; height: 3px; margin: 6px auto 0; background: linear-gradient(90deg, transparent, #b83a2a 20%, #e8a87c 50%, #b83a2a 80%, transparent); border-radius: 2px; opacity: 0.7; }
-  nav { margin-top: 1rem; }
-  nav a { color: var(--subtle); text-decoration: none; margin: 0 0.8rem; font-size: 0.95rem; }
-  nav a:hover { color: var(--accent); }
-
-  article { margin: 2rem 0; }
-
-  h2 {
-    font-weight: normal;
-    font-size: 1.5rem;
-    color: var(--accent);
-    margin: 2.5rem 0 1rem;
-    line-height: 1.4;
-   border-left: 4px solid var(--accent-warm); padding-left: 0.8rem; }
-
-  .article-meta {
-    text-align: center;
-    color: var(--subtle);
-    font-size: 0.9rem;
-    margin-bottom: 2rem;
-  }
-  .article-meta .date { font-style: italic; }
-
-  .pain-point {
-    background: var(--light);
-    border-left: 4px solid var(--accent);
-    padding: 1.5rem;
-    margin: 2rem 0;
-    font-size: 1.05rem;
-  }
-  .pain-point strong { color: var(--accent); }
-
-  .ollie-speaks {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 2rem 0;
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  .ollie-speaks img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    border: 2px solid var(--border);
-  }
-  .ollie-speaks .bubble {
-    background: var(--light);
-    border-radius: 12px;
-    padding: 1rem 1.3rem;
-    position: relative;
-    font-style: italic;
-  }
-
-  .comic-section {
-    text-align: center;
-    margin: 2.5rem 0;
-  }
-  .comic-section img {
-    max-width: 100%;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-  }
-  .comic-section .caption {
-    color: var(--subtle);
-    font-size: 0.85rem;
-    font-style: italic;
-    margin-top: 0.5rem;
-  }
-
-  /* === NEW: Health Sign Cards === */
-  .sign-card {
-    background: white;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 1.8rem;
-    margin: 1.5rem 0;
-    position: relative;
-    overflow: hidden;
-  }
-  .sign-card::before {
-    content: attr(data-num);
-    position: absolute;
-    top: 12px;
-    right: 16px;
-    font-size: 3rem;
-    font-weight: bold;
-    color: var(--accent);
-    opacity: 0.08;
-    line-height: 1;
-  }
-  .sign-card h3 {
-    color: var(--accent);
-    font-weight: normal;
-    font-size: 1.15rem;
-    margin-bottom: 0.6rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .sign-card .sign-icon {
-    font-size: 1.4rem;
-    flex-shrink: 0;
-  }
-  .sign-card p { margin-bottom: 0.6rem; font-size: 0.98rem; }
-  .sign-card .tcm-term {
-    display: inline-block;
-    background: var(--light);
-    color: var(--accent);
-    padding: 0.1rem 0.5rem;
-    border-radius: 4px;
-    font-style: italic;
-    font-size: 0.9rem;
-  }
-  .sign-card .red-flag {
-    background: #fef3f0;
-    border-left: 3px solid var(--accent);
-    padding: 0.7rem 1rem;
-    margin: 0.8rem 0 0;
-    font-size: 0.92rem;
-    border-radius: 0 6px 6px 0;
-  }
-  .red-flag strong { color: var(--accent); font-size: 0.88rem; }
-
-  .tip-card {
-    background: var(--light);
-    border-radius: 8px;
-    padding: 1.5rem 1.8rem;
-    margin: 1.2rem 0;
-  }
-  .tip-card h3 {
-    color: var(--accent);
-    font-weight: normal;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-  }
-  .tip-card .icon {
-    font-size: 1.3rem;
-    margin-right: 0.4rem;
-  }
-
-  .wrap-up {
-    text-align: center;
-    background: var(--accent);
-    color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    margin: 3rem 0 2rem;
-  }
-  .wrap-up p { font-size: 1.1rem; line-height: 1.7; }
-  .wrap-up em { color: #f0d9b5; }
-
-  footer {
-    text-align: center;
-    padding: 2rem 0;
-    color: var(--subtle);
-    font-size: 0.85rem;
-    border-top: 1px solid var(--border);
-    margin-top: 3rem;
-  }
-  footer a { color: var(--accent); text-decoration: none; }
-
-  ul { margin: 0.5rem 0 0.5rem 1.5rem; }
-  li { margin-bottom: 0.4rem; }
-
-  strong { color: var(--text); }
-  .back { display: block; margin: 2rem 0 0; }
-</style>
+1|<!DOCTYPE html>
+2|<html lang="en">
+3|<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G95528TPWH"></script>
 <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?44f28eb4eacca95fb6aeacca17dd57d5";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-G95528TPWH');
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What are the six signs of health in Traditional Chinese Medicine?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The six TCM health signs are: (1) Sleeping through the night and waking refreshed; (2) Feeling hungry at mealtimes and satisfied after eating; (3) Normal thirst and appropriate sweating; (4) Regular, uneventful bowel movements and urination; (5) Waking with reasonable energy for the day; (6) A cool head and warm hands/feet. These are observable daily markers that TCM uses to assess health before any lab test would detect a problem."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I be healthy even if my lab results are normal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — and conversely, you can feel unwell with perfectly normal lab results. TCM views health as a spectrum of functional balance, not just the absence of diagnosed disease. The six health signs are early warning indicators. If you consistently fail two or more of them, TCM would suggest an imbalance exists — potentially years before it would register on a blood test."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why should I track body signals beyond lab tests?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Lab tests typically measure what has already gone wrong — elevated markers, structural changes, diagnosed conditions. The six TCM health signs measure what is still right and what is beginning to shift. Tracking appetite, sleep quality, temperature patterns, digestion, energy, and extremity warmth gives you a daily dashboard of your functional health that catches dysfunction in its earliest, most reversible stages."
-      }
-    }
-  ]
-}
-</script>
-</head>
-<body>
-
-<header>
-  <svg class="brand-symbol" viewBox="0 0 80 80" width="64" height="64" style="display:block;margin:0 auto 1rem;">
-    <circle cx="40" cy="40" r="36" fill="none" stroke="#b83a2a" stroke-width="2" stroke-dasharray="4 3"/>
-    <ellipse cx="40" cy="44" rx="22" ry="20" fill="#e8a87c"/>
-    <circle cx="34" cy="36" r="4" fill="#b83a2a"/>
-    <circle cx="46" cy="36" r="4" fill="#b83a2a"/>
-    <polygon points="24,26 20,14 28,22" fill="#b83a2a" stroke="#b83a2a" stroke-width="1"/>
-    <polygon points="56,26 60,14 52,22" fill="#b83a2a" stroke="#b83a2a" stroke-width="1"/>
-    <path d="M36 48 Q40 54 44 48" fill="none" stroke="#b83a2a" stroke-width="1.5" stroke-linecap="round"/>
-    <circle cx="40" cy="62" r="5" fill="#c9a84c" opacity="0.85" stroke="#b83a2a" stroke-width="1"/>
-    <path d="M38 62 L40 65 L42 62" fill="#b83a2a" opacity="0.5"/>
-  </svg>
-  <h1>6 Signs You're Actually Healthy</h1>
-  <nav>
-    <a href="../index.html">Home</a>
-    <a href="../about.html">About</a>
-    <a href="../about-owl.html">The Owl</a>
-    <a href="../contact.html">Contact</a>
-    <a href="../disclaimer.html">Disclaimer</a>
-  </nav>
-</header>
-
-<article>
-  <h1 style="font-size: 1.8rem; color: var(--accent); font-weight: normal; text-align: center; margin-bottom: 0.5rem;">
-    6 Signs You're Actually Healthy<br>(And Why Your Lab Results Don't Tell the Whole Story)
-  </h1>
-  <div class="article-meta">
-    <span class="date">May 26, 2026</span> &middot; By Ollie the TCM Owl
-  </div>
-
-  <!-- PAIN POINT -->
-  <div class="pain-point">
-    <strong>The Daily Pain Point:</strong> You got your annual bloodwork back. Everything's "within normal range." Cholesterol? Fine. Blood sugar? Normal. Thyroid? Unremarkable. And yet &mdash; you know something's not right. You wake up tired. Your hands are always cold. You can't remember the last time you felt genuinely hungry. Your doctor says "you're healthy." Your body says otherwise.
-  </div>
-
-  <p>
-    Here's an uncomfortable thought: <strong>modern medicine is incredible at detecting disease.</strong>
-    It can find a tumor before you feel it. It can flag cholesterol that might cause a heart attack in twenty years.
-    It is genuinely one of humanity's greatest achievements.
-  </p>
-
-  <p>
-    But here's what it's not great at: <strong>telling you whether you're actually thriving.</strong>
-    "Normal range" means you're not sick yet. It doesn't mean you're well. There's a vast territory
-    between "not diseased" and "vibrantly healthy," and most of us have been living in it for so long 
-    we've forgotten there's anything else.
-  </p>
-
-  <p>
-    Two thousand years ago, Chinese physicians faced the exact same problem &mdash; minus the blood tests and MRI machines.
-    They couldn't peer inside the body with instruments. So they did something clever:
-    <strong>they learned to read the body's external signals like a language.</strong>
-  </p>
-
-  <!-- OLLIE INTRO -->
-  <div class="ollie-speaks">
-    <img src="../images/ollie-warm.svg" loading="lazy" alt="Ollie the TCM Owl">
-    <div class="bubble">
-      "Think of it this way: your car's dashboard has warning lights for everything &mdash;
-      oil pressure, engine temperature, battery. But imagine if the only thing your mechanic checked
-      was whether the engine could still turn on. 'Yep, it starts. You're good!'
-      Meanwhile, the temperature gauge is pegged in the red and the check engine light has been
-      blinking for six months. That's the gap between 'normal lab results' and actual health."
-    </div>
-  </div>
-
-  <!-- THE 6 SIGNS -->
-  <h2>The Six Signs: A 2,000-Year-Old Health Checklist</h2>
-
-  <p>
-    What follows comes from a lineage of Chinese physicians who spent careers observing patterns
-    in thousands of patients. The framework I'm sharing was systematized by
-    <strong>Ni Haisha (&#x502A;&#x6D77;&#x5EFA;)</strong>, a Taiwanese practitioner widely regarded as one of the most influential
-    classical Chinese medicine teachers of the modern era. He didn't invent these signs &mdash;
-    they're woven through classics like the <em>Huangdi Neijing</em> (&#x7687;&#x5E1D;&#x5185;&#x7ECF;) &mdash; but he brought them together into a practical,
-    everyday diagnostic framework that any person can use.
-  </p>
-
-  <p>
-    These aren't alternative-fact wellness tropes. They're <em>functional benchmarks</em>. 
-    Each one reflects how well a specific organ system is doing its job.
-    Let's walk through them.
-  </p>
-
-  <!-- SIGN 1 -->
-  <div class="sign-card" data-num="1">
-    <h3><span class="sign-icon">&#x1F4A4;</span> Sign #1: You Sleep Through the Night</h3>
-    <p>
-      Not "you spend eight hours in bed." Not "you take melatonin and pass out."
-      <strong>You fall asleep reasonably easily, and you stay asleep until morning.</strong>
-    </p>
-    <p>
-      In TCM, this is about <span class="tcm-term">Yang entering Yin</span> (&#x9633;&#x5165;&#x9634;).
-      During the day, Yang energy (active, warm, outward) dominates. At night, it needs to
-      withdraw inward so your body can switch into rest-and-repair mode.
-      If Yang can't settle into Yin &mdash; because of stress, heat, deficiency, or emotional turbulence
-      &mdash; you get the classic pattern: tired but wired, falling asleep late, waking at 2 or 3 AM,
-      or sleeping lightly and waking unrefreshed.
-    </p>
-    <div class="red-flag">
-      <strong>&#x1F534; Red flag:</strong> Consistently waking at the same time every night
-      (especially 1&ndash;3 AM), difficulty falling asleep, or feeling exhausted despite "enough" hours.
-    </div>
-  </div>
-
-  <!-- SIGN 2 -->
-  <div class="sign-card" data-num="2">
-    <h3><span class="sign-icon">&#x1F37D;</span> Sign #2: You Have a Normal Appetite</h3>
-    <p>
-      Not "you force yourself to eat breakfast because articles say you should."
-      Not "you could eat or not eat and wouldn't notice either way."
-      <strong>You get hungry at mealtimes, food sounds appealing, and you feel satisfied after eating.</strong>
-    </p>
-    <p>
-      In TCM, appetite is the barometer of the <span class="tcm-term">Spleen and Stomach</span> system
-      &mdash; your body's digestive power plant. The classics call these organs
-      <em>"the foundation of post-natal Qi"</em> (&#x540E;&#x5929;&#x4E4B;&#x672C;). Everything else depends on them.
-      If your digestion isn't transforming food into usable energy properly, nothing downstream works right.
-      No amount of superfood can fix a weak digestive fire.
-    </p>
-    <div class="red-flag">
-      <strong>&#x1F534; Red flag:</strong> No appetite (especially in the morning), bloating after meals,
-      craving sweets (a sign Spleen is desperate for quick energy), or feeling full after just a few bites.
-    </div>
-  </div>
-
-  <!-- SIGN 3 -->
-  <div class="sign-card" data-num="3">
-    <h3><span class="sign-icon">&#x1F4A7;</span> Sign #3: Your Thirst and Sweat Are Balanced</h3>
-    <p>
-      You're not excessively thirsty all the time. You don't wake up with a dry mouth.
-      You sweat when it's hot or when you exercise &mdash; but you don't sweat randomly when everyone
-      else is comfortable, and you don't fail to sweat when you should.
-    </p>
-    <p>
-      This one's about <span class="tcm-term">Yin-Yang balance</span> (&#x9634;&#x5E73;&#x9633;&#x79D8;).
-      Thirst relates to Body Fluids (Yin). Sweating relates to Yang Qi's ability to regulate pores.
-      When they're in proper proportion, you barely notice thirst or sweat &mdash; they just work quietly
-      in the background, as physiology should.
-    </p>
-    <div class="red-flag">
-      <strong>&#x1F534; Red flag:</strong> Constant dry mouth/throat (especially upon waking),
-      night sweats (waking up damp), excessive sweating without exertion, or rarely sweating even during activity.
-    </div>
-  </div>
-
-  <!-- SIGN 4 -->
-  <div class="sign-card" data-num="4">
-    <h3><span class="sign-icon">&#x1F6BD;</span> Sign #4: Your Bathroom Habits Are... Boringly Normal</h3>
-    <p>
-      Bowel movements: regular, neither too loose nor too hard, no pain, no undigested food visible.
-      Urination: normal frequency, pale yellow to straw-colored, no urgency, no burning.
-      <strong>If you never think about your bathroom habits, that's actually a good sign.</strong>
-    </p>
-    <p>
-      This reveals more than you'd expect. Regular bowel function tells you your
-      <span class="tcm-term">Small Intestine temperature</span> is adequate &mdash; which directly determines
-      whether your hands and feet are warm (more on that next). In TCM clinical thinking,
-      <em>treating the Liver often requires treating the Large Intestine</em> &mdash; they're connected
-      through the meridian system. Constipation or irregularity can be a downstream effect of
-      stress, emotional holding, or Liver Qi stagnation.
-    </p>
-    <div class="red-flag">
-      <strong>&#x1F534; Red flag:</strong> Chronic constipation or diarrhea, urgent bowel movements
-      (especially triggered by stress), very loose stools, or urinating frequently at night.
-    </div>
-  </div>
-
-  <!-- SIGN 5 -->
-  <div class="sign-card" data-num="5">
-    <h3><span class="sign-icon">&#x1F4AA;</span> Sign #5: You Have Energy When You Wake Up</h3>
-    <p>
-      Not "you need three cups of coffee before you can speak to another human."
-      Not "you hit snooze four times and drag yourself out of bed."
-      <strong>You wake up and &mdash; within reason &mdash; feel ready to start the day.</strong>
-    </p>
-    <p>
-      Morning vitality is the ultimate functional test of your body's energy reserves.
-      Ni Haisha used specific physiological markers: in men, <strong>morning erection</strong>;
-      in women, <strong>breast sensitivity around menstruation</strong>.
-      These aren't being gratuitous &mdash; they're objective indicators that your Kidney Qi
-      (your body's deep energy reserve system) is sufficient. If those feel too personal to track,
-      here's a simpler version: do you feel like getting out of bed? Or does staying under the covers
-      feel like the only viable option?
-    </p>
-    <div class="red-flag">
-      <strong>&#x1F534; Red flag:</strong> Needing coffee to function, morning brain fog,
-      hitting snooze repeatedly, or feeling like you "never really wake up" until afternoon.
-    </div>
-  </div>
-
-  <!-- SIGN 6 -->
-  <div class="sign-card" data-num="6">
-    <h3><span class="sign-icon">&#x1F9E5;</span> Sign #6: Your Head Is Cool, Your Hands and Feet Are Warm</h3>
-    <p>
-      This one surprises almost everyone who hears it for the first time.
-      <strong>Your head should feel cool.</strong> Your palms and soles should be warm.
-      If it's the other way around &mdash; hot face, cold extremities &mdash; that's a significant finding.
-    </p>
-    <p>
-      Here's why: the head is where all the Yang channels meet ("the gathering place of all Yang").
-      If Yang Qi is rising upward instead of circulating properly, you get a hot head, flushed face,
-      maybe headaches or dizziness &mdash; while your limbs starve for warmth.
-      Warm hands and feet mean your Yang Qi is reaching the extremities &mdash; it's circulating
-      all the way out to the fingertips, which is exactly where it should go.
-    </p>
-    <p>
-      Cold hands and feet are one of the most common complaints in TCM clinics worldwide,
-      and they're almost never "just poor circulation" in the Western sense. They signal that
-      your internal furnace isn't generating or distributing heat effectively.
-    </p>
-    <div class="red-flag">
-      <strong>&#x1F534; Red flag:</strong> Chronically cold hands and feet (even in warm rooms),
-      hot flashes in the head/face, facial flushing after meals or alcohol, or feeling cold
-      while your face feels warm.
-    </div>
-  </div>
-
-  <!-- PRACTICAL TOOLKIT -->
-  <h2>The Practical Toolkit: What to Do About Each Sign</h2>
-
-  <p>
-    Knowing is half the battle. The other half is doing something about it.
-    For each of the six signs, here's one simple thing you can try &mdash; starting today.
-    (None of these require supplements, expensive equipment, or a degree in biochemistry.)
-  </p>
-
-  <div class="tip-card">
-    <h3><span class="icon">&#x1F4A4;</span> For Sleep (Sign #1)</h3>
-    <p><strong>No screens for 60 minutes before bed.</strong> It's the most boring advice you'll ever hear, and also the most effective. Your Liver meridian peaks between 1&ndash;3 AM &mdash; if you're staring at blue light until midnight, your body hasn't had time to wind down and Yang can't enter Yin. Replace the scrolling with a book, a warm(not hot) foot soak, or just lying still. Give it three nights.</p>
-  </div>
-
-  <div class="tip-card">
-    <h3><span class="icon">&#x1F37D;</span> For Appetite (Sign #2)</h3>
-    <p><strong>Eat a warm breakfast within an hour of waking.</strong> Cold cereal, smoothies, and yogurt straight from the fridge are four-alarm fires to a sluggish Spleen. Switch to warm oatmeal, congee, or even just scrambled eggs. The Spleen likes warmth the way an engine likes oil. This single change is the highest-leverage move for digestive energy.</p>
-  </div>
-
-  <div class="tip-card">
-    <h3><span class="icon">&#x1F4A7;</span> For Thirst &amp; Sweat (Sign #3)</h3>
-    <p><strong>Drink room-temperature water, not ice water.</strong> Iced drinks douse your digestive fire and confuse your body's fluid regulation. Herbal teas (chrysanthemum, mint, or just warm water with a slice of lemon) support balanced hydration without the shock. If you sweat excessively without exertion, reduce spicy foods and alcohol for a week and see what changes.</p>
-  </div>
-
-  <div class="tip-card">
-    <h3><span class="icon">&#x1F6BD;</span> For Bathroom Habits (Sign #4)</h3>
-    <p><strong>Don't rush it. Give yourself five undistracted minutes.</strong> The Large Intestine meridian is active between 5&ndash;7 AM. If you're skipping the bathroom to catch a train or scrolling your phone while half-sitting, you're training your body to ignore its own cues. Drink a glass of warm water upon waking &mdash; it gently stimulates the digestive tract. And for regularity: cooked vegetables over raw salads every time.</p>
-  </div>
-
-  <div class="tip-card">
-    <h3><span class="icon">&#x1F4AA;</span> For Morning Energy (Sign #5)</h3>
-    <p><strong>Get 10 minutes of natural light within 30 minutes of waking.</strong> Your body's energy clock is calibrated by sunlight hitting your eyes. If you go from bed to screen to subway to desk, your internal clock genuinely doesn't know it's morning. Step outside, walk around the block, or just stand on your balcony. No phone. Let your eyes tell your brain it's time to be awake. Combine this with a consistent bedtime (even on weekends) and your Kidney Qi gets the rhythm it needs.</p>
-  </div>
-
-  <div class="tip-card">
-    <h3><span class="icon">&#x1F9E5;</span> For Warm Hands &amp; Feet (Sign #6)</h3>
-    <p><strong>Soak your feet in warm water for 10 minutes before bed.</strong> This one sounds too simple to work. Try it. Warm water draws circulation to the extremities, training your body to send warmth outward instead of hoarding it in the core. Add a slice of fresh ginger to the water if you have it. Keep your ankles covered in cold weather &mdash; in TCM, cold enters through the "Three Yin Crossing" point just above the ankle. And if your hands and feet are chronically cold, look at your diet: are you eating enough warm, cooked food, or is everything from the refrigerator?</p>
-  </div>
-
-  <!-- COMIC -->
-  <div class="comic-section">
-    <img src="../images/comic-07-six-signs-new.png?v=202605311035" alt="Ollie's 4-Panel Comic: The TCM Owl checks off his 6-sign health scorecard" loading="lazy">
-    <div class="caption">Each sign is like a dashboard light. How many are lit up?</div>
-  </div>
-
-  <!-- WHAT THIS ISN'T -->
-  <h2>What This Is (and Isn't)</h2>
-
-  <p>
-    Let me be clear about something important: <strong>this is not a replacement for medical care.</strong>
-    If your doctor says you need medication, take it. If something feels scary, get it checked out.
-    These six signs are a <em>complementary lens</em> &mdash; a way to notice things that routine labs don't capture.
-  </p>
-
-  <p>
-    Think of it like this: modern excels at answering <strong>"Is there disease present?"</strong>
-    Traditional Chinese medicine excels at answering <strong>"Is this body functioning optimally?"</strong>
-    They're different questions. Both matter.
-  </p>
-
-  <div class="ollie-speaks">
-    <img src="../images/ollie-warm.svg" loading="lazy" alt="Ollie the TCM Owl">
-    <div class="bubble">
-      "Here's the thing that took me years to understand: 'not sick' and 'healthy' are not the same thing.
-      Most people live their entire lives in the space between. These six signs are a simple way
-      to figure out which side of that line you're standing on. You don't need special equipment.
-      You don't need a lab. You just need to pay attention to things you've probably been ignoring."
-    </div>
-  </div>
-
-  <!-- QUICK SELF-CHECK -->
-  <h2>A Quick Self-Check (Takes 30 Seconds)</h2>
-
-  <p>Be honest. For each sign, give yourself a quick yes/maybe/no:</p>
-
-  <div class="tip-card">
-    <h3><span class="icon">1.</span> Sleep</h3>
-    <p>Do you sleep through the night and wake refreshed?</p>
-  </div>
-  <div class="tip-card">
-    <h3><span class="icon">2.</span> Appetite</h3>
-    <p>Do you get hungry at mealtimes and feel satisfied after eating?</p>
-  </div>
-  <div class="tip-card">
-    <h3><span class="icon">3.</span> Thirst/Sweat</h3>
-    <p>Is your thirst normal? Do you sweat appropriately?</p>
-  </div>
-  <div class="tip-card">
-    <h3><span class="icon">4.</span> Bathroom</h3>
-    <p>Are your bowel movements and urination regular and uneventful?</p>
-  </div>
-  <div class="tip-card">
-    <h3><span class="icon">5.</span> Energy</h3>
-    <p>Do you wake up with reasonable energy for the day ahead?</p>
-  </div>
-  <div class="tip-card">
-    <h3><span class="icon">6.</span> Temperature</h3>
-    <p>Is your head cool and are your hands/feet warm?</p>
-  </div>
-
-  <p style="margin-top: 1.5rem;">
-    <strong>Mostly yeses?</strong> You're doing better than you think. Keep doing what you're doing.<br>
-    <strong>A mix of yeses and maybes?</strong> Pay attention to the "maybes" &mdash; they're early warnings.<br>
-    <strong>Mostly nos?</strong> Your body has been sending signals. Time to start listening.
-  </p>
-
-  <!-- KEY TAKEAWAYS -->
-  <h2>Key Takeaways</h2>
-
-  <div style="background: white; border: 1px solid var(--border); border-radius: 10px; padding: 1.8rem; margin: 1.5rem 0; counter-reset: takeaway;">
-    <div style="padding: 0.7rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 0.8rem;">
-      <span style="color: var(--accent); font-weight: bold; font-size: 1.1rem; flex-shrink: 0;">1.</span>
-      <span><strong>"Normal" lab results don't mean you're thriving.</strong> Modern medicine detects disease. TCM detects function. Both matter, but they answer different questions.</span>
-    </div>
-    <div style="padding: 0.7rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 0.8rem;">
-      <span style="color: var(--accent); font-weight: bold; font-size: 1.1rem; flex-shrink: 0;">2.</span>
-      <span><strong>Your body talks through patterns, not pain.</strong> Waking at the same time every night, chronic cold hands, no morning appetite — these aren't random annoyances. They're signals with specific meanings.</span>
-    </div>
-    <div style="padding: 0.7rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 0.8rem;">
-      <span style="color: var(--accent); font-weight: bold; font-size: 1.1rem; flex-shrink: 0;">3.</span>
-      <span><strong>The six signs are a dashboard, not a diagnosis.</strong> Use them like a car's instrument panel — to notice what needs attention before the engine seizes. Don't self-diagnose; do self-monitor.</span>
-    </div>
-    <div style="padding: 0.7rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 0.8rem;">
-      <span style="color: var(--accent); font-weight: bold; font-size: 1.1rem; flex-shrink: 0;">4.</span>
-      <span><strong>Start with one thing, not everything.</strong> If 3 of your 6 signs are off, don't try to fix all 3 at once. Pick the one practical tip that feels easiest and do it for a week. Small, consistent changes outperform heroic overhauls every time.</span>
-    </div>
-    <div style="padding: 0.7rem 0 0; display: flex; align-items: flex-start; gap: 0.8rem;">
-      <span style="color: var(--accent); font-weight: bold; font-size: 1.1rem; flex-shrink: 0;">5.</span>
-      <span><strong>This has worked for 2,000 years.</strong> The framework described here comes from the <em>Huangdi Neijing</em>, systematized by Ni Haisha, and verified through countless clinical observations across centuries. It's not new-age wellness — it's one of humanity's longest-running health monitoring systems.</span>
-    </div>
-  </div>
-
-  <!-- WRAP UP -->
-  <div class="wrap-up">
-    <p>
-      <strong>Health isn't the absence of abnormal lab results.</strong>
-      It's the presence of vital signs that say: this body is working <em>well</em>,
-      not just <em>working without catastrophic failure</em>.
-    </p>
-    <p style="margin-top: 1rem;">
-      <em>Save this somewhere. Come back in a month. See if anything changed.
-      Your body talks &mdash; now you know its language.</em>
-    </p>
-  </div>
-
-</article>
-
-<div style="text-align: center; margin: 2.5rem 0; padding: 1.5rem; background: var(--light); border-radius: 8px;">
-    <h3 style="font-weight: normal; color: var(--accent); margin: 0 0 1rem; font-size: 1.1rem;">Sources &amp; Further Reading</h3>
-    <ul style="list-style: none; padding: 0; margin: 0;">
-      <li style="margin-bottom: 0.8rem; font-size: 0.9rem; line-height: 1.6;">
-        <strong><em>Huangdi Neijing</em>, Suwen, Chapters 2, 3, 17, 39, 44, 62, 71</strong>
-        (《素问》多章). The foundational source for organ physiology, Yin-Yang balance criteria,
-        and the relationship between external signs and internal health states in classical TCM theory.
-      </li>
-      <li style="margin-bottom: 0.8rem; font-size: 0.9rem; line-height: 1.6;">
-        <strong>Ni Haisha (&#x502A;&#x6D77;&#x5EFA;).</strong> <em>Ren Ji: Huangdi Neijing Series</em> (&#x4EBA;&#x7EAA;&#xB7;&#x7687;&#x5E1D;&#x5185;&#x7ECF;, 94 episodes).
-        Systematic teaching of the six health standards as clinical benchmarks derived from classical texts,
-        presented through the lens of classical formula (&#x7ECF;&#x65B9;) practice.
-      </li>
-           <li style="margin-bottom: 0.8rem; font-size: 0.9rem; line-height: 1.6;">
-        <strong>Ni Haisha (&#x502A;&#x6D77;&#x5EFA;).</strong> <em>Ren Ji: Shanghan Lun Series</em> (&#x4EBA;&#x7EAA;&#xB7;&#x4F24;&#x5BD2;&#x8BBA;, 69 episodes).
-        Clinical application of the six health standards as treatment endpoints &mdash; when to continue therapy
-        and when a patient has recovered sufficiently to stop herbal formulas.
-      </li>
-      <li style="margin-bottom: 0; font-size: 0.9rem; line-height: 1.6;">
-        <strong>Liang Dong &amp; Ni Haisha Interview Series</strong> (&#x6881;&#x51AC;&#x5BF9;&#x8BDD;&#x502A;&#x6D77;&#x5EFA;).
-        Accessible public discussions covering the six signs, the "internal furnace" metaphor,
-        the Liver-as-master concept, and the distinction between treating disease versus supporting vitality.
-      </li>
-    </ul>
-  </div>
-
-  <div style="text-align: center; margin: 2rem 0; padding: 1.5rem; background: var(--light); border-radius: 8px;">
-    <p style="margin-bottom: 0.8rem; color: var(--subtle); font-size: 0.9rem;">If you found this helpful, share it:</p>
-    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-      <a href="https://twitter.com/intent/tweet?url=https://tcmway.org/posts/07-six-signs-of-health.html&text=6%20Signs%20You%27re%20Actually%20Healthy%20%E2%80%94%20A%202%2C000-Year-Old%20Health%20Checklist" target="_blank" rel="noopener" style="display: inline-block; padding: 0.5rem 1.5rem; background: #1DA1F2; color: white; text-decoration: none; border-radius: 4px; font-family: -apple-system, sans-serif; font-size: 0.9rem;">Share on Twitter</a>
-      <a href="https://www.reddit.com/submit?url=https://tcmway.org/posts/07-six-signs-of-health.html&title=6%20Signs%20You%27re%20Actually%20Healthy" target="_blank" rel="noopener" style="display: inline-block; padding: 0.5rem 1.5rem; background: #FF4500; color: white; text-decoration: none; border-radius: 4px; font-family: -apple-system, sans-serif; font-size: 0.9rem;">Share on Reddit</a>
-      <a href="mailto:?subject=6%20Signs%20You%27re%20Actually%20Healthy%20%E2%80%94%20TCM%20Way&body=Thought%20you%20might%20find%20this%20interesting:%20https://tcmway.org/posts/07-six-signs-of-health.html" style="display: inline-block; padding: 0.5rem 1.5rem; background: #555; color: white; text-decoration: none; border-radius: 4px; font-family: -apple-system, sans-serif; font-size: 0.9rem;">Share by Email</a>
-    </div>
-  </div>
-
-<div style="margin: 2.5rem 0; padding: 1.8rem; background: linear-gradient(135deg, #fef0e2 0%, #f5dcc4 100%); border-radius: 12px; text-align: center;">
-  <p style="font-size: 1.1rem; margin-bottom: 0.6rem;">💌 <strong>Write to Ollie</strong></p>
-  <p style="margin-bottom: 1rem; color: var(--subtle); font-size: 0.95rem;">Got a question? A story about your own health journey?<br>Or just want to say hi? Ollie reads every email.</p>
-  <a href="mailto:tcmway.ollie@outlook.com" style="display: inline-block; padding: 0.6rem 2rem; background: var(--accent); color: white; text-decoration: none; border-radius: 4px; font-family: -apple-system, sans-serif; font-size: 0.95rem;">📧 tcmway.ollie@outlook.com</a>
-</div>
 
 
-<p class="back"><a href="/">← Back to Home</a></p>
-
-<footer>
-  <p>&copy; 2026 TCM Way. All rights reserved.</p>
-  <p><a href="../disclaimer.html">Medical Disclaimer</a></p>
-</footer>
-
-</body>
-</html>
+4|<meta charset="UTF-8">
+5|<meta name="viewport" content="width=device-width, initial-scale=1.0">
+6|<title>6 Signs You're Actually Healthy (And Why Your Lab Results Don't Tell the Whole Story) — TCM Way</title>
+7|<meta name="description" content="Your bloodwork came back 'normal.' So why do you still feel off? TCM has six health standards that catch problems years before any lab test would. Are you actually healthy?">
+8|<meta property="og:title" content="6 Signs You're Actually Healthy (And Why Your Lab Results Don't Tell the Whole Story) — TCM Way">
+9|<meta property="og:description" content="Your bloodwork came back 'normal.' So why do you still feel off? TCM has six health standards that catch problems years before any lab test would.">
+10|<meta property="og:image" content="https://tcmway.net/images/comic-07-six-signs-new.png?v=202605311035">
+11|<meta property="og:url" content="https://tcmway.org/posts/07-six-signs-of-health.html">
+12|<meta property="og:type" content="article">
+13|<meta property="og:site_name" content="TCM Way">
+14|<meta name="twitter:card" content="summary_large_image">
+15|<style>
+16|  :root {
+17|    --bg: #fdf6ee;
+18|    --text: #3b2a1a;
+19|    --accent: #b83a2a;
+20|    --accent-warm: #e8a87c;
+21|    --light: #fef0e2;
+22|    --border: #e8d5c0;
+23|    --subtle: #8a6d54;
+24|    --gold: #c9a84c;
+25|  }
+26|  * { margin: 0; padding: 0; box-sizing: border-box; }
+27|  body {
+28|    font-family: Georgia, 'Times New Roman', serif;
+29|    background: var(--bg);
+30|    color: var(--text);
+31|    line-height: 1.85;
+32|    max-width: 720px;
+33|    margin: 0 auto;
+34|    padding: 2rem 1.5rem;
+35|  }
+36|  header {
+37|    text-align: center;
+38|    padding: 2rem 0 1.5rem;
+39|    border-bottom: 1px solid var(--border);
+40|    margin-bottom: 2.5rem;
+41|  }
+42|  header h1 { font-size: 2rem; font-weight: normal; color: var(--accent); }
+43|  header h1::after { content: ""; display: block; width: 60%; height: 3px; margin: 6px auto 0; background: linear-gradient(90deg, transparent, #b83a2a 20%, #e8a87c 50%, #b83a2a 80%, transparent); border-radius: 2px; opacity: 0.7; }
+44|  nav { margin-top: 1rem; }
+45|  nav a { color: var(--subtle); text-decoration: none; margin: 0 0.8rem; font-size: 0.95rem; }
+46|  nav a:hover { color: var(--accent); }
+47|
+48|  article { margin: 2rem 0; }
+49|
+50|  h2 {
+51|    font-weight: normal;
+52|    font-size: 1.5rem;
+53|    color: var(--accent);
+54|    margin: 2.5rem 0 1rem;
+55|    line-height: 1.4;
+56|   border-left: 4px solid var(--accent-warm); padding-left: 0.8rem; }
+57|
+58|  .article-meta {
+59|    text-align: center;
+60|    color: var(--subtle);
+61|    font-size: 0.9rem;
+62|    margin-bottom: 2rem;
+63|  }
+64|  .article-meta .date { font-style: italic; }
+65|
+66|  .pain-point {
+67|    background: var(--light);
+68|    border-left: 4px solid var(--accent);
+69|    padding: 1.5rem;
+70|    margin: 2rem 0;
+71|    font-size: 1.05rem;
+72|  }
+73|  .pain-point strong { color: var(--accent); }
+74|
+75|  .ollie-speaks {
+76|    background: white;
+77|    border: 1px solid var(--border);
+78|    border-radius: 8px;
+79|    padding: 1.5rem;
+80|    margin: 2rem 0;
+81|    display: flex;
+82|    align-items: flex-start;
+83|    gap: 1rem;
+84|  }
+85|  .ollie-speaks img {
+86|    width: 60px;
+87|    height: 60px;
+88|    border-radius: 50%;
+89|    flex-shrink: 0;
+90|    border: 2px solid var(--border);
+91|  }
+92|  .ollie-speaks .bubble {
+93|    background: var(--light);
+94|    border-radius: 12px;
+95|    padding: 1rem 1.3rem;
+96|    position: relative;
+97|    font-style: italic;
+98|  }
+99|
+100|  .comic-section {
+101|    text-align: center;
+102|    margin: 2.5rem 0;
+103|  }
+104|  .comic-section img {
+105|    max-width: 100%;
+106|    border: 1px solid var(--border);
+107|    border-radius: 4px;
+108|  }
+109|  .comic-section .caption {
+110|    color: var(--subtle);
+111|    font-size: 0.85rem;
+112|    font-style: italic;
+113|    margin-top: 0.5rem;
+114|  }
+115|
+116|  /* === NEW: Health Sign Cards === */
+117|  .sign-card {
+118|    background: white;
+119|    border: 1px solid var(--border);
+120|    border-radius: 10px;
+121|    padding: 1.8rem;
+122|    margin: 1.5rem 0;
+123|    position: relative;
+124|    overflow: hidden;
+125|  }
+126|  .sign-card::before {
+127|    content: attr(data-num);
+128|    position: absolute;
+129|    top: 12px;
+130|    right: 16px;
+131|    font-size: 3rem;
+132|    font-weight: bold;
+133|    color: var(--accent);
+134|    opacity: 0.08;
+135|    line-height: 1;
+136|  }
+137|  .sign-card h3 {
+138|    color: var(--accent);
+139|    font-weight: normal;
+140|    font-size: 1.15rem;
+141|    margin-bottom: 0.6rem;
+142|    display: flex;
+143|    align-items: center;
+144|    gap: 0.5rem;
+145|  }
+146|  .sign-card .sign-icon {
+147|    font-size: 1.4rem;
+148|    flex-shrink: 0;
+149|  }
+150|  .sign-card p { margin-bottom: 0.6rem; font-size: 0.98rem; }
+151|  .sign-card .tcm-term {
+152|    display: inline-block;
+153|    background: var(--light);
+154|    color: var(--accent);
+155|    padding: 0.1rem 0.5rem;
+156|    border-radius: 4px;
+157|    font-style: italic;
+158|    font-size: 0.9rem;
+159|  }
+160|  .sign-card .red-flag {
+161|    background: #fef3f0;
+162|    border-left: 3px solid var(--accent);
+163|    padding: 0.7rem 1rem;
+164|    margin: 0.8rem 0 0;
+165|    font-size: 0.92rem;
+166|    border-radius: 0 6px 6px 0;
+167|  }
+168|  .red-flag strong { color: var(--accent); font-size: 0.88rem; }
+169|
+170|  .tip-card {
+171|    background: var(--light);
+172|    border-radius: 8px;
+173|    padding: 1.5rem 1.8rem;
+174|    margin: 1.2rem 0;
+175|  }
+176|  .tip-card h3 {
+177|    color: var(--accent);
+178|    font-weight: normal;
+179|    font-size: 1.1rem;
+180|    margin-bottom: 0.5rem;
+181|  }
+182|  .tip-card .icon {
+183|    font-size: 1.3rem;
+184|    margin-right: 0.4rem;
+185|  }
+186|
+187|  .wrap-up {
+188|    text-align: center;
+189|    background: var(--accent);
+190|    color: white;
+191|    padding: 2rem;
+192|    border-radius: 8px;
+193|    margin: 3rem 0 2rem;
+194|  }
+195|  .wrap-up p { font-size: 1.1rem; line-height: 1.7; }
+196|  .wrap-up em { color: #f0d9b5; }
+197|
+198|  footer {
+199|    text-align: center;
+200|    padding: 2rem 0;
+201|    color: var(--subtle);
+202|    font-size: 0.85rem;
+203|    border-top: 1px solid var(--border);
+204|    margin-top: 3rem;
+205|  }
+206|  footer a { color: var(--accent); text-decoration: none; }
+207|
+208|  ul { margin: 0.5rem 0 0.5rem 1.5rem; }
+209|  li { margin-bottom: 0.4rem; }
+210|
+211|  strong { color: var(--text); }
+212|  .back { display: block; margin: 2rem 0 0; }
+213|</style>
+214|<script>
+215|var _hmt = _hmt || [];
+216|(function() {
+217|  var hm = document.createElement("script");
+218|  hm.src = "https://hm.baidu.com/hm.js?44f28eb4eacca95fb6aeacca17dd57d5";
+219|  var s = document.getElementsByTagName("script")[0];
+220|  s.parentNode.insertBefore(hm, s);
+221|})();
+222|</script>
+223|<script type="application/ld+json">
+224|{
+225|  "@context": "https://schema.org",
+226|  "@type": "FAQPage",
+227|  "mainEntity": [
+228|    {
+229|      "@type": "Question",
+230|      "name": "What are the six signs of health in Traditional Chinese Medicine?",
+231|      "acceptedAnswer": {
+232|        "@type": "Answer",
+233|        "text": "The six TCM health signs are: (1) Sleeping through the night and waking refreshed; (2) Feeling hungry at mealtimes and satisfied after eating; (3) Normal thirst and appropriate sweating; (4) Regular, uneventful bowel movements and urination; (5) Waking with reasonable energy for the day; (6) A cool head and warm hands/feet. These are observable daily markers that TCM uses to assess health before any lab test would detect a problem."
+234|      }
+235|    },
+236|    {
+237|      "@type": "Question",
+238|      "name": "Can I be healthy even if my lab results are normal?",
+239|      "acceptedAnswer": {
+240|        "@type": "Answer",
+241|        "text": "Yes — and conversely, you can feel unwell with perfectly normal lab results. TCM views health as a spectrum of functional balance, not just the absence of diagnosed disease. The six health signs are early warning indicators. If you consistently fail two or more of them, TCM would suggest an imbalance exists — potentially years before it would register on a blood test."
+242|      }
+243|    },
+244|    {
+245|      "@type": "Question",
+246|      "name": "Why should I track body signals beyond lab tests?",
+247|      "acceptedAnswer": {
+248|        "@type": "Answer",
+249|        "text": "Lab tests typically measure what has already gone wrong — elevated markers, structural changes, diagnosed conditions. The six TCM health signs measure what is still right and what is beginning to shift. Tracking appetite, sleep quality, temperature patterns, digestion, energy, and extremity warmth gives you a daily dashboard of your functional health that catches dysfunction in its earliest, most reversible stages."
+250|      }
+251|    }
+252|  ]
+253|}
+254|</script>
+255|</head>
+256|<body>
+257|
+258|<header>
+259|  <svg class="brand-symbol" viewBox="0 0 80 80" width="64" height="64" style="display:block;margin:0 auto 1rem;">
+260|    <circle cx="40" cy="40" r="36" fill="none" stroke="#b83a2a" stroke-width="2" stroke-dasharray="4 3"/>
+261|    <ellipse cx="40" cy="44" rx="22" ry="20" fill="#e8a87c"/>
+262|    <circle cx="34" cy="36" r="4" fill="#b83a2a"/>
+263|    <circle cx="46" cy="36" r="4" fill="#b83a2a"/>
+264|    <polygon points="24,26 20,14 28,22" fill="#b83a2a" stroke="#b83a2a" stroke-width="1"/>
+265|    <polygon points="56,26 60,14 52,22" fill="#b83a2a" stroke="#b83a2a" stroke-width="1"/>
+266|    <path d="M36 48 Q40 54 44 48" fill="none" stroke="#b83a2a" stroke-width="1.5" stroke-linecap="round"/>
+267|    <circle cx="40" cy="62" r="5" fill="#c9a84c" opacity="0.85" stroke="#b83a2a" stroke-width="1"/>
+268|    <path d="M38 62 L40 65 L42 62" fill="#b83a2a" opacity="0.5"/>
+269|  </svg>
+270|  <h1>6 Signs You're Actually Healthy</h1>
+271|  <nav>
+272|    <a href="../index.html">Home</a>
+273|    <a href="../about.html">About</a>
+274|    <a href="../about-owl.html">The Owl</a>
+275|    <a href="../contact.html">Contact</a>
+276|    <a href="../disclaimer.html">Disclaimer</a>
+277|  </nav>
+278|</header>
+279|
+280|<article>
+281|  <h1 style="font-size: 1.8rem; color: var(--accent); font-weight: normal; text-align: center; margin-bottom: 0.5rem;">
+282|    6 Signs You're Actually Healthy<br>(And Why Your Lab Results Don't Tell the Whole Story)
+283|  </h1>
+284|  <div class="article-meta">
+285|    <span class="date">May 26, 2026</span> &middot; By Ollie the TCM Owl
+286|  </div>
+287|
+288|  <!-- PAIN POINT -->
+289|  <div class="pain-point">
+290|    <strong>The Daily Pain Point:</strong> You got your annual bloodwork back. Everything's "within normal range." Cholesterol? Fine. Blood sugar? Normal. Thyroid? Unremarkable. And yet &mdash; you know something's not right. You wake up tired. Your hands are always cold. You can't remember the last time you felt genuinely hungry. Your doctor says "you're healthy." Your body says otherwise.
+291|  </div>
+292|
+293|  <p>
+294|    Here's an uncomfortable thought: <strong>modern medicine is incredible at detecting disease.</strong>
+295|    It can find a tumor before you feel it. It can flag cholesterol that might cause a heart attack in twenty years.
+296|    It is genuinely one of humanity's greatest achievements.
+297|  </p>
+298|
+299|  <p>
+300|    But here's what it's not great at: <strong>telling you whether you're actually thriving.</strong>
+301|    "Normal range" means you're not sick yet. It doesn't mean you're well. There's a vast territory
+302|    between "not diseased" and "vibrantly healthy," and most of us have been living in it for so long 
+303|    we've forgotten there's anything else.
+304|  </p>
+305|
+306|  <p>
+307|    Two thousand years ago, Chinese physicians faced the exact same problem &mdash; minus the blood tests and MRI machines.
+308|    They couldn't peer inside the body with instruments. So they did something clever:
+309|    <strong>they learned to read the body's external signals like a language.</strong>
+310|  </p>
+311|
+312|  <!-- OLLIE INTRO -->
+313|  <div class="ollie-speaks">
+314|    <img src="../images/ollie-warm.svg" loading="lazy" alt="Ollie the TCM Owl">
+315|    <div class="bubble">
+316|      "Think of it this way: your car's dashboard has warning lights for everything &mdash;
+317|      oil pressure, engine temperature, battery. But imagine if the only thing your mechanic checked
+318|      was whether the engine could still turn on. 'Yep, it starts. You're good!'
+319|      Meanwhile, the temperature gauge is pegged in the red and the check engine light has been
+320|      blinking for six months. That's the gap between 'normal lab results' and actual health."
+321|    </div>
+322|  </div>
+323|
+324|  <!-- THE 6 SIGNS -->
+325|  <h2>The Six Signs: A 2,000-Year-Old Health Checklist</h2>
+326|
+327|  <p>
+328|    What follows comes from a lineage of Chinese physicians who spent careers observing patterns
+329|    in thousands of patients. The framework I'm sharing was systematized by
+330|    <strong>Ni Haisha (&#x502A;&#x6D77;&#x5EFA;)</strong>, a Taiwanese practitioner widely regarded as one of the most influential
+331|    classical Chinese medicine teachers of the modern era. He didn't invent these signs &mdash;
+332|    they're woven through classics like the <em>Huangdi Neijing</em> (&#x7687;&#x5E1D;&#x5185;&#x7ECF;) &mdash; but he brought them together into a practical,
+333|    everyday diagnostic framework that any person can use.
+334|  </p>
+335|
+336|  <p>
+337|    These aren't alternative-fact wellness tropes. They're <em>functional benchmarks</em>. 
+338|    Each one reflects how well a specific organ system is doing its job.
+339|    Let's walk through them.
+340|  </p>
+341|
+342|  <!-- SIGN 1 -->
+343|  <div class="sign-card" data-num="1">
+344|    <h3><span class="sign-icon">&#x1F4A4;</span> Sign #1: You Sleep Through the Night</h3>
+345|    <p>
+346|      Not "you spend eight hours in bed." Not "you take melatonin and pass out."
+347|      <strong>You fall asleep reasonably easily, and you stay asleep until morning.</strong>
+348|    </p>
+349|    <p>
+350|      In TCM, this is about <span class="tcm-term">Yang entering Yin</span> (&#x9633;&#x5165;&#x9634;).
+351|      During the day, Yang energy (active, warm, outward) dominates. At night, it needs to
+352|      withdraw inward so your body can switch into rest-and-repair mode.
+353|      If Yang can't settle into Yin &mdash; because of stress, heat, deficiency, or emotional turbulence
+354|      &mdash; you get the classic pattern: tired but wired, falling asleep late, waking at 2 or 3 AM,
+355|      or sleeping lightly and waking unrefreshed.
+356|    </p>
+357|    <div class="red-flag">
+358|      <strong>&#x1F534; Red flag:</strong> Consistently waking at the same time every night
+359|      (especially 1&ndash;3 AM), difficulty falling asleep, or feeling exhausted despite "enough" hours.
+360|    </div>
+361|  </div>
+362|
+363|  <!-- SIGN 2 -->
+364|  <div class="sign-card" data-num="2">
+365|    <h3><span class="sign-icon">&#x1F37D;</span> Sign #2: You Have a Normal Appetite</h3>
+366|    <p>
+367|      Not "you force yourself to eat breakfast because articles say you should."
+368|      Not "you could eat or not eat and wouldn't notice either way."
+369|      <strong>You get hungry at mealtimes, food sounds appealing, and you feel satisfied after eating.</strong>
+370|    </p>
+371|    <p>
+372|      In TCM, appetite is the barometer of the <span class="tcm-term">Spleen and Stomach</span> system
+373|      &mdash; your body's digestive power plant. The classics call these organs
+374|      <em>"the foundation of post-natal Qi"</em> (&#x540E;&#x5929;&#x4E4B;&#x672C;). Everything else depends on them.
+375|      If your digestion isn't transforming food into usable energy properly, nothing downstream works right.
+376|      No amount of superfood can fix a weak digestive fire.
+377|    </p>
+378|    <div class="red-flag">
+379|      <strong>&#x1F534; Red flag:</strong> No appetite (especially in the morning), bloating after meals,
+380|      craving sweets (a sign Spleen is desperate for quick energy), or feeling full after just a few bites.
+381|    </div>
+382|  </div>
+383|
+384|  <!-- SIGN 3 -->
+385|  <div class="sign-card" data-num="3">
+386|    <h3><span class="sign-icon">&#x1F4A7;</span> Sign #3: Your Thirst and Sweat Are Balanced</h3>
+387|    <p>
+388|      You're not excessively thirsty all the time. You don't wake up with a dry mouth.
+389|      You sweat when it's hot or when you exercise &mdash; but you don't sweat randomly when everyone
+390|      else is comfortable, and you don't fail to sweat when you should.
+391|    </p>
+392|    <p>
+393|      This one's about <span class="tcm-term">Yin-Yang balance</span> (&#x9634;&#x5E73;&#x9633;&#x79D8;).
+394|      Thirst relates to Body Fluids (Yin). Sweating relates to Yang Qi's ability to regulate pores.
+395|      When they're in proper proportion, you barely notice thirst or sweat &mdash; they just work quietly
+396|      in the background, as physiology should.
+397|    </p>
+398|    <div class="red-flag">
+399|      <strong>&#x1F534; Red flag:</strong> Constant dry mouth/throat (especially upon waking),
+400|      night sweats (waking up damp), excessive sweating without exertion, or rarely sweating even during activity.
+401|    </div>
+402|  </div>
+403|
+404|  <!-- SIGN 4 -->
+405|  <div class="sign-card" data-num="4">
+406|    <h3><span class="sign-icon">&#x1F6BD;</span> Sign #4: Your Bathroom Habits Are... Boringly Normal</h3>
+407|    <p>
+408|      Bowel movements: regular, neither too loose nor too hard, no pain, no undigested food visible.
+409|      Urination: normal frequency, pale yellow to straw-colored, no urgency, no burning.
+410|      <strong>If you never think about your bathroom habits, that's actually a good sign.</strong>
+411|    </p>
+412|    <p>
+413|      This reveals more than you'd expect. Regular bowel function tells you your
+414|      <span class="tcm-term">Small Intestine temperature</span> is adequate &mdash; which directly determines
+415|      whether your hands and feet are warm (more on that next). In TCM clinical thinking,
+416|      <em>treating the Liver often requires treating the Large Intestine</em> &mdash; they're connected
+417|      through the meridian system. Constipation or irregularity can be a downstream effect of
+418|      stress, emotional holding, or Liver Qi stagnation.
+419|    </p>
+420|    <div class="red-flag">
+421|      <strong>&#x1F534; Red flag:</strong> Chronic constipation or diarrhea, urgent bowel movements
+422|      (especially triggered by stress), very loose stools, or urinating frequently at night.
+423|    </div>
+424|  </div>
+425|
+426|  <!-- SIGN 5 -->
+427|  <div class="sign-card" data-num="5">
+428|    <h3><span class="sign-icon">&#x1F4AA;</span> Sign #5: You Have Energy When You Wake Up</h3>
+429|    <p>
+430|      Not "you need three cups of coffee before you can speak to another human."
+431|      Not "you hit snooze four times and drag yourself out of bed."
+432|      <strong>You wake up and &mdash; within reason &mdash; feel ready to start the day.</strong>
+433|    </p>
+434|    <p>
+435|      Morning vitality is the ultimate functional test of your body's energy reserves.
+436|      Ni Haisha used specific physiological markers: in men, <strong>morning erection</strong>;
+437|      in women, <strong>breast sensitivity around menstruation</strong>.
+438|      These aren't being gratuitous &mdash; they're objective indicators that your Kidney Qi
+439|      (your body's deep energy reserve system) is sufficient. If those feel too personal to track,
+440|      here's a simpler version: do you feel like getting out of bed? Or does staying under the covers
+441|      feel like the only viable option?
+442|    </p>
+443|    <div class="red-flag">
+444|      <strong>&#x1F534; Red flag:</strong> Needing coffee to function, morning brain fog,
+445|      hitting snooze repeatedly, or feeling like you "never really wake up" until afternoon.
+446|    </div>
+447|  </div>
+448|
+449|  <!-- SIGN 6 -->
+450|  <div class="sign-card" data-num="6">
+451|    <h3><span class="sign-icon">&#x1F9E5;</span> Sign #6: Your Head Is Cool, Your Hands and Feet Are Warm</h3>
+452|    <p>
+453|      This one surprises almost everyone who hears it for the first time.
+454|      <strong>Your head should feel cool.</strong> Your palms and soles should be warm.
+455|      If it's the other way around &mdash; hot face, cold extremities &mdash; that's a significant finding.
+456|    </p>
+457|    <p>
+458|      Here's why: the head is where all the Yang channels meet ("the gathering place of all Yang").
+459|      If Yang Qi is rising upward instead of circulating properly, you get a hot head, flushed face,
+460|      maybe headaches or dizziness &mdash; while your limbs starve for warmth.
+461|      Warm hands and feet mean your Yang Qi is reaching the extremities &mdash; it's circulating
+462|      all the way out to the fingertips, which is exactly where it should go.
+463|    </p>
+464|    <p>
+465|      Cold hands and feet are one of the most common complaints in TCM clinics worldwide,
+466|      and they're almost never "just poor circulation" in the Western sense. They signal that
+467|      your internal furnace isn't generating or distributing heat effectively.
+468|    </p>
+469|    <div class="red-flag">
+470|      <strong>&#x1F534; Red flag:</strong> Chronically cold hands and feet (even in warm rooms),
+471|      hot flashes in the head/face, facial flushing after meals or alcohol, or feeling cold
+472|      while your face feels warm.
+473|    </div>
+474|  </div>
+475|
+476|  <!-- PRACTICAL TOOLKIT -->
+477|  <h2>The Practical Toolkit: What to Do About Each Sign</h2>
+478|
+479|  <p>
+480|    Knowing is half the battle. The other half is doing something about it.
+481|    For each of the six signs, here's one simple thing you can try &mdash; starting today.
+482|    (None of these require supplements, expensive equipment, or a degree in biochemistry.)
+483|  </p>
+484|
+485|  <div class="tip-card">
+486|    <h3><span class="icon">&#x1F4A4;</span> For Sleep (Sign #1)</h3>
+487|    <p><strong>No screens for 60 minutes before bed.</strong> It's the most boring advice you'll ever hear, and also the most effective. Your Liver meridian peaks between 1&ndash;3 AM &mdash; if you're staring at blue light until midnight, your body hasn't had time to wind down and Yang can't enter Yin. Replace the scrolling with a book, a warm(not hot) foot soak, or just lying still. Give it three nights.</p>
+488|  </div>
+489|
+490|  <div class="tip-card">
+491|    <h3><span class="icon">&#x1F37D;</span> For Appetite (Sign #2)</h3>
+492|    <p><strong>Eat a warm breakfast within an hour of waking.</strong> Cold cereal, smoothies, and yogurt straight from the fridge are four-alarm fires to a sluggish Spleen. Switch to warm oatmeal, congee, or even just scrambled eggs. The Spleen likes warmth the way an engine likes oil. This single change is the highest-leverage move for digestive energy.</p>
+493|  </div>
+494|
+495|  <div class="tip-card">
+496|    <h3><span class="icon">&#x1F4A7;</span> For Thirst &amp; Sweat (Sign #3)</h3>
+497|    <p><strong>Drink room-temperature water, not ice water.</strong> Iced drinks douse your digestive fire and confuse your body's fluid regulation. Herbal teas (chrysanthemum, mint, or just warm water with a slice of lemon) support balanced hydration without the shock. If you sweat excessively without exertion, reduce spicy foods and alcohol for a week and see what changes.</p>
+498|  </div>
+499|
+500|  <div class="tip-card">
+501|
