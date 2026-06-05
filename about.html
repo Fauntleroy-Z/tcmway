@@ -1,6 +1,6 @@
-1|<!DOCTYPE html>
-2|<html lang="en">
-3|<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G9S528TPWH"></script>
 <script>
@@ -11,145 +11,144 @@
 </script>
 
 
-4|<meta charset="UTF-8">
-5|<meta name="viewport" content="width=device-width, initial-scale=1.0">
-6|<title>About — TCM Way</title>
-7|<meta name="description" content="About TCM Way — a project to share classical Chinese medicine philosophy with the English-speaking world.">
-8|<meta property="og:title" content="About — TCM Way">
-9|<meta property="og:description" content="About TCM Way — a project to share classical Chinese medicine philosophy with the English-speaking world.">
-10|<meta property="og:image" content="https://tcmway.org/images/ollie-warm.svg">
-11|<meta property="og:url" content="https://tcmway.org/about.html">
-12|<meta property="og:type" content="website">
-13|<meta property="og:site_name" content="TCM Way">
-14|<meta name="twitter:card" content="summary">
-15|<style>
-16|  :root {
-17|    --bg: #fdf6ee;
-18|    --text: #3b2a1a;
-19|    --accent: #b83a2a;
-20|    --accent-warm: #e8a87c;
-21|    --light: #fef0e2;
-22|    --border: #e8d5c0;
-23|    --subtle: #8a6d54;
-24|    --gold: #c9a84c;
-25|  }
-26|  * { margin: 0; padding: 0; box-sizing: border-box; }
-27|  body { font-family: Georgia, 'Times New Roman', serif; background: var(--bg); color: var(--text); line-height: 1.9; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
-28|  header { text-align: center; padding: 2rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
-29|  header h1 { font-size: 2rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
-30|  nav { margin-top: 1rem; }
-31|  nav a { color: var(--subtle); text-decoration: none; margin: 0 0.8rem; font-size: 0.95rem; }
-32|  nav a:hover { color: var(--accent); }
-33|  h2 { font-weight: normal; color: var(--accent); margin: 2rem 0 1rem; font-size: 1.4rem; }
-34|  p { margin-bottom: 1.2rem; }
-35|  footer { text-align: center; padding: 2rem 0; color: var(--subtle); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
-36|  footer a { color: var(--accent); text-decoration: none; }
-37|
-38|  /* ===== Direction B: 赤縁·温暖手工感 ===== */
-39|  header h1 { position: relative; display: inline-block; }
-40|  header h1::after {
-41|    content: '';
-42|    position: absolute;
-43|    bottom: -4px; left: 0;
-44|    width: 100%; height: 3px;
-45|    background: linear-gradient(90deg, #b83a2a 0%, #e8a87c 60%, transparent 100%);
-46|    border-radius: 2px;
-47|  }
-48|  h2 { border-left: 4px solid var(--accent-warm); padding-left: 0.8rem !important; }
-49|  h3 { border-left: 3px solid var(--accent-warm); padding-left: 0.6rem; }
-50|  blockquote { 
-51|    background: var(--light); 
-52|    border-left: none; 
-53|    padding: 1rem 1.5rem 1rem 2rem; 
-54|    margin: 1.5rem 0; 
-55|    border-radius: 4px; 
-56|    position: relative; 
-57|  }
-58|  blockquote::before { content: "\270E"; color: var(--accent); font-size: 1.2rem; position: absolute; left: 0.6rem; top: 0.9rem; }
-59|  .warning { border-left-color: var(--accent) !important; }
-60|  .email-box { border-color: var(--accent) !important; }
-61|  .bonus-box { background: linear-gradient(135deg, #fef0e2 0%, #f8dcc8 100%) !important; }
-62|</style>
-63|<script>
-64|var _hmt = _hmt || [];
-65|(function() {
-66|  var hm = document.createElement("script");
-67|  hm.src = "https://hm.baidu.com/hm.js?44f28eb4eacca95fb6aeacca17dd57d5";
-68|  var s = document.getElementsByTagName("script")[0]; 
-69|  s.parentNode.insertBefore(hm, s);
-70|})();
-71|</script>
-72|</head>
-73|<body>
-74|
-75|<header>
-76|  <h1>TCM Way</h1>
-77|  <svg class="brand-symbol" viewBox="0 0 80 80" width="64" height="64" style="display:block;margin:0 auto 1rem;">
-78|  <circle cx="40" cy="40" r="38" fill="none" stroke="#b83a2a" stroke-width="1.5" stroke-dasharray="4 3"/>
-79|  <circle cx="40" cy="28" r="10" fill="#b83a2a"/>
-80|  <ellipse cx="35" cy="26" rx="2.5" ry="3" fill="#fdf6ee"/>
-81|  <ellipse cx="45" cy="26" rx="2.5" ry="3" fill="#fdf6ee"/>
-82|  <path d="M38 29 Q40 32 42 29" stroke="#fdf6ee" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-83|  <path d="M30 22 Q40 14 50 22 L48 24 Q40 18 32 24 Z" fill="#e8a87c"/>
-84|  <path d="M30 34 Q40 44 50 34 L48 38 Q40 46 32 38 Z" fill="#e8a87c"/>
-85|  <ellipse cx="40" cy="36" rx="7" ry="9" fill="#e8a87c"/>
-86|  <path d="M37 33 L39 37 L35 36 Z" fill="#b83a2a"/>
-87|  <path d="M43 33 L41 37 L45 36 Z" fill="#b83a2a"/>
-88|  <circle cx="52" cy="54" r="5" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
-89|  <path d="M49 54 A3 3 0 1 1 55 54" fill="#c9a84c"/>
-90|  <path d="M55 51 A3 3 0 1 1 49 51" fill="#c9a84c"/>
-91|</svg>
-92|  <nav>
-93|    <a href="/">Home</a>
-94|    <a href="about.html">About</a>
-95|    <a href="contact.html">Contact</a>
-96|    <a href="disclaimer.html">Disclaimer</a>
-97|  </nav>
-98|</header>
-99|
-100|<h2>Who Is Ollie?</h2>
-101|
-102|<p>Hi, I am Ollie. Yes — that is an owl. And yes — that is my pen name.</p>
-103|
-104|<p>You will not find my real name anywhere on this blog, and that is intentional. I am not here to build a personal brand. I am here to share ideas — ideas that have been around for two thousand years and deserve a wider audience than they currently have. The owl is just more fun to look at than my face.</p>
-105|
-106|<p>Behind Ollie is a real person with real credentials: self-taught in classical Chinese medicine, guided by the Shanghan Lun (Treatise on Cold Damage, 《伤寒论》) and its six-meridian pattern differentiation framework (六经辩证). I passed the national examination for licensed TCM pharmacist (执业中药师). By day, I work in international trade — English has been my working language for many years.</p>
-107|
-108|<p>But credentials are not the point. The point is that I studied Chinese medicine because it answered questions Western medicine never asked. About patterns. About the relationship between a person and their environment. About what it means to be <em>healthy</em> rather than merely <em>not sick</em>.</p>
-109|
-110|<p>Ollie — the owl — is the voice I chose to share this with you. Curious, not judgmental. Good at simplifying without dumbing down. Occasionally sleepy. Very opinionated about ginger tea.</p>
-111|
-112|<h2>Why This Blog Exists</h2>
-113|
-114|<p>Most English-language content about Chinese medicine falls into two categories. The first is overly technical — written by and for TCM students, dense with jargon that means nothing to a general reader. The second is shallow — clickbait lists of "5 herbs for better sleep" that strip away all the philosophy that makes TCM worth understanding in the first place.</p>
-115|
-116|<p>TCM Way exists in the gap between these two.</p>
-117|
-118|<p>This is not a "wellness blog." I will not sell you herbs, recommend treatments, or promise cures. What I offer is something more fundamental: an introduction to a way of thinking about health, nature, and human experience that has endured for two millennia — and that feels more relevant now than ever.</p>
-119|
-120|<h2>What I Believe</h2>
-121|
-122|<p>The ancient Chinese physicians — Zhang Zhongjing in particular — were not mystics. They were careful observers who developed a practical system for understanding how the body responds to the world around it. The six-channel pattern differentiation (六经辩证) at the heart of the Shanghan Lun is, in its essence, a framework for seeing connections that modern reductionist thinking often misses.</p>
-123|
-124|<p>I believe this wisdom deserves a wider audience. I believe it can be explained clearly, in plain English, without dumbing it down. And I believe that in an age of accelerating technology and increasing anxiety, people everywhere are looking for something grounding — something that connects them back to nature, back to their own bodies, back to the rhythms that governed human life for thousands of years before smartphones.</p>
-125|
-126|<h2>What You Can Expect</h2>
-127|
-128|<p>This is not a serious academic blog. It is a casual, personal space where I share whatever comes to mind — no rigid schedule, no grand plan. The goal is simple: make Chinese medicine and culture approachable, interesting, and maybe even fun.</p>
-129|
-130|<p>Some days I will share a single thought — a sentence or two sparked by daily life. On a quiet weekend, I might write something longer, diving into a classic text or a piece of TCM knowledge that fascinates me. Sometimes I will simply document my own re-learning journey, picking up where I left off years ago and starting again from the basics.</p>
-131|
-132|<p>You will find variety here — short reflections, longer explorations, random inspirations, and perhaps a touch of humor. If a reader reaches out with a specific question or interest, I am happy to write about that too. This blog exists to share, not to lecture.</p>
-133|
-134|<p>Beyond TCM, I may also share other aspects of Chinese culture that I find worth talking about. After all, medicine does not exist in a vacuum — it is part of a larger way of seeing the world.</p>
-135|
-136|<p>No ads. No sponsors. No pressure. Just a quiet corner of the internet where I hope to offer something you won't find in the rush of everyday life — a slower thought, a different angle, a moment of calm.</p>
-137|
-138|<footer>
-139|  <p>&copy; 2026 TCM Way. All rights reserved.</p>
-140|  <p><a href="disclaimer.html">Medical Disclaimer</a> &middot; <a href="contact.html">Contact</a></p>
-141|</footer>
-142|
-143|</body>
-144|</html>
-145|
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — TCM Way</title>
+<meta name="description" content="About TCM Way — a project to share classical Chinese medicine philosophy with the English-speaking world.">
+<meta property="og:title" content="About — TCM Way">
+<meta property="og:description" content="About TCM Way — a project to share classical Chinese medicine philosophy with the English-speaking world.">
+<meta property="og:image" content="https://tcmway.org/images/ollie-warm.svg">
+<meta property="og:url" content="https://tcmway.org/about.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TCM Way">
+<meta name="twitter:card" content="summary">
+<style>
+  :root {
+    --bg: #fdf6ee;
+    --text: #3b2a1a;
+    --accent: #b83a2a;
+    --accent-warm: #e8a87c;
+    --light: #fef0e2;
+    --border: #e8d5c0;
+    --subtle: #8a6d54;
+    --gold: #c9a84c;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; background: var(--bg); color: var(--text); line-height: 1.9; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
+  header { text-align: center; padding: 2rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
+  header h1 { font-size: 2rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
+  nav { margin-top: 1rem; }
+  nav a { color: var(--subtle); text-decoration: none; margin: 0 0.8rem; font-size: 0.95rem; }
+  nav a:hover { color: var(--accent); }
+  h2 { font-weight: normal; color: var(--accent); margin: 2rem 0 1rem; font-size: 1.4rem; }
+  p { margin-bottom: 1.2rem; }
+  footer { text-align: center; padding: 2rem 0; color: var(--subtle); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  /* ===== Direction B: 赤縁·温暖手工感 ===== */
+  header h1 { position: relative; display: inline-block; }
+  header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 100%; height: 3px;
+    background: linear-gradient(90deg, #b83a2a 0%, #e8a87c 60%, transparent 100%);
+    border-radius: 2px;
+  }
+  h2 { border-left: 4px solid var(--accent-warm); padding-left: 0.8rem !important; }
+  h3 { border-left: 3px solid var(--accent-warm); padding-left: 0.6rem; }
+  blockquote { 
+    background: var(--light); 
+    border-left: none; 
+    padding: 1rem 1.5rem 1rem 2rem; 
+    margin: 1.5rem 0; 
+    border-radius: 4px; 
+    position: relative; 
+  }
+  blockquote::before { content: "\270E"; color: var(--accent); font-size: 1.2rem; position: absolute; left: 0.6rem; top: 0.9rem; }
+  .warning { border-left-color: var(--accent) !important; }
+  .email-box { border-color: var(--accent) !important; }
+  .bonus-box { background: linear-gradient(135deg, #fef0e2 0%, #f8dcc8 100%) !important; }
+</style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?44f28eb4eacca95fb6aeacca17dd57d5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+
+<header>
+  <h1>TCM Way</h1>
+  <svg class="brand-symbol" viewBox="0 0 80 80" width="64" height="64" style="display:block;margin:0 auto 1rem;">
+  <circle cx="40" cy="40" r="38" fill="none" stroke="#b83a2a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="40" cy="28" r="10" fill="#b83a2a"/>
+  <ellipse cx="35" cy="26" rx="2.5" ry="3" fill="#fdf6ee"/>
+  <ellipse cx="45" cy="26" rx="2.5" ry="3" fill="#fdf6ee"/>
+  <path d="M38 29 Q40 32 42 29" stroke="#fdf6ee" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M30 22 Q40 14 50 22 L48 24 Q40 18 32 24 Z" fill="#e8a87c"/>
+  <path d="M30 34 Q40 44 50 34 L48 38 Q40 46 32 38 Z" fill="#e8a87c"/>
+  <ellipse cx="40" cy="36" rx="7" ry="9" fill="#e8a87c"/>
+  <path d="M37 33 L39 37 L35 36 Z" fill="#b83a2a"/>
+  <path d="M43 33 L41 37 L45 36 Z" fill="#b83a2a"/>
+  <circle cx="52" cy="54" r="5" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
+  <path d="M49 54 A3 3 0 1 1 55 54" fill="#c9a84c"/>
+  <path d="M55 51 A3 3 0 1 1 49 51" fill="#c9a84c"/>
+</svg>
+  <nav>
+    <a href="/">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="disclaimer.html">Disclaimer</a>
+  </nav>
+</header>
+
+<h2>Who Is Ollie?</h2>
+
+<p>Hi, I am Ollie. Yes — that is an owl. And yes — that is my pen name.</p>
+
+<p>You will not find my real name anywhere on this blog, and that is intentional. I am not here to build a personal brand. I am here to share ideas — ideas that have been around for two thousand years and deserve a wider audience than they currently have. The owl is just more fun to look at than my face.</p>
+
+<p>Behind Ollie is a real person with real credentials: self-taught in classical Chinese medicine, guided by the Shanghan Lun (Treatise on Cold Damage, 《伤寒论》) and its six-meridian pattern differentiation framework (六经辩证). I passed the national examination for licensed TCM pharmacist (执业中药师). By day, I work in international trade — English has been my working language for many years.</p>
+
+<p>But credentials are not the point. The point is that I studied Chinese medicine because it answered questions Western medicine never asked. About patterns. About the relationship between a person and their environment. About what it means to be <em>healthy</em> rather than merely <em>not sick</em>.</p>
+
+<p>Ollie — the owl — is the voice I chose to share this with you. Curious, not judgmental. Good at simplifying without dumbing down. Occasionally sleepy. Very opinionated about ginger tea.</p>
+
+<h2>Why This Blog Exists</h2>
+
+<p>Most English-language content about Chinese medicine falls into two categories. The first is overly technical — written by and for TCM students, dense with jargon that means nothing to a general reader. The second is shallow — clickbait lists of "5 herbs for better sleep" that strip away all the philosophy that makes TCM worth understanding in the first place.</p>
+
+<p>TCM Way exists in the gap between these two.</p>
+
+<p>This is not a "wellness blog." I will not sell you herbs, recommend treatments, or promise cures. What I offer is something more fundamental: an introduction to a way of thinking about health, nature, and human experience that has endured for two millennia — and that feels more relevant now than ever.</p>
+
+<h2>What I Believe</h2>
+
+<p>The ancient Chinese physicians — Zhang Zhongjing in particular — were not mystics. They were careful observers who developed a practical system for understanding how the body responds to the world around it. The six-channel pattern differentiation (六经辩证) at the heart of the Shanghan Lun is, in its essence, a framework for seeing connections that modern reductionist thinking often misses.</p>
+
+<p>I believe this wisdom deserves a wider audience. I believe it can be explained clearly, in plain English, without dumbing it down. And I believe that in an age of accelerating technology and increasing anxiety, people everywhere are looking for something grounding — something that connects them back to nature, back to their own bodies, back to the rhythms that governed human life for thousands of years before smartphones.</p>
+
+<h2>What You Can Expect</h2>
+
+<p>This is not a serious academic blog. It is a casual, personal space where I share whatever comes to mind — no rigid schedule, no grand plan. The goal is simple: make Chinese medicine and culture approachable, interesting, and maybe even fun.</p>
+
+<p>Some days I will share a single thought — a sentence or two sparked by daily life. On a quiet weekend, I might write something longer, diving into a classic text or a piece of TCM knowledge that fascinates me. Sometimes I will simply document my own re-learning journey, picking up where I left off years ago and starting again from the basics.</p>
+
+<p>You will find variety here — short reflections, longer explorations, random inspirations, and perhaps a touch of humor. If a reader reaches out with a specific question or interest, I am happy to write about that too. This blog exists to share, not to lecture.</p>
+
+<p>Beyond TCM, I may also share other aspects of Chinese culture that I find worth talking about. After all, medicine does not exist in a vacuum — it is part of a larger way of seeing the world.</p>
+
+<p>No ads. No sponsors. No pressure. Just a quiet corner of the internet where I hope to offer something you won't find in the rush of everyday life — a slower thought, a different angle, a moment of calm.</p>
+
+<footer>
+  <p>&copy; 2026 TCM Way. All rights reserved.</p>
+  <p><a href="disclaimer.html">Medical Disclaimer</a> &middot; <a href="contact.html">Contact</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
-1|<!DOCTYPE html>
-2|<html lang="en">
-3|<head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G9S528TPWH"></script>
 <script>
@@ -11,379 +11,378 @@
 </script>
 
 
-4|<meta charset="UTF-8">
-5|<meta name="viewport" content="width=device-width, initial-scale=1.0">
-6|<title>Meet The TCM Owl — TCM Way</title>
-7|<meta name="description" content="Meet Ollie, the TCM Owl — your friendly guide to ancient Chinese medicine wisdom.">
-8|<meta property="og:title" content="Meet the TCM Owl — TCM Way">
-9|<meta property="og:description" content="Meet Ollie, the TCM Owl — your friendly guide to ancient Chinese medicine wisdom.">
-10|<meta property="og:image" content="https://tcmway.org/images/ollie-warm.svg">
-11|<meta property="og:url" content="https://tcmway.org/about-owl.html">
-12|<meta property="og:type" content="website">
-13|<meta property="og:site_name" content="TCM Way">
-14|<meta name="twitter:card" content="summary">
-15|<style>
-16|  :root {
-17|    --bg: #fdf6ee;
-18|    --text: #3b2a1a;
-19|    --accent: #b83a2a;
-20|    --accent-warm: #e8a87c;
-21|    --light: #fef0e2;
-22|    --border: #e8d5c0;
-23|    --subtle: #8a6d54;
-24|    --gold: #c9a84c;
-25|  }
-26|  * { margin: 0; padding: 0; box-sizing: border-box; }
-27|  body {
-28|    font-family: Georgia, 'Times New Roman', serif;
-29|    background: var(--bg);
-30|    color: var(--text);
-31|    line-height: 1.8;
-32|    max-width: 720px;
-33|    margin: 0 auto;
-34|    padding: 2rem 1.5rem;
-35|  }
-36|  header {
-37|    text-align: center;
-38|    padding: 2rem 0 1.5rem;
-39|    border-bottom: 1px solid var(--border);
-40|    margin-bottom: 2.5rem;
-41|  }
-42|  header h1 {
-43|    font-size: 2rem;
-44|    font-weight: normal;
-45|    letter-spacing: 0.04em;
-46|    color: var(--accent);
-47|  }
-48|  nav { margin-top: 1rem; }
-49|  nav a {
-50|    color: var(--subtle);
-51|    text-decoration: none;
-52|    margin: 0 0.8rem;
-53|    font-size: 0.95rem;
-54|    transition: color 0.2s;
-55|  }
-56|  nav a:hover { color: var(--accent); }
-57|
-58|  .owl-hero {
-59|    text-align: center;
-60|    margin: 2rem 0 3rem;
-61|  }
-62|  .owl-hero img {
-63|    width: 200px;
-64|    height: 200px;
-65|    border-radius: 50%;
-66|    object-fit: cover;
-67|    border: 3px solid var(--border);
-68|    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-69|  }
-70|  .owl-hero .name {
-71|    font-size: 2rem;
-72|    color: var(--accent);
-73|    margin-top: 1rem;
-74|    font-weight: normal;
-75|  }
-76|  .owl-hero .tagline {
-77|    color: var(--subtle);
-78|    font-style: italic;
-79|    font-size: 1.1rem;
-80|    margin-top: 0.3rem;
-81|  }
-82|
-83|  .stat-card {
-84|    background: var(--light);
-85|    border-radius: 8px;
-86|    padding: 1.8rem 2rem;
-87|    margin: 2rem 0;
-88|  }
-89|  .stat-card h3 {
-90|    color: var(--accent);
-91|    font-weight: normal;
-92|    font-size: 1.3rem;
-93|    margin-bottom: 1rem;
-94|    padding-bottom: 0.5rem;
-95|    border-bottom: 1px solid var(--border);
-96|  }
-97|  .stat-row {
-98|    display: flex;
-99|    margin-bottom: 0.7rem;
-100|    font-size: 0.95rem;
-101|  }
-102|  .stat-label {
-103|    color: var(--subtle);
-104|    min-width: 130px;
-105|    flex-shrink: 0;
-106|  }
-107|  .stat-value { color: var(--text); }
-108|
-109|  .personality-grid {
-110|    display: grid;
-111|    grid-template-columns: 1fr 1fr;
-112|    gap: 1rem;
-113|    margin: 1.5rem 0;
-114|  }
-115|  .trait {
-116|    background: var(--light);
-117|    border-radius: 6px;
-118|    padding: 1.2rem;
-119|    text-align: center;
-120|  }
-121|  .trait .emoji { font-size: 1.8rem; display: block; margin-bottom: 0.4rem; }
-122|  .trait .label { color: var(--accent); font-weight: bold; font-size: 0.95rem; }
-123|  .trait .desc { color: var(--subtle); font-size: 0.85rem; margin-top: 0.3rem; line-height: 1.4; }
-124|
-125|  .comic-preview {
-126|    background: white;
-127|    border: 1px solid var(--border);
-128|    border-radius: 8px;
-129|    padding: 2rem;
-130|    margin: 2rem 0;
-131|    text-align: center;
-132|  }
-133|  .comic-preview .panel {
-134|    display: inline-block;
-135|    width: 120px;
-136|    height: 120px;
-137|    border: 1px dashed var(--border);
-138|    border-radius: 8px;
-139|    margin: 0 0.5rem;
-140|    vertical-align: top;
-141|    background: var(--light);
-142|    line-height: 120px;
-143|    color: var(--subtle);
-144|    font-size: 0.8rem;
-145|  }
-146|
-147|  footer {
-148|    text-align: center;
-149|    padding: 2rem 0;
-150|    color: var(--subtle);
-151|    font-size: 0.85rem;
-152|    border-top: 1px solid var(--border);
-153|    margin-top: 3rem;
-154|  }
-155|  footer a { color: var(--accent); text-decoration: none; }
-156|
-157|  blockquote {
-158|    background: var(--light);
-159|    border-left: 3px solid var(--accent);
-160|    padding: 1rem 1.5rem;
-161|    margin: 1.5rem 0;
-162|    font-style: italic;
-163|    color: var(--text);
-164|  }
-165|
-166|  .role-section {
-167|    margin: 2rem 0;
-168|  }
-169|  .role-section h3 {
-170|    color: var(--accent);
-171|    font-weight: normal;
-172|    font-size: 1.3rem;
-173|    margin-bottom: 0.8rem;
-174|  }
-175|  .role-section p { margin-bottom: 1rem; }
-176|
-177|  .origin-illustration {
-178|    text-align: center;
-179|    margin: 1.8rem 0;
-180|  }
-181|  .origin-illustration img {
-182|    max-width: 280px;
-183|    width: 100%;
-184|    border-radius: 12px;
-185|    border: 1px solid var(--border);
-186|    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-187|  }
-188|
-189|  /* ===== Direction B: 赤縁·温暖手工感 ===== */
-190|  header h1 { position: relative; display: inline-block; }
-191|  header h1::after {
-192|    content: '';
-193|    position: absolute;
-194|    bottom: -4px; left: 0;
-195|    width: 100%; height: 3px;
-196|    background: linear-gradient(90deg, #b83a2a 0%, #e8a87c 60%, transparent 100%);
-197|    border-radius: 2px;
-198|  }
-199|  h2 { border-left: 4px solid var(--accent-warm); padding-left: 0.8rem !important; }
-200|  h3 { border-left: 3px solid var(--accent-warm); padding-left: 0.6rem; }
-201|  blockquote { 
-202|    background: var(--light); 
-203|    border-left: none; 
-204|    padding: 1rem 1.5rem 1rem 2rem; 
-205|    margin: 1.5rem 0; 
-206|    border-radius: 4px; 
-207|    position: relative; 
-208|  }
-209|  blockquote::before { content: "\270E"; color: var(--accent); font-size: 1.2rem; position: absolute; left: 0.6rem; top: 0.9rem; }
-210|  .warning { border-left-color: var(--accent) !important; }
-211|  .email-box { border-color: var(--accent) !important; }
-212|  .bonus-box { background: linear-gradient(135deg, #fef0e2 0%, #f8dcc8 100%) !important; }
-213|</style>
-214|<script>
-215|var _hmt = _hmt || [];
-216|(function() {
-217|  var hm = document.createElement("script");
-218|  hm.src = "https://hm.baidu.com/hm.js?44f28eb4eacca95fb6aeacca17dd57d5";
-219|  var s = document.getElementsByTagName("script")[0]; 
-220|  s.parentNode.insertBefore(hm, s);
-221|})();
-222|</script>
-223|</head>
-224|<body>
-225|
-226|<header>
-227|  <h1>TCM Way</h1>
-228|  <svg class="brand-symbol" viewBox="0 0 80 80" width="64" height="64" style="display:block;margin:0 auto 1rem;">
-229|  <circle cx="40" cy="40" r="38" fill="none" stroke="#b83a2a" stroke-width="1.5" stroke-dasharray="4 3"/>
-230|  <circle cx="40" cy="28" r="10" fill="#b83a2a"/>
-231|  <ellipse cx="35" cy="26" rx="2.5" ry="3" fill="#fdf6ee"/>
-232|  <ellipse cx="45" cy="26" rx="2.5" ry="3" fill="#fdf6ee"/>
-233|  <path d="M38 29 Q40 32 42 29" stroke="#fdf6ee" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-234|  <path d="M30 22 Q40 14 50 22 L48 24 Q40 18 32 24 Z" fill="#e8a87c"/>
-235|  <path d="M30 34 Q40 44 50 34 L48 38 Q40 46 32 38 Z" fill="#e8a87c"/>
-236|  <ellipse cx="40" cy="36" rx="7" ry="9" fill="#e8a87c"/>
-237|  <path d="M37 33 L39 37 L35 36 Z" fill="#b83a2a"/>
-238|  <path d="M43 33 L41 37 L45 36 Z" fill="#b83a2a"/>
-239|  <circle cx="52" cy="54" r="5" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
-240|  <path d="M49 54 A3 3 0 1 1 55 54" fill="#c9a84c"/>
-241|  <path d="M55 51 A3 3 0 1 1 49 51" fill="#c9a84c"/>
-242|</svg>
-243|  <nav>
-244|    <a href="/">Home</a>
-245|    <a href="about.html">About</a>
-246|    <a href="about-owl.html">The Owl</a>
-247|    <a href="contact.html">Contact</a>
-248|    <a href="disclaimer.html">Disclaimer</a>
-249|  </nav>
-250|</header>
-251|
-252|<section class="owl-hero">
-253|  <img src="images/ollie-warm.svg" alt="Ollie the TCM Owl" style="width:200px;height:200px;">
-254|  <div class="name">Ollie</div>
-255|  <div class="tagline">The TCM Owl — Your Guide to Ancient Wisdom</div>
-256|</section>
-257|
-258|<div class="stat-card">
-259|  <h3>Ollie's File</h3>
-260|  <div class="stat-row">
-261|    <span class="stat-label">Full Name</span>
-262|    <span class="stat-value">Ollie (short for "Owl" — he's not big on ceremony)</span>
-263|  </div>
-264|  <div class="stat-row">
-265|    <span class="stat-label">Species</span>
-266|    <span class="stat-value">Wise Owl (<em>Athene noctua sapientiae</em>, if you must)</span>
-267|  </div>
-268|  <div class="stat-row">
-269|    <span class="stat-label">Height</span>
-270|    <span class="stat-value">About the size of a mortar and pestle</span>
-271|  </div>
-272|  <div class="stat-row">
-273|    <span class="stat-label">Favorite Thing</span>
-274|    <span class="stat-value">Brewing herbal tea while re-reading the Shanghan Lun</span>
-275|  </div>
-276|  <div class="stat-row">
-277|    <span class="stat-label">Pet Peeve</span>
-278|    <span class="stat-value">When people say "it's just in your head"</span>
-279|  </div>
-280|  <div class="stat-row">
-281|    <span class="stat-label">Signature Item</span>
-282|    <span class="stat-value">Yin-yang pendant (his grandmother's)</span>
-283|  </div>
-284|  <div class="stat-row">
-285|    <span class="stat-label">Catchphrase</span>
-286|    <span class="stat-value">"Your body knows what it's doing. Let's listen."</span>
-287|  </div>
-288|</div>
-289|
-290|<h3 style="color: var(--accent); font-weight: normal; margin: 2rem 0 1rem; text-align: center;">Personality Traits</h3>
-291|
-292|<div class="personality-grid">
-293|  <div class="trait">
-294|    <span class="emoji">&#x1F9D0;</span>
-295|    <div class="label">Curious, Not Judgmental</div>
-296|    <div class="desc">He won't tell you you're living wrong. He'll wonder with you.</div>
-297|  </div>
-298|  <div class="trait">
-299|    <span class="emoji">&#x1F914;</span>
-300|    <div class="label">Explainer-in-Chief</div>
-301|    <div class="desc">Complex ideas become simple. Simple ideas become obvious.</div>
-302|  </div>
-303|  <div class="trait">
-304|    <span class="emoji">&#x1F4A4;</span>
-305|    <div class="label">Occasionally Sleepy</div>
-306|    <div class="desc">He's an owl. He falls asleep mid-sentence sometimes. It's charming.</div>
-307|  </div>
-308|  <div class="trait">
-309|    <span class="emoji">&#x1F375;</span>
-310|    <div class="label">Ginger Tea Enthusiast</div>
-311|    <div class="desc">Has strong opinions about ginger-to-water ratios. Will fight you.</div>
-312|  </div>
-313|  <div class="trait">
-314|    <span class="emoji">&#x1F3AF;</span>
-315|    <div class="label">Qi Debugger</div>
-316|    <div class="desc">Thinks of acupuncture as "manual Qi debugging." Programmers love him.</div>
-317|  </div>
-318|  <div class="trait">
-319|    <span class="emoji">&#x1FA90;</span>
-320|    <div class="label">Herb Nerd</div>
-321|    <div class="desc">Name any symptom. He'll suggest an herb. Then three alternatives.</div>
-322|  </div>
-323|</div>
-324|
-325|<div class="role-section">
-326|  <h3>How Ollie Appears in Every Article</h3>
-327|  <p>
-328|    Ollie isn't just a logo. He's the <strong>narrator</strong> — the friendly face who breaks down Chinese medicine concepts into plain English. 
-329|    Think of him as the translator between your body and your brain.
-330|  </p>
-331|  <p>In each article, you'll find him:</p>
-332|  <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text);">
-333|    <li style="margin-bottom: 0.4rem;">Pointing out the <strong>Daily Pain Point</strong> — with empathy, not judgment</li>
-334|    <li style="margin-bottom: 0.4rem;">Explaining the <strong>TCM lens</strong> — what the ancient texts actually say about your problem</li>
-335|    <li style="margin-bottom: 0.4rem;">Offering <strong>actionable tips</strong> — stuff you can try today, not philosophy essays</li>
-336|    <li style="margin-bottom: 0.4rem;">Wrapping up with a <strong>warm nudge</strong> — because nobody needs another lecture</li>
-337|  </ul>
-338|</div>
-339|
-340|<div class="role-section">
-341|  <h3>Why an Owl?</h3>
-342|  <p>
-343|    In the West, the owl symbolizes <strong>wisdom</strong> — Athena's companion, the creature that sees in the dark.
-344|  </p>
-345|  <p>
-346|    Traditional Chinese Medicine is exactly that: a way of <strong>seeing patterns</strong> where others see chaos. 
-347|    An owl doesn't need a floodlight. It just needs to pay attention.
-348|  </p>
-349|  <p>
-350|    Plus, owls are cute. And if we're going to talk about your liver Qi stagnation, 
-351|    we might as well have a cute owl do it.
-352|  </p>
-353|
-354|  <div class="origin-illustration">
-355|    <img src="images/ollie-warm.svg" alt="Ollie the TCM Owl — warm vermillion and apricot owl with yin-yang pendant" style="max-width:280px;width:100%;">
-356|  </div>
-357|</div>
-358|
-359|<blockquote>
-360|  "The body doesn't speak English or Chinese. It speaks patterns. Ollie's here to translate."
-361|</blockquote>
-362|
-363|<div class="role-section" style="text-align: center;">
-364|  <h3>Visual Style Guide</h3>
-365|  <p style="color: var(--subtle);">
-366|    Hand-drawn seal-stamp style &middot; Vermilion red #b83a2a + Apricot #e8a87c + Warm cream #fdf6ee<br>
-367|    Always wears his yin-yang gold pendant &middot; Circular dashed seal border<br>
-368|    Clean flat colors with brush-touch accents — like a friend's notebook doodles
-369|  </p>
-370|</div>
-371|
-372|<footer>
-373|  <p>&copy; 2026 TCM Way. All rights reserved.</p>
-374|  <p><a href="disclaimer.html">Medical Disclaimer</a></p>
-375|</footer>
-376|
-377|</body>
-378|</html>
-379|
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meet The TCM Owl — TCM Way</title>
+<meta name="description" content="Meet Ollie, the TCM Owl — your friendly guide to ancient Chinese medicine wisdom.">
+<meta property="og:title" content="Meet the TCM Owl — TCM Way">
+<meta property="og:description" content="Meet Ollie, the TCM Owl — your friendly guide to ancient Chinese medicine wisdom.">
+<meta property="og:image" content="https://tcmway.org/images/ollie-warm.svg">
+<meta property="og:url" content="https://tcmway.org/about-owl.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TCM Way">
+<meta name="twitter:card" content="summary">
+<style>
+  :root {
+    --bg: #fdf6ee;
+    --text: #3b2a1a;
+    --accent: #b83a2a;
+    --accent-warm: #e8a87c;
+    --light: #fef0e2;
+    --border: #e8d5c0;
+    --subtle: #8a6d54;
+    --gold: #c9a84c;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  header {
+    text-align: center;
+    padding: 2rem 0 1.5rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2.5rem;
+  }
+  header h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+  }
+  nav { margin-top: 1rem; }
+  nav a {
+    color: var(--subtle);
+    text-decoration: none;
+    margin: 0 0.8rem;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: var(--accent); }
+
+  .owl-hero {
+    text-align: center;
+    margin: 2rem 0 3rem;
+  }
+  .owl-hero img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  }
+  .owl-hero .name {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-top: 1rem;
+    font-weight: normal;
+  }
+  .owl-hero .tagline {
+    color: var(--subtle);
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+  }
+
+  .stat-card {
+    background: var(--light);
+    border-radius: 8px;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0;
+  }
+  .stat-card h3 {
+    color: var(--accent);
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .stat-row {
+    display: flex;
+    margin-bottom: 0.7rem;
+    font-size: 0.95rem;
+  }
+  .stat-label {
+    color: var(--subtle);
+    min-width: 130px;
+    flex-shrink: 0;
+  }
+  .stat-value { color: var(--text); }
+
+  .personality-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+  .trait {
+    background: var(--light);
+    border-radius: 6px;
+    padding: 1.2rem;
+    text-align: center;
+  }
+  .trait .emoji { font-size: 1.8rem; display: block; margin-bottom: 0.4rem; }
+  .trait .label { color: var(--accent); font-weight: bold; font-size: 0.95rem; }
+  .trait .desc { color: var(--subtle); font-size: 0.85rem; margin-top: 0.3rem; line-height: 1.4; }
+
+  .comic-preview {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  .comic-preview .panel {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border: 1px dashed var(--border);
+    border-radius: 8px;
+    margin: 0 0.5rem;
+    vertical-align: top;
+    background: var(--light);
+    line-height: 120px;
+    color: var(--subtle);
+    font-size: 0.8rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--subtle);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+    margin-top: 3rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  blockquote {
+    background: var(--light);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--text);
+  }
+
+  .role-section {
+    margin: 2rem 0;
+  }
+  .role-section h3 {
+    color: var(--accent);
+    font-weight: normal;
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  .role-section p { margin-bottom: 1rem; }
+
+  .origin-illustration {
+    text-align: center;
+    margin: 1.8rem 0;
+  }
+  .origin-illustration img {
+    max-width: 280px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+
+  /* ===== Direction B: 赤縁·温暖手工感 ===== */
+  header h1 { position: relative; display: inline-block; }
+  header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 100%; height: 3px;
+    background: linear-gradient(90deg, #b83a2a 0%, #e8a87c 60%, transparent 100%);
+    border-radius: 2px;
+  }
+  h2 { border-left: 4px solid var(--accent-warm); padding-left: 0.8rem !important; }
+  h3 { border-left: 3px solid var(--accent-warm); padding-left: 0.6rem; }
+  blockquote { 
+    background: var(--light); 
+    border-left: none; 
+    padding: 1rem 1.5rem 1rem 2rem; 
+    margin: 1.5rem 0; 
+    border-radius: 4px; 
+    position: relative; 
+  }
+  blockquote::before { content: "\270E"; color: var(--accent); font-size: 1.2rem; position: absolute; left: 0.6rem; top: 0.9rem; }
+  .warning { border-left-color: var(--accent) !important; }
+  .email-box { border-color: var(--accent) !important; }
+  .bonus-box { background: linear-gradient(135deg, #fef0e2 0%, #f8dcc8 100%) !important; }
+</style>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?44f28eb4eacca95fb6aeacca17dd57d5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
+
+<header>
+  <h1>TCM Way</h1>
+  <svg class="brand-symbol" viewBox="0 0 80 80" width="64" height="64" style="display:block;margin:0 auto 1rem;">
+  <circle cx="40" cy="40" r="38" fill="none" stroke="#b83a2a" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="40" cy="28" r="10" fill="#b83a2a"/>
+  <ellipse cx="35" cy="26" rx="2.5" ry="3" fill="#fdf6ee"/>
+  <ellipse cx="45" cy="26" rx="2.5" ry="3" fill="#fdf6ee"/>
+  <path d="M38 29 Q40 32 42 29" stroke="#fdf6ee" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M30 22 Q40 14 50 22 L48 24 Q40 18 32 24 Z" fill="#e8a87c"/>
+  <path d="M30 34 Q40 44 50 34 L48 38 Q40 46 32 38 Z" fill="#e8a87c"/>
+  <ellipse cx="40" cy="36" rx="7" ry="9" fill="#e8a87c"/>
+  <path d="M37 33 L39 37 L35 36 Z" fill="#b83a2a"/>
+  <path d="M43 33 L41 37 L45 36 Z" fill="#b83a2a"/>
+  <circle cx="52" cy="54" r="5" fill="none" stroke="#c9a84c" stroke-width="1.2"/>
+  <path d="M49 54 A3 3 0 1 1 55 54" fill="#c9a84c"/>
+  <path d="M55 51 A3 3 0 1 1 49 51" fill="#c9a84c"/>
+</svg>
+  <nav>
+    <a href="/">Home</a>
+    <a href="about.html">About</a>
+    <a href="about-owl.html">The Owl</a>
+    <a href="contact.html">Contact</a>
+    <a href="disclaimer.html">Disclaimer</a>
+  </nav>
+</header>
+
+<section class="owl-hero">
+  <img src="images/ollie-warm.svg" alt="Ollie the TCM Owl" style="width:200px;height:200px;">
+  <div class="name">Ollie</div>
+  <div class="tagline">The TCM Owl — Your Guide to Ancient Wisdom</div>
+</section>
+
+<div class="stat-card">
+  <h3>Ollie's File</h3>
+  <div class="stat-row">
+    <span class="stat-label">Full Name</span>
+    <span class="stat-value">Ollie (short for "Owl" — he's not big on ceremony)</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Species</span>
+    <span class="stat-value">Wise Owl (<em>Athene noctua sapientiae</em>, if you must)</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Height</span>
+    <span class="stat-value">About the size of a mortar and pestle</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Favorite Thing</span>
+    <span class="stat-value">Brewing herbal tea while re-reading the Shanghan Lun</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Pet Peeve</span>
+    <span class="stat-value">When people say "it's just in your head"</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Signature Item</span>
+    <span class="stat-value">Yin-yang pendant (his grandmother's)</span>
+  </div>
+  <div class="stat-row">
+    <span class="stat-label">Catchphrase</span>
+    <span class="stat-value">"Your body knows what it's doing. Let's listen."</span>
+  </div>
+</div>
+
+<h3 style="color: var(--accent); font-weight: normal; margin: 2rem 0 1rem; text-align: center;">Personality Traits</h3>
+
+<div class="personality-grid">
+  <div class="trait">
+    <span class="emoji">&#x1F9D0;</span>
+    <div class="label">Curious, Not Judgmental</div>
+    <div class="desc">He won't tell you you're living wrong. He'll wonder with you.</div>
+  </div>
+  <div class="trait">
+    <span class="emoji">&#x1F914;</span>
+    <div class="label">Explainer-in-Chief</div>
+    <div class="desc">Complex ideas become simple. Simple ideas become obvious.</div>
+  </div>
+  <div class="trait">
+    <span class="emoji">&#x1F4A4;</span>
+    <div class="label">Occasionally Sleepy</div>
+    <div class="desc">He's an owl. He falls asleep mid-sentence sometimes. It's charming.</div>
+  </div>
+  <div class="trait">
+    <span class="emoji">&#x1F375;</span>
+    <div class="label">Ginger Tea Enthusiast</div>
+    <div class="desc">Has strong opinions about ginger-to-water ratios. Will fight you.</div>
+  </div>
+  <div class="trait">
+    <span class="emoji">&#x1F3AF;</span>
+    <div class="label">Qi Debugger</div>
+    <div class="desc">Thinks of acupuncture as "manual Qi debugging." Programmers love him.</div>
+  </div>
+  <div class="trait">
+    <span class="emoji">&#x1FA90;</span>
+    <div class="label">Herb Nerd</div>
+    <div class="desc">Name any symptom. He'll suggest an herb. Then three alternatives.</div>
+  </div>
+</div>
+
+<div class="role-section">
+  <h3>How Ollie Appears in Every Article</h3>
+  <p>
+    Ollie isn't just a logo. He's the <strong>narrator</strong> — the friendly face who breaks down Chinese medicine concepts into plain English. 
+    Think of him as the translator between your body and your brain.
+  </p>
+  <p>In each article, you'll find him:</p>
+  <ul style="margin-left: 1.5rem; margin-bottom: 1rem; color: var(--text);">
+    <li style="margin-bottom: 0.4rem;">Pointing out the <strong>Daily Pain Point</strong> — with empathy, not judgment</li>
+    <li style="margin-bottom: 0.4rem;">Explaining the <strong>TCM lens</strong> — what the ancient texts actually say about your problem</li>
+    <li style="margin-bottom: 0.4rem;">Offering <strong>actionable tips</strong> — stuff you can try today, not philosophy essays</li>
+    <li style="margin-bottom: 0.4rem;">Wrapping up with a <strong>warm nudge</strong> — because nobody needs another lecture</li>
+  </ul>
+</div>
+
+<div class="role-section">
+  <h3>Why an Owl?</h3>
+  <p>
+    In the West, the owl symbolizes <strong>wisdom</strong> — Athena's companion, the creature that sees in the dark.
+  </p>
+  <p>
+    Traditional Chinese Medicine is exactly that: a way of <strong>seeing patterns</strong> where others see chaos. 
+    An owl doesn't need a floodlight. It just needs to pay attention.
+  </p>
+  <p>
+    Plus, owls are cute. And if we're going to talk about your liver Qi stagnation, 
+    we might as well have a cute owl do it.
+  </p>
+
+  <div class="origin-illustration">
+    <img src="images/ollie-warm.svg" alt="Ollie the TCM Owl — warm vermillion and apricot owl with yin-yang pendant" style="max-width:280px;width:100%;">
+  </div>
+</div>
+
+<blockquote>
+  "The body doesn't speak English or Chinese. It speaks patterns. Ollie's here to translate."
+</blockquote>
+
+<div class="role-section" style="text-align: center;">
+  <h3>Visual Style Guide</h3>
+  <p style="color: var(--subtle);">
+    Hand-drawn seal-stamp style &middot; Vermilion red #b83a2a + Apricot #e8a87c + Warm cream #fdf6ee<br>
+    Always wears his yin-yang gold pendant &middot; Circular dashed seal border<br>
+    Clean flat colors with brush-touch accents — like a friend's notebook doodles
+  </p>
+</div>
+
+<footer>
+  <p>&copy; 2026 TCM Way. All rights reserved.</p>
+  <p><a href="disclaimer.html">Medical Disclaimer</a></p>
+</footer>
+
+</body>
+</html>
