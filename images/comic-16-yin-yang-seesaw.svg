@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 580" width="680" height="580">
+  <!-- TCM Way #16: Yin & Yang Seesaw — 4-Panel Flat Comic -->
+  <!-- SOP-compliant: flat colors, clean outlines, no gradients, no 3D shadows -->
+  <!-- Ollie: red head #b83a2a, apricot belly #e8a87c, round eyes, pointed ear tufts, gold pendant #c9a84c -->
+
+  <defs>
+    <style>
+      .bg { fill: #fdf6ee; stroke: none; }
+      .outline { fill: none; stroke: #3b2a1a; stroke-width: 1.5; stroke-linejoin: round; }
+      .thin { fill: none; stroke: #3b2a1a; stroke-width: 0.8; }
+      .label { font-family: Georgia, serif; font-size: 12px; fill: #3b2a1a; text-anchor: middle; }
+      .bubble { fill: white; stroke: #3b2a1a; stroke-width: 1.5; }
+      .bubble-text { font-family: Georgia, serif; font-size: 11px; fill: #3b2a1a; }
+      .caption { font-family: Georgia, serif; font-size: 14px; fill: #b83a2a; text-anchor: middle; font-style: italic; }
+      .panel-label { font-family: Georgia, serif; font-size: 10px; fill: #8a6e54; }
+    </style>
+  </defs>
+
+  <!-- ===== PANEL 1 (Top-Left): Balanced Seesaw ===== -->
+  <rect x="4" y="4" width="334" height="284" class="bg" stroke="#e8d5c0" stroke-width="1.5" rx="4"/>
+  <text x="16" y="20" class="panel-label">1</text>
+
+  <!-- Ground -->
+  <line x1="40" y1="220" x2="300" y2="220" stroke="#e8d5c0" stroke-width="2"/>
+
+  <!-- Fulcrum -->
+  <polygon points="170,220 155,180 185,180" fill="#8a6e54" stroke="#3b2a1a" stroke-width="1.5"/>
+
+  <!-- Seesaw plank (balanced, horizontal) -->
+  <line x1="80" y1="180" x2="260" y2="180" stroke="#3b2a1a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Left seat (YIN) -->
+  <rect x="75" y="180" width="20" height="6" fill="#e8a87c" stroke="#3b2a1a" stroke-width="1"/>
+  <!-- Moon icon -->
+  <circle cx="85" cy="174" r="5" fill="none" stroke="#b83a2a" stroke-width="1.5"/>
+  <text x="85" y="170" class="label" font-size="8">YIN</text>
+
+  <!-- Right seat (YANG) -->
+  <rect x="245" y="180" width="20" height="6" fill="#e8a87c" stroke="#3b2a1a" stroke-width="1"/>
+  <!-- Sun icon -->
+  <circle cx="255" cy="174" r="5" fill="#c9a84c" stroke="#b83a2a" stroke-width="1"/>
+  <text x="255" y="170" class="label" font-size="8">YANG</text>
+
+  <!-- Ollie (small, flat, beside seesaw) -->
+  <ellipse cx="310" cy="195" rx="14" ry="12" fill="#e8a87c" stroke="#b83a2a" stroke-width="1.2"/>
+  <circle cx="310" cy="195" r="9" fill="#fdf6ee" stroke="#b83a2a" stroke-width="1"/>
+  <circle cx="307" cy="194" r="2.5" fill="white" stroke="#b83a2a" stroke-width="0.8"/>
+  <circle cx="313" cy="194" r="2.5" fill="white" stroke="#b83a2a" stroke-width="0.8"/>
+  <circle cx="307" cy="194" r="1.3" fill="#1a1410"/>
+  <circle cx="313" cy="194" r="1.3" fill="#1a1410"/>
+  <polygon points="310,198 307,201 313,201" fill="#b83a2a"/>
+  <polygon points="304,189 302,183 306,187" fill="#b83a2a"/>
+  <polygon points="316,189 318,183 314,187" fill="#b83a2a"/>
+  <!-- Pendant -->
+  <circle cx="310" cy="205" r="2.5" fill="#c9a84c" stroke="#b83a2a" stroke-width="0.8"/>
+
+  <!-- Speech bubble -->
+  <rect x="140" y="90" width="180" height="40" rx="10" class="bubble"/>
+  <polygon points="220,130 215,140 225,140" fill="white" stroke="#3b2a1a" stroke-width="1.5"/>
+  <text x="230" y="112" class="bubble-text">Meet the oldest seesaw</text>
+  <text x="230" y="124" class="bubble-text">in medical history.</text>
+
+  <!-- ===== PANEL 2 (Top-Right): Yang Rises ===== -->
+  <rect x="342" y="4" width="334" height="284" class="bg" stroke="#e8d5c0" stroke-width="1.5" rx="4"/>
+  <text x="354" y="20" class="panel-label">2</text>
+
+  <!-- Ground -->
+  <line x1="380" y1="220" x2="640" y2="220" stroke="#e8d5c0" stroke-width="2"/>
+
+  <!-- Fulcrum -->
+  <polygon points="510,220 495,180 525,180" fill="#8a6e54" stroke="#3b2a1a" stroke-width="1.5"/>
+
+  <!-- Seesaw plank (tilted: Yang side DOWN, Yin side UP) -->
+  <line x1="420" y1="165" x2="600" y2="195" stroke="#3b2a1a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Left seat (YIN — UP) -->
+  <rect x="415" y="165" width="20" height="6" fill="#e8a87c" stroke="#3b2a1a" stroke-width="1" transform="rotate(-9, 425, 168)"/>
+  <text x="425" y="155" class="label" font-size="8" fill="#b83a2a">YIN ↑</text>
+
+  <!-- Right seat (YANG — DOWN) -->
+  <rect x="585" y="195" width="20" height="6" fill="#e8a87c" stroke="#3b2a1a" stroke-width="1"/>
+  <text x="595" y="210" class="label" font-size="8" fill="#b83a2a">YANG ↓</text>
+
+  <!-- Ollie on the Yang (down) side -->
+  <ellipse cx="595" cy="188" rx="14" ry="12" fill="#e8a87c" stroke="#b83a2a" stroke-width="1.2"/>
+  <circle cx="595" cy="188" r="9" fill="#fdf6ee" stroke="#b83a2a" stroke-width="1"/>
+  <circle cx="592" cy="187" r="2.5" fill="white" stroke="#b83a2a" stroke-width="0.8"/>
+  <circle cx="598" cy="187" r="2.5" fill="white" stroke="#b83a2a" stroke-width="0.8"/>
+  <circle cx="592" cy="187" r="1.3" fill="#1a1410"/>
+  <circle cx="598" cy="187" r="1.3" fill="#1a1410"/>
+  <polygon points="595,191 592,194 598,194" fill="#b83a2a"/>
+  <polygon points="589,182 587,176 591,180" fill="#b83a2a"/>
+  <polygon points="601,182 603,176 599,180" fill="#b83a2a"/>
+  <circle cx="595" cy="198" r="2.5" fill="#c9a84c" stroke="#b83a2a" stroke-width="0.8"/>
+
+  <!-- Warm glow on right -->
+  <ellipse cx="610" cy="170" rx="40" ry="30" fill="#c9a84c" opacity="0.15"/>
+
+  <!-- Caption -->
+  <text x="510" y="270" class="caption">Yang rises, Yin falls.</text>
+
+  <!-- ===== PANEL 3 (Bottom-Left): Yin Rises ===== -->
+  <rect x="4" y="292" width="334" height="284" class="bg" stroke="#e8d5c0" stroke-width="1.5" rx="4"/>
+  <text x="16" y="308" class="panel-label">3</text>
+
+  <!-- Ground -->
+  <line x1="40" y1="508" x2="300" y2="508" stroke="#e8d5c0" stroke-width="2"/>
+
+  <!-- Fulcrum -->
+  <polygon points="170,508 155,468 185,468" fill="#8a6e54" stroke="#3b2a1a" stroke-width="1.5"/>
+
+  <!-- Seesaw plank (tilted: Yin side DOWN, Yang side UP) -->
+  <line x1="80" y1="495" x2="260" y2="465" stroke="#3b2a1a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Left seat (YIN — DOWN) -->
+  <rect x="75" y="495" width="20" height="6" fill="#e8a87c" stroke="#3b2a1a" stroke-width="1"/>
+  <text x="85" y="510" class="label" font-size="8" fill="#b83a2a">YIN ↓</text>
+
+  <!-- Right seat (YANG — UP) -->
+  <rect x="245" y="465" width="20" height="6" fill="#e8a87c" stroke="#3b2a1a" stroke-width="1" transform="rotate(9, 255, 468)"/>
+  <text x="255" y="455" class="label" font-size="8" fill="#b83a2a">YANG ↑</text>
+
+  <!-- Moon icon on Yin side -->
+  <circle cx="85" cy="489" r="5" fill="none" stroke="#b83a2a" stroke-width="1.5"/>
+
+  <!-- Ollie on the Yin (left/down) side -->
+  <ellipse cx="85" cy="488" rx="14" ry="12" fill="#e8a87c" stroke="#b83a2a" stroke-width="1.2"/>
+  <circle cx="85" cy="488" r="9" fill="#fdf6ee" stroke="#b83a2a" stroke-width="1"/>
+  <circle cx="82" cy="487" r="2.5" fill="white" stroke="#b83a2a" stroke-width="0.8"/>
+  <circle cx="88" cy="487" r="2.5" fill="white" stroke="#b83a2a" stroke-width="0.8"/>
+  <circle cx="82" cy="487" r="1.3" fill="#1a1410"/>
+  <circle cx="88" cy="487" r="1.3" fill="#1a1410"/>
+  <polygon points="85,491 82,494 88,494" fill="#b83a2a"/>
+  <polygon points="79,482 77,476 81,480" fill="#b83a2a"/>
+  <polygon points="91,482 93,476 89,480" fill="#b83a2a"/>
+  <circle cx="85" cy="498" r="2.5" fill="#c9a84c" stroke="#b83a2a" stroke-width="0.8"/>
+
+  <!-- Cool glow on left -->
+  <ellipse cx="60" cy="470" rx="40" ry="30" fill="#b83a2a" opacity="0.08"/>
+
+  <!-- Caption -->
+  <text x="170" y="558" class="caption">Yin rises, Yang falls.</text>
+
+  <!-- ===== PANEL 4 (Bottom-Right): Dynamic Balance ===== -->
+  <rect x="342" y="292" width="334" height="284" class="bg" stroke="#e8d5c0" stroke-width="1.5" rx="4"/>
+  <text x="354" y="308" class="panel-label">4</text>
+
+  <!-- Ground -->
+  <line x1="380" y1="508" x2="640" y2="508" stroke="#e8d5c0" stroke-width="2"/>
+
+  <!-- Fulcrum -->
+  <polygon points="500,508 485,468 515,468" fill="#8a6e54" stroke="#3b2a1a" stroke-width="1.5"/>
+
+  <!-- Seesaw plank (slightly tilted, dynamic) -->
+  <line x1="410" y1="482" x2="590" y2="485" stroke="#3b2a1a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Motion lines (rhythm/wave) -->
+  <path d="M400,470 Q425,460 440,470 Q455,480 470,470" fill="none" stroke="#e8a87c" stroke-width="1.5"/>
+  <path d="M530,478 Q550,468 570,478 Q590,488 610,478" fill="none" stroke="#e8a87c" stroke-width="1.5"/>
+
+  <!-- Yin seat -->
+  <rect x="405" y="482" width="20" height="6" fill="#e8a87c" stroke="#3b2a1a" stroke-width="1" opacity="0.7"/>
+  <text x="415" y="478" class="label" font-size="8" fill="#8a6e54">YIN</text>
+
+  <!-- Yang seat -->
+  <rect x="575" y="485" width="20" height="6" fill="#e8a87c" stroke="#3b2a1a" stroke-width="1" opacity="0.7"/>
+  <text x="585" y="498" class="label" font-size="8" fill="#8a6e54">YANG</text>
+
+  <!-- Ollie (beside seesaw, pointing) -->
+  <ellipse cx="630" cy="488" rx="14" ry="12" fill="#e8a87c" stroke="#b83a2a" stroke-width="1.2"/>
+  <circle cx="630" cy="488" r="9" fill="#fdf6ee" stroke="#b83a2a" stroke-width="1"/>
+  <circle cx="627" cy="487" r="2.5" fill="white" stroke="#b83a2a" stroke-width="0.8"/>
+  <circle cx="633" cy="487" r="2.5" fill="white" stroke="#b83a2a" stroke-width="0.8"/>
+  <circle cx="627" cy="487" r="1.3" fill="#1a1410"/>
+  <circle cx="633" cy="487" r="1.3" fill="#1a1410"/>
+  <polygon points="630,491 627,494 633,494" fill="#b83a2a"/>
+  <polygon points="624,482 622,476 626,480" fill="#b83a2a"/>
+  <polygon points="636,482 638,476 634,480" fill="#b83a2a"/>
+  <circle cx="630" cy="498" r="2.5" fill="#c9a84c" stroke="#b83a2a" stroke-width="0.8"/>
+
+  <!-- Ollie wing pointing at seesaw -->
+  <line x1="620" y1="486" x2="600" y2="480" stroke="#b83a2a" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Speech bubble -->
+  <rect x="370" y="540" width="240" height="35" rx="10" class="bubble"/>
+  <polygon points="460,575 455,568 465,568" fill="white" stroke="#3b2a1a" stroke-width="1.5"/>
+  <text x="490" y="559" class="bubble-text">Neither side is winning.</text>
+  <text x="490" y="571" class="bubble-text">That is the point.</text>
+
+  <!-- Dusk transition (subtle gradient band) -->
+  <rect x="380" y="420" width="260" height="15" fill="#e8a87c" opacity="0.1"/>
+  <rect x="380" y="435" width="260" height="15" fill="#b83a2a" opacity="0.06"/>
+
+</svg>
