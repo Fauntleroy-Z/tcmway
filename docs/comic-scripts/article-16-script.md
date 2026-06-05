@@ -37,9 +37,10 @@ Ollie expression: warm, knowing smile.
 **Visual Standards Check (SOP Table A):**
 - Ollie head: cinnabar red #b83a2a ✅
 - Ollie belly: apricot #e8a87c ✅
-- Ear tufts: pointed, on top ✅
-- Eyes: large, round, intelligent ✅
-- Beak: short triangular ✅
-- Pendant: golden Yin-Yang #d4a017, hanging from neck ✅
-- Style: 2D flat vector, clean outlines, no gradients ✅
-- Vibe: wise + warm, NOT cute ✅
+- Ear tufts: organic curved paths (Q commands), pointed, on top, brown stroke ✅
+- Eyes: large, elliptical, with eyelids (warm brown), iris gradient (radial) ✅
+- Beak: short triangular with gold accent line ✅
+- Pendant: golden Yin-Yang #c9a84c, hanging from neck, with opacity ✅
+- Style: Direction B warm handmade — soft radialGradient fills, gentle feDropShadow, organic curves, subtle blush, feather texture lines ✅
+- Vibe: wise + warm + hand-drawn, NOT flat/minimal/cute ✅
+- ❌ DO NOT: flat fills, sharp polygon ears, perfect circles, remove gradients, remove shadows

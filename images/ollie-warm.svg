@@ -1,48 +1,69 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
-  <!-- TCM Way Ollie — Flat 2D Style (SOP-compliant: no gradients, no shadows, clean outlines) -->
-  <!-- Color Palette: #b83a2a (zhu red), #e8a87c (apricot), #fdf6ee (warm white), #c9a84c (gold), #8a6e54 (subtle brown) -->
+  <!-- TCM Way Ollie Mascot — Warm Color Version (Direction B) -->
+  <!-- Color Palette: #b83a2a (zhu red), #e8a87c (apricot), #fdf6ee (warm white), #c9a84c (gold) -->
+  <defs>
+    <radialGradient id="bodyGrad" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#f0c8a0"/>
+      <stop offset="100%" stop-color="#e8a87c"/>
+    </radialGradient>
+    <radialGradient id="eyeGrad" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#d4534a"/>
+      <stop offset="100%" stop-color="#b83a2a"/>
+    </radialGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#00000022"/>
+    </filter>
+  </defs>
 
-  <!-- Ear tufts (zhu red, pointed, on top) -->
-  <polygon points="88,100 78,58 108,85" fill="#b83a2a" stroke="#b83a2a" stroke-width="1"/>
-  <polygon points="212,100 222,58 192,85" fill="#b83a2a" stroke="#b83a2a" stroke-width="1"/>
+  <!-- Body -->
+  <ellipse cx="150" cy="175" rx="95" ry="85" fill="url(#bodyGrad)" filter="url(#shadow)"/>
 
-  <!-- Body (apricot, flat) -->
-  <ellipse cx="150" cy="175" rx="90" ry="82" fill="#e8a87c" stroke="#b83a2a" stroke-width="2"/>
+  <!-- Wing hints (simplified, warm) -->
+  <ellipse cx="65" cy="155" rx="38" ry="55" fill="#e8a87c" opacity="0.5" transform="rotate(-15 65 155)"/>
+  <ellipse cx="235" cy="155" rx="38" ry="55" fill="#e8a87c" opacity="0.5" transform="rotate(15 235 155)"/>
 
-  <!-- Wing hints (flat, no opacity tricks) -->
-  <path d="M70,140 Q55,180 75,210" fill="none" stroke="#b83a2a" stroke-width="2" stroke-linecap="round"/>
-  <path d="M230,140 Q245,180 225,210" fill="none" stroke="#b83a2a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Face (lighter core) -->
+  <ellipse cx="150" cy="148" rx="62" ry="58" fill="#fdf6ee"/>
 
-  <!-- Face (lighter flat core) -->
-  <ellipse cx="150" cy="148" rx="58" ry="55" fill="#fdf6ee" stroke="#b83a2a" stroke-width="1.5"/>
+  <!-- Eye whites -->
+  <ellipse cx="130" cy="140" rx="18" ry="20" fill="white"/>
+  <ellipse cx="170" cy="140" rx="18" ry="20" fill="white"/>
 
-  <!-- Eyes (large round, zhu red) -->
-  <circle cx="130" cy="140" r="16" fill="white" stroke="#b83a2a" stroke-width="2"/>
-  <circle cx="170" cy="140" r="16" fill="white" stroke="#b83a2a" stroke-width="2"/>
+  <!-- Irises (zhu red) -->
+  <ellipse cx="130" cy="143" rx="13" ry="15" fill="url(#eyeGrad)"/>
+  <ellipse cx="170" cy="143" rx="13" ry="15" fill="url(#eyeGrad)"/>
 
-  <!-- Irises (zhu red, flat) -->
-  <circle cx="130" cy="143" r="10" fill="#b83a2a"/>
-  <circle cx="170" cy="143" r="10" fill="#b83a2a"/>
+  <!-- Pupils (dark brown-black) -->
+  <ellipse cx="130" cy="145" rx="7" ry="8.5" fill="#1a1410"/>
+  <ellipse cx="170" cy="145" rx="7" ry="8.5" fill="#1a1410"/>
 
-  <!-- Pupils -->
-  <circle cx="130" cy="145" r="5" fill="#1a1410"/>
-  <circle cx="170" cy="145" r="5" fill="#1a1410"/>
+  <!-- Eye highlights -->
+  <circle cx="127" cy="140" r="3.5" fill="white" opacity="0.9"/>
+  <circle cx="167" cy="140" r="3.5" fill="white" opacity="0.9"/>
 
-  <!-- Eye highlights (flat white dots) -->
-  <circle cx="127" cy="139" r="2.5" fill="white"/>
-  <circle cx="167" cy="139" r="2.5" fill="white"/>
+  <!-- Eyelids (warm brown outline) -->
+  <path d="M112,130 Q130,118 148,130" stroke="#8a6e54" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M152,130 Q170,118 188,130" stroke="#8a6e54" stroke-width="2.5" fill="none" stroke-linecap="round"/>
 
-  <!-- Beak (short triangular, zhu red) -->
-  <polygon points="150,152 138,162 162,162" fill="#b83a2a" stroke="#b83a2a" stroke-width="1"/>
+  <!-- Beak (zhu red) -->
+  <polygon points="150,148 138,158 162,158" fill="#b83a2a"/>
+  <line x1="138" y1="158" x2="162" y2="158" stroke="#c9a84c" stroke-width="1.2"/>
 
-  <!-- Yin-Yang Pendant (gold, flat) -->
-  <circle cx="150" cy="180" r="12" fill="#c9a84c" stroke="#b83a2a" stroke-width="1.5"/>
-  <circle cx="150" cy="180" r="4" fill="#b83a2a"/>
-  <path d="M146,180 L154,180" stroke="#b83a2a" stroke-width="0.8"/>
-  <!-- Yin-Yang dot -->
-  <circle cx="150" cy="177" r="1.5" fill="#c9a84c"/>
+  <!-- Yin-Yang Pendant (Direction B gold accent) -->
+  <circle cx="150" cy="178" r="12" fill="#c9a84c" opacity="0.8" stroke="#b83a2a" stroke-width="1.5"/>
+  <circle cx="150" cy="178" r="5" fill="#b83a2a" opacity="0.6"/>
+  <line x1="143" y1="171" x2="157" y2="185" stroke="#b83a2a" stroke-width="0.8" opacity="0.5"/>
 
-  <!-- Feet (small, simple) -->
-  <ellipse cx="135" cy="255" rx="10" ry="6" fill="#b83a2a" opacity="0.7"/>
-  <ellipse cx="165" cy="255" rx="10" ry="6" fill="#b83a2a" opacity="0.7"/>
+  <!-- Ear tufts (zhu red) -->
+  <path d="M100,108 Q90,75 105,78 Q115,72 118,100" fill="#b83a2a" stroke="#8a6e54" stroke-width="1"/>
+  <path d="M200,108 Q210,75 195,78 Q185,72 182,100" fill="#b83a2a" stroke="#8a6e54" stroke-width="1"/>
+
+  <!-- Feather texture hints (warm lines) -->
+  <path d="M150,106 Q145,120 150,135" stroke="#8a6e54" stroke-width="0.8" fill="none" opacity="0.4"/>
+  <path d="M138,110 Q133,125 138,140" stroke="#8a6e54" stroke-width="0.7" fill="none" opacity="0.3"/>
+  <path d="M162,110 Q167,125 162,140" stroke="#8a6e54" stroke-width="0.7" fill="none" opacity="0.3"/>
+
+  <!-- Subtle blush (warm apricot) -->
+  <ellipse cx="115" cy="152" rx="10" ry="6" fill="#e8a87c" opacity="0.35"/>
+  <ellipse cx="185" cy="152" rx="10" ry="6" fill="#e8a87c" opacity="0.35"/>
 </svg>
