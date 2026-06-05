@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
-  <!-- TCM Way Ollie Mascot — Warm Color Version (Direction B) -->
-  <!-- Color Palette: #b83a2a (zhu red), #e8a87c (apricot), #fdf6ee (warm white), #c9a84c (gold) -->
+  <!-- TCM Way Ollie Mascot — Warm Handmade Style (Direction B) -->
+  <!-- Restored from commit 5f7f6f1: radialGradient body/eyes, feDropShadow, warm blush -->
   <defs>
     <radialGradient id="bodyGrad" cx="50%" cy="45%" r="50%">
       <stop offset="0%" stop-color="#f0c8a0"/>
@@ -15,7 +15,7 @@
     </filter>
   </defs>
 
-  <!-- Body -->
+  <!-- Body (radial gradient + shadow) -->
   <ellipse cx="150" cy="175" rx="95" ry="85" fill="url(#bodyGrad)" filter="url(#shadow)"/>
 
   <!-- Wing hints (simplified, warm) -->
@@ -29,7 +29,7 @@
   <ellipse cx="130" cy="140" rx="18" ry="20" fill="white"/>
   <ellipse cx="170" cy="140" rx="18" ry="20" fill="white"/>
 
-  <!-- Irises (zhu red) -->
+  <!-- Irises (zhu red gradient) -->
   <ellipse cx="130" cy="143" rx="13" ry="15" fill="url(#eyeGrad)"/>
   <ellipse cx="170" cy="143" rx="13" ry="15" fill="url(#eyeGrad)"/>
 
@@ -54,7 +54,7 @@
   <circle cx="150" cy="178" r="5" fill="#b83a2a" opacity="0.6"/>
   <line x1="143" y1="171" x2="157" y2="185" stroke="#b83a2a" stroke-width="0.8" opacity="0.5"/>
 
-  <!-- Ear tufts (zhu red) -->
+  <!-- Ear tufts (zhu red, hand-drawn feel) -->
   <path d="M100,108 Q90,75 105,78 Q115,72 118,100" fill="#b83a2a" stroke="#8a6e54" stroke-width="1"/>
   <path d="M200,108 Q210,75 195,78 Q185,72 182,100" fill="#b83a2a" stroke="#8a6e54" stroke-width="1"/>
 
