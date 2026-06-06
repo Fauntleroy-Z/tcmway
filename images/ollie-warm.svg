@@ -1,69 +1,180 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
-  <!-- TCM Way Ollie Mascot — Warm Handmade Style (Direction B) -->
-  <!-- Restored from commit 5f7f6f1: radialGradient body/eyes, feDropShadow, warm blush -->
+  <!-- Ollie the TCM Owl — Painterly Hand-Drawn Style (v2) -->
   <defs>
-    <radialGradient id="bodyGrad" cx="50%" cy="45%" r="50%">
-      <stop offset="0%" stop-color="#f0c8a0"/>
-      <stop offset="100%" stop-color="#e8a87c"/>
+    <!-- Body gradient: warm apricot with depth -->
+    <radialGradient id="bodyGrad" cx="48%" cy="42%" r="52%">
+      <stop offset="0%" stop-color="#f5d0a8"/>
+      <stop offset="45%" stop-color="#e8a87c"/>
+      <stop offset="85%" stop-color="#d4916a"/>
+      <stop offset="100%" stop-color="#c07850"/>
     </radialGradient>
+
+    <!-- Eye gradient: deep vermillion -->
     <radialGradient id="eyeGrad" cx="50%" cy="40%" r="50%">
       <stop offset="0%" stop-color="#d4534a"/>
-      <stop offset="100%" stop-color="#b83a2a"/>
+      <stop offset="70%" stop-color="#b83a2a"/>
+      <stop offset="100%" stop-color="#8c1c18"/>
     </radialGradient>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
-      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#00000022"/>
+
+    <!-- Face gradient -->
+    <radialGradient id="faceGrad" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#fef8f0"/>
+      <stop offset="60%" stop-color="#fdf6ee"/>
+      <stop offset="100%" stop-color="#f5e8d8"/>
+    </radialGradient>
+
+    <!-- Pendant gradient -->
+    <radialGradient id="pendantGrad" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#e8c84a"/>
+      <stop offset="60%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#a08030"/>
+    </radialGradient>
+
+    <!-- Soft shadow -->
+    <filter id="shadow" x="-15%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="5" stdDeviation="4" flood-color="#5a3020" flood-opacity="0.15"/>
     </filter>
+
+    <!-- Paper texture overlay for organic feel -->
+    <filter id="paperTex">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/>
+      <feColorMatrix type="saturate" values="0" in="noise" result="grayNoise"/>
+      <feBlend in="SourceGraphic" in2="grayNoise" mode="multiply" result="textured"/>
+      <feComponentTransfer in="textured">
+        <feFuncA type="linear" slope="1"/>
+      </feComponentTransfer>
+    </filter>
+
+    <!-- Ear tuft gradient -->
+    <linearGradient id="earGradL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c94030"/>
+      <stop offset="100%" stop-color="#8c1c18"/>
+    </linearGradient>
+    <linearGradient id="earGradR" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c94030"/>
+      <stop offset="100%" stop-color="#8c1c18"/>
+    </linearGradient>
   </defs>
 
-  <!-- Body (radial gradient + shadow) -->
-  <ellipse cx="150" cy="175" rx="95" ry="85" fill="url(#bodyGrad)" filter="url(#shadow)"/>
+  <g filter="url(#shadow)">
+    <!-- Body -->
+    <ellipse cx="150" cy="178" rx="98" ry="88" fill="url(#bodyGrad)"/>
 
-  <!-- Wing hints (simplified, warm) -->
-  <ellipse cx="65" cy="155" rx="38" ry="55" fill="#e8a87c" opacity="0.5" transform="rotate(-15 65 155)"/>
-  <ellipse cx="235" cy="155" rx="38" ry="55" fill="#e8a87c" opacity="0.5" transform="rotate(15 235 155)"/>
+    <!-- Wing hints with feather scallops -->
+    <g opacity="0.55">
+      <ellipse cx="68" cy="158" rx="42" ry="60" fill="#e8a87c" transform="rotate(-18 68 158)"/>
+      <path d="M52,140 Q58,148 55,158 Q58,165 52,172" fill="none" stroke="#d4916a" stroke-width="1.2" opacity="0.5"/>
+      <path d="M60,135 Q66,143 63,153 Q66,160 60,167" fill="none" stroke="#d4916a" stroke-width="1.2" opacity="0.5"/>
+      <path d="M68,130 Q74,138 71,148 Q74,155 68,162" fill="none" stroke="#d4916a" stroke-width="1.2" opacity="0.5"/>
+    </g>
+    <g opacity="0.55">
+      <ellipse cx="232" cy="158" rx="42" ry="60" fill="#e8a87c" transform="rotate(18 232 158)"/>
+      <path d="M248,140 Q242,148 245,158 Q242,165 248,172" fill="none" stroke="#d4916a" stroke-width="1.2" opacity="0.5"/>
+      <path d="M240,135 Q234,143 237,153 Q234,160 240,167" fill="none" stroke="#d4916a" stroke-width="1.2" opacity="0.5"/>
+      <path d="M232,130 Q226,138 229,148 Q226,155 232,162" fill="none" stroke="#d4916a" stroke-width="1.2" opacity="0.5"/>
+    </g>
+  </g>
 
-  <!-- Face (lighter core) -->
-  <ellipse cx="150" cy="148" rx="62" ry="58" fill="#fdf6ee"/>
+  <!-- Face disc -->
+  <ellipse cx="150" cy="150" rx="66" ry="62" fill="url(#faceGrad)" filter="url(#shadow)"/>
+
+  <!-- Feather texture on face -->
+  <g opacity="0.15" stroke="#8a6e54" stroke-width="0.7" fill="none">
+    <path d="M110,135 Q115,132 120,135"/>
+    <path d="M125,130 Q130,127 135,130"/>
+    <path d="M165,130 Q170,127 175,130"/>
+    <path d="M180,135 Q185,132 190,135"/>
+    <path d="M115,155 Q120,152 125,155"/>
+    <path d="M175,155 Q180,152 185,155"/>
+  </g>
+
+  <!-- Ear tufts — hand-drawn feel with irregular paths -->
+  <path d="M99,108 Q88,72 106,76 Q117,70 118,100 Q115,104 112,102"
+        fill="url(#earGradL)" stroke="#6a1410" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- Inner ear detail -->
+  <path d="M104,94 Q98,82 106,82 Q110,80 110,96"
+        fill="#e8a87c" opacity="0.4"/>
+  <!-- Feather strokes on left ear -->
+  <path d="M102,88 Q108,84 112,88" fill="none" stroke="#6a1410" stroke-width="0.6" opacity="0.5"/>
+  <path d="M104,94 Q109,91 113,94" fill="none" stroke="#6a1410" stroke-width="0.6" opacity="0.5"/>
+
+  <path d="M201,108 Q212,72 194,76 Q183,70 182,100 Q185,104 188,102"
+        fill="url(#earGradR)" stroke="#6a1410" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M196,94 Q202,82 194,82 Q190,80 190,96"
+        fill="#e8a87c" opacity="0.4"/>
+  <path d="M198,88 Q192,84 188,88" fill="none" stroke="#6a1410" stroke-width="0.6" opacity="0.5"/>
+  <path d="M196,94 Q191,91 187,94" fill="none" stroke="#6a1410" stroke-width="0.6" opacity="0.5"/>
 
   <!-- Eye whites -->
-  <ellipse cx="130" cy="140" rx="18" ry="20" fill="white"/>
-  <ellipse cx="170" cy="140" rx="18" ry="20" fill="white"/>
+  <ellipse cx="130" cy="142" rx="19" ry="22" fill="white" stroke="#8a6e54" stroke-width="1.2"/>
+  <ellipse cx="170" cy="142" rx="19" ry="22" fill="white" stroke="#8a6e54" stroke-width="1.2"/>
 
-  <!-- Irises (zhu red gradient) -->
-  <ellipse cx="130" cy="143" rx="13" ry="15" fill="url(#eyeGrad)"/>
-  <ellipse cx="170" cy="143" rx="13" ry="15" fill="url(#eyeGrad)"/>
+  <!-- Irises with depth -->
+  <ellipse cx="130" cy="145" rx="14" ry="16" fill="url(#eyeGrad)"/>
+  <ellipse cx="170" cy="145" rx="14" ry="16" fill="url(#eyeGrad)"/>
 
-  <!-- Pupils (dark brown-black) -->
-  <ellipse cx="130" cy="145" rx="7" ry="8.5" fill="#1a1410"/>
-  <ellipse cx="170" cy="145" rx="7" ry="8.5" fill="#1a1410"/>
+  <!-- Pupils -->
+  <ellipse cx="130" cy="147" rx="7.5" ry="9" fill="#1a1410"/>
+  <ellipse cx="170" cy="147" rx="7.5" ry="9" fill="#1a1410"/>
 
-  <!-- Eye highlights -->
-  <circle cx="127" cy="140" r="3.5" fill="white" opacity="0.9"/>
-  <circle cx="167" cy="140" r="3.5" fill="white" opacity="0.9"/>
+  <!-- Eye highlights (double — lively) -->
+  <circle cx="126" cy="140" r="3.8" fill="white" opacity="0.95"/>
+  <circle cx="166" cy="140" r="3.8" fill="white" opacity="0.95"/>
+  <circle cx="132" cy="150" r="1.5" fill="white" opacity="0.4"/>
+  <circle cx="172" cy="150" r="1.5" fill="white" opacity="0.4"/>
 
-  <!-- Eyelids (warm brown outline) -->
-  <path d="M112,130 Q130,118 148,130" stroke="#8a6e54" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <path d="M152,130 Q170,118 188,130" stroke="#8a6e54" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Eyelids — hand-drawn curves -->
+  <path d="M110,132 Q130,118 151,133" stroke="#6a4030" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <path d="M149,133 Q170,118 190,132" stroke="#6a4030" stroke-width="2.8" fill="none" stroke-linecap="round"/>
+  <!-- Eyelid crease -->
+  <path d="M113,128 Q130,116 148,129" stroke="#5a3020" stroke-width="0.8" fill="none" stroke-linecap="round" opacity="0.4"/>
+  <path d="M152,129 Q170,116 187,128" stroke="#5a3020" stroke-width="0.8" fill="none" stroke-linecap="round" opacity="0.4"/>
 
-  <!-- Beak (zhu red) -->
-  <polygon points="150,148 138,158 162,158" fill="#b83a2a"/>
-  <line x1="138" y1="158" x2="162" y2="158" stroke="#c9a84c" stroke-width="1.2"/>
+  <!-- Beak — organic triangle with curve -->
+  <path d="M140,152 Q150,145 160,152 Q155,168 150,170 Q145,168 140,152Z"
+        fill="#b83a2a" stroke="#6a1410" stroke-width="1"/>
+  <!-- Beak highlight -->
+  <path d="M145,154 Q150,150 155,154" fill="none" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round"/>
 
-  <!-- Yin-Yang Pendant (Direction B gold accent) -->
-  <circle cx="150" cy="178" r="12" fill="#c9a84c" opacity="0.8" stroke="#b83a2a" stroke-width="1.5"/>
-  <circle cx="150" cy="178" r="5" fill="#b83a2a" opacity="0.6"/>
-  <line x1="143" y1="171" x2="157" y2="185" stroke="#b83a2a" stroke-width="0.8" opacity="0.5"/>
+  <!-- Warm blush -->
+  <ellipse cx="113" cy="158" rx="12" ry="7" fill="#e8a87c" opacity="0.45"/>
+  <ellipse cx="187" cy="158" rx="12" ry="7" fill="#e8a87c" opacity="0.45"/>
 
-  <!-- Ear tufts (zhu red, hand-drawn feel) -->
-  <path d="M100,108 Q90,75 105,78 Q115,72 118,100" fill="#b83a2a" stroke="#8a6e54" stroke-width="1"/>
-  <path d="M200,108 Q210,75 195,78 Q185,72 182,100" fill="#b83a2a" stroke="#8a6e54" stroke-width="1"/>
+  <!-- Yin-Yang Pendant — prominent, with chain -->
+  <g transform="translate(150, 200)">
+    <!-- Chain -->
+    <path d="M0,-10 Q-3,-22 0,-30" fill="none" stroke="#c9a84c" stroke-width="0.8" opacity="0.4"/>
+    <path d="M0,-10 Q3,-22 0,-30" fill="none" stroke="#c9a84c" stroke-width="0.8" opacity="0.4"/>
+    <!-- Pendant circle -->
+    <circle cx="0" cy="0" r="14" fill="url(#pendantGrad)" stroke="#8a5a20" stroke-width="1.8"/>
+    <!-- Yin-yang divide -->
+    <path d="M0,-12 A6,6 0 0,1 0,0 A6,6 0 0,0 0,12"
+          fill="none" stroke="#6a4030" stroke-width="1.5"/>
+    <!-- Yang dot (dark on light side) -->
+    <circle cx="0" cy="-5" r="3" fill="#3b2a1a"/>
+    <!-- Yin dot (light on dark side) -->
+    <circle cx="0" cy="5" r="3" fill="#fdf6ee"/>
+  </g>
 
-  <!-- Feather texture hints (warm lines) -->
-  <path d="M150,106 Q145,120 150,135" stroke="#8a6e54" stroke-width="0.8" fill="none" opacity="0.4"/>
-  <path d="M138,110 Q133,125 138,140" stroke="#8a6e54" stroke-width="0.7" fill="none" opacity="0.3"/>
-  <path d="M162,110 Q167,125 162,140" stroke="#8a6e54" stroke-width="0.7" fill="none" opacity="0.3"/>
+  <!-- Body feather texture — cross-hatching -->
+  <g opacity="0.12" stroke="#6a4030" stroke-width="0.7" fill="none">
+    <path d="M120,140 Q125,150 120,160"/>
+    <path d="M130,138 Q135,148 130,158"/>
+    <path d="M140,136 Q145,146 140,156"/>
+    <path d="M160,136 Q155,146 160,156"/>
+    <path d="M170,138 Q165,148 170,158"/>
+    <path d="M180,140 Q175,150 180,160"/>
+    <!-- Belly feathers -->
+    <path d="M135,165 Q140,175 135,185"/>
+    <path d="M145,163 Q150,173 145,183"/>
+    <path d="M155,163 Q150,173 155,183"/>
+    <path d="M165,165 Q160,175 165,185"/>
+  </g>
 
-  <!-- Subtle blush (warm apricot) -->
-  <ellipse cx="115" cy="152" rx="10" ry="6" fill="#e8a87c" opacity="0.35"/>
-  <ellipse cx="185" cy="152" rx="10" ry="6" fill="#e8a87c" opacity="0.35"/>
+  <!-- Circular seal border (dashed, hand-drawn feel) -->
+  <circle cx="150" cy="155" r="110" fill="none" stroke="#b83a2a" stroke-width="2.2"
+          stroke-dasharray="5 4" opacity="0.5"/>
+
+  <!-- Warm glow behind owl -->
+  <circle cx="150" cy="155" r="95" fill="#e8a87c" opacity="0.08"/>
 </svg>
