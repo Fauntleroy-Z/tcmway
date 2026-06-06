@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 580" width="680" height="580">
-  <!-- TCM Way #11: Cold Progression Through Defense Layers — Direction B -->
+  <!-- TCM Way #11: Cold Progression — Ollie-Centered Direction B -->
   <defs>
     <radialGradient id="bodyGrad" cx="50%" cy="45%" r="50%">
       <stop offset="0%" stop-color="#f0c8a0"/><stop offset="100%" stop-color="#e8a87c"/>
@@ -8,175 +8,210 @@
       <stop offset="0%" stop-color="#d4534a"/><stop offset="100%" stop-color="#b83a2a"/>
     </radialGradient>
     <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
-      <feDropShadow dx="1.5" dy="3" stdDeviation="2.5" flood-color="#00000022"/>
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#00000022"/>
     </filter>
-    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
-      <polygon points="0 0, 8 3, 0 6" fill="#b83a2a"/>
-    </marker>
   </defs>
   <style>
     .bg2{fill:#fdf6ee;stroke:#e8d5c0;stroke-width:1.5}
-    .lbl{font-family:Georgia,serif;font-size:9px;fill:#8a6e54}
-    .cap{font-family:Georgia,serif;font-size:11px;fill:#b83a2a;text-anchor:middle;font-style:italic}
+    .lbl{font-family:Georgia,serif;font-size:11px;fill:#8a6e54}
+    .cap{font-family:Georgia,serif;font-size:13px;fill:#b83a2a;text-anchor:middle;font-style:italic}
     .bub{fill:white;stroke:#3b2a1a;stroke-width:1.5}
-    .btx{font-family:Georgia,serif;font-size:9px;fill:#3b2a1a}
+    .btx{font-family:Georgia,serif;font-size:10px;fill:#3b2a1a}
     .ollie-head{fill:#b83a2a}
     .ollie-foot{fill:#c9a84c}
-    .layer-box{fill:none;stroke-width:1.5;rx:6}
   </style>
 
   <rect x="4" y="4" width="334" height="284" class="bg2" rx="4"/>
-  <text x="16" y="20" class="lbl">1</text>
+  <text x="16" y="22" class="lbl">1</text>
 
-  <rect x="44" y="64" width="120" height="180" rx="10" class="layer-box" stroke="#e8a87c"/>
-  <text x="104" y="59" font-family="Georgia,serif" font-size="8" fill="#e8a87c" font-weight="bold">Surface (Tai Yang)</text>
+  <text x="171" y="39" class="cap" font-size="14">&ldquo;Just a cold...&rdquo;</text>
 
-  <circle cx="34" cy="124" r="10" fill="#4a90d9" opacity="0.8"/>
-  <circle cx="31" cy="122" r="3.5" fill="white" opacity="0.5"/>
-  <circle cx="36" cy="121" r="3.0" fill="white" opacity="0.4"/>
+  <rect x="49" y="84" width="8" height="45" rx="4" fill="white" stroke="#b83a2a" stroke-width="1.5"/>
+  <circle cx="53" cy="129" r="7" fill="#b83a2a"/>
+  <rect x="50" y="89" width="6" height="30" fill="#b83a2a" opacity="0.7"/>
 
-  <line x1="46" y1="124" x2="72" y2="124" stroke="#b83a2a" stroke-width="2" stroke-dasharray="4,2"/>
-  <text x="104" y="39" class="cap">Day 1: The pathogen knocks.</text>
-  <rect x="164" y="164" width="155" height="50" rx="8" class="bub"/>
-  <polygon points="184,214 179,209 189,209" fill="white" stroke="#3b2a1a" stroke-width="1.5"/>
-  <text x="241" y="180" class="btx" text-anchor="middle">Chills, stiff neck,</text><text x="241" y="193" class="btx" text-anchor="middle">body aches. The body</text><text x="241" y="206" class="btx" text-anchor="middle">is pushing it OUT.</text>
+  <g transform="translate(144,214)">
+    <ellipse cx="0" cy="26" rx="28" ry="6" fill="#d4c4a8" opacity="0.35"/>
+    <ellipse cx="0" cy="4" rx="26" ry="22" fill="url(#bodyGrad)" filter="url(#shadow)"/>
+    <ellipse cx="0" cy="-5" rx="18" ry="16" fill="#fdf6ee"/>
+    <path d="M-15,-16 Q-22,-32 -12,-30 Q-6,-36 -4,-20" class="ollie-head" stroke="#8a6e54" stroke-width="1"/>
+    <path d="M15,-16 Q22,-32 12,-30 Q6,-36 4,-20" class="ollie-head" stroke="#8a6e54" stroke-width="1"/>
+    <ellipse cx="-7" cy="-8" rx="7" ry="9" fill="white"/>
+    <ellipse cx="7" cy="-8" rx="7" ry="9" fill="white"/>
+    <ellipse cx="-7" cy="-6" rx="5.5" ry="7" fill="url(#eyeGrad)"/>
+    <ellipse cx="7" cy="-6" rx="5.5" ry="7" fill="url(#eyeGrad)"/>
+    <ellipse cx="-4" cy="-5" rx="3.2" ry="4" fill="#1a1410"/>
+    <ellipse cx="3" cy="-6" rx="3.2" ry="4" fill="#1a1410"/>
+    <circle cx="-8" cy="-9" r="1.8" fill="white" opacity="0.9"/>
+    <circle cx="6" cy="-9" r="1.8" fill="white" opacity="0.9"/>
+    <path d="M-10,-9 Q-5,-7 0,-9" fill="none" stroke="#8a6e54" stroke-width="1.5" stroke-linecap="round"/><path d="M0,-9 Q5,-7 10,-9" fill="none" stroke="#8a6e54" stroke-width="1.5" stroke-linecap="round"/>
+    <polygon points="0,2 -3.5,-1 3.5,-1" fill="#b83a2a"/>
+    <line x1="-3.5" y1="-1" x2="3.5" y2="-1" stroke="#c9a84c" stroke-width="0.7"/>
+    <ellipse cx="-13" cy="0" rx="4.5" ry="2.8" fill="#e8a87c" opacity="0.35"/>
+    <ellipse cx="13" cy="0" rx="4.5" ry="2.8" fill="#e8a87c" opacity="0.35"/>
+    <path d="M0,-20 Q-2,-14 0,-8" stroke="#8a6e54" stroke-width="0.8" fill="none" opacity="0.25"/>
+    <circle cx="0" cy="20" r="5" fill="#c9a84c" opacity="0.85" stroke="#b83a2a" stroke-width="1"/>
+    <path d="M-2,20 L0,24 L2,20" fill="#b83a2a" opacity="0.5"/>
+    <polygon points="-8,24 -11,30 -6,30" class="ollie-foot"/>
+    <polygon points="8,24 6,30 11,30" class="ollie-foot"/>
+    <ellipse cx="13" cy="-20" rx="5" ry="3" fill="#e8a87c" opacity="0.3"/>
+  </g>
+  <ellipse cx="134" cy="199" rx="10" ry="6" fill="#e8a87c" stroke="#d4956a" stroke-width="1" transform="rotate(20,134,199)"/>
+  <path d="M184,174 Q186,169 184,164" fill="none" stroke="#8a6e54" stroke-width="0.8" opacity="0.4"/>
+  <path d="M192,174 Q194,169 192,164" fill="none" stroke="#8a6e54" stroke-width="0.8" opacity="0.4"/>
+  <path d="M200,174 Q202,169 200,164" fill="none" stroke="#8a6e54" stroke-width="0.8" opacity="0.4"/>
+  <rect x="174" y="64" width="140" height="40" rx="8" class="bub"/>
+  <polygon points="194,104 188,98 200,98" fill="white" stroke="#3b2a1a" stroke-width="1.5"/>
+  <text x="244" y="80" class="btx" text-anchor="middle">Scratchy throat...</text><text x="244" y="94" class="btx" text-anchor="middle">I'll just power through.</text>
 
   <rect x="342" y="4" width="334" height="284" class="bg2" rx="4"/>
-  <text x="354" y="20" class="lbl">2</text>
+  <text x="354" y="22" class="lbl">2</text>
 
-  <rect x="362" y="74" width="180" height="180" rx="8" class="layer-box" stroke="#e8a87c" stroke-width="1.2"/>
-  <rect x="380" y="92" width="144" height="144" rx="8" class="layer-box" stroke="#d4956a" stroke-width="1.2"/>
-  <rect x="398" y="110" width="108" height="108" rx="8" class="layer-box" stroke="#c9a84c" stroke-width="1.2"/>
-  <rect x="416" y="128" width="72" height="72" rx="8" class="layer-box" stroke="#d4534a" stroke-width="1.2"/>
-  <circle cx="442" cy="134" r="7" fill="#4a90d9" opacity="0.9"/>
-  <circle cx="439" cy="132" r="2.4499999999999997" fill="white" opacity="0.5"/>
-  <circle cx="444" cy="131" r="2.1" fill="white" opacity="0.4"/>
+  <text x="509" y="39" class="cap" font-size="14">The Suppression Trap</text>
 
+  <rect x="382" y="104" width="22" height="30" rx="4" fill="#fdf6ee" stroke="#b83a2a" stroke-width="1.5"/>
+  <rect x="380" y="99" width="26" height="8" rx="3" fill="white" stroke="#b83a2a" stroke-width="1"/>
+  <text x="393" y="92" font-family="Georgia,serif" font-size="6" fill="#b83a2a" text-anchor="middle">PILLS</text>
+  <ellipse cx="412" cy="129" rx="4" ry="2.5" fill="#4a90d9" opacity="0.6"/>
+  <ellipse cx="397" cy="134" rx="3.5" ry="2" fill="#d4534a" opacity="0.6"/>
 
-  <g transform="translate(602,204) scale(1.0)">
-    <ellipse cx="0" cy="8" rx="14" ry="3" fill="#d4c4a8" opacity="0.4"/>
-    <ellipse cx="0" cy="-2" rx="15" ry="12" fill="url(#bodyGrad)" filter="url(#shadow)"/>
-    <ellipse cx="0" cy="-6" rx="10" ry="9" fill="#fdf6ee"/>
-    <path d="M-9,-14 Q-13,-24 -7,-23 Q-3,-27 -2,-16" class="ollie-head" stroke="#8a6e54" stroke-width="0.8"/>
-    <path d="M9,-14 Q13,-24 7,-23 Q3,-27 2,-16" class="ollie-head" stroke="#8a6e54" stroke-width="0.8"/>
-    <ellipse cx="-4" cy="-8" rx="4" ry="5" fill="white"/>
-    <ellipse cx="4" cy="-8" rx="4" ry="5" fill="white"/>
-    <ellipse cx="-4" cy="-7" rx="3" ry="4" fill="url(#eyeGrad)"/>
-    <ellipse cx="4" cy="-7" rx="3" ry="4" fill="url(#eyeGrad)"/>
-    <ellipse cx="-4" cy="-6" rx="1.8" ry="2.2" fill="#1a1410"/>
-    <ellipse cx="4" cy="-6" rx="1.8" ry="2.2" fill="#1a1410"/>
-    <circle cx="-5" cy="-9" r="1" fill="white" opacity="0.9"/>
-    <circle cx="3" cy="-9" r="1" fill="white" opacity="0.9"/>
-    <path d="M-8,-11 Q-4,-14 0,-11" fill="none" stroke="#8a6e54" stroke-width="1.2" stroke-linecap="round"/>
-    <path d="M0,-11 Q4,-14 8,-11" fill="none" stroke="#8a6e54" stroke-width="1.2" stroke-linecap="round"/>
-    <polygon points="0,-2 -2,-5 2,-5" fill="#b83a2a"/>
-    <line x1="-2" y1="-5" x2="2" y2="-5" stroke="#c9a84c" stroke-width="0.6"/>
-    <ellipse cx="-7" cy="-3" rx="2.5" ry="1.5" fill="#e8a87c" opacity="0.35"/>
-    <ellipse cx="7" cy="-3" rx="2.5" ry="1.5" fill="#e8a87c" opacity="0.35"/>
-    <path d="M0,-14 Q-1,-10 0,-7" stroke="#8a6e54" stroke-width="0.5" fill="none" opacity="0.3"/>
-    <circle cx="0" cy="8" r="3" fill="#c9a84c" opacity="0.8" stroke="#b83a2a" stroke-width="0.6"/>
-    <polygon points="-5,9 -7,13 -3,13" class="ollie-foot"/>
-    <polygon points="5,9 3,13 7,13" class="ollie-foot"/>
+  <g transform="translate(532,214)">
+    <ellipse cx="0" cy="26" rx="28" ry="6" fill="#d4c4a8" opacity="0.35"/>
+    <ellipse cx="0" cy="4" rx="26" ry="22" fill="url(#bodyGrad)" filter="url(#shadow)"/>
+    <ellipse cx="0" cy="-5" rx="18" ry="16" fill="#fdf6ee"/>
+    <path d="M-15,-16 Q-22,-32 -12,-30 Q-6,-36 -4,-20" class="ollie-head" stroke="#8a6e54" stroke-width="1"/>
+    <path d="M15,-16 Q22,-32 12,-30 Q6,-36 4,-20" class="ollie-head" stroke="#8a6e54" stroke-width="1"/>
+    <ellipse cx="-7" cy="-8" rx="7" ry="9" fill="white"/>
+    <ellipse cx="7" cy="-8" rx="7" ry="9" fill="white"/>
+    <ellipse cx="-7" cy="-6" rx="5.5" ry="7" fill="url(#eyeGrad)"/>
+    <ellipse cx="7" cy="-6" rx="5.5" ry="7" fill="url(#eyeGrad)"/>
+    <ellipse cx="-5" cy="-3" rx="3.2" ry="4" fill="#1a1410"/>
+    <ellipse cx="2" cy="-7" rx="3.2" ry="4" fill="#1a1410"/>
+    <circle cx="-8" cy="-9" r="1.8" fill="white" opacity="0.9"/>
+    <circle cx="6" cy="-9" r="1.8" fill="white" opacity="0.9"/>
+    <path d="M-10,-8 Q-5,-5 0,-8" fill="none" stroke="#8a6e54" stroke-width="1.5" stroke-linecap="round"/><path d="M0,-8 Q5,-5 10,-8" fill="none" stroke="#8a6e54" stroke-width="1.5" stroke-linecap="round"/>
+    <polygon points="0,2 -3.5,-1 3.5,-1" fill="#b83a2a"/>
+    <line x1="-3.5" y1="-1" x2="3.5" y2="-1" stroke="#c9a84c" stroke-width="0.7"/>
+    <ellipse cx="-13" cy="0" rx="4.5" ry="2.8" fill="#e8a87c" opacity="0.35"/>
+    <ellipse cx="13" cy="0" rx="4.5" ry="2.8" fill="#e8a87c" opacity="0.35"/>
+    <path d="M0,-20 Q-2,-14 0,-8" stroke="#8a6e54" stroke-width="0.8" fill="none" opacity="0.25"/>
+    <circle cx="0" cy="20" r="5" fill="#c9a84c" opacity="0.85" stroke="#b83a2a" stroke-width="1"/>
+    <path d="M-2,20 L0,24 L2,20" fill="#b83a2a" opacity="0.5"/>
+    <polygon points="-8,24 -11,30 -6,30" class="ollie-foot"/>
+    <polygon points="8,24 6,30 11,30" class="ollie-foot"/>
+    <path d="M-17,-15 Q-20,-20 -17,-25" fill="none" stroke="#8a6e54" stroke-width="0.8" opacity="0.4"/><path d="M17,-15 Q20,-20 17,-25" fill="none" stroke="#8a6e54" stroke-width="0.8" opacity="0.4"/>
   </g>
-  <rect x="392" y="244" width="260" height="40" rx="8" class="bub"/>
-  <polygon points="602,284 597,279 607,279" fill="white" stroke="#3b2a1a" stroke-width="1.5"/>
-  <text x="522" y="260" class="btx" text-anchor="middle">Fever reducer = the burglar</text><text x="522" y="273" class="btx" text-anchor="middle">just moved to the living room.</text>
+  <path d="M572,164 L592,184 L602,179" fill="none" stroke="#b83a2a" stroke-width="1.5"/>
+  <text x="582" y="156" font-family="Georgia,serif" font-size="6" fill="#b83a2a">deeper</text>
+  <rect x="382" y="154" width="130" height="55" rx="8" class="bub"/>
+  <polygon points="422,209 416,203 428,203" fill="white" stroke="#3b2a1a" stroke-width="1.5"/>
+  <text x="447" y="170" class="btx" text-anchor="middle">I took the pills...</text><text x="447" y="184" class="btx" text-anchor="middle">why do I feel</text><text x="447" y="198" class="btx" text-anchor="middle">even worse?</text>
 
-  <text x="509" y="34" class="cap">Suppress symptoms = push deeper.</text>
   <rect x="4" y="292" width="334" height="284" class="bg2" rx="4"/>
-  <text x="16" y="308" class="lbl">3</text>
+  <text x="16" y="310" class="lbl">3</text>
 
-  <line x1="44" y1="432" x2="294" y2="432" stroke="#8a6e54" stroke-width="1" stroke-dasharray="6,3"/>
-  <circle cx="74" cy="432" r="3" fill="#b83a2a"/>
-  <text x="74" y="452" font-family="Georgia,serif" font-size="7" fill="#8a6e54" text-anchor="middle">Cold #1</text>
-  <circle cx="124" cy="432" r="3" fill="#b83a2a"/>
-  <text x="124" y="452" font-family="Georgia,serif" font-size="7" fill="#8a6e54" text-anchor="middle">Cold #2</text>
-  <line x1="104" y1="412" x2="119" y2="429" stroke="#b83a2a" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="171" y="327" class="cap" font-size="14">The Body Remembers</text>
 
-  <circle cx="174" cy="432" r="3" fill="#b83a2a"/>
-  <text x="174" y="452" font-family="Georgia,serif" font-size="7" fill="#8a6e54" text-anchor="middle">Cold #3</text>
-  <line x1="154" y1="412" x2="169" y2="429" stroke="#b83a2a" stroke-width="2" marker-end="url(#arrowhead)"/>
-
-  <circle cx="224" cy="432" r="3" fill="#b83a2a"/>
-  <text x="224" y="452" font-family="Georgia,serif" font-size="7" fill="#8a6e54" text-anchor="middle">Cold #4</text>
-  <line x1="204" y1="412" x2="219" y2="429" stroke="#b83a2a" stroke-width="2" marker-end="url(#arrowhead)"/>
-
-  <circle cx="274" cy="432" r="3" fill="#b83a2a"/>
-  <text x="274" y="452" font-family="Georgia,serif" font-size="7" fill="#8a6e54" text-anchor="middle">Chronic</text>
-  <line x1="254" y1="412" x2="269" y2="429" stroke="#b83a2a" stroke-width="2" marker-end="url(#arrowhead)"/>
-
-  <text x="171" y="327" class="cap">Every suppressed cold = one step deeper.</text>
-
-  <g transform="translate(171,532) scale(1.0)">
-    <ellipse cx="0" cy="8" rx="14" ry="3" fill="#d4c4a8" opacity="0.4"/>
-    <ellipse cx="0" cy="-2" rx="15" ry="12" fill="url(#bodyGrad)" filter="url(#shadow)"/>
-    <ellipse cx="0" cy="-6" rx="10" ry="9" fill="#fdf6ee"/>
-    <path d="M-9,-14 Q-13,-24 -7,-23 Q-3,-27 -2,-16" class="ollie-head" stroke="#8a6e54" stroke-width="0.8"/>
-    <path d="M9,-14 Q13,-24 7,-23 Q3,-27 2,-16" class="ollie-head" stroke="#8a6e54" stroke-width="0.8"/>
-    <ellipse cx="-4" cy="-8" rx="4" ry="5" fill="white"/>
-    <ellipse cx="4" cy="-8" rx="4" ry="5" fill="white"/>
-    <ellipse cx="-4" cy="-7" rx="3" ry="4" fill="url(#eyeGrad)"/>
-    <ellipse cx="4" cy="-7" rx="3" ry="4" fill="url(#eyeGrad)"/>
-    <ellipse cx="-4" cy="-6" rx="1.8" ry="2.2" fill="#1a1410"/>
-    <ellipse cx="4" cy="-6" rx="1.8" ry="2.2" fill="#1a1410"/>
-    <circle cx="-5" cy="-9" r="1" fill="white" opacity="0.9"/>
-    <circle cx="3" cy="-9" r="1" fill="white" opacity="0.9"/>
-    <path d="M-8,-11 Q-4,-14 0,-11" fill="none" stroke="#8a6e54" stroke-width="1.2" stroke-linecap="round"/>
-    <path d="M0,-11 Q4,-14 8,-11" fill="none" stroke="#8a6e54" stroke-width="1.2" stroke-linecap="round"/>
-    <polygon points="0,-2 -2,-5 2,-5" fill="#b83a2a"/>
-    <line x1="-2" y1="-5" x2="2" y2="-5" stroke="#c9a84c" stroke-width="0.6"/>
-    <ellipse cx="-7" cy="-3" rx="2.5" ry="1.5" fill="#e8a87c" opacity="0.35"/>
-    <ellipse cx="7" cy="-3" rx="2.5" ry="1.5" fill="#e8a87c" opacity="0.35"/>
-    <path d="M0,-14 Q-1,-10 0,-7" stroke="#8a6e54" stroke-width="0.5" fill="none" opacity="0.3"/>
-    <circle cx="0" cy="8" r="3" fill="#c9a84c" opacity="0.8" stroke="#b83a2a" stroke-width="0.6"/>
-    <polygon points="-5,9 -7,13 -3,13" class="ollie-foot"/>
-    <polygon points="5,9 3,13 7,13" class="ollie-foot"/>
+  <g transform="translate(59,342) scale(0.5)">
+    <ellipse cx="0" cy="5" rx="26" ry="22" fill="url(#bodyGrad)" opacity="0.9"/>
+    <ellipse cx="-7" cy="-3" rx="5" ry="7" fill="#b83a2a"/>
+    <ellipse cx="7" cy="-3" rx="5" ry="7" fill="#b83a2a"/>
   </g>
-  <rect x="64" y="472" width="220" height="50" rx="8" class="bub"/>
-  <polygon points="171,522 166,517 176,517" fill="white" stroke="#3b2a1a" stroke-width="1.5"/>
-  <text x="174" y="488" class="btx" text-anchor="middle">The body remembers every</text><text x="174" y="501" class="btx" text-anchor="middle">battle it was forced to lose.</text>
+  <text x="71" y="367" font-family="Georgia,serif" font-size="6" fill="#8a6e54">Cold #1</text>
+  <g transform="translate(94,347) scale(0.45)">
+    <ellipse cx="0" cy="5" rx="26" ry="22" fill="url(#bodyGrad)" opacity="0.7"/>
+    <ellipse cx="-7" cy="-3" rx="5" ry="7" fill="#b83a2a"/>
+    <ellipse cx="7" cy="-3" rx="5" ry="7" fill="#b83a2a"/>
+  </g>
+  <text x="106" y="372" font-family="Georgia,serif" font-size="6" fill="#8a6e54">Cold #2</text>
+  <g transform="translate(129,352) scale(0.4)">
+    <ellipse cx="0" cy="5" rx="26" ry="22" fill="url(#bodyGrad)" opacity="0.5"/>
+    <ellipse cx="-7" cy="-3" rx="5" ry="7" fill="#b83a2a"/>
+    <ellipse cx="7" cy="-3" rx="5" ry="7" fill="#b83a2a"/>
+  </g>
+  <text x="141" y="377" font-family="Georgia,serif" font-size="6" fill="#8a6e54">Cold #3</text>
+  <g transform="translate(164,357) scale(0.35)">
+    <ellipse cx="0" cy="5" rx="26" ry="22" fill="url(#bodyGrad)" opacity="0.29999999999999993"/>
+    <ellipse cx="-7" cy="-3" rx="5" ry="7" fill="#b83a2a"/>
+    <ellipse cx="7" cy="-3" rx="5" ry="7" fill="#b83a2a"/>
+  </g>
+
+  <g transform="translate(244,502)">
+    <ellipse cx="0" cy="26" rx="28" ry="6" fill="#d4c4a8" opacity="0.35"/>
+    <ellipse cx="0" cy="4" rx="26" ry="22" fill="url(#bodyGrad)" filter="url(#shadow)"/>
+    <ellipse cx="0" cy="-5" rx="18" ry="16" fill="#fdf6ee"/>
+    <path d="M-15,-16 Q-22,-32 -12,-30 Q-6,-36 -4,-20" class="ollie-head" stroke="#8a6e54" stroke-width="1"/>
+    <path d="M15,-16 Q22,-32 12,-30 Q6,-36 4,-20" class="ollie-head" stroke="#8a6e54" stroke-width="1"/>
+    <ellipse cx="-7" cy="-8" rx="7" ry="9" fill="white"/>
+    <ellipse cx="7" cy="-8" rx="7" ry="9" fill="white"/>
+    <ellipse cx="-7" cy="-6" rx="5.5" ry="7" fill="url(#eyeGrad)"/>
+    <ellipse cx="7" cy="-6" rx="5.5" ry="7" fill="url(#eyeGrad)"/>
+    <ellipse cx="-5" cy="-3" rx="3.2" ry="4" fill="#1a1410"/>
+    <ellipse cx="2" cy="-7" rx="3.2" ry="4" fill="#1a1410"/>
+    <circle cx="-8" cy="-9" r="1.8" fill="white" opacity="0.9"/>
+    <circle cx="6" cy="-9" r="1.8" fill="white" opacity="0.9"/>
+    <path d="M-10,-8 Q-5,-5 0,-8" fill="none" stroke="#8a6e54" stroke-width="1.5" stroke-linecap="round"/><path d="M0,-8 Q5,-5 10,-8" fill="none" stroke="#8a6e54" stroke-width="1.5" stroke-linecap="round"/>
+    <polygon points="0,2 -3.5,-1 3.5,-1" fill="#b83a2a"/>
+    <line x1="-3.5" y1="-1" x2="3.5" y2="-1" stroke="#c9a84c" stroke-width="0.7"/>
+    <ellipse cx="-13" cy="0" rx="4.5" ry="2.8" fill="#e8a87c" opacity="0.35"/>
+    <ellipse cx="13" cy="0" rx="4.5" ry="2.8" fill="#e8a87c" opacity="0.35"/>
+    <path d="M0,-20 Q-2,-14 0,-8" stroke="#8a6e54" stroke-width="0.8" fill="none" opacity="0.25"/>
+    <circle cx="0" cy="20" r="5" fill="#c9a84c" opacity="0.85" stroke="#b83a2a" stroke-width="1"/>
+    <path d="M-2,20 L0,24 L2,20" fill="#b83a2a" opacity="0.5"/>
+    <polygon points="-8,24 -11,30 -6,30" class="ollie-foot"/>
+    <polygon points="8,24 6,30 11,30" class="ollie-foot"/>
+    <path d="M-17,-15 Q-20,-20 -17,-25" fill="none" stroke="#8a6e54" stroke-width="0.8" opacity="0.4"/><path d="M17,-15 Q20,-20 17,-25" fill="none" stroke="#8a6e54" stroke-width="0.8" opacity="0.4"/>
+  </g>
+  <line x1="74" y1="382" x2="224" y2="452" stroke="#8a6e54" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+  <rect x="104" y="542" width="200" height="35" rx="8" class="bub"/>
+  <polygon points="244,577 238,571 250,571" fill="white" stroke="#3b2a1a" stroke-width="1.5"/>
+  <text x="204" y="558" class="btx" text-anchor="middle">Chronic fatigue?</text><text x="204" y="572" class="btx" text-anchor="middle">It started years ago.</text>
 
   <rect x="342" y="292" width="334" height="284" class="bg2" rx="4"/>
-  <text x="354" y="308" class="lbl">4</text>
+  <text x="354" y="310" class="lbl">4</text>
 
-  <path d="M402,432 Q402,482 432,482 L462,482 Q492,482 492,432 Z" fill="#fdf6ee" stroke="#e8a87c" stroke-width="2"/>
-  <ellipse cx="447" cy="432" rx="45" ry="12" fill="#fdf6ee" stroke="#e8a87c" stroke-width="2"/>
-  <path d="M427,417 Q427,402 432,397" fill="none" stroke="#e8a87c" stroke-width="1.2" opacity="0.5"/>
-  <path d="M442,417 Q442,402 447,397" fill="none" stroke="#e8a87c" stroke-width="1.2" opacity="0.5"/>
-  <path d="M457,417 Q457,402 462,397" fill="none" stroke="#e8a87c" stroke-width="1.2" opacity="0.5"/>
-  <text x="447" y="462" font-family="Georgia,serif" font-size="9" fill="#8a6e54" text-anchor="middle">Ginger Tea</text>
-  <path d="M522,412 Q525,422 522,427" fill="none" stroke="#4a90d9" stroke-width="1.2" opacity="0.6"/>
-  <path d="M552,412 Q555,422 552,427" fill="none" stroke="#4a90d9" stroke-width="1.2" opacity="0.6"/>
-  <path d="M582,412 Q585,422 582,427" fill="none" stroke="#4a90d9" stroke-width="1.2" opacity="0.6"/>
-  <text x="509" y="327" class="cap">Sweat it out. The exit is through the pores.</text>
+  <text x="509" y="327" class="cap" font-size="14">The Right Way</text>
 
-  <g transform="translate(612,532) scale(1.0)">
-    <ellipse cx="0" cy="8" rx="14" ry="3" fill="#d4c4a8" opacity="0.4"/>
-    <ellipse cx="0" cy="-2" rx="15" ry="12" fill="url(#bodyGrad)" filter="url(#shadow)"/>
-    <ellipse cx="0" cy="-6" rx="10" ry="9" fill="#fdf6ee"/>
-    <path d="M-9,-14 Q-13,-24 -7,-23 Q-3,-27 -2,-16" class="ollie-head" stroke="#8a6e54" stroke-width="0.8"/>
-    <path d="M9,-14 Q13,-24 7,-23 Q3,-27 2,-16" class="ollie-head" stroke="#8a6e54" stroke-width="0.8"/>
-    <ellipse cx="-4" cy="-8" rx="4" ry="5" fill="white"/>
-    <ellipse cx="4" cy="-8" rx="4" ry="5" fill="white"/>
-    <ellipse cx="-4" cy="-7" rx="3" ry="4" fill="url(#eyeGrad)"/>
-    <ellipse cx="4" cy="-7" rx="3" ry="4" fill="url(#eyeGrad)"/>
-    <ellipse cx="-4" cy="-6" rx="1.8" ry="2.2" fill="#1a1410"/>
-    <ellipse cx="4" cy="-6" rx="1.8" ry="2.2" fill="#1a1410"/>
-    <circle cx="-5" cy="-9" r="1" fill="white" opacity="0.9"/>
-    <circle cx="3" cy="-9" r="1" fill="white" opacity="0.9"/>
-    <path d="M-8,-11 Q-4,-14 0,-11" fill="none" stroke="#8a6e54" stroke-width="1.2" stroke-linecap="round"/>
-    <path d="M0,-11 Q4,-14 8,-11" fill="none" stroke="#8a6e54" stroke-width="1.2" stroke-linecap="round"/>
-    <polygon points="0,-2 -2,-5 2,-5" fill="#b83a2a"/>
-    <line x1="-2" y1="-5" x2="2" y2="-5" stroke="#c9a84c" stroke-width="0.6"/>
-    <ellipse cx="-7" cy="-3" rx="2.5" ry="1.5" fill="#e8a87c" opacity="0.35"/>
-    <ellipse cx="7" cy="-3" rx="2.5" ry="1.5" fill="#e8a87c" opacity="0.35"/>
-    <path d="M0,-14 Q-1,-10 0,-7" stroke="#8a6e54" stroke-width="0.5" fill="none" opacity="0.3"/>
-    <circle cx="0" cy="8" r="3" fill="#c9a84c" opacity="0.8" stroke="#b83a2a" stroke-width="0.6"/>
-    <polygon points="-5,9 -7,13 -3,13" class="ollie-foot"/>
-    <polygon points="5,9 3,13 7,13" class="ollie-foot"/>
+  <path d="M377,412 Q377,487 407,487 L437,487 Q467,487 467,412 Z" fill="#fdf6ee" stroke="#e8a87c" stroke-width="2"/>
+  <ellipse cx="422" cy="412" rx="45" ry="14" fill="#fdf6ee" stroke="#e8a87c" stroke-width="2"/>
+  <path d="M397,397 Q400,382 404,377" fill="none" stroke="#e8a87c" stroke-width="1.2" opacity="0.4"/>
+  <path d="M412,397 Q415,382 419,377" fill="none" stroke="#e8a87c" stroke-width="1.2" opacity="0.4"/>
+  <path d="M427,397 Q430,382 434,377" fill="none" stroke="#e8a87c" stroke-width="1.2" opacity="0.4"/>
+  <path d="M442,397 Q445,382 449,377" fill="none" stroke="#e8a87c" stroke-width="1.2" opacity="0.4"/>
+  <text x="422" y="450" font-family="Georgia,serif" font-size="8" fill="#8a6e54" text-anchor="middle">Ginger Tea</text>
+  <path d="M532,432 Q535,440 532,444" fill="none" stroke="#4a90d9" stroke-width="1.2" opacity="0.5"/>
+  <path d="M557,427 Q560,435 557,439" fill="none" stroke="#4a90d9" stroke-width="1.2" opacity="0.5"/>
+  <path d="M547,442 Q550,450 547,454" fill="none" stroke="#4a90d9" stroke-width="1.2" opacity="0.5"/>
+
+  <g transform="translate(582,502)">
+    <ellipse cx="0" cy="26" rx="28" ry="6" fill="#d4c4a8" opacity="0.35"/>
+    <ellipse cx="0" cy="4" rx="26" ry="22" fill="url(#bodyGrad)" filter="url(#shadow)"/>
+    <ellipse cx="0" cy="-5" rx="18" ry="16" fill="#fdf6ee"/>
+    <path d="M-15,-16 Q-22,-32 -12,-30 Q-6,-36 -4,-20" class="ollie-head" stroke="#8a6e54" stroke-width="1"/>
+    <path d="M15,-16 Q22,-32 12,-30 Q6,-36 4,-20" class="ollie-head" stroke="#8a6e54" stroke-width="1"/>
+    <ellipse cx="-7" cy="-8" rx="7" ry="9" fill="white"/>
+    <ellipse cx="7" cy="-8" rx="7" ry="9" fill="white"/>
+    <ellipse cx="-7" cy="-6" rx="5.5" ry="7" fill="url(#eyeGrad)"/>
+    <ellipse cx="7" cy="-6" rx="5.5" ry="7" fill="url(#eyeGrad)"/>
+    <ellipse cx="-2" cy="-4" rx="3.2" ry="4" fill="#1a1410"/>
+    <ellipse cx="4" cy="-5" rx="3.2" ry="4" fill="#1a1410"/>
+    <circle cx="-8" cy="-9" r="1.8" fill="white" opacity="0.9"/>
+    <circle cx="6" cy="-9" r="1.8" fill="white" opacity="0.9"/>
+    <path d="M-10,-11 Q-5,-15 0,-11" fill="none" stroke="#8a6e54" stroke-width="1.5" stroke-linecap="round"/><path d="M0,-11 Q5,-15 10,-11" fill="none" stroke="#8a6e54" stroke-width="1.5" stroke-linecap="round"/>
+    <polygon points="0,2 -3.5,-1 3.5,-1" fill="#b83a2a"/>
+    <line x1="-3.5" y1="-1" x2="3.5" y2="-1" stroke="#c9a84c" stroke-width="0.7"/>
+    <ellipse cx="-13" cy="0" rx="4.5" ry="2.8" fill="#e8a87c" opacity="0.35"/>
+    <ellipse cx="13" cy="0" rx="4.5" ry="2.8" fill="#e8a87c" opacity="0.35"/>
+    <path d="M0,-20 Q-2,-14 0,-8" stroke="#8a6e54" stroke-width="0.8" fill="none" opacity="0.25"/>
+    <circle cx="0" cy="20" r="5" fill="#c9a84c" opacity="0.85" stroke="#b83a2a" stroke-width="1"/>
+    <path d="M-2,20 L0,24 L2,20" fill="#b83a2a" opacity="0.5"/>
+    <polygon points="-8,24 -11,30 -6,30" class="ollie-foot"/>
+    <polygon points="8,24 6,30 11,30" class="ollie-foot"/>
+    <ellipse cx="13" cy="-20" rx="5" ry="3" fill="#e8a87c" opacity="0.2"/>
   </g>
-  <rect x="402" y="537" width="240" height="40" rx="8" class="bub"/>
-  <polygon points="612,537 607,542 617,542" fill="white" stroke="#3b2a1a" stroke-width="1.5"/>
-  <text x="522" y="553" class="btx" text-anchor="middle">Hot tea. Sweat. Rest.</text><text x="522" y="566" class="btx" text-anchor="middle">Three days, and it's done.</text>
+  <ellipse cx="572" cy="477" rx="10" ry="6" fill="#e8a87c" stroke="#d4956a" stroke-width="1" transform="rotate(-30,572,477)"/>
+  <rect x="492" y="537" width="170" height="40" rx="8" class="bub"/>
+  <polygon points="582,537 576,543 588,543" fill="white" stroke="#3b2a1a" stroke-width="1.5"/>
+  <text x="577" y="553" class="btx" text-anchor="middle">Hot tea. Sweat. Rest.</text><text x="577" y="567" class="btx" text-anchor="middle">Three days. Done.</text>
 
 </svg>
