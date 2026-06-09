@@ -149,6 +149,30 @@
   footer { text-align: center; padding: 2rem 0; color: #555; font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
   footer a { color: var(--accent); text-decoration: none; }
   .back { display: block; margin: 2rem 0 0; }
+  .ollie-speaks {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .ollie-speaks img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: 2px solid var(--border);
+  }
+  .ollie-speaks .bubble {
+    background: var(--light);
+    border-radius: 12px;
+    padding: 1rem 1.3rem;
+    position: relative;
+    font-style: italic;
+  }
 </style>
 <script>
 var _hmt = _hmt || [];
@@ -441,10 +465,12 @@ var _hmt = _hmt || [];
   <div style="margin: 3rem 0 2rem; padding: 1.5rem; background: var(--light); border-radius: 8px; border-left: 3px solid var(--accent);">
 
     <h2>&#x1F989; Ollie Speaks</h2>
-    <blockquote class="ollie-speaks">
-      <p>I've had people tell me Qi sounds like something from a fantasy novel. Fair. But here's what I tell them: you already experience Qi every day. That post-lunch slump? Qi. That second wind at 9 PM? Qi. The difference between waking up refreshed and waking up like you never slept? Also Qi. The ancient Chinese doctors weren't mystics — they were the original systems thinkers. They just didn't have oscilloscopes, so they built a different vocabulary. Qi isn't magic. It's just your body's operating system — and you've been running it since before you were born, without ever reading the manual.</p>
-      <p style="text-align:right;font-size:0.9rem;">— Ollie</p>
-    </blockquote>
+    <div class="ollie-speaks">
+      <img src="/images/ollie-mini-v3.png" loading="lazy" alt="Ollie the TCM Owl">
+      <div class="bubble">
+        I've had people tell me Qi sounds like something from a fantasy novel. Fair. But here's what I tell them: you already experience Qi every day. That post-lunch slump? Qi. That second wind at 9 PM? Qi. The difference between waking up refreshed and waking up like you never slept? Also Qi. The ancient Chinese doctors weren't mystics — they were the original systems thinkers. They just didn't have oscilloscopes, so they built a different vocabulary. Qi isn't magic. It's just your body's operating system — and you've been running it since before you were born, without ever reading the manual.
+      </div>
+    </div>
 
     <h2>FAQ</h2>
     <div class="faq-item">
