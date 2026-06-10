@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <!-- Warm radial gradient for the body -->
+    <radialGradient id="bodyGrad" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#d45a3a"/>
+      <stop offset="100%" stop-color="#9a2e22"/>
+    </radialGradient>
+    <!-- Face disk gradient -->
+    <radialGradient id="faceGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f2c0a0"/>
+      <stop offset="100%" stop-color="#e8a87c"/>
+    </radialGradient>
+    <!-- Eye glow -->
+    <radialGradient id="eyeGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f5d060"/>
+      <stop offset="60%" stop-color="#d4a020"/>
+      <stop offset="100%" stop-color="#a07810"/>
+    </radialGradient>
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#3b2a1a" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background circle (warm glow) -->
+  <circle cx="60" cy="62" r="52" fill="#fff8f0" stroke="#e8d5c0" stroke-width="1.5"/>
+
+  <!-- Body (brown, oval) -->
+  <ellipse cx="60" cy="68" rx="38" ry="34" fill="url(#bodyGrad)" filter="url(#shadow)"/>
+
+  <!-- Belly highlight -->
+  <ellipse cx="60" cy="75" rx="24" ry="20" fill="#c47a5a" opacity="0.4"/>
+
+  <!-- EAR TUFTS — long, pointed, distinctive screech owl ears -->
+  <!-- Left ear tuft -->
+  <path d="M30,42 Q20,10 38,34 Q32,20 30,42Z" fill="#b83a2a" stroke="#7a2218" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M28,40 Q22,22 35,36" fill="#d06040" opacity="0.5"/>
+  <!-- Right ear tuft -->
+  <path d="M90,42 Q100,10 82,34 Q88,20 90,42Z" fill="#b83a2a" stroke="#7a2218" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M92,40 Q98,22 85,36" fill="#d06040" opacity="0.5"/>
+
+  <!-- Face disk (peach, heart-shaped) -->
+  <ellipse cx="60" cy="58" rx="30" ry="28" fill="url(#faceGrad)"/>
+  <!-- Face disk border line -->
+  <ellipse cx="60" cy="58" rx="30" ry="28" fill="none" stroke="#d09868" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.6"/>
+
+  <!-- Brow ridges (feathery) -->
+  <path d="M38,48 Q48,42 55,46" fill="none" stroke="#8a5a42" stroke-width="2" stroke-linecap="round"/>
+  <path d="M82,48 Q72,42 65,46" fill="none" stroke="#8a5a42" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Eyes (large, golden, round — screech owl characteristic) -->
+  <!-- Left eye -->
+  <circle cx="47" cy="55" r="12" fill="white"/>
+  <circle cx="47" cy="55" r="9" fill="url(#eyeGrad)"/>
+  <circle cx="47" cy="55" r="4.5" fill="#1a1008"/>
+  <circle cx="45" cy="53" r="2" fill="white" opacity="0.8"/>
+  <!-- Left eye ring -->
+  <circle cx="47" cy="55" r="12" fill="none" stroke="#7a5a38" stroke-width="1.2"/>
+
+  <!-- Right eye -->
+  <circle cx="73" cy="55" r="12" fill="white"/>
+  <circle cx="73" cy="55" r="9" fill="url(#eyeGrad)"/>
+  <circle cx="73" cy="55" r="4.5" fill="#1a1008"/>
+  <circle cx="71" cy="53" r="2" fill="white" opacity="0.8"/>
+  <!-- Right eye ring -->
+  <circle cx="73" cy="55" r="12" fill="none" stroke="#7a5a38" stroke-width="1.2"/>
+
+  <!-- Warm eyelids (half-moon shadow at top of eyes — Direction B warm) -->
+  <path d="M35,52 Q47,44 59,52" fill="#c47a5a" opacity="0.25"/>
+  <path d="M61,52 Q73,44 85,52" fill="#c47a5a" opacity="0.25"/>
+
+  <!-- Beak (hooked, dark grey) -->
+  <path d="M55,62 Q60,58 65,62 Q63,68 60,72 Q57,68 55,62Z" fill="#4a3830" stroke="#3a2820" stroke-width="0.8"/>
+  <!-- Beak hook tip -->
+  <path d="M57,64 Q60,69 60,72" fill="none" stroke="#3a2820" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Subtle blush on cheeks -->
+  <ellipse cx="38" cy="62" rx="6" ry="4" fill="#e8a87c" opacity="0.3"/>
+  <ellipse cx="82" cy="62" rx="6" ry="4" fill="#e8a87c" opacity="0.3"/>
+
+  <!-- Feather texture lines on body -->
+  <path d="M30,78 Q38,88 28,94" fill="none" stroke="#7a2218" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+  <path d="M40,82 Q48,92 42,100" fill="none" stroke="#7a2218" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+  <path d="M60,84 Q60,94 60,102" fill="none" stroke="#7a2218" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+  <path d="M80,82 Q72,92 78,100" fill="none" stroke="#7a2218" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+  <path d="M90,78 Q82,88 92,94" fill="none" stroke="#7a2218" stroke-width="1" opacity="0.4" stroke-linecap="round"/>
+
+  <!-- Wings (dark brown, folded at sides) -->
+  <path d="M22,60 Q16,78 24,98 Q30,92 32,75 Q28,65 22,60Z" fill="#8a2818" opacity="0.6"/>
+  <path d="M98,60 Q104,78 96,98 Q90,92 88,75 Q92,65 98,60Z" fill="#8a2818" opacity="0.6"/>
+
+  <!-- Gold Yin-Yang pendant -->
+  <circle cx="60" cy="94" r="7" fill="#c9a84c" opacity="0.85" stroke="#b83a2a" stroke-width="1.2"/>
+  <!-- Yin-yang symbol -->
+  <path d="M60,87 A7,7 0 0,1 60,101 A3.5,3.5 0 0,0 60,94 A3.5,3.5 0 0,1 60,87Z" fill="#fdf6ee"/>
+  <circle cx="60" cy="90.5" r="1.5" fill="#b83a2a"/>
+  <circle cx="60" cy="97.5" r="1.5" fill="#fdf6ee"/>
+  <!-- Pendant string -->
+  <path d="M58,88 Q56,85 58,82" fill="none" stroke="#c9a84c" stroke-width="1" opacity="0.6"/>
+
+  <!-- Feet (small, gripping) -->
+  <path d="M52,100 L48,104 M52,100 L52,105 M52,100 L56,104" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.7"/>
+  <path d="M68,100 L64,104 M68,100 L68,105 M68,100 L72,104" stroke="#c9a84c" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.7"/>
+</svg>
