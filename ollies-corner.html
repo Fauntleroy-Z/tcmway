@@ -9,14 +9,13 @@
   gtag('js', new Date());
   gtag('config', 'G-G9S528TPWH');
 </script>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ollie's Corner — Free Wallpapers & Goodies | TCM Way</title>
-<meta name="description" content="Free Ollie wallpapers for your desktop and phone. Bring a little TCM warmth to your screen. More goodies coming soon.">
-<meta property="og:title" content="Ollie's Corner — Free Wallpapers | TCM Way">
-<meta property="og:description" content="Free Ollie wallpapers for your desktop and phone. Bring a little TCM warmth to your screen.">
-<meta property="og:image" content="https://tcmway.net/images/ollie-warm-v3.png">
+<title>Ollie's Corner — Free Wallpapers & Weekly Zen | TCM Way</title>
+<meta name="description" content="Free Ollie wallpapers updated weekly, each with a classical Chinese zen quote translated for the modern mind. Bring a little warmth and wisdom to your screen.">
+<meta property="og:title" content="Ollie's Corner — Weekly Wallpapers & Zen Quotes | TCM Way">
+<meta property="og:description" content="Each week, a new wallpaper with a hand-picked zen quote from Chinese classical wisdom — translated to make you smile, breathe, and maybe learn something.">
+<meta property="og:image" content="https://tcmway.net/images/ollie-corner/wallpapers/ollie-desktop-week24.png">
 <meta property="og:url" content="https://tcmway.net/ollies-corner.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TCM Way">
@@ -33,109 +32,81 @@
     --subtle: #8a6d54;
     --gold: #c9a84c;
   }
-
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
   body {
-    font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif;
+    font-family: Georgia, 'Times New Roman', serif;
     background: var(--bg);
     color: var(--text);
-    line-height: 2;
+    line-height: 1.9;
     max-width: 720px;
     margin: 0 auto;
     padding: 0 1.5rem 3rem;
   }
-
   header {
     text-align: center;
-    padding: 3rem 0 2rem;
+    padding: 2.5rem 0 1.5rem;
     border-bottom: 2px solid var(--border);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
-
-  .brand-symbol {
-    display: block;
-    margin: 0 auto 1rem;
-    width: 80px;
-    height: 80px;
-  }
-
-  header h1 {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 2.2rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    color: var(--accent);
-    position: relative;
-    display: inline-block;
-  }
-
-  header h1::after {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    left: 5%;
-    width: 90%;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, var(--accent-warm), var(--accent), var(--accent-warm), transparent);
-    border-radius: 2px;
-  }
-
-  header p {
-    color: var(--subtle);
-    font-style: italic;
-    margin-top: 1.2rem;
-    font-size: 1.05rem;
-    letter-spacing: 0.02em;
-  }
-
-  nav {
-    margin-top: 1.5rem;
-  }
-
-  nav a {
-    color: var(--subtle);
-    text-decoration: none;
-    margin: 0 0.8rem;
-    font-size: 0.9rem;
-    letter-spacing: 0.06em;
-    font-family: Georgia, serif;
-    transition: color 0.3s;
-    position: relative;
-  }
-
+  header img.brand { display: block; margin: 0 auto 0.8rem; width: 80px; height: 80px; }
+  header h1 { font-size: 2rem; font-weight: normal; color: var(--accent); letter-spacing: 0.06em; }
+  header p.subtitle { color: var(--subtle); font-style: italic; margin-top: 0.5rem; }
+  nav { margin-top: 1rem; }
+  nav a { color: var(--subtle); text-decoration: none; margin: 0 0.7rem; font-size: 0.9rem; }
   nav a:hover { color: var(--accent); }
 
+  /* === Weekly Quote Hero === */
+  .quote-hero {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2rem 2rem 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+    position: relative;
+  }
+  .quote-hero .week-label {
+    font-family: -apple-system, sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    margin-bottom: 1rem;
+  }
+  .quote-hero .quote-text {
+    font-size: 1.35rem;
+    line-height: 1.7;
+    color: var(--text);
+    font-style: italic;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.02em;
+  }
+  .quote-hero .quote-credit {
+    font-size: 0.85rem;
+    color: var(--subtle);
+  }
+  .quote-hero .ollie-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 6px;
+  }
+
+  /* === Wallpaper Section === */
   h2 {
-    font-family: Georgia, serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--accent);
     margin: 2.5rem 0 1rem;
-    letter-spacing: 0.04em;
+    border-left: 4px solid var(--accent-warm);
+    padding-left: 0.8rem;
   }
-
-  h3 {
-    font-family: Georgia, serif;
-    font-size: 1.1rem;
-    color: var(--text);
-    margin: 1.5rem 0 0.5rem;
-    letter-spacing: 0.03em;
-  }
-
-  .intro {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-    color: var(--text);
-  }
-
-  /* Wallpaper cards */
   .wallpaper-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 2rem 0;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
   }
-
   .wallpaper-card {
     background: var(--light);
     border: 1px solid var(--border);
@@ -144,84 +115,56 @@
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
   }
-
   .wallpaper-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(184, 58, 42, 0.1);
+    box-shadow: 0 4px 20px rgba(184,58,42,0.1);
   }
-
   .wallpaper-card img {
     width: 100%;
     height: auto;
     display: block;
-    border-bottom: 1px solid var(--border);
   }
-
-  .wallpaper-card .info {
-    padding: 1rem 1.2rem;
-  }
-
-  .wallpaper-card .label {
-    font-family: Georgia, serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--text);
-    margin-bottom: 0.3rem;
-  }
-
-  .wallpaper-card .dim {
-    font-size: 0.85rem;
-    color: var(--subtle);
-    margin-bottom: 0.8rem;
-  }
-
+  .wallpaper-card .info { padding: 0.8rem 1rem; }
+  .wallpaper-card .label { font-weight: bold; font-size: 0.95rem; margin-bottom: 0.2rem; }
+  .wallpaper-card .dim { font-size: 0.8rem; color: var(--subtle); margin-bottom: 0.6rem; }
   .wallpaper-card .btn {
     display: inline-block;
     background: var(--accent);
     color: white;
-    padding: 0.5rem 1.5rem;
+    padding: 0.4rem 1.2rem;
     text-decoration: none;
     border-radius: 6px;
-    font-family: -apple-system, 'Helvetica Neue', sans-serif;
-    font-size: 0.9rem;
-    letter-spacing: 0.04em;
+    font-family: -apple-system, sans-serif;
+    font-size: 0.85rem;
     transition: background 0.3s;
   }
-
   .wallpaper-card .btn:hover { background: #a03020; }
 
-  .teaser {
+  /* === Archive === */
+  .archive { margin: 2.5rem 0; }
+  .archive h3 { font-size: 1rem; color: var(--subtle); margin-bottom: 0.8rem; }
+  .archive ul { list-style: none; padding: 0; }
+  .archive li {
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .archive li .week-label { color: var(--accent); font-family: -apple-system, sans-serif; font-size: 0.85rem; }
+  .archive li .week-quote { color: var(--subtle); font-style: italic; font-size: 0.9rem; max-width: 70%; text-align: right; }
+
+  /* === Notify === */
+  .notify-box {
     background: var(--light);
-    border: 1px dashed var(--border);
+    border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 2rem;
+    padding: 1.5rem;
     text-align: center;
-    margin: 2.5rem 0;
+    margin: 2rem 0;
   }
-
-  .teaser p {
-    color: var(--subtle);
-    font-style: italic;
-    font-size: 1rem;
-  }
-
-  .teaser .cta {
-    display: inline-block;
-    margin-top: 1rem;
-    color: var(--accent);
-    text-decoration: none;
-    font-family: -apple-system, 'Helvetica Neue', sans-serif;
-    font-size: 0.92rem;
-    letter-spacing: 0.04em;
-  }
-
-  .teaser .cta:hover { text-decoration: underline; }
-
-  /* single column on mobile */
-  @media (max-width: 600px) {
-    .wallpaper-grid { grid-template-columns: 1fr; }
-    header h1 { font-size: 1.8rem; }
-  }
+  .notify-box p { color: var(--subtle); font-size: 0.95rem; }
+  .notify-box a { color: var(--accent); text-decoration: none; }
 
   footer {
     text-align: center;
@@ -231,71 +174,99 @@
     padding-top: 2rem;
     border-top: 1px solid var(--border);
   }
-
   footer a { color: var(--accent); text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 600px) {
+    .wallpaper-grid { grid-template-columns: 1fr; }
+    .quote-hero .quote-text { font-size: 1.15rem; }
+    header h1 { font-size: 1.6rem; }
+  }
 </style>
 </head>
 <body>
 
 <header>
-  <a href="/"><img src="images/ollie-mini-v3.png" alt="Ollie the TCM owl" class="brand-symbol" width="80" height="80"></a>
+  <a href="/"><img src="images/ollie-mini-80.png" alt="Ollie the TCM Owl" class="brand" width="80" height="80"></a>
   <h1>Ollie's Corner</h1>
-  <p>Free goodies from your favorite TCM owl</p>
+  <p class="subtitle">Weekly wallpapers &mdash; a little zen for your screen</p>
   <nav>
-    <a href="/">← Home</a>
+    <a href="/">&larr; Home</a>
     <a href="/about-owl.html">About Ollie</a>
     <a href="/rss.xml">RSS</a>
   </nav>
 </header>
 
-<section class="intro">
-  <p>Ollie believes in sharing warmth — not just through words, but through the little things that brighten your day. Here you'll find free wallpapers for your desktop and phone. More goodies are on the way.</p>
-</section>
+<!-- ═══════════════════════════════════════════════ -->
+<!-- WEEKLY QUOTE — 本周格言 -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="quote-hero">
+  <div class="week-label">Week 24 &middot; June 14–20, 2026</div>
+  <div class="quote-text">
+    "The best kindness flows like water.<br>
+    It nourishes everything and fights nothing."
+  </div>
+  <div class="quote-credit">
+    <img src="images/ollie-mini-80.png" class="ollie-icon" alt=""> 
+    Laozi, <em>Dao De Jing</em> &middot; 上善若水
+  </div>
+</div>
 
-<h2>🖼️ Free Wallpapers</h2>
-<p style="color:var(--subtle);margin-bottom:1.5rem;">Click the download button or right-click → "Save Image As..." on the preview. Free for personal use.</p>
+<!-- ═══════════════════════════════════════════════ -->
+<!-- THIS WEEK'S WALLPAPERS — 本周壁纸 -->
+<!-- ═══════════════════════════════════════════════ -->
+<h2>This Week's Wallpapers</h2>
+<p style="color:var(--subtle);margin-bottom:1rem;">Right-click → "Save Image As…" or tap the download button. Free for personal use. New wallpapers every weekend.</p>
 
 <div class="wallpaper-grid">
-
-  <!-- Desktop -->
   <div class="wallpaper-card">
-    <img src="images/ollie-promo/wallpapers/ollie-desktop-D-medallion.png" alt="Ollie desktop wallpaper — circular medallion style" loading="lazy">
+    <img src="images/ollie-corner/wallpapers/ollie-desktop-week24.png" alt="Ollie desktop wallpaper — The best kindness flows like water" loading="lazy">
     <div class="info">
       <div class="label">Desktop</div>
       <div class="dim">1920 × 1080</div>
-      <a href="images/ollie-promo/wallpapers/ollie-desktop-D-medallion.png" download class="btn">Download</a>
+      <a href="images/ollie-corner/wallpapers/ollie-desktop-week24.png" download class="btn">Download</a>
     </div>
   </div>
-
-  <!-- Phone -->
   <div class="wallpaper-card">
-    <img src="images/ollie-promo/wallpapers/ollie-phone-C-medallion.png" alt="Ollie phone wallpaper — circular medallion style" loading="lazy">
+    <img src="images/ollie-corner/wallpapers/ollie-phone-week24.png" alt="Ollie phone wallpaper — The best kindness flows like water" loading="lazy">
     <div class="info">
       <div class="label">Phone</div>
       <div class="dim">1080 × 1920</div>
-      <a href="images/ollie-promo/wallpapers/ollie-phone-C-medallion.png" download class="btn">Download</a>
+      <a href="images/ollie-corner/wallpapers/ollie-phone-week24.png" download class="btn">Download</a>
     </div>
   </div>
-
 </div>
 
-<!-- Teaser -->
-<div class="teaser">
-  <p>🦉 "Want Ollie on a sticker? A mug? A t-shirt? Let me know."</p>
-  <a href="mailto:tcmway.ollie@outlook.com?subject=Ollie%20Merch%20Request" class="cta">→ Tell Ollie what you'd like</a>
+<!-- ═══════════════════════════════════════════════ -->
+<!-- ARCHIVE — 往期 -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="archive">
+  <h3>Coming Weeks (Preview)</h3>
+  <ul>
+    <li>
+      <span class="week-label">Week 25</span>
+      <span class="week-quote">"When your inner light burns steady, no darkness can enter." — Huangdi Neijing</span>
+    </li>
+    <li>
+      <span class="week-label">Week 26</span>
+      <span class="week-quote">"Let praise and blame pass like flowers blooming and falling." — Cai Gen Tan</span>
+    </li>
+    <li>
+      <span class="week-label">Week 27</span>
+      <span class="week-quote">"Heal those above with knowledge. Heal those below with kindness." — Zhang Zhongjing</span>
+    </li>
+  </ul>
 </div>
 
-<h2>🔮 Coming Soon</h2>
-<ul style="margin-left:1.5rem;color:var(--subtle);">
-  <li>Phone lock screen with TCM quotes</li>
-  <li>Printable Ollie coloring page (for your kids — or you)</li>
-  <li>Seasonal wallpaper pack (spring, summer, autumn, winter)</li>
-</ul>
+<!-- ═══════════════════════════════════════════════ -->
+<!-- NOTIFY -->
+<!-- ═══════════════════════════════════════════════ -->
+<div class="notify-box">
+  <p>🦉 New wallpaper every weekend. Bookmark this page or <a href="mailto:tcmway.ollie@outlook.com?subject=Wallpaper%20Reminder">tell Ollie to remind you</a>.</p>
+</div>
 
 <footer>
-  <p><a href="/">← Back to TCM Way</a></p>
-  <p style="margin-top:1rem;">&copy; 2026 TCM Way. All wallpapers free for personal use.</p>
+  <p><a href="/">&larr; Back to TCM Way</a></p>
+  <p style="margin-top:1rem;">&copy; 2026 TCM Way. All wallpapers free for personal use. Quotes sourced from Chinese classical texts, translated by the TCM Way team.</p>
 </footer>
 
 </body>
