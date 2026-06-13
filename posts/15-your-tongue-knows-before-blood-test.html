@@ -79,7 +79,11 @@
 60|  .inner-link { display: inline-block; margin: 1rem 0; padding: 0.6rem 1.2rem; background: var(--light); border: 1px solid var(--border); border-radius: 6px; color: var(--accent); text-decoration: none; font-size: 0.9rem; font-family: -apple-system, sans-serif; }
 61|  .inner-link:hover { background: #fce8d5; }
 62|  @media (max-width: 500px) { .tongue-map { grid-template-columns: 1fr; } }
-63|</style>
+63|
+.post-nav { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+.post-nav a { color: var(--accent); text-decoration: none; font-size: 0.95rem; }
+.post-nav a:hover { text-decoration: underline; }
+</style>
 64|<script>
 65|var _hmt = _hmt || [];
 66|(function() {
@@ -181,10 +185,10 @@
 155|
 156|<p>A blood test, by contrast, is a chemical snapshot. It tells you what your blood contained at the moment the needle went in. It's precise, but it's also narrow — it only measures what it's designed to measure, and only after the imbalance has grown large enough to cross a defined threshold. By the time your iron drops low enough to flag on a CBC, your tongue may have been pale for months.</p>
 157|
-158|<blockquote>
-159|  <p>"Think of blood tests like a security camera that only records after the break-in has already happened. Your tongue is the motion sensor — it detects the footsteps in the hallway while the intruder is still downstairs."</p>
-160|  <p style="text-align:right;font-size:0.9rem;">&mdash; Ollie</p>
-161|</blockquote>
+<blockquote>
+  <p>"Think of blood tests like a security camera that only records after the break-in has already happened. Your tongue is the motion sensor — it detects the footsteps in the hallway while the intruder is still downstairs."</p>
+  <p class="sign">&mdash; Ollie 🦉</p>
+</blockquote>
 162|
 163|
 <div class="tongue-comic" style="text-align: center; margin: 2.5rem 0;">
@@ -383,7 +387,12 @@
     <li><strong>Ni Haixia</strong> (1954–2012) — Ren Ji lectures on diagnostics. Clinical tongue-reading methodology and case studies linking tongue signs to Shanghan Lun patterns.</li>
   </ul>
 
-337|</article>
+337|
+<nav class="post-nav">
+  <a href="14-ten-questions-ancient-doctors-asked.html">&larr; The Diagnostic Gap Nobody Talks About</a>
+  <a href="16-yin-yang-not-good-vs-evil.html">The Seesaw That Only Works When Both Sides Move &rarr;</a>
+</nav>
+</article>
 338|
 339|<div style="text-align: center; margin: 2.5rem 0; padding: 1.5rem; background: var(--light); border-radius: 8px;">
 340|  <p style="margin-bottom: 0.8rem; color: var(--subtle); font-size: 0.9rem;">If you found this valuable, share it:</p>
@@ -404,7 +413,7 @@
   <h2><img src="/images/ollie-mini-80.png" alt="Ollie" style="width:36px;height:36px;vertical-align:middle;margin-right:8px;border-radius:50%;">Ollie Speaks</h2>
   <blockquote class="ollie-speaks">
     <p>Your tongue is the only internal organ that volunteers for show-and-tell every morning. It changes color, shape, and coating in real time — faster than any blood marker. Chinese medicine figured out what each change means over two thousand years of clinical observation. And the best part? You don't need a lab. You need a mirror and about thirty seconds.</p>
-    <p style="text-align:right;font-size:0.9rem;">— Ollie</p>
+    <p class="sign">&mdash; Ollie 🦉</p>
   </blockquote>
 
   <h2>FAQ</h2>
