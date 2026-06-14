@@ -8,9 +8,9 @@
 
 | # | 标题 | 角度 | 备注 |
 |---|------|------|------|
-| S01 | What Zhang Zhongjing Knew That Your Doctor Doesn't | 伤寒论 vs 现代医学思维差异。不是对抗，是互补 | 系列开篇，要有冲击力 |
-| S02 | The Six Layers of Defense You Didn't Know You Had | 六经辨证入门。Taiyang→Shaoyin→Jueyin | 接 #09 六层防御，深化 |
-| S03 | Wind-Cold Is Not A Weather Report | 太阳病。恶寒、发热、脉浮。为什么感冒不是"小事" | 接 #11 |
+| S01 | What Zhang Zhongjing Knew | 伤寒论 vs 现代医学 | ✅ #20 已发布 (2026-06-12) |
+| S02 | The Six Layers of Defense | 六经辨证入门 | ⛔ 跳过：与 #09 语义重叠 |
+| S03 | Wind-Cold Is Not A Weather Report | 太阳病。恶寒、发热、脉浮。| ✅ #22 已发布 (2026-06-14) |
 | S04 | Your Fever Might Be Your Friend | 阳明病。高热、口渴、脉洪大。白虎汤思维 | |
 | S05 | When Your Body Is Stuck Between Two Fires | 少阳病。寒热往来、口苦、胸胁苦满。小柴胡汤 | |
 | S06 | The Spleen Has A Cold. Your Doctor Called It "IBS" | 太阴病。腹满、自利、时腹痛。理中汤 | |
