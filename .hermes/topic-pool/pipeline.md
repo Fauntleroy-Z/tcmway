@@ -11,7 +11,7 @@
 | S01 | What Zhang Zhongjing Knew | 伤寒论 vs 现代医学 | ✅ #20 已发布 (2026-06-12) |
 | S02 | The Six Layers of Defense | 六经辨证入门 | ⛔ 跳过：与 #09 语义重叠 |
 | S03 | Wind-Cold Is Not A Weather Report | 太阳病。恶寒、发热、脉浮。| ✅ #22 已发布 (2026-06-14) |
-| S04 | Your Fever Might Be Your Friend | 阳明病。高热、口渴、脉洪大。白虎汤思维 | |
+| S04 | Your Fever Might Be Your Friend | 阳明病。高热、口渴、脉洪大。白虎汤思维 | ✅ #23 已发布 (2026-06-15) |
 | S05 | When Your Body Is Stuck Between Two Fires | 少阳病。寒热往来、口苦、胸胁苦满。小柴胡汤 | |
 | S06 | The Spleen Has A Cold. Your Doctor Called It "IBS" | 太阴病。腹满、自利、时腹痛。理中汤 | |
 | S07 | Why You're Tired In A Way Coffee Can't Fix | 少阴病。脉微细、但欲寐。四逆汤思维 | |
