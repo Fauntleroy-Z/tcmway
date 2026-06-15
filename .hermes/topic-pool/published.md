@@ -35,3 +35,4 @@ N 系列已完成。下一阶段：**S 系列**（伤寒论实践）。
 | 20 | What Zhang Zhongjing Knew That Your Doctor Doesn't | 2026-06-12 |
 | 21 | Your Body Doesn't Need a Warrior — It Needs a Fire | 2026-06-13 |
 | 22 | Wind-Cold Is Not A Weather Report | 2026-06-14 |
+| 23 | Your Fever Might Be Your Friend | 2026-06-15 |
