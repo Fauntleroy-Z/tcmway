@@ -13,9 +13,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Start Here — TCM Way</title>
-<meta name="description" content="New to TCM Way? Start with these three articles to understand who we are, how we think, and whether this site is for you.">
+<meta name="description" content="New to classical Chinese medicine? A guided reading path through TCM Way — from first concepts to deep understanding.">
 <meta property="og:title" content="Start Here — TCM Way">
-<meta property="og:description" content="New to TCM Way? Start with these three articles to understand who we are, how we think, and whether this site is for you.">
+<meta property="og:description" content="A guided reading path through classical Chinese medicine — from first concepts to deep understanding.">
 <meta property="og:image" content="https://tcmway.net/images/ollie-warm-v3.png">
 <meta property="og:url" content="https://tcmway.net/start-here.html">
 <meta property="og:type" content="website">
@@ -40,38 +40,60 @@
   nav a:hover, nav a.active { color: var(--accent); }
   nav a.active { font-weight: bold; }
   h2 { font-weight: normal; color: var(--accent); margin: 2rem 0 1rem; font-size: 1.4rem; border-left: 4px solid var(--accent-warm); padding-left: 0.8rem; }
-  h3 { font-weight: normal; color: var(--accent); margin: 1.5rem 0 0.8rem; font-size: 1.15rem; }
   p { margin-bottom: 1.2rem; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  .card {
+
+  /* Path section */
+  .path-section { margin: 2rem 0 2.5rem; }
+  .step {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem 1.5rem 3rem;
+    margin: 1rem 0;
+    position: relative;
+  }
+  .step .num {
+    position: absolute;
+    top: 1.5rem; left: 1rem;
+    background: var(--accent);
+    color: white;
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: -apple-system, sans-serif;
+  }
+  .step h3 { font-weight: normal; color: var(--accent); margin: 0 0 0.4rem; font-size: 1.1rem; }
+  .step .desc { color: var(--subtle); font-size: 0.92rem; margin: 0; }
+  .step .links { margin-top: 0.6rem; font-size: 0.9rem; }
+
+  /* Arrow between steps */
+  .arrow { text-align: center; color: var(--accent-warm); font-size: 1.3rem; margin: -0.3rem 0; }
+
+  /* Branch section */
+  .branch { margin: 2rem 0; }
+  .branch h2 { font-size: 1.1rem; margin-top: 3rem; }
+  .branch-card {
     background: white;
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    position: relative;
+    padding: 1rem 1.2rem;
+    margin: 0.8rem 0;
   }
-  .card .number {
-    position: absolute;
-    top: -12px;
-    left: -12px;
-    background: var(--accent);
-    color: white;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 28px;
-    font-size: 0.85rem;
-    font-weight: bold;
-  }
-  .card h2 { margin-top: 0; border-left: none; padding-left: 0; font-size: 1.2rem; }
-  .card p { color: var(--subtle); font-size: 0.95rem; }
-  .card .why { font-style: italic; color: var(--accent); margin-top: 0.8rem; font-size: 0.9rem; }
-  .road { border-left: 2px solid var(--accent-warm); padding-left: 1rem; margin: 1rem 0; }
+  .branch-card strong { color: var(--text); font-weight: normal; }
+  .branch-card .hint { font-size: 0.85rem; color: var(--subtle); margin-top: 0.2rem; }
+
   footer { text-align: center; padding: 2rem 0; color: var(--subtle); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
   footer a { color: var(--accent); text-decoration: none; }
+
+  @media (max-width: 500px) {
+    .step { padding: 1.2rem 1rem 1.2rem 2.5rem; }
+    .step .num { left: 0.6rem; top: 1.2rem; }
+  }
 </style>
 </head>
 <body>
@@ -82,70 +104,101 @@
   <nav>
     <a href="/">Home</a>
     <a href="/about.html">About</a>
-    <a href="/start-here.html">Start Here</a>
     <a href="/start-here.html" class="active">Start Here</a>
     <a href="/about-owl.html">The Owl</a>
     <a href="/rss.xml">RSS</a>
   </nav>
 </header>
 
-<h2>Welcome. You're in the Right Place.</h2>
+<h2>A Reading Path Through Classical Chinese Medicine</h2>
 
-<p>Classical Chinese medicine is vast. 2,000 years of texts. Hundreds of concepts. A language that doesn't translate neatly into English. If you've landed here and aren't sure where to begin, this page is for you.</p>
+<p>You don't need to read 24 articles. You need to read the right ones in the right order. This path takes you from <em>"What is Qi?"</em> to <em>"I understand how this system works"</em> in five articles. After that, follow the branches that interest you.</p>
 
-<p>Below are three articles. Not the "best" ones — the ones that answer the question every new reader asks: <strong>Who are you, and should I trust you?</strong></p>
+<!-- ═══ TIER 1: Entry ═══ -->
+<div class="path-section">
+  <h2 style="font-size:1.05rem; margin-top:0.5rem; border-left-color:var(--subtle);">① Entry — Meet the Voice</h2>
 
-<p>Read them in order. By the end, you'll know whether TCM Way is worth your time.</p>
-
-<!-- CARD 1: The Framework -->
-<div class="card">
-  <div class="number">1</div>
-  <h2><a href="/posts/09-six-layer-defense.html">6 Signs Your Body's Defense System Is Working</a></h2>
-  <p>Your body has six layers of defense — from the surface of your skin to the deepest core. This is the Shanghan Lun's master framework, the scaffold everything else hangs on. Read this to understand <em>how</em> we think about illness at TCM Way.</p>
-  <p class="why">→ Why this one: It shows you the framework. If you only read one article, make it this one.</p>
+  <div class="step">
+    <div class="num">1</div>
+    <h3>Why a 1,800-Year-Old Book Matters Now</h3>
+    <p class="desc">Who is behind this blog, and why does classical Chinese medicine belong in 2026? The mission statement — and the confession.</p>
+    <p class="links"><a href="/posts/01-why-i-share-tcm-with-the-west.html">Read →</a></p>
+  </div>
 </div>
 
-<!-- CARD 2: The Voice -->
-<div class="card">
-  <div class="number">2</div>
-  <h2><a href="/posts/01-why-i-share-tcm-with-the-west.html">What a 1,800-Year-Old Book Taught Me About Anxiety</a></h2>
-  <p>The first post on this blog. It explains why a person with a full-time job in international trade decided to spend their nights translating ancient Chinese medicine into English — and what AI anxiety has to do with it.</p>
-  <p class="why">→ Why this one: It shows you the voice. You'll know immediately if this is the kind of person you want to learn from.</p>
+<!-- ═══ TIER 2: Core Framework ═══ -->
+<div class="path-section">
+  <h2 style="font-size:1.05rem; margin-top:0.5rem; border-left-color:var(--subtle);">② Core — Learn the Framework</h2>
+
+  <div class="step">
+    <div class="num">2</div>
+    <h3>Qi Isn't Magic — It's Your Body's Operating System</h3>
+    <p class="desc">The most misunderstood word in Chinese medicine. Once you understand Qi as functional energy rather than mystical force, everything else clicks.</p>
+    <p class="links"><a href="/posts/03-qi-is-not-magic.html">Read →</a></p>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="step">
+    <div class="num">3</div>
+    <h3>Yin-Yang Is Not Good vs. Evil</h3>
+    <p class="desc">It's balance, not battle. The simplest concept in Chinese medicine — and the one most Westerners get wrong.</p>
+    <p class="links"><a href="/posts/16-yin-yang-not-good-vs-evil.html">Read →</a></p>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="step">
+    <div class="num">4</div>
+    <h3>6 Signs Your Body's Defense System Is Working</h3>
+    <p class="desc">This is the master framework: the Shanghan Lun's six-layer defense. Everything else on this site orbits around this.</p>
+    <p class="links"><a href="/posts/09-six-layer-defense.html">Read →</a></p>
+  </div>
 </div>
 
-<!-- CARD 3: The Scholarship -->
-<div class="card">
-  <div class="number">3</div>
-  <h2><a href="/posts/20-what-zhang-zhongjing-knew.html">What Zhang Zhongjing Knew That We Forgot</a></h2>
-  <p>Zhang Zhongjing wrote the Shanghan Lun around 200 AD. He wasn't a mystic — he was a careful observer who documented patterns that modern medicine is only now rediscovering. This article shows how TCM Way grounds itself in the classics, not in wellness trends.</p>
-  <p class="why">→ Why this one: It shows you the scholarship. You'll see how we cite sources, how we translate without dumbing down, and where the ideas actually come from.</p>
+<!-- ═══ TIER 3: Scholarship ═══ -->
+<div class="path-section">
+  <h2 style="font-size:1.05rem; margin-top:0.5rem; border-left-color:var(--subtle);">③ Trust — See the Scholarship</h2>
+
+  <div class="step">
+    <div class="num">5</div>
+    <h3>What Zhang Zhongjing Knew That We Forgot</h3>
+    <p class="desc">The 2nd-century physician behind the Shanghan Lun. Not a mystic — a careful observer whose framework modern science is only now catching up to.</p>
+    <p class="links"><a href="/posts/20-what-zhang-zhongjing-knew.html">Read →</a></p>
+  </div>
 </div>
 
-<h2>After That?</h2>
 
-<p>If those three resonate, you're ready to explore. Here are three paths:</p>
+<!-- ═══ BRANCHES ═══ -->
+<h2>Where to Go Next</h2>
 
-<div class="road">
-  <p><strong>Understanding Your Body's Defense</strong> → <a href="/category/taiyang.html">Cold &amp; Defense (Taiyang)</a><br>
-  <span style="color:var(--subtle);font-size:0.9rem;">Why do colds happen? What is a fever really doing? How does wind make you sick?</span></p>
+<p>You now have the core framework. Follow the thread that draws you:</p>
+
+<div class="branch">
+  <div class="branch-card">
+    <a href="/category/taiyang.html"><strong>🛡️ Cold &amp; Defense</strong></a>
+    <p class="hint">Why wind makes you sick. What a fever really is. How your body's surface layer protects you. (Taiyang · 4 articles)</p>
+  </div>
+
+  <div class="branch-card">
+    <a href="/category/yangming.html"><strong>🔥 Heat &amp; Digestion</strong></a>
+    <p class="hint">What happens when the body runs hot. The connection between digestion, dampness, and energy. (Yangming · 3 articles)</p>
+  </div>
+
+  <div class="branch-card">
+    <a href="/category/shaoyang.html"><strong>⚖️ Balance &amp; Emotions</strong></a>
+    <p class="hint">Stuck Qi. The Liver. Why emotions land in your body. The half-external-half-internal space. (Shaoyang · 5 articles)</p>
+  </div>
+
+  <div class="branch-card">
+    <a href="/category/foundations.html"><strong>📚 Foundations</strong></a>
+    <p class="hint">Five Elements. Body clock. Diagnosis. The building blocks. (12 articles)</p>
+  </div>
 </div>
 
-<div class="road">
-  <p><strong>Digestion, Heat &amp; What You Eat</strong> → <a href="/category/yangming.html">Heat &amp; Digestion (Yangming)</a><br>
-  <span style="color:var(--subtle);font-size:0.9rem;">Why do you feel heavy after eating? What's the connection between digestion and energy?</span></p>
-</div>
-
-<div class="road">
-  <p><strong>Emotions, Balance &amp; Getting Unstuck</strong> → <a href="/category/shaoyang.html">Balance &amp; Emotions (Shaoyang)</a><br>
-  <span style="color:var(--subtle);font-size:0.9rem;">Why do emotions affect your body? What does "stuck Qi" actually feel like?</span></p>
-</div>
-
-<div class="road">
-  <p><strong>The Core Concepts</strong> → <a href="/category/foundations.html">Foundations</a><br>
-  <span style="color:var(--subtle);font-size:0.9rem;">Qi, Yin-Yang, Five Elements, diagnosis — the building blocks.</span></p>
-</div>
-
-<p style="margin-top:2.5rem;">Still not sure? <a href="/about.html">Read about who's behind the owl</a>, or <a href="mailto:ollie@tcmway.net">send me an email</a>. I read every message.</p>
+<p style="margin-top:2rem; text-align:center; font-size:0.9rem; color:var(--subtle);">
+  Questions? <a href="mailto:ollie@tcmway.net">Reply by email</a>. I read every message — and good questions become future articles.
+</p>
 
 <footer>
   <p>&copy; 2026 <a href="/">TCM Way</a> &mdash; Classical Chinese medicine, translated for the modern mind.</p>
