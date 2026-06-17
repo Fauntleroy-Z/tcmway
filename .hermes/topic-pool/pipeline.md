@@ -34,6 +34,12 @@
 | I02 | The Physics Of Acupuncture (No, It's Not Magic) | 筋膜、神经、生物电。TCM 解释 vs 现代科学验证 | |
 | I03 | Why Chinese Grandmothers Were Right About Ginger Tea | 民间智慧背后的 TCM 逻辑 | |
 
+### 🏥 待拓展：体质调理系列（黄帝内经+伤寒论完结后）
+
+| # | 标题 | 角度 | 数据来源 | 备注 |
+|---|------|------|----------|------|
+| A01 | Weight Loss The TCM Way — It's Not About The Calories | 肥胖=脾胃运化失常+痰湿体质。TCM减肥≠节食=恢复气化功能。中西医数据双线：西医（头痛↓57%、抑郁↓55%、脂肪肝↓90%、2型糖尿病↓83%、5年死亡率↓89%）+ 中医（健脾化湿、疏肝理气、温阳利水） | 人民日报信息图（2026-06-15存档） | S01-S08 完结后启动 |
+
 ---
 
 ## 已发布
