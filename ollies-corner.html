@@ -48,7 +48,7 @@
     border-bottom: 2px solid var(--border);
     margin-bottom: 2rem;
   }
-  header img.brand { display: block; margin: 0 auto 0.8rem; width: 80px; height: 80px; }
+  header img.brand-symbol { display: block; margin: 0 auto 0.8rem; width: 80px; height: 80px; }
   header h1 { font-size: 2rem; font-weight: normal; color: var(--accent); letter-spacing: 0.06em; }
   header p.subtitle { color: var(--subtle); font-style: italic; margin-top: 0.5rem; }
   nav { margin-top: 1rem; }
@@ -181,7 +181,23 @@
     .quote-hero .quote-text { font-size: 1.15rem; }
     header h1 { font-size: 1.6rem; }
   }
+  @media print {
+    nav, .wallpaper-card .btn, .notify-box { display: none; }
+    body { max-width: 100%; color: #000; }
+    .quote-hero { border: 1px solid #ccc; }
+  }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Ollie's Corner — Free Wallpapers & Weekly Zen",
+  "description": "Free Ollie wallpapers updated weekly, each with a classical Chinese zen quote translated for the modern mind.",
+  "url": "https://tcmway.net/ollies-corner.html",
+  "isPartOf": { "@type": "WebSite", "name": "TCM Way", "url": "https://tcmway.net/" },
+  "about": { "@type": "Thing", "name": "Traditional Chinese Medicine", "description": "Ollie the Screech Owl explores TCM wisdom through comics, stories, and weekly wallpapers." }
+}
+</script>
 </head>
 <body>
 
@@ -222,19 +238,19 @@
 
 <div class="wallpaper-grid">
   <div class="wallpaper-card">
-    <img src="images/ollie-corner/wallpapers/ollie-desktop-w24.png?v=9" alt="Ollie desktop wallpaper — The best kindness flows like water" loading="lazy">
+    <img src="images/ollie-corner/wallpapers/ollie-desktop-w24.png" alt="Ollie desktop wallpaper — The best kindness flows like water" loading="lazy">
     <div class="info">
       <div class="label">Desktop</div>
       <div class="dim">2560 × 1440</div>
-      <a href="images/ollie-corner/wallpapers/ollie-desktop-w24.png?v=9" download class="btn">Download</a>
+      <a href="images/ollie-corner/wallpapers/ollie-desktop-w24.png" download class="btn">Download</a>
     </div>
   </div>
   <div class="wallpaper-card">
-    <img src="images/ollie-corner/wallpapers/ollie-phone-w24.png?v=9" alt="Ollie phone wallpaper — The best kindness flows like water" loading="lazy">
+    <img src="images/ollie-corner/wallpapers/ollie-phone-w24.png" alt="Ollie phone wallpaper — The best kindness flows like water" loading="lazy">
     <div class="info">
       <div class="label">Phone</div>
       <div class="dim">1290 × 2796</div>
-      <a href="images/ollie-corner/wallpapers/ollie-phone-w24.png?v=9" download class="btn">Download</a>
+      <a href="images/ollie-corner/wallpapers/ollie-phone-w24.png" download class="btn">Download</a>
     </div>
   </div>
 </div>
@@ -243,18 +259,18 @@
 <!-- ARCHIVE — 往期 -->
 <!-- ═══════════════════════════════════════════════ -->
 <div class="archive">
-  <h3>Coming Weeks (Preview)</h3>
+  <h3>Coming Weeks</h3>
   <ul>
     <li>
-      <span class="week-label">Week 25</span>
+      <span class="week-label">Week 25 · Jun 21–27</span>
       <span class="week-quote">"When your inner light burns steady, no darkness can enter." — Huangdi Neijing</span>
     </li>
     <li>
-      <span class="week-label">Week 26</span>
+      <span class="week-label">Week 26 · Jun 28–Jul 4</span>
       <span class="week-quote">"Let praise and blame pass like flowers blooming and falling." — Cai Gen Tan</span>
     </li>
     <li>
-      <span class="week-label">Week 27</span>
+      <span class="week-label">Week 27 · Jul 5–11</span>
       <span class="week-quote">"Heal those above with knowledge. Heal those below with kindness." — Zhang Zhongjing</span>
     </li>
   </ul>
@@ -264,11 +280,16 @@
 <!-- NOTIFY -->
 <!-- ═══════════════════════════════════════════════ -->
 <div class="notify-box">
-  <p><img src="images/ollie-mini-80.png" alt="Ollie" style="width:22px;height:22px;vertical-align:middle;border-radius:50%;margin-right:4px;"> New wallpaper every weekend. Bookmark this page or <a href="mailto:ollie@tcmway.net?subject=Wallpaper%20Reminder">tell Ollie to remind you</a>.</p>
+  <p><img src="images/ollie-mini-80.png" alt="Ollie the TCM Owl" style="width:22px;height:22px;vertical-align:middle;border-radius:50%;margin-right:4px;"> New wallpaper every weekend. Bookmark this page or <a href="mailto:ollie@tcmway.net?subject=Wallpaper%20Reminder">tell Ollie to remind you</a>.</p>
 </div>
 
 <footer>
   <p><a href="/">&larr; Back to TCM Way</a></p>
+  <p style="margin-top:1rem;">
+    <a href="/disclaimer.html">Disclaimer</a> &middot;
+    <a href="/privacy.html">Privacy</a> &middot;
+    <a href="/contact.html">Contact</a>
+  </p>
   <p style="margin-top:1rem;">&copy; 2026 TCM Way. All wallpapers free for personal use. Quotes sourced from Chinese classical texts, translated by the TCM Way team.</p>
   <p style="margin-top:0.5rem;font-size:0.85rem;color:var(--subtle,#888);max-width:520px;margin-left:auto;margin-right:auto;">The quotes and wallpapers on this page are for inspiration and personal enjoyment only. They do not constitute medical advice, diagnosis, or treatment.</p>
 </footer>
