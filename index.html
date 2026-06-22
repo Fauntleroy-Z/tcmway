@@ -1,501 +1,517 @@
-1|<!DOCTYPE html>
-2|<html lang="en">
-3|<head>
-4|<!-- Google tag (gtag.js) -->
-5|<script async src="https://www.googletagmanager.com/gtag/js?id=G-G9S528TPWH"></script>
-6|<script>
-7|  window.dataLayer = window.dataLayer || [];
-8|  function gtag(){dataLayer.push(arguments);}
-9|  gtag('js', new Date());
-10|  gtag('config', 'G-G9S528TPWH');
-11|</script>
-12|
-13|
-14|<meta charset="UTF-8">
-15|<meta name="p:domain_verify" content="bb7223a30fb9fe953d5a2f7068a3e9c3"/>
-16|<meta name="viewport" content="width=device-width, initial-scale=1.0">
-17|<title>TCM Way — Ancient Wisdom, Told Warmly</title>
-18|<meta name="description" content="Bringing authentic Chinese medicine philosophy — especially Shanghan Lun and classical traditions — to the English-speaking world. By Ollie, a TCM practitioner and lifelong learner.">
-19|<meta property="og:title" content="TCM Way — Ancient Wisdom, Told Warmly">
-20|<meta property="og:description" content="Bringing authentic Chinese medicine philosophy to the English-speaking world. Ancient wisdom, told warmly.">
-21|<meta property="og:image" content="https://tcmway.net/images/ollie-warm-v3.png">
-22|<meta property="og:url" content="https://tcmway.net/">
-23|<meta property="og:type" content="website">
-24|<meta property="og:site_name" content="TCM Way">
-25|<meta name="twitter:card" content="summary_large_image">
-26|<link rel="alternate" type="application/rss+xml" title="TCM Way RSS Feed" href="https://tcmway.net/rss.xml">
-27|<style>
-28|  :root {
-29|    --bg: #fdf6ee;
-30|    --text: #3b2a1a;
-31|    --accent: #b83a2a;
-32|    --accent-warm: #e8a87c;
-33|    --light: #fef0e2;
-34|    --border: #e8d5c0;
-35|    --subtle: #8a6d54;
-36|    --gold: #c9a84c;
-37|  }
-38|
-39|  * { margin: 0; padding: 0; box-sizing: border-box; }
-40|
-41|  body {
-42|    font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif;
-43|    background: var(--bg);
-44|    color: var(--text);
-45|    line-height: 2;
-46|    max-width: 720px;
-47|    margin: 0 auto;
-48|    padding: 0 1.5rem 3rem;
-49|  }
-50|
-51|  /* —— Brand Header (Direction B: 赤縁) —— */
-52|  header {
-53|    text-align: center;
-54|    padding: 3rem 0 2rem;
-55|    border-bottom: 2px solid var(--border);
-56|    margin-bottom: 2.5rem;
-57|  }
-58|
-59|  .brand-symbol {
-60|    display: block;
-61|    margin: 0 auto 1rem;
-62|    width: 80px;
-63|    height: 80px;
-64|  }
-65|
-66|  header h1 {
-67|    font-family: Georgia, 'Times New Roman', serif;
-68|    font-size: 2.8rem;
-69|    font-weight: 700;
-70|    letter-spacing: 0.12em;
-71|    color: var(--accent);
-72|    position: relative;
-73|    display: inline-block;
-74|  }
-75|
-76|  /* 手工感下划线 */
-77|  header h1::after {
-78|    content: "";
-79|    position: absolute;
-80|    bottom: -8px;
-81|    left: 5%;
-82|    width: 90%;
-83|    height: 3px;
-84|    background: linear-gradient(90deg, transparent, var(--accent-warm), var(--accent), var(--accent-warm), transparent);
-85|    border-radius: 2px;
-86|  }
-87|
-88|  header p {
-89|    color: var(--subtle);
-90|    font-style: italic;
-91|    margin-top: 1.2rem;
-92|    font-size: 1.05rem;
-93|    letter-spacing: 0.02em;
-94|  }
-95|
-96|  nav {
-97|    margin-top: 1.5rem;
-98|  }
-99|
-100|  nav a {
-101|    color: var(--subtle);
-102|    text-decoration: none;
-103|    margin: 0 0.8rem;
-104|    font-size: 0.9rem;
-105|    letter-spacing: 0.06em;
-106|    font-family: Georgia, serif;
-107|    transition: color 0.3s;
-108|    position: relative;
-109|  }
-110|
-111|  nav a:hover { color: var(--accent); }
-112|
-113|  /* —— Newsletter Signup —— */
-114|  .subscribe-box {
-115|    background: var(--light);
-116|    border: 1px solid var(--border);
-117|    border-radius: 6px;
-118|    padding: 1.8rem 2rem;
-119|    margin: 2rem 0 3rem;
-120|    text-align: center;
-121|    position: relative;
-122|    overflow: hidden;
-123|  }
-124|
-125|  .subscribe-box::before {
-126|    content: "";
-127|    position: absolute;
-128|    top: -20px;
-129|    right: -20px;
-130|    width: 80px;
-131|    height: 80px;
-132|    background: var(--accent);
-133|    opacity: 0.06;
-134|    border-radius: 50%;
-135|  }
-136|
-137|  .subscribe-box p {
-138|    color: var(--subtle);
-139|    margin-bottom: 0.6rem;
-140|    font-size: 0.95rem;
-141|  }
-142|
-143|  .subscribe-box a {
-144|    display: inline-block;
-145|    background: var(--accent);
-146|    color: white;
-147|    padding: 0.65rem 2.2rem;
-148|    text-decoration: none;
-149|    border-radius: 6px;
-150|    font-family: -apple-system, 'Helvetica Neue', sans-serif;
-151|    font-size: 0.92rem;
-152|    letter-spacing: 0.04em;
-153|    transition: background 0.3s;
-154|  }
-155|
-156|  .subscribe-box a:hover { background: #a03020; }
-157|
-158|  /* —— Post List —— */
-159|  .post {
-160|    margin-bottom: 2.5rem;
-161|    padding-bottom: 2rem;
-162|    border-bottom: 1px solid var(--border);
-163|  }
-164|
-165|  .post h2 {
-166|    font-weight: 700;
-167|    font-size: 1.3rem;
-168|    margin-bottom: 0.3rem;
-169|    line-height: 1.5;
-170|    letter-spacing: 0.01em;
-171|  }
-172|
-173|  .post h2 a {
-174|    color: var(--text);
-175|    text-decoration: none;
-176|    transition: color 0.2s;
-177|  }
-178|
-179|  .post h2 a:hover { color: var(--accent); }
-180|
-181|  .post .date {
-182|    color: var(--subtle);
-183|    font-size: 0.82rem;
-184|    letter-spacing: 0.06em;
-185|    margin-bottom: 0.6rem;
-186|    font-family: -apple-system, sans-serif;
-187|    text-transform: uppercase;
-188|  }
-189|
-190|  .post .excerpt {
-191|    color: var(--subtle);
-192|    font-size: 0.95rem;
-193|    line-height: 1.8;
-194|  }
-195|
-196|  .mini-owl {
-197|    width: 22px;
-198|    height: 22px;
-199|    border-radius: 50%;
-200|    vertical-align: middle;
-201|    margin-right: 6px;
-202|    object-fit: cover;
-203|  }
-204|
-205|  /* —— Coming Soon —— */
-206|  .post-coming {
-207|    opacity: 0.5;
-208|  }
-209|
-210|  /* —— Footer —— */
-211|  footer {
-212|    text-align: center;
-213|    padding: 3rem 0 1rem;
-214|    color: var(--subtle);
-215|    font-size: 0.82rem;
-216|    border-top: 2px solid var(--border);
-217|    margin-top: 3rem;
-218|    letter-spacing: 0.04em;
-219|    line-height: 2;
-220|  }
-221|
-222|  footer a {
-223|    color: var(--accent);
-224|    text-decoration: none;
-225|    transition: color 0.2s;
-226|  }
-227|
-228|  footer a:hover { color: var(--gold); }
-229|</style>
-230|<script>
-231|var _hmt = _hmt || [];
-232|(function() {
-233|  var hm = document.createElement("script");
-234|  hm.src = "https://hm.baidu.com/hm.js?44f28eb4eacca95fb6aeacca17dd57d5";
-235|  var s = document.getElementsByTagName("script")[0];
-236|  s.parentNode.insertBefore(hm, s);
-237|})();
-238|</script>
-239|</head>
-240|<body>
-241|
-242|<header>
-243|  <!-- Ollie 印章图标 -->
-244|    <img src="/images/ollie-mini-80.png" class="brand-symbol" alt="Ollie the TCM Owl — Screech Owl" style="display:block;margin:0 auto 1rem;width:80px;height:80px;">
-245|
-246|  <h1>TCM Way</h1>
-247|  <p>Ancient Wisdom, Told Warmly</p>
-248|
-249|  <nav>
-250|    <a href="/">Home</a>
-251|    <a href="/about.html">About</a>
-252|    <a href="/start-here.html">Start Here</a>
-253|    <a href="/about-owl.html">The Owl</a>
-254|    <a href="/contact.html">Contact</a>
-255|    <a href="/ollies-corner.html">Ollie's Corner</a>
-256|    <a href="/disclaimer.html">Disclaimer</a>
-257|    <a href="/rss.xml">RSS</a>
-258|  </nav>
-259|</header>
-260|
-261|<section class="subscribe-box">
-262|  <p style="font-size:1.05rem; margin-bottom:0.8rem;"><strong>Letters on classical Chinese medicine,</strong> delivered to your inbox.</p>
-263|  <p style="font-size:0.88rem; color:var(--subtle); margin-bottom:1.2rem;">No spam. No hype. Just one carefully written letter at a time.</p>
-264|  <form class="subscribe-form" action="https://docs.google.com/forms/d/e/1FAIpQLSenD-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX... [truncated]
-265|    <input type="email" name="entry.1000000000" placeholder="you@email.com" required style="padding:0.6rem 1rem; border:1px solid var(--border); border-radius:6px; font-size:0.95rem; width:70%; max-width:280px; font-family:inherit;">
-266|    <button type="submit" style="padding:0.6rem 1.5rem; background:var(--accent); color:white; border:none; border-radius:6px; font-size:0.92rem; cursor:pointer; margin-left:0.5rem; font-family:-apple-system,sans-serif;">Subscribe</button>
-267|  </form>
-268|  <p style="font-size:0.78rem; color:var(--subtle); margin-top:0.7rem; opacity:0.7;">We respect your inbox. Unsubscribe anytime.</p>
-269|</section>
-270|<script>
-271|function subscribedSucces(form) {
-272|  var email = form.querySelector('input[type="email"]').value;
-273|  var btn = form.querySelector('button');
-274|  btn.textContent = 'Done ✓';
-275|  btn.style.background = '#2e7d32';
-276|  form.querySelector('input').style.display = 'none';
-277|  form.parentNode.querySelector('p:last-child').textContent = 'Welcome aboard. We\'ll be in touch.';
-278|}
-279|</script>
-280|
-281|<!-- ═══ CATEGORY CARDS ═══ -->
-282|  <section class="category-cards" style="display:grid; grid-template-columns:1fr 1fr; gap:0.8rem; margin:2.5rem 0 1.5rem;">
-283|    <a href="/category/foundations.html" style="text-decoration:none; background:white; border:1px solid var(--border); border-radius:8px; padding:1rem 1.2rem; display:block;">
-284|      <div style="font-size:1.05rem; color:var(--accent); font-weight:normal; margin-bottom:0.3rem;">📚 Foundations</div>
-285|      <div style="font-size:0.82rem; color:var(--subtle);">Qi · Yin-Yang · Five Elements · Diagnosis</div>
-286|      <div style="font-size:0.78rem; color:var(--accent-warm); margin-top:0.3rem;">12 articles</div>
-287|    </a>
-288|    <a href="/category/taiyang.html" style="text-decoration:none; background:white; border:1px solid var(--border); border-radius:8px; padding:1rem 1.2rem; display:block;">
-289|      <div style="font-size:1.05rem; color:var(--accent); font-weight:normal; margin-bottom:0.3rem;">🛡️ Cold &amp; Defense</div>
-290|      <div style="font-size:0.82rem; color:var(--subtle);">Wind-Cold · Fever · Body's Surface</div>
-291|      <div style="font-size:0.78rem; color:var(--accent-warm); margin-top:0.3rem;">4 articles · Taiyang</div>
-292|    </a>
-293|    <a href="/category/yangming.html" style="text-decoration:none; background:white; border:1px solid var(--border); border-radius:8px; padding:1rem 1.2rem; display:block;">
-294|      <div style="font-size:1.05rem; color:var(--accent); font-weight:normal; margin-bottom:0.3rem;">🔥 Heat &amp; Digestion</div>
-295|      <div style="font-size:0.82rem; color:var(--subtle);">Internal Heat · Dampness · Fever</div>
-296|      <div style="font-size:0.78rem; color:var(--accent-warm); margin-top:0.3rem;">3 articles · Yangming</div>
-297|    </a>
-298|    <a href="/category/shaoyang.html" style="text-decoration:none; background:white; border:1px solid var(--border); border-radius:8px; padding:1rem 1.2rem; display:block;">
-299|      <div style="font-size:1.05rem; color:var(--accent); font-weight:normal; margin-bottom:0.3rem;">⚖️ Balance &amp; Emotions</div>
-300|      <div style="font-size:0.82rem; color:var(--subtle);">Stuck Qi · Liver · Emotions</div>
-301|      <div style="font-size:0.78rem; color:var(--accent-warm); margin-top:0.3rem;">5 articles · Shaoyang</div>
-302|    </a>
-303|  </section>
-304|
-305|  <div style="text-align:center; margin-bottom:2.5rem;">
-306|    <a href="/start-here.html" style="color:var(--accent); font-size:0.92rem;">New here? → Start Here</a>
-307|  </div>
-308|
-309|  <h2 style="font-weight:normal; color:var(--accent); font-size:1.3rem; border-left:4px solid var(--accent-warm); padding-left:0.8rem; margin:2rem 0 1rem;">Latest Articles</h2>
-310|
-311|  <div class="post">
-312|  <h2><a href="posts/01-why-i-share-tcm-with-the-west.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">What a 1,800-Year-Old Book Taught Me About Anxiety — And Why the West Deserves to Hear It</a></h2>
-313|  <div class="date">May 20, 2026 · By Ollie</div>
-314|  <div class="excerpt">
-315|    <p>In a world accelerating toward AI and automation, why would anyone spend time studying thousand-year-old medical texts? The answer surprised even me: because the faster the world moves, the more we need something rooted.</p>
-316|  </div>
-317|</div>
-318|
-319|<div class="post">
-320|  <h2><a href="posts/02-exhausted-after-sleep.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">8 Hours of Sleep, Still Wrecked? Your Organs Run a Night Shift — And Yours Called In Sick</a></h2>
-321|  <div class="date">May 21, 2026 · By Ollie</div>
-322|  <div class="excerpt">
-323|    <p>You slept eight hours. You still feel wrecked. Traditional Chinese Medicine has a different answer — and it isn't "sleep more." Meet your body's night shift.</p>
-324|  </div>
-325|</div>
-326|
-327|<div class="post">
-328|  <h2><a href="posts/03-qi-is-not-magic.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Qi Isn't Magic. It's Your Body's OS — Running Without Updates Since 200 BC</a></h2>
-329|  <div class="date">May 22, 2026 · By Ollie</div>
-330|  <div class="excerpt">
-331|    <p>You've heard the word "Qi" a thousand times. It's not mystical energy — it's your body's most practical operating system, explained 2,200 years ago in the Huangdi Neijing.</p>
-332|  </div>
-333|</div>
-334|
-335|<div class="post">
-336|  <h2><a href="posts/04-traffic-jam-inside-your-body.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Why Your Body Is Like a Traffic Jam (And How to Unstick Yourself)</a></h2>
-337|  <div class="date">May 23, 2026 · By Ollie</div>
-338|  <div class="excerpt">
-339|    <p>That tight feeling in your chest, the sigh you can't suppress, the headache that won't quit — TCM calls it "Qi stagnation." Think of it as a traffic jam inside your body. Here's how to clear the lanes.</p>
-340|  </div>
-341|</div>
-342|
-343|<div class="post">
-344|  <h2><a href="posts/05-body-clock-you-didnt-set.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Your Body Runs on a Clock You Didn't Set — Why 3 AM Is Never Random</a></h2>
-345|  <div class="date">May 24, 2026 · By Ollie</div>
-346|  <div class="excerpt">
-347|    <p>You wake at 3 AM every night. Appetite vanishes at noon. Brain fog hits at 2 PM. TCM says your organs punch in and out on a schedule that predates mechanical clocks — and your body has been following it your entire life.</p>
-348|  </div>
-349|</div>
-350|
-351|<div class="post">
-352|  <h2><a href="posts/06-that-heavy-feeling-its-not-laziness.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">That Heavy Feeling in Your Limbs? It's Not Laziness.</a></h2>
-353|  <div class="date">May 25, 2026 · By Ollie</div>
-354|  <div class="excerpt">
-355|    <p>Your arms feel like lead. You've been called lazy your whole life. TCM says it's not your willpower — it's your Spleen sending an SOS nobody taught you to read.</p>
-356|  </div>
-357|</div>
-358|
-359|<div class="post">
-360|  <h2><a href="posts/07-six-signs-of-health.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">6 Signs You're Actually Healthy (And Why Your Lab Results Don't Tell the Whole Story)</a></h2>
-361|  <div class="date">May 26, 2026 · By Ollie</div>
-362|  <div class="excerpt">
-363|    <p>Your bloodwork came back "normal." So why do you still feel off? A 2,000-year-old health checklist that asks questions your doctor never does.</p>
-364|  </div>
-365|</div>
-366|
-367|<div class="post">
-368|  <h2><a href="posts/08-why-cold-hands-warn-you.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Why Your Cold Hands Are Warning You</a></h2>
-369|  <div class="date">May 27, 2026 · By Ollie</div>
-370|  <div class="excerpt">
-371|    <p>You know that thing where you put on gloves indoors? And your partner jokes about your "ice block feet" at night? TCM says cold hands aren't just poor circulation — they're an early warning system you've been ignoring your whole life.</p>
-372|  </div>
-373|</div>
-374|
-375|<div class="post">
-376|  <h2><a href="posts/09-six-layer-defense.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">The Castle Inside You: Your Body's 6-Layer Defense System</a></h2>
-377|  <div class="date">May 28, 2026 · By Ollie</div>
-378|  <div class="excerpt">
-379|    <p>Your body doesn't just "get sick." It fights through six layers of defense, like an ancient castle. Understanding this map changes how you see every cold, every fever, every chronic illness.</p>
-380|  </div>
-381|</div>
-382|
-383|<div class="post">
-384|  <h2><a href="posts/10-stop-feeding-what-you-fight.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Stop Feeding What You're Trying to Fight</a></h2>
-385|  <div class="date">May 29, 2026 · By Ollie</div>
-386|  <div class="excerpt">
-387|    <p>You spend $50 a month on vitamins. Chinese medicine asks: who else are you feeding? The ancient insight that nutrition doesn't discriminate between you and your disease — and what to do instead.</p>
-388|  </div>
-389|</div>
-390|
-391|<div class="post">
-392|  <h2><a href="posts/11-cold-is-never-just-a-cold.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">It's Just a Cold — Why Chinese Medicine Thinks That's the Most Dangerous Sentence</a></h2>
-393|  <div class="date">May 31, 2026 · By Ollie</div>
-394|  <div class="excerpt">
-395|    <p>Everyone says "it's just a cold" and pops a pill. TCM sees a pathogen marching through your body's defenses — and if you ignore it, it doesn't forget where you live. A 2,000-year-old map of what happens to the cold you never shook.</p>
-396|  </div>
-397|</div>
-398|
-399|<!-- Article 12: June 1, 2026 -->
-400|<div class="post">
-401|  <h2><a href="posts/12-liver-rules-everything.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Your Shoulder Pain, Your IBS, Your Insomnia — They Might All Be Saying the Same Thing</a></h2>
-402|  <div class="date">June 1, 2026 · By Ollie</div>
-403|  <div class="excerpt">
-404|    <p>You've seen five specialists for five symptoms. TCM says they all trace back to one organ. Meet your Liver — the General who's been running the show since before you were born.</p>
-405|  </div>
-406|</div>
-407|
-408|<!-- Article 13: June 2, 2026 -->
-409|<div class="post">
-410|  <h2><a href="posts/13-medicine-character-contains-music.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">The Chinese Character for 'Medicine' Contains Music — What Ancient China Knew About Sound Healing</a></h2>
-411|  <div class="date">June 2, 2026 · By Ollie</div>
-412|  <div class="excerpt">
-413|    <p>The character 藥 breaks down into 艹 (herbs) and 樂 (music). This isn't a coincidence — ancient Chinese doctors had a five-tone healing system that mapped musical notes to organs. Modern neuroscience is catching up.</p>
-414|  </div>
-415|</div>
-416|
-417|<!-- Article 14: June 4, 2026 -->
-418|<div class="post">
-419|  <h2><a href="posts/14-ten-questions-ancient-doctors-asked.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">10 Questions Ancient Chinese Doctors Asked (That Yours Never Will)</a></h2>
-420|  <div class="date">June 4, 2026 · By Ollie</div>
-421|  <div class="excerpt">
-422|    <p>When was the last time a doctor asked whether your hands are warm or cold — and listened to the answer? Chinese medicine's 2,000-year-old Ten Questions (十问歌) framework maps simple answers to organ function, catching what lab panels were never designed to see.</p>
-423|  </div>
-424|</div>
-425|
-426|<div class="post">
-427|  <h2><a href="posts/15-your-tongue-knows-before-blood-test.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Your Tongue Knows Before Your Blood Test Does</a></h2>
-428|  <div class="date">June 5, 2026 · By Ollie</div>
-429|  <div class="excerpt">
-430|    <p>Your tongue is the only internal organ you can see without a scalpel. For 2,000 years Chinese medicine has read its color, shape, coating, and moisture like a dashboard — spotting patterns days or weeks before blood markers shift. Here's what yours is trying to tell you.</p>
-431|  </div>
-432|</div>
-433|
-434|<div class="post">
-435|  <h2><a href="posts/16-yin-yang-not-good-vs-evil.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Yin & Yang ≠ Good vs Evil — Why Balance Is the Point, Not the Battle</a></h2>
-436|  <div class="date">June 6, 2026 · By Ollie</div>
-437|  <div class="excerpt">
-438|    <p>A friend once told me "I need more Yang energy." As if Yang were spinach and Yin were french fries. The Huangdi Neijing knew better 2,000 years ago: Yin and Yang aren't a scoreboard. They're a seesaw that only works when both sides move.</p>
-439|  </div>
-440|</div>
-441|
-442|<div class="post">
-443|  <h2><a href="posts/17-five-elements-not-personality-test.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Five Elements ≠ Personality Test — Your Body Is a Garden Ecosystem</a></h2>
-444|  <div class="date">June 7, 2026 · By Ollie</div>
-445|  <div class="excerpt">
-446|    <p>Somewhere between the Huangdi Neijing and wellness Instagram, the Five Elements turned into a BuzzFeed quiz. Wood, Fire, Earth, Metal, Water are not identity badges — they're a 2,000-year-old systems map of how your body actually works.</p>
-447|  </div>
-448|</div>
-449|
-450|<div class="post">
-451|  <h2><a href="posts/18-your-body-is-a-kingdom.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Your Body Is a Kingdom — Why Your Organs Aren't Just Parts</a></h2>
-452|  <div class="date">June 8, 2026 · By Ollie</div>
-453|  <div class="excerpt">
-454|    <p>In Western medicine, your liver is a factory and your heart is a pump. In the Huangdi Neijing, your body is a kingdom — and every organ is a minister. When one ministry goes rogue, the whole kingdom feels it.</p>
-455|  </div>
-456|</div>
-457|
-458|<div class="post">
-459|  <h2><a href="posts/19-jing-qi-shen-three-treasures.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Jing, Qi, Shen — The Three Treasures That Make You You</a></h2>
-460|  <div class="date">June 9, 2026 · By Ollie</div>
-461|  <div class="excerpt">
-462|    <p>Your body has a hardware layer, a software layer, and a user layer. Jing is the hardware you were born with. Qi is the operating system. Shen is the consciousness running the show — and protecting your Jing is the single most important thing you can do for your health.</p>
-463|  </div>
-464|</div>
-465|
-466|<div class="post">
-467|  <h2><a href="posts/20-what-zhang-zhongjing-knew.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">What Zhang Zhongjing Knew That Your Doctor Doesn't</a></h2>
-468|  <div class="date">June 12, 2026 &middot; By Ollie</div>
-469|  <div class="excerpt">
-470|    <p>In 200 AD, Zhang Zhongjing mapped six defensive layers that predict how illness moves through your body — Taiyang, Shaoyang, Yangming, Taiyin, Shaoyin, Jueyin. Your doctor treats the snapshot. He watched the movie. Both lenses matter.</p>
-471|  </div>
-472|</div>
-473|
-474|        <div class="post">
-475|          <h2><a href="posts/21-stop-fighting-start-warming.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Your Body Doesn't Need a Warrior &mdash; Stop Fighting, Start Warming</a></h2>
-476|          <div class="date">June 13, 2026 &middot; By Ollie</div>
-477|          <div class="excerpt">
-478|            <p>Stop declaring war on every cold. TCM's warming herbs — Gui Zhi, Gan Jiang, Fu Zi — build your inner fire so illness simply can't take hold. Ollie explains why fluffing your feathers beats swinging a sword.</p>
-479|          </div>
-480|        </div>
-481|
-482|        <div class="post">
-483|          <h2><a href="posts/22-wind-cold-is-not-a-weather-report.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Wind-Cold Is Not A Weather Report</a></h2>
-484|          <div class="date">June 14, 2026 &middot; By Ollie</div>
-485|          <div class="excerpt">
-486|            <p>Wind-Cold isn't about the weather. It's about what happens when a pathogen invades your Taiyang layer — and why one question changes everything: Are you sweating? Gui Zhi Tang or Ma Huang Tang? The Shang Han Lun's first chapter has the answer.</p>
-487|          </div>
-488|        </div>
-489|
-490|        <div class="post">
-491|  <h2><a href="posts/23-your-fever-might-be-your-friend.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Your Fever Might Be Your Friend</a></h2>
-492|  <div class="date">June 15, 2026 · By Ollie</div>
-493|  <div class="excerpt">
-494|    <p>What if that high fever isn't a sign of failure, but a sign your body is fighting at full capacity? The Yangming stage and Bai Hu Tang reveal a counterintuitive truth.</p>
-495|  </div>
-496|</div>
-497|
-498|<div class="post">
-499|  <h2><a href="posts/24-when-your-body-is-stuck-between-two-fires.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">When Your Body Is Stuck Between Two Fires</a></h2>
-500|  <div class="date">June 17, 2026 · By Ollie</div>
+1|1|<!DOCTYPE html>
+2|2|<html lang="en">
+3|3|<head>
+4|4|<!-- Google tag (gtag.js) -->
+5|5|<script async src="https://www.googletagmanager.com/gtag/js?id=G-G9S528TPWH"></script>
+6|6|<script>
+7|7|  window.dataLayer = window.dataLayer || [];
+8|8|  function gtag(){dataLayer.push(arguments);}
+9|9|  gtag('js', new Date());
+10|10|  gtag('config', 'G-G9S528TPWH');
+11|11|</script>
+12|12|
+13|13|
+14|14|<meta charset="UTF-8">
+15|15|<meta name="p:domain_verify" content="bb7223a30fb9fe953d5a2f7068a3e9c3"/>
+16|16|<meta name="viewport" content="width=device-width, initial-scale=1.0">
+17|17|<title>TCM Way — Ancient Wisdom, Told Warmly</title>
+18|18|<meta name="description" content="Bringing authentic Chinese medicine philosophy — especially Shanghan Lun and classical traditions — to the English-speaking world. By Ollie, a TCM practitioner and lifelong learner.">
+19|19|<meta property="og:title" content="TCM Way — Ancient Wisdom, Told Warmly">
+20|20|<meta property="og:description" content="Bringing authentic Chinese medicine philosophy to the English-speaking world. Ancient wisdom, told warmly.">
+21|21|<meta property="og:image" content="https://tcmway.net/images/ollie-warm-v3.png">
+22|22|<meta property="og:url" content="https://tcmway.net/">
+23|23|<meta property="og:type" content="website">
+24|24|<meta property="og:site_name" content="TCM Way">
+25|25|<meta name="twitter:card" content="summary_large_image">
+26|26|<link rel="alternate" type="application/rss+xml" title="TCM Way RSS Feed" href="https://tcmway.net/rss.xml">
+27|27|<style>
+28|28|  :root {
+29|29|    --bg: #fdf6ee;
+30|30|    --text: #3b2a1a;
+31|31|    --accent: #b83a2a;
+32|32|    --accent-warm: #e8a87c;
+33|33|    --light: #fef0e2;
+34|34|    --border: #e8d5c0;
+35|35|    --subtle: #8a6d54;
+36|36|    --gold: #c9a84c;
+37|37|  }
+38|38|
+39|39|  * { margin: 0; padding: 0; box-sizing: border-box; }
+40|40|
+41|41|  body {
+42|42|    font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif;
+43|43|    background: var(--bg);
+44|44|    color: var(--text);
+45|45|    line-height: 2;
+46|46|    max-width: 720px;
+47|47|    margin: 0 auto;
+48|48|    padding: 0 1.5rem 3rem;
+49|49|  }
+50|50|
+51|51|  /* —— Brand Header (Direction B: 赤縁) —— */
+52|52|  header {
+53|53|    text-align: center;
+54|54|    padding: 3rem 0 2rem;
+55|55|    border-bottom: 2px solid var(--border);
+56|56|    margin-bottom: 2.5rem;
+57|57|  }
+58|58|
+59|59|  .brand-symbol {
+60|60|    display: block;
+61|61|    margin: 0 auto 1rem;
+62|62|    width: 80px;
+63|63|    height: 80px;
+64|64|  }
+65|65|
+66|66|  header h1 {
+67|67|    font-family: Georgia, 'Times New Roman', serif;
+68|68|    font-size: 2.8rem;
+69|69|    font-weight: 700;
+70|70|    letter-spacing: 0.12em;
+71|71|    color: var(--accent);
+72|72|    position: relative;
+73|73|    display: inline-block;
+74|74|  }
+75|75|
+76|76|  /* 手工感下划线 */
+77|77|  header h1::after {
+78|78|    content: "";
+79|79|    position: absolute;
+80|80|    bottom: -8px;
+81|81|    left: 5%;
+82|82|    width: 90%;
+83|83|    height: 3px;
+84|84|    background: linear-gradient(90deg, transparent, var(--accent-warm), var(--accent), var(--accent-warm), transparent);
+85|85|    border-radius: 2px;
+86|86|  }
+87|87|
+88|88|  header p {
+89|89|    color: var(--subtle);
+90|90|    font-style: italic;
+91|91|    margin-top: 1.2rem;
+92|92|    font-size: 1.05rem;
+93|93|    letter-spacing: 0.02em;
+94|94|  }
+95|95|
+96|96|  nav {
+97|97|    margin-top: 1.5rem;
+98|98|  }
+99|99|
+100|100|  nav a {
+101|101|    color: var(--subtle);
+102|102|    text-decoration: none;
+103|103|    margin: 0 0.8rem;
+104|104|    font-size: 0.9rem;
+105|105|    letter-spacing: 0.06em;
+106|106|    font-family: Georgia, serif;
+107|107|    transition: color 0.3s;
+108|108|    position: relative;
+109|109|  }
+110|110|
+111|111|  nav a:hover { color: var(--accent); }
+112|112|
+113|113|  /* —— Newsletter Signup —— */
+114|114|  .subscribe-box {
+115|115|    background: var(--light);
+116|116|    border: 1px solid var(--border);
+117|117|    border-radius: 6px;
+118|118|    padding: 1.8rem 2rem;
+119|119|    margin: 2rem 0 3rem;
+120|120|    text-align: center;
+121|121|    position: relative;
+122|122|    overflow: hidden;
+123|123|  }
+124|124|
+125|125|  .subscribe-box::before {
+126|126|    content: "";
+127|127|    position: absolute;
+128|128|    top: -20px;
+129|129|    right: -20px;
+130|130|    width: 80px;
+131|131|    height: 80px;
+132|132|    background: var(--accent);
+133|133|    opacity: 0.06;
+134|134|    border-radius: 50%;
+135|135|  }
+136|136|
+137|137|  .subscribe-box p {
+138|138|    color: var(--subtle);
+139|139|    margin-bottom: 0.6rem;
+140|140|    font-size: 0.95rem;
+141|141|  }
+142|142|
+143|143|  .subscribe-box a {
+144|144|    display: inline-block;
+145|145|    background: var(--accent);
+146|146|    color: white;
+147|147|    padding: 0.65rem 2.2rem;
+148|148|    text-decoration: none;
+149|149|    border-radius: 6px;
+150|150|    font-family: -apple-system, 'Helvetica Neue', sans-serif;
+151|151|    font-size: 0.92rem;
+152|152|    letter-spacing: 0.04em;
+153|153|    transition: background 0.3s;
+154|154|  }
+155|155|
+156|156|  .subscribe-box a:hover { background: #a03020; }
+157|157|
+158|158|  /* —— Post List —— */
+159|159|  .post {
+160|160|    margin-bottom: 2.5rem;
+161|161|    padding-bottom: 2rem;
+162|162|    border-bottom: 1px solid var(--border);
+163|163|  }
+164|164|
+165|165|  .post h2 {
+166|166|    font-weight: 700;
+167|167|    font-size: 1.3rem;
+168|168|    margin-bottom: 0.3rem;
+169|169|    line-height: 1.5;
+170|170|    letter-spacing: 0.01em;
+171|171|  }
+172|172|
+173|173|  .post h2 a {
+174|174|    color: var(--text);
+175|175|    text-decoration: none;
+176|176|    transition: color 0.2s;
+177|177|  }
+178|178|
+179|179|  .post h2 a:hover { color: var(--accent); }
+180|180|
+181|181|  .post .date {
+182|182|    color: var(--subtle);
+183|183|    font-size: 0.82rem;
+184|184|    letter-spacing: 0.06em;
+185|185|    margin-bottom: 0.6rem;
+186|186|    font-family: -apple-system, sans-serif;
+187|187|    text-transform: uppercase;
+188|188|  }
+189|189|
+190|190|  .post .excerpt {
+191|191|    color: var(--subtle);
+192|192|    font-size: 0.95rem;
+193|193|    line-height: 1.8;
+194|194|  }
+195|195|
+196|196|  .mini-owl {
+197|197|    width: 22px;
+198|198|    height: 22px;
+199|199|    border-radius: 50%;
+200|200|    vertical-align: middle;
+201|201|    margin-right: 6px;
+202|202|    object-fit: cover;
+203|203|  }
+204|204|
+205|205|  /* —— Coming Soon —— */
+206|206|  .post-coming {
+207|207|    opacity: 0.5;
+208|208|  }
+209|209|
+210|210|  /* —— Footer —— */
+211|211|  footer {
+212|212|    text-align: center;
+213|213|    padding: 3rem 0 1rem;
+214|214|    color: var(--subtle);
+215|215|    font-size: 0.82rem;
+216|216|    border-top: 2px solid var(--border);
+217|217|    margin-top: 3rem;
+218|218|    letter-spacing: 0.04em;
+219|219|    line-height: 2;
+220|220|  }
+221|221|
+222|222|  footer a {
+223|223|    color: var(--accent);
+224|224|    text-decoration: none;
+225|225|    transition: color 0.2s;
+226|226|  }
+227|227|
+228|228|  footer a:hover { color: var(--gold); }
+229|229|</style>
+230|230|<script>
+231|231|var _hmt = _hmt || [];
+232|232|(function() {
+233|233|  var hm = document.createElement("script");
+234|234|  hm.src = "https://hm.baidu.com/hm.js?44f28eb4eacca95fb6aeacca17dd57d5";
+235|235|  var s = document.getElementsByTagName("script")[0];
+236|236|  s.parentNode.insertBefore(hm, s);
+237|237|})();
+238|238|</script>
+239|239|</head>
+240|240|<body>
+241|241|
+242|242|<header>
+243|243|  <!-- Ollie 印章图标 -->
+244|244|    <img src="/images/ollie-mini-80.png" class="brand-symbol" alt="Ollie the TCM Owl — Screech Owl" style="display:block;margin:0 auto 1rem;width:80px;height:80px;">
+245|245|
+246|246|  <h1>TCM Way</h1>
+247|247|  <p>Ancient Wisdom, Told Warmly</p>
+248|248|
+249|249|  <nav>
+250|250|    <a href="/">Home</a>
+251|251|    <a href="/about.html">About</a>
+252|252|    <a href="/start-here.html">Start Here</a>
+253|253|    <a href="/about-owl.html">The Owl</a>
+254|254|    <a href="/contact.html">Contact</a>
+255|255|    <a href="/ollies-corner.html">Ollie's Corner</a>
+256|256|    <a href="/disclaimer.html">Disclaimer</a>
+257|257|    <a href="/rss.xml">RSS</a>
+258|258|  </nav>
+259|259|</header>
+260|260|
+261|261|<section class="subscribe-box">
+262|262|  <p style="font-size:1.05rem; margin-bottom:0.8rem;"><strong>Letters on classical Chinese medicine,</strong> delivered to your inbox.</p>
+263|263|  <p style="font-size:0.88rem; color:var(--subtle); margin-bottom:1.2rem;">No spam. No hype. Just one carefully written letter at a time.</p>
+264|264|  <form class="subscribe-form" action="https://docs.google.com/forms/d/e/1FAIpQLSenD-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX... [truncated]
+265|265|    <input type="email" name="entry.1000000000" placeholder="you@email.com" required style="padding:0.6rem 1rem; border:1px solid var(--border); border-radius:6px; font-size:0.95rem; width:70%; max-width:280px; font-family:inherit;">
+266|266|    <button type="submit" style="padding:0.6rem 1.5rem; background:var(--accent); color:white; border:none; border-radius:6px; font-size:0.92rem; cursor:pointer; margin-left:0.5rem; font-family:-apple-system,sans-serif;">Subscribe</button>
+267|267|  </form>
+268|268|  <p style="font-size:0.78rem; color:var(--subtle); margin-top:0.7rem; opacity:0.7;">We respect your inbox. Unsubscribe anytime.</p>
+269|269|</section>
+270|270|<script>
+271|271|function subscribedSucces(form) {
+272|272|  var email = form.querySelector('input[type="email"]').value;
+273|273|  var btn = form.querySelector('button');
+274|274|  btn.textContent = 'Done ✓';
+275|275|  btn.style.background = '#2e7d32';
+276|276|  form.querySelector('input').style.display = 'none';
+277|277|  form.parentNode.querySelector('p:last-child').textContent = 'Welcome aboard. We\'ll be in touch.';
+278|278|}
+279|279|</script>
+280|280|
+281|281|<!-- ═══ CATEGORY CARDS ═══ -->
+282|282|  <section class="category-cards" style="display:grid; grid-template-columns:1fr 1fr; gap:0.8rem; margin:2.5rem 0 1.5rem;">
+283|283|    <a href="/category/foundations.html" style="text-decoration:none; background:white; border:1px solid var(--border); border-radius:8px; padding:1rem 1.2rem; display:block;">
+284|284|      <div style="font-size:1.05rem; color:var(--accent); font-weight:normal; margin-bottom:0.3rem;">📚 Foundations</div>
+285|285|      <div style="font-size:0.82rem; color:var(--subtle);">Qi · Yin-Yang · Five Elements · Diagnosis</div>
+286|286|      <div style="font-size:0.78rem; color:var(--accent-warm); margin-top:0.3rem;">12 articles</div>
+287|287|    </a>
+288|288|    <a href="/category/taiyang.html" style="text-decoration:none; background:white; border:1px solid var(--border); border-radius:8px; padding:1rem 1.2rem; display:block;">
+289|289|      <div style="font-size:1.05rem; color:var(--accent); font-weight:normal; margin-bottom:0.3rem;">🛡️ Cold &amp; Defense</div>
+290|290|      <div style="font-size:0.82rem; color:var(--subtle);">Wind-Cold · Fever · Body's Surface</div>
+291|291|      <div style="font-size:0.78rem; color:var(--accent-warm); margin-top:0.3rem;">4 articles · Taiyang</div>
+292|292|    </a>
+293|293|    <a href="/category/yangming.html" style="text-decoration:none; background:white; border:1px solid var(--border); border-radius:8px; padding:1rem 1.2rem; display:block;">
+294|294|      <div style="font-size:1.05rem; color:var(--accent); font-weight:normal; margin-bottom:0.3rem;">🔥 Heat &amp; Digestion</div>
+295|295|      <div style="font-size:0.82rem; color:var(--subtle);">Internal Heat · Dampness · Fever</div>
+296|296|      <div style="font-size:0.78rem; color:var(--accent-warm); margin-top:0.3rem;">3 articles · Yangming</div>
+297|297|    </a>
+298|298|    <a href="/category/shaoyang.html" style="text-decoration:none; background:white; border:1px solid var(--border); border-radius:8px; padding:1rem 1.2rem; display:block;">
+299|299|      <div style="font-size:1.05rem; color:var(--accent); font-weight:normal; margin-bottom:0.3rem;">⚖️ Balance &amp; Emotions</div>
+300|300|      <div style="font-size:0.82rem; color:var(--subtle);">Stuck Qi · Liver · Emotions</div>
+301|301|      <div style="font-size:0.78rem; color:var(--accent-warm); margin-top:0.3rem;">5 articles · Shaoyang</div>
+302|302|    </a>
+303|303|  </section>
+304|304|
+305|305|  <div style="text-align:center; margin-bottom:2.5rem;">
+306|306|    <a href="/start-here.html" style="color:var(--accent); font-size:0.92rem;">New here? → Start Here</a>
+307|307|  </div>
+308|308|
+309|309|  <h2 style="font-weight:normal; color:var(--accent); font-size:1.3rem; border-left:4px solid var(--accent-warm); padding-left:0.8rem; margin:2rem 0 1rem;">Latest Articles</h2>
+310|310|
+311|311|  <div class="post">
+312|312|  <h2><a href="posts/01-why-i-share-tcm-with-the-west.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">What a 1,800-Year-Old Book Taught Me About Anxiety — And Why the West Deserves to Hear It</a></h2>
+313|313|  <div class="date">May 20, 2026 · By Ollie</div>
+314|314|  <div class="excerpt">
+315|315|    <p>In a world accelerating toward AI and automation, why would anyone spend time studying thousand-year-old medical texts? The answer surprised even me: because the faster the world moves, the more we need something rooted.</p>
+316|316|  </div>
+317|317|</div>
+318|318|
+319|319|<div class="post">
+320|320|  <h2><a href="posts/02-exhausted-after-sleep.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">8 Hours of Sleep, Still Wrecked? Your Organs Run a Night Shift — And Yours Called In Sick</a></h2>
+321|321|  <div class="date">May 21, 2026 · By Ollie</div>
+322|322|  <div class="excerpt">
+323|323|    <p>You slept eight hours. You still feel wrecked. Traditional Chinese Medicine has a different answer — and it isn't "sleep more." Meet your body's night shift.</p>
+324|324|  </div>
+325|325|</div>
+326|326|
+327|327|<div class="post">
+328|328|  <h2><a href="posts/03-qi-is-not-magic.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Qi Isn't Magic. It's Your Body's OS — Running Without Updates Since 200 BC</a></h2>
+329|329|  <div class="date">May 22, 2026 · By Ollie</div>
+330|330|  <div class="excerpt">
+331|331|    <p>You've heard the word "Qi" a thousand times. It's not mystical energy — it's your body's most practical operating system, explained 2,200 years ago in the Huangdi Neijing.</p>
+332|332|  </div>
+333|333|</div>
+334|334|
+335|335|<div class="post">
+336|336|  <h2><a href="posts/04-traffic-jam-inside-your-body.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Why Your Body Is Like a Traffic Jam (And How to Unstick Yourself)</a></h2>
+337|337|  <div class="date">May 23, 2026 · By Ollie</div>
+338|338|  <div class="excerpt">
+339|339|    <p>That tight feeling in your chest, the sigh you can't suppress, the headache that won't quit — TCM calls it "Qi stagnation." Think of it as a traffic jam inside your body. Here's how to clear the lanes.</p>
+340|340|  </div>
+341|341|</div>
+342|342|
+343|343|<div class="post">
+344|344|  <h2><a href="posts/05-body-clock-you-didnt-set.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Your Body Runs on a Clock You Didn't Set — Why 3 AM Is Never Random</a></h2>
+345|345|  <div class="date">May 24, 2026 · By Ollie</div>
+346|346|  <div class="excerpt">
+347|347|    <p>You wake at 3 AM every night. Appetite vanishes at noon. Brain fog hits at 2 PM. TCM says your organs punch in and out on a schedule that predates mechanical clocks — and your body has been following it your entire life.</p>
+348|348|  </div>
+349|349|</div>
+350|350|
+351|351|<div class="post">
+352|352|  <h2><a href="posts/06-that-heavy-feeling-its-not-laziness.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">That Heavy Feeling in Your Limbs? It's Not Laziness.</a></h2>
+353|353|  <div class="date">May 25, 2026 · By Ollie</div>
+354|354|  <div class="excerpt">
+355|355|    <p>Your arms feel like lead. You've been called lazy your whole life. TCM says it's not your willpower — it's your Spleen sending an SOS nobody taught you to read.</p>
+356|356|  </div>
+357|357|</div>
+358|358|
+359|359|<div class="post">
+360|360|  <h2><a href="posts/07-six-signs-of-health.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">6 Signs You're Actually Healthy (And Why Your Lab Results Don't Tell the Whole Story)</a></h2>
+361|361|  <div class="date">May 26, 2026 · By Ollie</div>
+362|362|  <div class="excerpt">
+363|363|    <p>Your bloodwork came back "normal." So why do you still feel off? A 2,000-year-old health checklist that asks questions your doctor never does.</p>
+364|364|  </div>
+365|365|</div>
+366|366|
+367|367|<div class="post">
+368|368|  <h2><a href="posts/08-why-cold-hands-warn-you.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Why Your Cold Hands Are Warning You</a></h2>
+369|369|  <div class="date">May 27, 2026 · By Ollie</div>
+370|370|  <div class="excerpt">
+371|371|    <p>You know that thing where you put on gloves indoors? And your partner jokes about your "ice block feet" at night? TCM says cold hands aren't just poor circulation — they're an early warning system you've been ignoring your whole life.</p>
+372|372|  </div>
+373|373|</div>
+374|374|
+375|375|<div class="post">
+376|376|  <h2><a href="posts/09-six-layer-defense.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">The Castle Inside You: Your Body's 6-Layer Defense System</a></h2>
+377|377|  <div class="date">May 28, 2026 · By Ollie</div>
+378|378|  <div class="excerpt">
+379|379|    <p>Your body doesn't just "get sick." It fights through six layers of defense, like an ancient castle. Understanding this map changes how you see every cold, every fever, every chronic illness.</p>
+380|380|  </div>
+381|381|</div>
+382|382|
+383|383|<div class="post">
+384|384|  <h2><a href="posts/10-stop-feeding-what-you-fight.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Stop Feeding What You're Trying to Fight</a></h2>
+385|385|  <div class="date">May 29, 2026 · By Ollie</div>
+386|386|  <div class="excerpt">
+387|387|    <p>You spend $50 a month on vitamins. Chinese medicine asks: who else are you feeding? The ancient insight that nutrition doesn't discriminate between you and your disease — and what to do instead.</p>
+388|388|  </div>
+389|389|</div>
+390|390|
+391|391|<div class="post">
+392|392|  <h2><a href="posts/11-cold-is-never-just-a-cold.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">It's Just a Cold — Why Chinese Medicine Thinks That's the Most Dangerous Sentence</a></h2>
+393|393|  <div class="date">May 31, 2026 · By Ollie</div>
+394|394|  <div class="excerpt">
+395|395|    <p>Everyone says "it's just a cold" and pops a pill. TCM sees a pathogen marching through your body's defenses — and if you ignore it, it doesn't forget where you live. A 2,000-year-old map of what happens to the cold you never shook.</p>
+396|396|  </div>
+397|397|</div>
+398|398|
+399|399|<!-- Article 12: June 1, 2026 -->
+400|400|<div class="post">
+401|401|  <h2><a href="posts/12-liver-rules-everything.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Your Shoulder Pain, Your IBS, Your Insomnia — They Might All Be Saying the Same Thing</a></h2>
+402|402|  <div class="date">June 1, 2026 · By Ollie</div>
+403|403|  <div class="excerpt">
+404|404|    <p>You've seen five specialists for five symptoms. TCM says they all trace back to one organ. Meet your Liver — the General who's been running the show since before you were born.</p>
+405|405|  </div>
+406|406|</div>
+407|407|
+408|408|<!-- Article 13: June 2, 2026 -->
+409|409|<div class="post">
+410|410|  <h2><a href="posts/13-medicine-character-contains-music.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">The Chinese Character for 'Medicine' Contains Music — What Ancient China Knew About Sound Healing</a></h2>
+411|411|  <div class="date">June 2, 2026 · By Ollie</div>
+412|412|  <div class="excerpt">
+413|413|    <p>The character 藥 breaks down into 艹 (herbs) and 樂 (music). This isn't a coincidence — ancient Chinese doctors had a five-tone healing system that mapped musical notes to organs. Modern neuroscience is catching up.</p>
+414|414|  </div>
+415|415|</div>
+416|416|
+417|417|<!-- Article 14: June 4, 2026 -->
+418|418|<div class="post">
+419|419|  <h2><a href="posts/14-ten-questions-ancient-doctors-asked.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">10 Questions Ancient Chinese Doctors Asked (That Yours Never Will)</a></h2>
+420|420|  <div class="date">June 4, 2026 · By Ollie</div>
+421|421|  <div class="excerpt">
+422|422|    <p>When was the last time a doctor asked whether your hands are warm or cold — and listened to the answer? Chinese medicine's 2,000-year-old Ten Questions (十问歌) framework maps simple answers to organ function, catching what lab panels were never designed to see.</p>
+423|423|  </div>
+424|424|</div>
+425|425|
+426|426|<div class="post">
+427|427|  <h2><a href="posts/15-your-tongue-knows-before-blood-test.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Your Tongue Knows Before Your Blood Test Does</a></h2>
+428|428|  <div class="date">June 5, 2026 · By Ollie</div>
+429|429|  <div class="excerpt">
+430|430|    <p>Your tongue is the only internal organ you can see without a scalpel. For 2,000 years Chinese medicine has read its color, shape, coating, and moisture like a dashboard — spotting patterns days or weeks before blood markers shift. Here's what yours is trying to tell you.</p>
+431|431|  </div>
+432|432|</div>
+433|433|
+434|434|<div class="post">
+435|435|  <h2><a href="posts/16-yin-yang-not-good-vs-evil.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Yin & Yang ≠ Good vs Evil — Why Balance Is the Point, Not the Battle</a></h2>
+436|436|  <div class="date">June 6, 2026 · By Ollie</div>
+437|437|  <div class="excerpt">
+438|438|    <p>A friend once told me "I need more Yang energy." As if Yang were spinach and Yin were french fries. The Huangdi Neijing knew better 2,000 years ago: Yin and Yang aren't a scoreboard. They're a seesaw that only works when both sides move.</p>
+439|439|  </div>
+440|440|</div>
+441|441|
+442|442|<div class="post">
+443|443|  <h2><a href="posts/17-five-elements-not-personality-test.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Five Elements ≠ Personality Test — Your Body Is a Garden Ecosystem</a></h2>
+444|444|  <div class="date">June 7, 2026 · By Ollie</div>
+445|445|  <div class="excerpt">
+446|446|    <p>Somewhere between the Huangdi Neijing and wellness Instagram, the Five Elements turned into a BuzzFeed quiz. Wood, Fire, Earth, Metal, Water are not identity badges — they're a 2,000-year-old systems map of how your body actually works.</p>
+447|447|  </div>
+448|448|</div>
+449|449|
+450|450|<div class="post">
+451|451|  <h2><a href="posts/18-your-body-is-a-kingdom.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Your Body Is a Kingdom — Why Your Organs Aren't Just Parts</a></h2>
+452|452|  <div class="date">June 8, 2026 · By Ollie</div>
+453|453|  <div class="excerpt">
+454|454|    <p>In Western medicine, your liver is a factory and your heart is a pump. In the Huangdi Neijing, your body is a kingdom — and every organ is a minister. When one ministry goes rogue, the whole kingdom feels it.</p>
+455|455|  </div>
+456|456|</div>
+457|457|
+458|458|<div class="post">
+459|459|  <h2><a href="posts/19-jing-qi-shen-three-treasures.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Jing, Qi, Shen — The Three Treasures That Make You You</a></h2>
+460|460|  <div class="date">June 9, 2026 · By Ollie</div>
+461|461|  <div class="excerpt">
+462|462|    <p>Your body has a hardware layer, a software layer, and a user layer. Jing is the hardware you were born with. Qi is the operating system. Shen is the consciousness running the show — and protecting your Jing is the single most important thing you can do for your health.</p>
+463|463|  </div>
+464|464|</div>
+465|465|
+466|466|<div class="post">
+467|467|  <h2><a href="posts/20-what-zhang-zhongjing-knew.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">What Zhang Zhongjing Knew That Your Doctor Doesn't</a></h2>
+468|468|  <div class="date">June 12, 2026 &middot; By Ollie</div>
+469|469|  <div class="excerpt">
+470|470|    <p>In 200 AD, Zhang Zhongjing mapped six defensive layers that predict how illness moves through your body — Taiyang, Shaoyang, Yangming, Taiyin, Shaoyin, Jueyin. Your doctor treats the snapshot. He watched the movie. Both lenses matter.</p>
+471|471|  </div>
+472|472|</div>
+473|473|
+474|474|        <div class="post">
+475|475|          <h2><a href="posts/21-stop-fighting-start-warming.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Your Body Doesn't Need a Warrior &mdash; Stop Fighting, Start Warming</a></h2>
+476|476|          <div class="date">June 13, 2026 &middot; By Ollie</div>
+477|477|          <div class="excerpt">
+478|478|            <p>Stop declaring war on every cold. TCM's warming herbs — Gui Zhi, Gan Jiang, Fu Zi — build your inner fire so illness simply can't take hold. Ollie explains why fluffing your feathers beats swinging a sword.</p>
+479|479|          </div>
+480|480|        </div>
+481|481|
+482|482|        <div class="post">
+483|483|          <h2><a href="posts/22-wind-cold-is-not-a-weather-report.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Wind-Cold Is Not A Weather Report</a></h2>
+484|484|          <div class="date">June 14, 2026 &middot; By Ollie</div>
+485|485|          <div class="excerpt">
+486|486|            <p>Wind-Cold isn't about the weather. It's about what happens when a pathogen invades your Taiyang layer — and why one question changes everything: Are you sweating? Gui Zhi Tang or Ma Huang Tang? The Shang Han Lun's first chapter has the answer.</p>
+487|487|          </div>
+488|488|        </div>
+489|489|
+490|490|        <div class="post">
+491|491|  <h2><a href="posts/23-your-fever-might-be-your-friend.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">Your Fever Might Be Your Friend</a></h2>
+492|492|  <div class="date">June 15, 2026 · By Ollie</div>
+493|493|  <div class="excerpt">
+494|494|    <p>What if that high fever isn't a sign of failure, but a sign your body is fighting at full capacity? The Yangming stage and Bai Hu Tang reveal a counterintuitive truth.</p>
+495|495|  </div>
+496|496|</div>
+497|497|
+498|498|<div class="post">
+499|499|  <h2><a href="posts/24-when-your-body-is-stuck-between-two-fires.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">When Your Body Is Stuck Between Two Fires</a></h2>
+500|500|  <div class="date">June 17, 2026 · By Ollie</div>
+<div class="post">
+  <h2><a href="posts/26-when-food-stops-being-food.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">When Food Stops Being Food — Understanding the Taiyin Stage</a></h2>
+  <div class="date">June 22, 2026 &middot; By Ollie</div>
+  <div class="excerpt">
+    <p>Food just sits there, bloating, exhaustion after eating — understanding the Taiyin Stage where your digestive engine fails and how to rekindle the fire.</p>
+  </div>
+</div>
+
+<div class="post">
+  <h2><a href="posts/25-yangming-fire.html"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">When the Fire Won't Go Out — Understanding the Yangming Stage</a></h2>
+  <div class="date">June 18, 2026 &middot; By Ollie</div>
+  <div class="excerpt">
+    <p>High fever that won't quit, drenching sweats, and unquenchable thirst — what the Yangming Stage reveals about your body's most dramatic immune response.</p>
+  </div>
+</div>
+
 501|
