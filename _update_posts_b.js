@@ -54,10 +54,10 @@ const IMAGE_REPLACEMENTS = [
 
 // OG image replacements
 const OG_REPLACEMENTS = [
-  [/https:\/\/fauntleroy-z\.github\.io\/tcmway\/images\/owl-mascot-v3\.png/g, 'https://tcmway.org/images/ollie-warm.svg'],
-  [/https:\/\/fauntleroy-z\.github\.io\/tcmway\/images\/comic-01-exhaustion\.png/g, 'https://tcmway.org/images/ollie-warm.svg'],
-  [/https:\/\/fauntleroy-z\.github\.io\/tcmway\/images\/comic-03-qi\.png/g, 'https://tcmway.org/images/ollie-warm.svg'],
-  [/(<meta property="og:image" content=")https:\/\/tcmway\.org\/images\/owl-mascot-v3\.png(")/g, '$1https://tcmway.org/images/ollie-warm.svg$2'],
+  [/https:\/\/fauntleroy-z\.github\.io\/tcmway\/images\/owl-mascot-v3\.png/g, 'https://tcmway.net/images/ollie-warm.svg'],
+  [/https:\/\/fauntleroy-z\.github\.io\/tcmway\/images\/comic-01-exhaustion\.png/g, 'https://tcmway.net/images/ollie-warm.svg'],
+  [/https:\/\/fauntleroy-z\.github\.io\/tcmway\/images\/comic-03-qi\.png/g, 'https://tcmway.net/images/ollie-warm.svg'],
+  [/(<meta property="og:image" content=")https:\/\/tcmway\.net\/images\/owl-mascot-v3\.png(")/g, '$1https://tcmway.net/images/ollie-warm.svg$2'],
 ];
 
 function updatePost(filepath) {

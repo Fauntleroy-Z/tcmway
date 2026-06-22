@@ -92,8 +92,8 @@ function refinePost(filepath) {
     modified = true;
   }
   
-  // --- Fix OG url from fauntleroy-z.github.io to tcmway.org ---
-  html = html.replace(/https:\/\/fauntleroy-z\.github\.io\/tcmway\/posts\//g, 'https://tcmway.org/posts/');
+  // --- Fix OG url from fauntleroy-z.github.io to tcmway.net ---
+  html = html.replace(/https:\/\/fauntleroy-z\.github\.io\/tcmway\/posts\//g, 'https://tcmway.net/posts/');
 
   if (modified) {
     fs.writeFileSync(filepath, html, 'utf8');

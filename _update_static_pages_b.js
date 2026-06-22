@@ -54,13 +54,13 @@ files.forEach(file => {
     
     // 2. 替换旧OG image路径
     if (html.includes('fauntleroy-z.github.io/tcmway/images/')) {
-      html = html.replace(/fauntleroy-z\.github\.io\/tcmway\/images\//g, 'tcmway.org/images/');
+      html = html.replace(/fauntleroy-z\.github\.io\/tcmway\/images\//g, 'tcmway.net/images/');
       modified = true;
     }
     
     // 3. 替换旧OG URL
     if (html.includes('fauntleroy-z.github.io/tcmway/')) {
-      html = html.replace(/fauntleroy-z\.github\.io\/tcmway\//g, 'tcmway.org/');
+      html = html.replace(/fauntleroy-z\.github\.io\/tcmway\//g, 'tcmway.net/');
       modified = true;
     }
     
