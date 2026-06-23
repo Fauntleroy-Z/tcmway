@@ -234,10 +234,10 @@
     border-radius: 6px;
     vertical-align: middle;
     margin-right: 10px;
-    object-fit: cover;
     border: 1px solid var(--border);
   }
-  .post h2 a { display: flex; align-items: center; }
+  /* Remove flex from post links to keep title wrapping natural */
+  .post h2 a { display: inline; }
 
 </style>
 231|<script>
