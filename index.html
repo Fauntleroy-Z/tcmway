@@ -228,14 +228,6 @@
 
   footer a:hover { color: var(--gold); }
 
-  .mini-thumb {
-    width: 50px;
-    height: 50px;
-    border-radius: 6px;
-    vertical-align: middle;
-    margin-right: 10px;
-    border: 1px solid var(--border);
-  }
   /* Remove flex from post links to keep title wrapping natural */
   .post h2 a { display: inline; }
 
@@ -245,11 +237,8 @@
     header { padding: 2rem 0 1.5rem; }
     header h1 { font-size: 2rem; }
 
-    /* Hero stacks vertically */
+    /* Category cards stack */
     .category-cards { grid-template-columns: 1fr; }
-
-    /* Mini thumbnails smaller */
-    .mini-thumb { width: 36px; height: 36px; margin-right: 6px; }
   }
 
 </style>
@@ -328,36 +317,22 @@ var _hmt = _hmt || [];
   </div>
 
   <h2 style="font-weight:normal; color:var(--accent); font-size:1.3rem; border-left:4px solid var(--accent-warm); padding-left:0.8rem; margin:2rem 0 1rem;">Latest Articles</h2>
-
-  <div class="post">
-  <h2><a href="posts/27-the-most-dangerous-quiet.html"><img src="images/comic-27-bw.png" class="mini-thumb" alt="">The Most Dangerous Quiet — Why "I Just Want to Sleep" Is Not Laziness</a></h2>
-  <div class="date">June 23, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>You want to sleep all the time, yet sleep doesn't restore you. Understanding the Shaoyin Stage — when disease reaches your body's deepest level and your vital fire is barely flickering.</p>
-  </div>
-</div>
+<div class="post">
+  <h2><a href="posts/01-why-i-share-tcm-with-the-west.html">What a 1,800-Year-Old Book Taught Me About Anxiety — And Why the West Deserves to Hear It</a></h2>
+  <div class="date">May 20, 2026 · By Ollie</div>
 
 <div class="post">
-  <h2><a href="posts/26-when-food-stops-being-food.html"><img src="images/comic-26-bw.png" class="mini-thumb" alt="">When Food Stops Being Food — Understanding the Taiyin Stage</a></h2>
-  <div class="date">June 22, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>Food just sits there, bloating, exhaustion after eating — understanding the Taiyin Stage where your digestive engine fails and how to rekindle the fire.</p>
-  </div>
-</div>
+  <h2><a href="posts/02-exhausted-after-sleep.html">8 Hours of Sleep, Still Wrecked? Your Organs Run a Night Shift — And Yours Called In Sick</a></h2>
+  <div class="date">May 21, 2026 · By Ollie</div>
+
 <div class="post">
-  <h2><a href="posts/25-yangming-fire.html"><img src="images/comic-25-bw.png" class="mini-thumb" alt="">When the Fire Won't Go Out — Understanding the Yangming Stage</a></h2>
-  <div class="date">June 18, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>High fever that won't quit, drenching sweats, and unquenchable thirst — what the Yangming Stage reveals about your body's most dramatic immune response.</p>
-  </div>
-</div>
+  <h2><a href="posts/03-qi-is-not-magic.html">Qi Isn't Magic. It's Your Body's OS — Running Without Updates Since 200 BC</a></h2>
+  <div class="date">May 22, 2026 · By Ollie</div>
+
 <div class="post">
-  <h2><a href="posts/24-when-your-body-is-stuck-between-two-fires.html"><img src="images/comic-24-bw.png" class="mini-thumb" alt="">When Your Body Is Stuck Between Two Fires</a></h2>
-  <div class="date">June 17, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>Caught between shivering and burning up, your body is fighting on two fronts — what the Shaoyang Stage tells us about the body's most confusing immune response.</p>
-  </div>
-</div>
+  <h2><a href="posts/04-traffic-jam-inside-your-body.html">Why Your Body Is Like a Traffic Jam (And How to Unstick Yourself)</a></h2>
+  <div class="date">May 23, 2026 · By Ollie</div>
+
 
 <!-- ═══ SUBSCRIBE BOX (after 4 newest) ═══ -->
 <section class="subscribe-box">
@@ -380,168 +355,100 @@ function subscribedSucces(form) {
 }
 </script>
 
-<div class="post">
-  <h2><a href="posts/23-your-fever-might-be-your-friend.html"><img src="images/comic-23-bw.png" class="mini-thumb" alt="">Your Fever Might Be Your Friend</a></h2>
-  <div class="date">June 15, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>What if that high fever isn't a sign of failure, but a sign your body is fighting at full capacity? The Yangming stage and Bai Hu Tang reveal a counterintuitive truth.</p>
-  </div>
-</div>
+
 
 <div class="post">
-  <h2><a href="posts/22-wind-cold-is-not-a-weather-report.html"><img src="images/comic-22-bw.png" class="mini-thumb" alt="">Wind-Cold Is Not A Weather Report</a></h2>
-  <div class="date">June 14, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>Wind-Cold isn't about the weather. It's about what happens when a pathogen invades your Taiyang layer — and why one question changes everything.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/21-stop-fighting-start-warming.html"><img src="images/comic-21-bw.png" class="mini-thumb" alt="">Your Body Doesn't Need a Warrior — Stop Fighting, Start Warming</a></h2>
-  <div class="date">June 13, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>Stop declaring war on every cold. TCM's warming herbs — Gui Zhi, Gan Jiang, Fu Zi — build your inner fire so illness simply can't take hold.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/20-what-zhang-zhongjing-knew.html"><img src="images/comic-20-bw.png" class="mini-thumb" alt="">What Zhang Zhongjing Knew That Your Doctor Doesn't</a></h2>
-  <div class="date">June 12, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>In 200 AD, Zhang Zhongjing mapped six defensive layers that predict how illness moves through your body — your doctor treats the snapshot, he watched the movie.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/19-jing-qi-shen-three-treasures.html"><img src="images/comic-19-bw.png" class="mini-thumb" alt="">Jing, Qi, Shen — The Three Treasures That Make You You</a></h2>
-  <div class="date">June 9, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>Your body has a hardware layer, a software layer, and a user layer. Jing is the hardware you were born with, Qi is the OS, Shen is the consciousness.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/18-your-body-is-a-kingdom.html"><img src="images/comic-18-bw.png" class="mini-thumb" alt="">Your Body Is a Kingdom — Why Your Organs Aren't Just Parts</a></h2>
-  <div class="date">June 8, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>In Western medicine, your liver is a factory. In the Huangdi Neijing, your body is a kingdom — and every organ is a minister.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/17-five-elements-not-personality-test.html"><img src="images/comic-17-bw.png" class="mini-thumb" alt="">Five Elements ≠ Personality Test — Your Body Is a Garden Ecosystem</a></h2>
-  <div class="date">June 7, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>Somewhere between the Huangdi Neijing and wellness Instagram, the Five Elements turned into a BuzzFeed quiz. They're a 2,000-year-old systems map of how your body works.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/16-yin-yang-not-good-vs-evil.html"><img src="images/comic-16-bw.png" class="mini-thumb" alt="">Yin & Yang ≠ Good vs Evil</a></h2>
-  <div class="date">June 6, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>A friend once told me "I need more Yang energy." As if Yang were spinach and Yin were french fries. Yin and Yang aren't a scoreboard — they're a seesaw.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/15-your-tongue-knows-before-blood-test.html"><img src="images/comic-15-bw.png" class="mini-thumb" alt="">Your Tongue Knows Before Your Blood Test Does</a></h2>
-  <div class="date">June 5, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>Your tongue is the only internal organ you can see without a scalpel. For 2,000 years Chinese medicine has read it like a dashboard — spotting patterns weeks before blood markers shift.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/14-ten-questions-ancient-doctors-asked.html"><img src="images/comic-14-bw.png" class="mini-thumb" alt="">10 Questions Ancient Chinese Doctors Asked (That Yours Never Will)</a></h2>
-  <div class="date">June 4, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>When was the last time a doctor asked whether your hands are warm or cold — and listened? Chinese medicine's Ten Questions framework maps answers to organ function.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/13-medicine-character-contains-music.html"><img src="images/comic-13-bw.png" class="mini-thumb" alt="">The Chinese Character for 'Medicine' Contains Music</a></h2>
-  <div class="date">June 2, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>The character 藥 breaks down into 艹 (herbs) and 樂 (music). Ancient Chinese doctors mapped musical notes to organs — modern neuroscience is catching up.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/12-liver-rules-everything.html"><img src="images/comic-12-bw.png" class="mini-thumb" alt="">Your Shoulder Pain, Your IBS, Your Insomnia — They Might All Be Saying the Same Thing</a></h2>
-  <div class="date">June 1, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>You've seen five specialists for five symptoms. TCM says they all trace back to one organ — meet your Liver, the General who's been running the show.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/11-cold-is-never-just-a-cold.html"><img src="images/comic-11-bw.png" class="mini-thumb" alt="">It's Just a Cold — Why Chinese Medicine Thinks That's the Most Dangerous Sentence</a></h2>
-  <div class="date">May 31, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>Everyone says "it's just a cold" and pops a pill. TCM sees a pathogen marching through your body's defenses — and if you ignore it, it doesn't forget where you live.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/10-stop-feeding-what-you-fight.html"><img src="images/comic-10-bw.png" class="mini-thumb" alt="">Stop Feeding What You're Trying to Fight</a></h2>
-  <div class="date">May 29, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>You spend $50 a month on vitamins. Chinese medicine asks: who else are you feeding? The ancient insight that nutrition doesn't discriminate between you and your disease.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/09-six-layer-defense.html"><img src="images/comic-09-bw.png" class="mini-thumb" alt="">The Castle Inside You: Your Body's 6-Layer Defense System</a></h2>
-  <div class="date">May 28, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>Your body doesn't just "get sick." It fights through six layers of defense, like an ancient castle. Understanding this map changes how you see every cold, every fever.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/08-why-cold-hands-warn-you.html"><img src="images/comic-08-bw.png" class="mini-thumb" alt="">Why Your Cold Hands Are Warning You</a></h2>
-  <div class="date">May 27, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>You know that thing where you put on gloves indoors? TCM says cold hands aren't just poor circulation — they're an early warning system you've been ignoring.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/07-six-signs-of-health.html"><img src="images/comic-07-bw.png" class="mini-thumb" alt="">6 Signs You're Actually Healthy (And Why Your Lab Results Don't Tell the Whole Story)</a></h2>
-  <div class="date">May 26, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>Your bloodwork came back "normal." So why do you still feel off? A 2,000-year-old health checklist that asks questions your doctor never does.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/06-that-heavy-feeling-its-not-laziness.html"><img src="images/comic-06-bw.png" class="mini-thumb" alt="">That Heavy Feeling in Your Limbs? It's Not Laziness.</a></h2>
-  <div class="date">May 25, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>Your arms feel like lead. You've been called lazy your whole life. TCM says it's not your willpower — it's your Spleen sending an SOS nobody taught you to read.</p>
-  </div>
-</div>
-<div class="post">
-  <h2><a href="posts/05-body-clock-you-didnt-set.html"><img src="images/comic-05-bw.png" class="mini-thumb" alt="">Your Body Runs on a Clock You Didn't Set — Why 3 AM Is Never Random</a></h2>
+  <h2><a href="posts/05-body-clock-you-didnt-set.html">Your Body Runs on a Clock You Didn't Set — Why 3 AM Is Never Random</a></h2>
   <div class="date">May 24, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>You wake at 3 AM every night. TCM says your organs punch in and out on a schedule that predates mechanical clocks — and your body has been following it your entire life.</p>
-  </div>
-</div>
+
 <div class="post">
-  <h2><a href="posts/04-traffic-jam-inside-your-body.html"><img src="images/comic-04-bw.png" class="mini-thumb" alt="">Why Your Body Is Like a Traffic Jam (And How to Unstick Yourself)</a></h2>
-  <div class="date">May 23, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>That tight feeling in your chest, the sigh you can't suppress, the headache that won't quit — TCM calls it "Qi stagnation." Think of it as a traffic jam inside your body.</p>
-  </div>
-</div>
+  <h2><a href="posts/06-that-heavy-feeling-its-not-laziness.html">That Heavy Feeling in Your Limbs? It's Not Laziness.</a></h2>
+  <div class="date">May 25, 2026 · By Ollie</div>
+
 <div class="post">
-  <h2><a href="posts/03-qi-is-not-magic.html"><img src="images/comic-03-bw.png" class="mini-thumb" alt="">Qi Isn't Magic. It's Your Body's OS — Running Without Updates Since 200 BC</a></h2>
-  <div class="date">May 22, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>You've heard the word "Qi" a thousand times. It's not mystical energy — it's your body's most practical operating system, explained 2,200 years ago in the Huangdi Neijing.</p>
-  </div>
-</div>
+  <h2><a href="posts/07-six-signs-of-health.html">6 Signs You're Actually Healthy (And Why Your Lab Results Don't Tell the Whole Story)</a></h2>
+  <div class="date">May 26, 2026 · By Ollie</div>
+
 <div class="post">
-  <h2><a href="posts/02-exhausted-after-sleep.html"><img src="images/comic-02-bw.png" class="mini-thumb" alt="">8 Hours of Sleep, Still Wrecked? Your Organs Run a Night Shift — And Yours Called In Sick</a></h2>
-  <div class="date">May 21, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>You slept eight hours. You still feel wrecked. Traditional Chinese Medicine has a different answer — and it isn't "sleep more." Meet your body's night shift.</p>
-  </div>
-</div>
+  <h2><a href="posts/08-why-cold-hands-warn-you.html">Why Your Cold Hands Are Warning You</a></h2>
+  <div class="date">May 27, 2026 · By Ollie</div>
+
 <div class="post">
-  <h2><a href="posts/01-why-i-share-tcm-with-the-west.html"><img src="images/comic-01-bw.png" class="mini-thumb" alt="">What a 1,800-Year-Old Book Taught Me About Anxiety — And Why the West Deserves to Hear It</a></h2>
-  <div class="date">May 20, 2026 · By Ollie</div>
-  <div class="excerpt">
-    <p>In a world accelerating toward AI and automation, why would anyone spend time studying thousand-year-old medical texts? The faster the world moves, the more we need something rooted.</p>
-  </div>
-</div>
+  <h2><a href="posts/09-six-layer-defense.html">The Castle Inside You: Your Body's 6-Layer Defense System</a></h2>
+  <div class="date">May 28, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/10-stop-feeding-what-you-fight.html">Stop Feeding What You're Trying to Fight</a></h2>
+  <div class="date">May 29, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/11-cold-is-never-just-a-cold.html">It's Just a Cold — Why Chinese Medicine Thinks That's the Most Dangerous Sentence</a></h2>
+  <div class="date">May 31, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/12-liver-rules-everything.html">Your Shoulder Pain, Your IBS, Your Insomnia — They Might All Be Saying the Same Thing</a></h2>
+  <div class="date">June 1, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/13-medicine-character-contains-music.html">The Chinese Character for 'Medicine' Contains Music</a></h2>
+  <div class="date">June 2, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/14-ten-questions-ancient-doctors-asked.html">10 Questions Ancient Chinese Doctors Asked (That Yours Never Will)</a></h2>
+  <div class="date">June 4, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/15-your-tongue-knows-before-blood-test.html">Your Tongue Knows Before Your Blood Test Does</a></h2>
+  <div class="date">June 5, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/16-yin-yang-not-good-vs-evil.html">Yin & Yang ≠ Good vs Evil</a></h2>
+  <div class="date">June 6, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/17-five-elements-not-personality-test.html">Five Elements ≠ Personality Test — Your Body Is a Garden Ecosystem</a></h2>
+  <div class="date">June 7, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/18-your-body-is-a-kingdom.html">Your Body Is a Kingdom — Why Your Organs Aren't Just Parts</a></h2>
+  <div class="date">June 8, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/19-jing-qi-shen-three-treasures.html">Jing, Qi, Shen — The Three Treasures That Make You You</a></h2>
+  <div class="date">June 9, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/20-what-zhang-zhongjing-knew.html">What Zhang Zhongjing Knew That Your Doctor Doesn't</a></h2>
+  <div class="date">June 12, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/21-stop-fighting-start-warming.html">Your Body Doesn't Need a Warrior — Stop Fighting, Start Warming</a></h2>
+  <div class="date">June 13, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/22-wind-cold-is-not-a-weather-report.html">Wind-Cold Is Not A Weather Report</a></h2>
+  <div class="date">June 14, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/23-your-fever-might-be-your-friend.html">Your Fever Might Be Your Friend</a></h2>
+  <div class="date">June 15, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/24-when-your-body-is-stuck-between-two-fires.html">When Your Body Is Stuck Between Two Fires</a></h2>
+  <div class="date">June 17, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/25-yangming-fire.html">When the Fire Won't Go Out — Understanding the Yangming Stage</a></h2>
+  <div class="date">June 18, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/26-when-food-stops-being-food.html">When Food Stops Being Food — Understanding the Taiyin Stage</a></h2>
+  <div class="date">June 22, 2026 · By Ollie</div>
+
+<div class="post">
+  <h2><a href="posts/27-the-most-dangerous-quiet.html">The Most Dangerous Quiet — Why "I Just Want to Sleep" Is Not Laziness</a></h2>
+  <div class="date">June 23, 2026 · By Ollie</div>
+
 
 </body>
 </html>
