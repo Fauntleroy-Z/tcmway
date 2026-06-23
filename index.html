@@ -1,233 +1,233 @@
-1|<!DOCTYPE html>
-2|<html lang="en">
-3|<head>
-4|<!-- Google tag (gtag.js) -->
-5|<script async src="https://www.googletagmanager.com/gtag/js?id=G-G9S528TPWH"></script>
-6|<script>
-7|  window.dataLayer = window.dataLayer || [];
-8|  function gtag(){dataLayer.push(arguments);}
-9|  gtag('js', new Date());
-10|  gtag('config', 'G-G9S528TPWH');
-11|</script>
-12|
-13|
-14|<meta charset="UTF-8">
-15|<meta name="p:domain_verify" content="bb7223a30fb9fe953d5a2f7068a3e9c3"/>
-16|<meta name="viewport" content="width=device-width, initial-scale=1.0">
-17|<title>TCM Way — Ancient Wisdom, Told Warmly</title>
-18|<meta name="description" content="Bringing authentic Chinese medicine philosophy — especially Shanghan Lun and classical traditions — to the English-speaking world. By Ollie, a TCM practitioner and lifelong learner.">
-19|<meta property="og:title" content="TCM Way — Ancient Wisdom, Told Warmly">
-20|<meta property="og:description" content="Bringing authentic Chinese medicine philosophy to the English-speaking world. Ancient wisdom, told warmly.">
-21|<meta property="og:image" content="https://tcmway.net/images/ollie-warm-v3.png">
-22|<meta property="og:url" content="https://tcmway.net/">
-23|<meta property="og:type" content="website">
-24|<meta property="og:site_name" content="TCM Way">
-25|<meta name="twitter:card" content="summary_large_image">
-26|<link rel="alternate" type="application/rss+xml" title="TCM Way RSS Feed" href="https://tcmway.net/rss.xml">
-27|<style>
-28|  :root {
-29|    --bg: #fdf6ee;
-30|    --text: #3b2a1a;
-31|    --accent: #b83a2a;
-32|    --accent-warm: #e8a87c;
-33|    --light: #fef0e2;
-34|    --border: #e8d5c0;
-35|    --subtle: #8a6d54;
-36|    --gold: #c9a84c;
-37|  }
-38|
-39|  * { margin: 0; padding: 0; box-sizing: border-box; }
-40|
-41|  body {
-42|    font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif;
-43|    background: var(--bg);
-44|    color: var(--text);
-45|    line-height: 2;
-46|    max-width: 720px;
-47|    margin: 0 auto;
-48|    padding: 0 1.5rem 3rem;
-49|  }
-50|
-51|  /* —— Brand Header (Direction B: 赤縁) —— */
-52|  header {
-53|    text-align: center;
-54|    padding: 3rem 0 2rem;
-55|    border-bottom: 2px solid var(--border);
-56|    margin-bottom: 2.5rem;
-57|  }
-58|
-59|  .brand-symbol {
-60|    display: block;
-61|    margin: 0 auto 1rem;
-62|    width: 80px;
-63|    height: 80px;
-64|  }
-65|
-66|  header h1 {
-67|    font-family: Georgia, 'Times New Roman', serif;
-68|    font-size: 2.8rem;
-69|    font-weight: 700;
-70|    letter-spacing: 0.12em;
-71|    color: var(--accent);
-72|    position: relative;
-73|    display: inline-block;
-74|  }
-75|
-76|  /* 手工感下划线 */
-77|  header h1::after {
-78|    content: "";
-79|    position: absolute;
-80|    bottom: -8px;
-81|    left: 5%;
-82|    width: 90%;
-83|    height: 3px;
-84|    background: linear-gradient(90deg, transparent, var(--accent-warm), var(--accent), var(--accent-warm), transparent);
-85|    border-radius: 2px;
-86|  }
-87|
-88|  header p {
-89|    color: var(--subtle);
-90|    font-style: italic;
-91|    margin-top: 1.2rem;
-92|    font-size: 1.05rem;
-93|    letter-spacing: 0.02em;
-94|  }
-95|
-96|  nav {
-97|    margin-top: 1.5rem;
-98|  }
-99|
-100|  nav a {
-101|    color: var(--text);
-102|    text-decoration: none;
-103|    margin: 0 0.8rem;
-104|    font-size: 0.9rem;
-105|    letter-spacing: 0.06em;
-106|    font-weight: 700;
-107|    font-family: Georgia, serif;
-108|    transition: color 0.3s;
-109|    position: relative;
-110|  }
-111|
-112|  nav a:hover { color: var(--accent); }
-113|
-114|  /* —— Newsletter Signup —— */
-115|  .subscribe-box {
-116|    background: var(--light);
-117|    border: 1px solid var(--border);
-118|    border-radius: 6px;
-119|    padding: 1.8rem 2rem;
-120|    margin: 2rem 0 3rem;
-121|    text-align: center;
-122|    position: relative;
-123|    overflow: hidden;
-124|  }
-125|
-126|  .subscribe-box::before {
-127|    content: "";
-128|    position: absolute;
-129|    top: -20px;
-130|    right: -20px;
-131|    width: 80px;
-132|    height: 80px;
-133|    background: var(--accent);
-134|    opacity: 0.06;
-135|    border-radius: 50%;
-136|  }
-137|
-138|  .subscribe-box p {
-139|    color: var(--subtle);
-140|    margin-bottom: 0.6rem;
-141|    font-size: 0.95rem;
-142|  }
-143|
-144|  .subscribe-box a {
-145|    display: inline-block;
-146|    background: var(--accent);
-147|    color: white;
-148|    padding: 0.65rem 2.2rem;
-149|    text-decoration: none;
-150|    border-radius: 6px;
-151|    font-family: -apple-system, 'Helvetica Neue', sans-serif;
-152|    font-size: 0.92rem;
-153|    letter-spacing: 0.04em;
-154|    transition: background 0.3s;
-155|  }
-156|
-157|  .subscribe-box a:hover { background: #a03020; }
-158|
-159|  /* —— Post List —— */
-160|  .post {
-161|    margin-bottom: 2.5rem;
-162|    padding-bottom: 2rem;
-163|    border-bottom: 1px solid var(--border);
-164|  }
-165|
-166|  .post h2 {
-167|    font-weight: 700;
-168|    font-size: 1.3rem;
-169|    margin-bottom: 0.3rem;
-170|    line-height: 1.5;
-171|    letter-spacing: 0.01em;
-172|  }
-173|
-174|  .post h2 a {
-175|    color: var(--text);
-176|    text-decoration: none;
-177|    transition: color 0.2s;
-178|  }
-179|
-180|  .post h2 a:hover { color: var(--accent); }
-181|
-182|  .post .date {
-183|    color: var(--subtle);
-184|    font-size: 0.82rem;
-185|    letter-spacing: 0.06em;
-186|    margin-bottom: 0.6rem;
-187|    font-family: -apple-system, sans-serif;
-188|    text-transform: uppercase;
-189|  }
-190|
-191|  .post .excerpt {
-192|    color: var(--subtle);
-193|    font-size: 0.95rem;
-194|    line-height: 1.8;
-195|  }
-196|
-197|  .mini-owl {
-198|    width: 22px;
-199|    height: 22px;
-200|    border-radius: 50%;
-201|    vertical-align: middle;
-202|    margin-right: 6px;
-203|    object-fit: cover;
-204|  }
-205|
-206|  /* —— Coming Soon —— */
-207|  .post-coming {
-208|    opacity: 0.5;
-209|  }
-210|
-211|  /* —— Footer —— */
-212|  footer {
-213|    text-align: center;
-214|    padding: 3rem 0 1rem;
-215|    color: var(--subtle);
-216|    font-size: 0.82rem;
-217|    border-top: 2px solid var(--border);
-218|    margin-top: 3rem;
-219|    letter-spacing: 0.04em;
-220|    line-height: 2;
-221|  }
-222|
-223|  footer a {
-224|    color: var(--accent);
-225|    text-decoration: none;
-226|    transition: color 0.2s;
-227|  }
-228|
-229|  footer a:hover { color: var(--gold); }
-230|
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-G9S528TPWH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-G9S528TPWH');
+</script>
+
+
+<meta charset="UTF-8">
+<meta name="p:domain_verify" content="bb7223a30fb9fe953d5a2f7068a3e9c3"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TCM Way — Ancient Wisdom, Told Warmly</title>
+<meta name="description" content="Bringing authentic Chinese medicine philosophy — especially Shanghan Lun and classical traditions — to the English-speaking world. By Ollie, a TCM practitioner and lifelong learner.">
+<meta property="og:title" content="TCM Way — Ancient Wisdom, Told Warmly">
+<meta property="og:description" content="Bringing authentic Chinese medicine philosophy to the English-speaking world. Ancient wisdom, told warmly.">
+<meta property="og:image" content="https://tcmway.net/images/ollie-warm-v3.png">
+<meta property="og:url" content="https://tcmway.net/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TCM Way">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="TCM Way RSS Feed" href="https://tcmway.net/rss.xml">
+<style>
+  :root {
+    --bg: #fdf6ee;
+    --text: #3b2a1a;
+    --accent: #b83a2a;
+    --accent-warm: #e8a87c;
+    --light: #fef0e2;
+    --border: #e8d5c0;
+    --subtle: #8a6d54;
+    --gold: #c9a84c;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', 'Noto Serif SC', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 2;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+  }
+
+  /* —— Brand Header (Direction B: 赤縁) —— */
+  header {
+    text-align: center;
+    padding: 3rem 0 2rem;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 2.5rem;
+  }
+
+  .brand-symbol {
+    display: block;
+    margin: 0 auto 1rem;
+    width: 80px;
+    height: 80px;
+  }
+
+  header h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+    position: relative;
+    display: inline-block;
+  }
+
+  /* 手工感下划线 */
+  header h1::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 5%;
+    width: 90%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--accent-warm), var(--accent), var(--accent-warm), transparent);
+    border-radius: 2px;
+  }
+
+  header p {
+    color: var(--subtle);
+    font-style: italic;
+    margin-top: 1.2rem;
+    font-size: 1.05rem;
+    letter-spacing: 0.02em;
+  }
+
+  nav {
+    margin-top: 1.5rem;
+  }
+
+  nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 0.8rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+    font-family: Georgia, serif;
+    transition: color 0.3s;
+    position: relative;
+  }
+
+  nav a:hover { color: var(--accent); }
+
+  /* —— Newsletter Signup —— */
+  .subscribe-box {
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.8rem 2rem;
+    margin: 2rem 0 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .subscribe-box::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    background: var(--accent);
+    opacity: 0.06;
+    border-radius: 50%;
+  }
+
+  .subscribe-box p {
+    color: var(--subtle);
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .subscribe-box a {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 0.65rem 2.2rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: -apple-system, 'Helvetica Neue', sans-serif;
+    font-size: 0.92rem;
+    letter-spacing: 0.04em;
+    transition: background 0.3s;
+  }
+
+  .subscribe-box a:hover { background: #a03020; }
+
+  /* —— Post List —— */
+  .post {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .post h2 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+  }
+
+  .post h2 a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .post h2 a:hover { color: var(--accent); }
+
+  .post .date {
+    color: var(--subtle);
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.6rem;
+    font-family: -apple-system, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .post .excerpt {
+    color: var(--subtle);
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .mini-owl {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 6px;
+    object-fit: cover;
+  }
+
+  /* —— Coming Soon —— */
+  .post-coming {
+    opacity: 0.5;
+  }
+
+  /* —— Footer —— */
+  footer {
+    text-align: center;
+    padding: 3rem 0 1rem;
+    color: var(--subtle);
+    font-size: 0.82rem;
+    border-top: 2px solid var(--border);
+    margin-top: 3rem;
+    letter-spacing: 0.04em;
+    line-height: 2;
+  }
+
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  footer a:hover { color: var(--gold); }
+
   .mini-thumb {
     width: 50px;
     height: 50px;
@@ -253,17 +253,17 @@
   }
 
 </style>
-231|<script>
-232|var _hmt = _hmt || [];
-233|(function() {
-234|  var hm = document.createElement("script");
-235|  hm.src = "https://hm.baidu.com/hm.js?44f28eb4eacca95fb6aeacca17dd57d5";
-236|  var s = document.getElementsByTagName("script")[0];
-237|  s.parentNode.insertBefore(hm, s);
-238|})();
-239|</script>
-240|</head>
-241|<body>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?44f28eb4eacca95fb6aeacca17dd57d5";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</head>
+<body>
 
 <header>
   <!-- Ollie 印章图标 -->
