@@ -1,240 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-    <loc>https://tcmway.net/posts/01-why-i-share-tcm-with-the-west.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/02-exhausted-after-sleep.html</loc>
-    <lastmod>2026-05-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/03-qi-is-not-magic.html</loc>
-    <lastmod>2026-05-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/04-traffic-jam-inside-your-body.html</loc>
-    <lastmod>2026-05-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/05-body-clock-you-didnt-set.html</loc>
-    <lastmod>2026-05-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/06-that-heavy-feeling-its-not-laziness.html</loc>
-    <lastmod>2026-05-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/07-six-signs-of-health.html</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/08-why-cold-hands-warn-you.html</loc>
-    <lastmod>2026-05-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/09-six-layer-defense.html</loc>
-    <lastmod>2026-05-29</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/10-stop-feeding-what-you-fight.html</loc>
-    <lastmod>2026-05-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/11-cold-is-never-just-a-cold.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/12-liver-rules-everything.html</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/13-medicine-character-contains-music.html</loc>
-    <lastmod>2026-06-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/14-ten-questions-ancient-doctors-asked.html</loc>
-    <lastmod>2026-06-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/16-yin-yang-not-good-vs-evil.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/17-five-elements-not-personality-test.html</loc>
-    <lastmod>2026-06-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/18-your-body-is-a-kingdom.html</loc>
-    <lastmod>2026-06-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/19-jing-qi-shen-three-treasures.html</loc>
-    <lastmod>2026-06-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/15-your-tongue-knows-before-blood-test.html</loc>
-    <lastmod>2026-06-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/20-what-zhang-zhongjing-knew.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/21-stop-fighting-start-warming.html</loc>
-    <lastmod>2026-06-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/22-wind-cold-is-not-a-weather-report.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/23-your-fever-might-be-your-friend.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/24-when-your-body-is-stuck-between-two-fires.html</loc>
-    <lastmod>2026-06-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/25-yangming-fire.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/26-when-food-stops-being-food.html</loc>
-    <lastmod>2026-06-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/27-the-most-dangerous-quiet.html</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/</loc>
-    <lastmod>2026-06-23</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/about.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/disclaimer.html</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/about-owl.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/ollies-corner.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/privacy.html</loc>
-    <lastmod>2026-06-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
   <url>
-    <loc>https://tcmway.net/posts/28-stop-fighting-start-warming.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>weekly</changefreq>
+  <loc>https://tcmway.net/</loc>
+  <lastmod>2026-06-24</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.0</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/about.html</loc>
+  <lastmod>2026-05-20</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/about-owl.html</loc>
+  <lastmod>2026-06-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.5</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/ollies-corner.html</loc>
+  <lastmod>2026-06-14</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.6</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/privacy.html</loc>
+  <lastmod>2026-06-14</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.3</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/disclaimer.html</loc>
+  <lastmod>2026-05-20</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.3</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/01-why-i-share-tcm-with-the-west.html</loc>
+  <lastmod>2026-05-20</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/02-exhausted-after-sleep.html</loc>
+  <lastmod>2026-05-21</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/03-qi-is-not-magic.html</loc>
+  <lastmod>2026-05-22</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/04-traffic-jam-inside-your-body.html</loc>
+  <lastmod>2026-05-23</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/05-body-clock-you-didnt-set.html</loc>
+  <lastmod>2026-05-24</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/06-that-heavy-feeling-its-not-laziness.html</loc>
+  <lastmod>2026-05-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/07-six-signs-of-health.html</loc>
+  <lastmod>2026-05-27</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/08-why-cold-hands-warn-you.html</loc>
+  <lastmod>2026-05-28</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/09-six-layer-defense.html</loc>
+  <lastmod>2026-05-29</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/10-stop-feeding-what-you-fight.html</loc>
+  <lastmod>2026-05-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/11-cold-is-never-just-a-cold.html</loc>
+  <lastmod>2026-05-31</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/12-liver-rules-everything.html</loc>
+  <lastmod>2026-06-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/13-medicine-character-contains-music.html</loc>
+  <lastmod>2026-06-03</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/14-ten-questions-ancient-doctors-asked.html</loc>
+  <lastmod>2026-06-04</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/15-your-tongue-knows-before-blood-test.html</loc>
+  <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/16-yin-yang-not-good-vs-evil.html</loc>
+  <lastmod>2026-06-06</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/17-five-elements-not-personality-test.html</loc>
+  <lastmod>2026-06-07</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/18-your-body-is-a-kingdom.html</loc>
+  <lastmod>2026-06-07</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/19-jing-qi-shen-three-treasures.html</loc>
+  <lastmod>2026-06-07</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/20-what-zhang-zhongjing-knew.html</loc>
+  <lastmod>2026-06-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/21-stop-fighting-start-warming.html</loc>
+  <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/22-wind-cold-is-not-a-weather-report.html</loc>
+  <lastmod>2026-06-14</lastmod>
+    <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/23-your-fever-might-be-your-friend.html</loc>
+  <lastmod>2026-06-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/24-when-your-body-is-stuck-between-two-fires.html</loc>
+  <lastmod>2026-06-17</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/25-yangming-fire.html</loc>
+  <lastmod>2026-06-18</lastmod>
+  <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/26-when-food-stops-being-food.html</loc>
+  <lastmod>2026-06-22</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/27-the-most-dangerous-quiet.html</loc>
+  <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+  </url>
+  <url>
+  <loc>https://tcmway.net/posts/28-stop-fighting-start-warming.html</loc>
+  <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
   </url>
 </urlset>
