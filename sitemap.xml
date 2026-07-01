@@ -204,8 +204,14 @@
   </url>
 
 <url>
-  <loc>https://tcmway.net/</loc>
-  <lastmod>2026-07-01</lastmod>
+  <loc>https://tcmway.net/posts/30-when-the-body-reaches-its-last-line.html</loc>
+  <lastmod>2026-06-30</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  P26-07-01</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.0</priority>
   </url>
@@ -246,11 +252,17 @@
   </url>
 
 <url>
-  <loc>https://tcmway.net/posts/30-when-the-body-reaches-its-last-line.html</loc>
-  <lastmod>2026-06-30</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
+  <loc>https://tcmway.net/podcast/</loc>
+  <lastmod>2026-07-01</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://tcmway.net/podcast/feed.xml</loc>
+  <lastmod>2026-07-01</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.5</priority>
 </url>
 
 </urlset>
-

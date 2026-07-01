@@ -6,9 +6,25 @@
 <title>East &amp; Inner with Ollie — Podcast</title>
 <meta name="description" content="Classical Chinese medicine, translated for the modern ear. Hosted by Ollie.">
 <link rel="alternate" type="application/rss+xml" title="East &amp; Inner Podcast" href="/podcast/feed.xml">
+
+<!-- Open Graph -->
+<meta property="og:title" content="East &amp; Inner with Ollie — Podcast">
+<meta property="og:description" content="Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee.">
+<meta property="og:image" content="https://tcmway.net/podcast/cover.jpg">
+<meta property="og:url" content="https://tcmway.net/podcast/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TCM Way">
+<meta name="twitter:card" content="summary_large_image">
+
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body { font-family: Georgia, serif; background: #fdfaf3; color: #2c2416; line-height: 1.7; max-width: 720px; margin: 0 auto; padding: 40px 20px; }
+
+  /* Navigation */
+  nav { text-align: center; margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #e8dcc8; }
+  nav a { color: #8b7355; text-decoration: none; margin: 0 0.8rem; font-size: 0.95rem; }
+  nav a:hover { color: #b83a2a; }
+
   h1 { font-size: 2.2em; margin-bottom: 4px; color: #5c3a1e; }
   .tagline { color: #8b7355; font-size: 1.1em; margin-bottom: 30px; font-style: italic; }
   .cover { width: 200px; height: 200px; border-radius: 12px; float: right; margin: 0 0 20px 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
@@ -25,6 +41,8 @@
   .ep-info .date { font-size: 0.85em; color: #a09080; margin-bottom: 8px; }
   .ep-info p { font-size: 0.95em; color: #4a3728; }
   .ep-info audio { width: 100%; margin-top: 10px; }
+  .ep-info .read-article { display: inline-block; margin-top: 8px; font-size: 0.9em; color: #b83a2a; text-decoration: none; border-bottom: 1px dotted #b83a2a; }
+  .ep-info .read-article:hover { border-bottom-style: solid; }
 
   footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #e8dcc8; font-size: 0.85em; color: #a09080; text-align: center; }
   footer a { color: #5c3a1e; }
@@ -32,14 +50,22 @@
 </head>
 <body>
 
+<nav>
+  <a href="/">Home</a>
+  <a href="/about.html">About</a>
+  <a href="/start-here.html">Start Here</a>
+  <a href="/about-owl.html">The Owl</a>
+  <a href="/podcast/" style="color:#b83a2a;">🎧 Podcast</a>
+  <a href="/contact.html">Contact</a>
+  <a href="/ollies-corner.html">Ollie's Corner</a>
+</nav>
+
 <img class="cover" src="cover.jpg" alt="East &amp; Inner Podcast Cover">
 
 <h1>East &amp; Inner</h1>
 <p class="tagline">Classical Chinese medicine, translated for the modern ear. Hosted by Ollie.</p>
 
 <div class="listen">
-  <a class="btn-spotify" href="https://podcasters.spotify.com/pod/show/east-inner" target="_blank">🎧 Spotify</a>
-  <a class="btn-apple" href="https://podcasts.apple.com/podcast/id0000000000" target="_blank"> Apple Podcasts</a>
   <a class="btn-rss" href="feed.xml">📡 RSS</a>
 </div>
 
@@ -54,15 +80,31 @@
     <audio controls preload="none">
       <source src="ep01.mp3" type="audio/mpeg">
     </audio>
+    <a class="read-article" href="/posts/16-yin-yang-not-good-vs-evil.html">📖 Read the full article →</a>
   </div>
 </div>
 
 <footer>
-  <p>New episodes every other week. Subscribe on <a href="feed.xml">RSS</a> · 
-  <a href="https://podcasters.spotify.com/pod/show/east-inner">Spotify</a> · 
-  <a href="https://podcasts.apple.com/podcast/id0000000000">Apple Podcasts</a></p>
+  <p>New episodes every other week. Subscribe via <a href="feed.xml">RSS</a> · Coming soon to Apple Podcasts &amp; Spotify</p>
   <p style="margin-top:4px">Part of <a href="https://tcmway.net">TCM Way</a> · ollie@tcmway.net</p>
 </footer>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PodcastSeries",
+  "name": "East &amp; Inner with Ollie",
+  "description": "Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee.",
+  "url": "https://tcmway.net/podcast/",
+  "image": "https://tcmway.net/podcast/cover.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Ollie"
+  },
+  "webFeed": "https://tcmway.net/podcast/feed.xml"
+}
+</script>
 
 </body>
 </html>
