@@ -211,10 +211,11 @@
 </url>
 
 <url>
-  P26-07-01</lastmod>
+  <loc>https://tcmway.net/</loc>
+  <lastmod>2026-07-02</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.0</priority>
-  </url>
+</url>
 
 <url>
   <loc>https://tcmway.net/about.html</loc>
