@@ -48,5 +48,22 @@
     <itunes:image href="https://tcmway.net/podcast/cover.jpg"/>
   </item>
 
+  <!-- ===== EPISODE 2 ===== -->
+  <item>
+    <title>Stop Fighting, Start Warming</title>
+    <link>https://tcmway.net/posts/21-stop-fighting-start-warming.html</link>
+    <guid isPermaLink="false">east-inner-ep02-stop-fighting</guid>
+    <pubDate>Wed, 02 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[When a cold hits, your first instinct is to fight it. But Chinese medicine says that's exactly the wrong move. Discover the three warming herbs — Gui Zhi, Gan Jiang, and Fu Zi — and learn why your body doesn't need a warrior. It just needs a blanket.]]></description>
+    <itunes:summary><![CDATA[Stop fighting colds. Start warming your body. Ollie explains the three warming herbs, the terrain theory, and why Gui Zhi Tang opens the Shanghan Lun. Featuring guqin music.]]></itunes:summary>
+    <itunes:duration>1071</itunes:duration>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:episode>2</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <enclosure url="https://tcmway.net/podcast/ep02.mp3" length="17131437" type="audio/mpeg"/>
+    <itunes:image href="https://tcmway.net/podcast/cover.jpg"/>
+  </item>
+
 </channel>
 </rss>
