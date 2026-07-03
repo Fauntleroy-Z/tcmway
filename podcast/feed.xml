@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a screech owl with a yin-yang pendant and a lot of questions. New episodes every other week.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Wed, 02 Jul 2026 14:50:00 GMT</lastBuildDate>
+  <lastBuildDate>Thu, 03 Jul 2026 03:38:00 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -32,7 +32,22 @@
   </itunes:owner>
 
   <!-- ===== EPISODE 1 ===== -->
-  <item>
+      <item>
+      <title><![CDATA[Ep04: What Is Qi, Actually?]]></title>
+      <link>https://tcmway.net/podcast/ep04.mp3</link>
+      <guid isPermaLink="true">https://tcmway.net/podcast/ep04.mp3</guid>
+      <pubDate>Thu, 03 Jul 2026 03:38:00 +0800</pubDate>
+      <description><![CDATA[
+        <p>You've heard the word a thousand times. But what IS Qi, actually? Not the wellness-industry version — the real thing. Ollie explains the five functions of Qi, the four ways it goes wrong, and why your body has been trying to tell you something your whole life. Adapted from the TCM Way article "Qi Isn't Magic: It's Your Body's OS."</p>
+      ]]></description>
+      <enclosure url="https://tcmway.net/podcast/ep04.mp3" length="17624964" type="audio/mpeg"/>
+      <itunes:duration>18:21</itunes:duration>
+      <itunes:episode>4</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:author>Ollie</itunes:author>
+    </item>
+
+<item>
     <title>Yin &amp; Yang ≠ Good vs Evil</title>
     <link>https://tcmway.net/posts/16-yin-yang-not-good-vs-evil.html</link>
     <guid isPermaLink="false">east-inner-ep01-yin-yang</guid>
