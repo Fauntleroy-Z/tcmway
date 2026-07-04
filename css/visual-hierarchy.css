@@ -1,0 +1,84 @@
+/* Phase A Visual Hierarchy — shared across all TCM Way articles */
+
+/* TL;DR summary box */
+.tl-dr {
+  background: #fef0e2;
+  border-left: 4px solid #e8a87c;
+  padding: 1rem 1.3rem;
+  margin: 1.5rem 0 2rem;
+  border-radius: 0 8px 8px 0;
+  font-size: 0.95rem;
+  color: #3b2a1a;
+  line-height: 1.7;
+}
+.tl-dr::before {
+  content: "TL;DR — 30 second read";
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #e8a87c;
+  margin-bottom: 0.5rem;
+  font-family: -apple-system, sans-serif;
+  font-weight: 600;
+}
+
+/* Key concept highlight */
+.key-concept {
+  border-bottom: 2px dotted #e8a87c;
+  cursor: help;
+}
+
+/* Alternating section background */
+.section-alt {
+  background: #faf5ed;
+  padding: 1.8rem 2rem;
+  margin: 2rem -2rem;
+  border-radius: 8px;
+}
+@media (max-width: 600px) {
+  .section-alt { margin: 2rem -1rem; padding: 1.2rem 1rem; }
+}
+
+/* Pull quote */
+article blockquote.pull {
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  color: #b83a2a;
+  text-align: center;
+  padding: 2rem 2.5rem;
+  margin: 2.5rem 0;
+  line-height: 1.5;
+  font-style: italic;
+  position: relative;
+}
+article blockquote.pull::before {
+  content: "◑";
+  display: block;
+  font-size: 1.5rem;
+  color: #e8a87c;
+  margin-bottom: 0.8rem;
+  font-style: normal;
+}
+article blockquote.pull::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #e8a87c;
+  margin: 0.8rem auto 0;
+}
+
+/* Ollie note / aside */
+.ollie-note {
+  background: #fef0e2;
+  border-left: 3px solid #e8a87c;
+  padding: 0.8rem 1rem;
+  margin: 1.5rem 0;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
