@@ -3,181 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon.png">
-<title>One Pendant. A Thousand Journeys. — Ollie's Corner</title>
-<meta name="description" content="The same yin-yang pendant. Different times. Different worlds. One owl. An art gallery of what Chinese medicine looks like through the eyes of history.">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon.png?v=2">
+<title>One Pendant. A Thousand Journeys. — Ollie's Corner | TCM Way</title>
+<meta name="description" content="The same yin-yang pendant. The same owl. Reimagined through the brushstrokes of Kyoto, the stained glass of Notre-Dame, the geometry of Marrakech — and other worlds yet to come.">
 <meta property="og:title" content="One Pendant. A Thousand Journeys. — Ollie's Corner">
-<meta property="og:description" content="The same yin-yang pendant. Different times. Different worlds. One owl.">
-<meta property="og:image" content="https://tcmway.net/images/brand/logo-tcmway-header.png">
+<meta property="og:description" content="The same yin-yang pendant. The same owl. Reimagined through different cultures, eras, and ways of seeing.">
+<meta property="og:image" content="https://tcmway.net/images/brand/logo-tcmway-header.png?v=2">
 <meta property="og:url" content="https://tcmway.net/ollies-corner.html">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="TCM Way">
+<meta name="twitter:card" content="summary_large_image">
 <style>
-  :root {
-    --bg: #fdf6ee;
-    --text: #3b2a1a;
-    --accent: #b83a2a;
-    --accent-warm: #e8a87c;
-    --light: #fef0e2;
-    --border: #e8d5c0;
-    --subtle: #8a6d54;
-    --gold: #c9a84c;
-    --ink: #2c2416;
-  }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body {
-    font-family: Georgia, 'Times New Roman', serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.9;
-  }
-  
-  /* ── Header ── */
-  .site-header {
-    text-align: center;
-    padding: 2rem 1rem 1.5rem;
-    border-bottom: 1px solid var(--border);
-    background: var(--bg);
-  }
-  .site-header img { width: 80px; display: block; margin: 0 auto 0.5rem; }
-  .site-header h1 { font-size: 2rem; font-weight: normal; color: var(--accent); }
-  .site-header nav { margin-top: 0.8rem; }
-  .site-header nav a {
-    color: var(--subtle); text-decoration: none; margin: 0 0.7rem;
-    font-size: 0.9rem; letter-spacing: 0.04em;
-  }
-  .site-header nav a:hover { color: var(--accent); }
+  :root{--bg:#fdf6ee;--text:#3b2a1a;--accent:#b83a2a;--accent-warm:#e8a87c;--light:#fef0e2;--border:#e8d5c0;--subtle:#8a6d54;--gold:#c9a84c}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);line-height:1.9}
+
+  /* ── Header (brand standard) ── */
+  header{text-align:center;padding:3rem 0 2rem;border-bottom:2px solid var(--border);margin-bottom:2.5rem}
+  .brand-symbol{display:block;margin:0 auto 1.2rem;width:110px;height:auto}
+  header h1{font-size:2.2rem;font-weight:700;letter-spacing:.08em;color:var(--accent);display:inline-block;position:relative}
+  header h1::after{content:"";position:absolute;bottom:-6px;left:5%;width:90%;height:3px;background:linear-gradient(90deg,transparent,var(--accent-warm),var(--accent),var(--accent-warm),transparent);border-radius:2px}
+  header p.tagline{color:var(--subtle);font-style:italic;margin-top:.6rem;font-size:.95rem;letter-spacing:.02em}
+  nav{margin-top:1.5rem}
+  nav a{color:var(--subtle);text-decoration:none;margin:0 .8rem;font-size:.9rem;letter-spacing:.06em;transition:color .3s}
+  nav a:hover{color:var(--accent)}
+  nav a.current{color:var(--accent);font-weight:600}
 
   /* ── Hero ── */
-  .hero {
-    text-align: center;
-    padding: 5rem 1rem 4rem;
-    max-width: 680px;
-    margin: 0 auto;
-  }
-  .hero .pendant-big {
-    width: 100px;
-    margin-bottom: 2rem;
-    opacity: 0.85;
-  }
-  .hero h2 {
-    font-size: 2.6rem;
-    font-weight: normal;
-    color: var(--accent);
-    line-height: 1.3;
-    margin-bottom: 1rem;
-    letter-spacing: 0.02em;
-  }
-  .hero .subtitle {
-    font-size: 1.15rem;
-    color: var(--subtle);
-    font-style: italic;
-    max-width: 500px;
-    margin: 0 auto;
-    line-height: 1.7;
-  }
-  .hero .divider {
-    width: 60px; height: 3px;
-    background: var(--accent-warm);
-    margin: 2rem auto;
-    border-radius: 2px;
-  }
+  .hero{text-align:center;padding:5rem 1rem 4rem;max-width:680px;margin:0 auto}
+  .hero .pendant-big{width:100px;margin-bottom:2rem}
+  .hero h1{font-size:2.6rem;font-weight:normal;color:var(--accent);line-height:1.3;margin-bottom:1rem;letter-spacing:.02em}
+  .hero .subtitle{font-size:1.15rem;color:var(--subtle);font-style:italic;max-width:520px;margin:0 auto;line-height:1.7}
+  .hero .divider{width:60px;height:3px;background:var(--accent-warm);margin:2rem auto;border-radius:2px}
 
-  /* ── Journey Cards ── */
-  .journeys {
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 0 1rem 4rem;
-  }
-  .journey {
-    margin-bottom: 4rem;
-    position: relative;
-  }
-  .journey img {
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    box-shadow: 0 2px 12px rgba(139, 109, 84, 0.10);
-  }
-  .journey .caption {
-    margin-top: 1rem;
-    text-align: center;
-  }
-  .journey .caption .place {
-    font-size: 1.1rem;
-    color: var(--accent);
-    letter-spacing: 0.04em;
-  }
-  .journey .caption .time {
-    font-size: 0.85rem;
-    color: var(--subtle);
-    margin-top: 0.2rem;
-  }
-  .journey::before {
-    content: "◑";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -1.8rem;
-    font-size: 1.2rem;
-    color: var(--accent-warm);
-    z-index: 1;
-  }
+  /* ── Gallery ── */
+  .journeys{max-width:860px;margin:0 auto;padding:0 1rem 4rem}
+  .journey{margin-bottom:5rem}
+  .journey img{width:100%;border-radius:8px;border:1px solid var(--border);box-shadow:0 2px 12px rgba(139,109,84,0.10);transition:box-shadow .3s}
+  .journey img:hover{box-shadow:0 4px 20px rgba(139,109,84,0.16)}
+  .journey .caption{margin-top:1rem;text-align:center}
+  .journey .caption .place{font-size:1.1rem;color:var(--accent);letter-spacing:.04em}
+  .journey .caption .time{font-size:.85rem;color:var(--subtle);margin-top:.2rem}
+
+  /* ── Back CTA ── */
+  .back-cta{text-align:center;padding:2.5rem 1rem;background:var(--light);border-radius:8px;margin:3rem auto 4rem;max-width:860px;border:1px solid var(--border)}
+  .back-cta .lead{color:var(--subtle);font-style:italic;margin-bottom:.8rem;font-size:1.05rem}
+  .back-cta a{color:var(--accent);text-decoration:none;font-weight:600;font-size:1.05rem;transition:color .2s}
+  .back-cta a:hover{color:var(--gold)}
 
   /* ── Footer ── */
-  .footer {
-    text-align: center;
-    padding: 3rem 1rem;
-    border-top: 1px solid var(--border);
-    color: var(--subtle);
-    font-size: 0.85rem;
-    line-height: 2;
-    max-width: 860px;
-    margin: 0 auto;
-  }
-  .footer .ending {
-    margin-bottom: 2rem;
-    font-style: italic;
-    font-size: 1.05rem;
-    color: var(--accent);
-  }
-  .footer a { color: var(--accent); text-decoration: none; }
-  .footer a:hover { text-decoration: underline; }
+  footer{text-align:center;padding:3rem 1rem;border-top:1px solid var(--border);color:var(--subtle);font-size:.85rem;line-height:2;max-width:860px;margin:0 auto}
+  footer a{color:var(--accent);text-decoration:none}
+  footer a:hover{text-decoration:underline}
 
-  @media (max-width: 600px) {
-    .hero h2 { font-size: 1.8rem; }
-    .hero { padding: 3rem 1rem 2rem; }
-  }
+  @media(max-width:600px){.brand-symbol{width:100px}.hero h1{font-size:1.8rem}.hero{padding:3rem 1rem 2rem}header{padding:2rem 0 1.5rem}header h1{font-size:1.8rem}}
+  @media(max-width:400px){.brand-symbol{width:90px}}
 </style>
 </head>
 <body>
 
-<header class="site-header">
-  <img src="/images/brand/logo-tcmway-header.png" alt="TCM Way — yin-yang pendant" style="width:110px;display:block;margin:0 auto 0.5rem;">
-    <nav>
+<header>
+  <img src="/images/brand/logo-tcmway-header.png?v=2" class="brand-symbol" alt="TCM Way — yin-yang pendant">
+  <h1>TCM Way</h1>
+  <p class="tagline">Ancient Wisdom, Told Warmly</p>
+  <nav>
     <a href="/">Home</a>
     <a href="/start-here.html">Start Here</a>
     <a href="/archive.html">Archive</a>
     <a href="/podcast/">🎧 Podcast</a>
     <a href="/about.html">About</a>
+    <a href="/ollies-corner.html" class="current">🖼️ Gallery</a>
   </nav>
 </header>
 
 <section class="hero">
-  <img class="pendant-big" src="/images/brand/logo-tcmway-header.png" alt="">
-  <h2>One Pendant.<br>A Thousand Journeys.</h2>
+  <img class="pendant-big" src="/images/brand/logo-tcmway-header.png?v=2" alt="TCM Way pendant">
+  <h1>One Pendant.<br>A Thousand Journeys.</h1>
   <div class="divider"></div>
   <p class="subtitle">
-    The same yin-yang pendant. Worn by the same owl. Seen through different eyes — different centuries, different cultures, different ways of seeing.
-  </p>
-  <p style="margin-top:1.5rem; font-size:0.9rem; color:var(--subtle);">
-    Each image below is a window into what Chinese medicine might look like if it had been drawn by a different tradition. The pendant is the constant. Everything else changes.
+    The same yin-yang pendant. The same owl. Reimagined through the
+    brushstrokes of Kyoto, the stained glass of Notre-Dame, the
+    geometry of Marrakech — and other worlds yet to come.
   </p>
 </section>
 
 <section class="journeys">
 
   <div class="journey">
-    <img src="/images/brand/journeys/kyoto.png" alt="Kyoto temple, 1688" loading="lazy">
+    <img src="/images/brand/journeys/kyoto.png" alt="Kyoto temple, sumi-e ink wash, Edo period 1688" loading="lazy">
     <div class="caption">
       <div class="place">A temple in Kyoto</div>
       <div class="time">Sumi-e ink wash · Edo period · 1688</div>
@@ -185,7 +98,7 @@
   </div>
 
   <div class="journey">
-    <img src="/images/brand/journeys/notredame.png" alt="Notre-Dame, before the fire" loading="lazy">
+    <img src="/images/brand/journeys/notredame.png" alt="Notre-Dame de Paris, Gothic stained glass" loading="lazy">
     <div class="caption">
       <div class="place">Notre-Dame de Paris</div>
       <div class="time">Gothic stained glass · Before the fire</div>
@@ -193,7 +106,7 @@
   </div>
 
   <div class="journey">
-    <img src="/images/brand/journeys/silkroad.png" alt="The Silk Road" loading="lazy">
+    <img src="/images/brand/journeys/silkroad.png" alt="The Silk Road, Persian miniature, between Dunhuang and Samarkand" loading="lazy">
     <div class="caption">
       <div class="place">The Silk Road</div>
       <div class="time">Persian miniature · Somewhere between Dunhuang and Samarkand</div>
@@ -201,7 +114,7 @@
   </div>
 
   <div class="journey">
-    <img src="/images/brand/journeys/lascaux.png" alt="Lascaux caves" loading="lazy">
+    <img src="/images/brand/journeys/lascaux.png" alt="Lascaux caves, charcoal on limestone, 17000 years ago" loading="lazy">
     <div class="caption">
       <div class="place">The cave of Lascaux</div>
       <div class="time">Charcoal on limestone · 17,000 years ago</div>
@@ -209,7 +122,7 @@
   </div>
 
   <div class="journey">
-    <img src="/images/brand/journeys/bloomsbury.png" alt="Bloomsbury, London" loading="lazy">
+    <img src="/images/brand/journeys/bloomsbury.png" alt="Bloomsbury study, literary illustration, London winter of Orlando" loading="lazy">
     <div class="caption">
       <div class="place">A study in Bloomsbury</div>
       <div class="time">Literary illustration · London, the winter Woolf wrote Orlando</div>
@@ -217,7 +130,7 @@
   </div>
 
   <div class="journey">
-    <img src="/images/brand/journeys/marrakech.png" alt="Marrakech souk" loading="lazy">
+    <img src="/images/brand/journeys/marrakech.png" alt="Marrakech souk, Islamic geometric art, before dawn" loading="lazy">
     <div class="caption">
       <div class="place">The souk of Marrakech</div>
       <div class="time">Islamic geometric art · An hour before dawn</div>
@@ -226,9 +139,13 @@
 
 </section>
 
-<footer class="footer">
-  <p class="ending">The pendant has more journeys ahead.</p>
-  <p>&copy; 2026 <a href="/">TCM Way</a> — Classical Chinese medicine, translated for the modern mind.</p>
+<div class="back-cta">
+  <p class="lead">The pendant returns home.</p>
+  <a href="/">← Back to TCM Way</a>
+</div>
+
+<footer>
+  <p>&copy; 2026 <a href="/">TCM Way</a> — Ancient wisdom, told warmly.</p>
   <p><a href="/disclaimer.html">Medical Disclaimer</a> · <a href="/privacy.html">Privacy Policy</a> · <a href="/contact.html">Contact</a> · <a href="/rss.xml">RSS Feed</a></p>
 </footer>
 
