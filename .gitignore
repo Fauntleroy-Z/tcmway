@@ -23,3 +23,4 @@ _update_*.js _update_*.py _refine_*.js
 _analyze_*.py _analyze_*.txt _check_*.py _check_*.ps1
 _cam_ocr*.py _clean_disk.py _backup_*.py _auto_*.json
 _chk_*.py
+models/ollie-lora-v1.safetensors
