@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root{--bg:#fdf6ee;--text:#3b2a1a;--accent:#b83a2a;--accent-warm:#e8a87c;--border:#e8d5c0;--subtle:#8a6d54}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,serif;background:var(--bg);color:var(--text);line-height:1.9;max-width:720px;margin:0 auto;padding:0 1.5rem}
+  
+  header{text-align:center;padding:3rem 0 2rem;border-bottom:1px solid var(--border);margin-bottom:2.5rem}
+  .brand-symbol{display:block;margin:0 auto .8rem;width:90px;height:auto}
+  header h1{font-size:2.8rem;font-weight:700;letter-spacing:.12em;color:var(--accent)}
+  header p{color:var(--subtle);font-style:italic;margin-top:.8rem;font-size:1.05rem}
+  nav{margin-top:1.5rem}
+  nav a{color:var(--subtle);text-decoration:none;margin:0 .8rem;font-size:.9rem;letter-spacing:.06em}
+  .category-cards{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:2rem 0}
+  .category-cards a{text-decoration:none;background:#fff;border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;display:block}
+  .card-title{font-size:1.05rem;color:var(--accent);margin-bottom:.3rem}
+  .card-desc{font-size:.82rem;color:var(--subtle)}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="/images/brand/logo-tcmway-header.png" class="brand-symbol" alt="TCM Way pendant">
+  <h1>TCM Way</h1>
+  <p>Ancient Wisdom, Told Warmly</p>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/start-here.html">Start Here</a>
+    <a href="/archive.html">Archive</a>
+    <a href="/podcast/">🎧 Podcast</a>
+    <a href="/about.html">About</a>
+  </nav>
+</header>
+
+<section class="category-cards">
+  <a href="#"><div class="card-title">📚 Foundations</div><div class="card-desc">Qi · Yin-Yang · Five Elements</div></a>
+  <a href="#"><div class="card-title">🛡️ Cold &amp; Defense</div><div class="card-desc">Wind-Cold · Fever · Body's Surface</div></a>
+</section>
+
+</body>
+</html>

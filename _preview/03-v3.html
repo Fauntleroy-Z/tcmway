@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root{--bg:#fdf6ee;--text:#3b2a1a;--accent:#b83a2a;--accent-warm:#e8a87c;--border:#e8d5c0;--subtle:#8a6d54}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,serif;background:var(--bg);color:var(--text);line-height:1.9;max-width:960px;margin:0 auto;padding:0 1rem}
+
+  .comparison{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+  .col{background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+  .col-label{background:var(--accent);color:#fff;text-align:center;padding:.3rem;font-size:.75rem;letter-spacing:.1em}
+  .col-content{padding:1.2rem}
+  .col-header{text-align:center;padding:1.5rem 0;border-bottom:1px solid var(--border);margin-bottom:1rem}
+  .brand-symbol{display:block;margin:0 auto .6rem;width:60px;height:auto}
+  .title-georgia{font-family:Georgia,serif;font-size:1.8rem;color:var(--accent);font-weight:700;letter-spacing:.08em}
+  
+  /* The real thing: extracted red brush calligraphy */
+  .calligraphy-red{display:block;margin:0 auto .8rem;height:32px;width:auto}
+  
+  nav{margin-top:.8rem}
+  nav a{color:var(--subtle);text-decoration:none;margin:0 .5rem;font-size:.82rem}
+  h2{font-weight:normal;color:var(--accent);margin:1rem 0 .4rem;font-size:1rem;border-left:4px solid var(--accent-warm);padding-left:.5rem}
+  p{margin-bottom:.8rem;font-size:.88rem}
+</style>
+</head>
+<body style="padding:1rem;">
+
+<div class="comparison">
+  <div class="col">
+    <div class="col-label">Option A: Georgia Red (now)</div>
+    <div class="col-content">
+      <div class="col-header">
+        <img src="/images/brand/logo-tcmway-header.png" class="brand-symbol" alt="">
+        <div class="title-georgia">TCM Way</div>
+        <nav><a href="#">Home</a> · <a href="#">Start Here</a> · <a href="#">Archive</a></nav>
+      </div>
+      <h2>About This Page</h2>
+      <p>Pendant + separate Georgia serif title. Two different font styles — pendant is brush, Georgia is print.</p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="col-label">Option B: Red Brush Calligraphy (NEW)</div>
+    <div class="col-content">
+      <div class="col-header">
+        <img src="/images/brand/logo-tcmway-header.png" class="brand-symbol" alt="">
+        <img src="/images/brand/tcmway-text-red.png" class="calligraphy-red" alt="TCM Way">
+        <nav><a href="#">Home</a> · <a href="#">Start Here</a> · <a href="#">Archive</a></nav>
+      </div>
+      <h2>About This Page</h2>
+      <p>Pendant + extracted red brush calligraphy. <strong>Same brush strokes as the logo</strong> — just the text isolated and colored red.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PREVIEW 01 — Homepage</title>
+<style>
+  :root{--bg:#fdf6ee;--text:#3b2a1a;--accent:#b83a2a;--accent-warm:#e8a87c;--light:#fef0e2;--border:#e8d5c0;--subtle:#8a6d54;--gold:#c9a84c}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--bg);color:var(--text);line-height:2;max-width:720px;margin:0 auto;padding:0 1.5rem 3rem}
+  
+  /* ── PREVIEW BANNER ── */
+  .preview-banner{background:var(--accent);color:#fff;text-align:center;padding:.5rem;font-size:.85rem;letter-spacing:.08em;position:sticky;top:0;z-index:10}
+  
+  /* ── HEADER VARIANTS ── */
+  header{text-align:center;padding:3rem 0 2rem;border-bottom:1px solid var(--border);margin-bottom:2.5rem}
+  
+  /* V1: pendant centered, red title below */
+  .brand-symbol{display:block;margin:0 auto .8rem;width:90px;height:auto}
+  header h1{font-family:Georgia,'Times New Roman',serif;font-size:2.8rem;font-weight:700;letter-spacing:.12em;color:var(--accent)}
+  header p{color:var(--subtle);font-style:italic;margin-top:.8rem;font-size:1.05rem;letter-spacing:.02em}
+  nav{margin-top:1.5rem}
+  nav a{color:var(--subtle);text-decoration:none;margin:0 .8rem;font-size:.9rem;letter-spacing:.06em;transition:color .3s}
+  nav a:hover{color:var(--accent)}
+  
+  /* ── SECTION DIVIDER ── */
+  .divider{text-align:center;margin:3rem 0;color:var(--accent-warm);font-size:.9rem;letter-spacing:.12em;border-top:1px dashed var(--border);padding-top:2rem}
+  .divider span{background:var(--bg);padding:0 1rem;position:relative;top:-.8rem}
+  
+  /* ── CARDS ── */
+  .category-cards{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin:2.5rem 0}
+  .category-cards a{text-decoration:none;background:#fff;border:1px solid var(--border);border-radius:8px;padding:1rem 1.2rem;display:block;transition:box-shadow .3s}
+  .category-cards a:hover{box-shadow:0 2px 8px rgba(0,0,0,.08)}
+  .card-title{font-size:1.05rem;color:var(--accent);margin-bottom:.3rem}
+  .card-desc{font-size:.82rem;color:var(--subtle)}
+  
+  /* ── POST LIST ── */
+  .post{margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+  .post h2{font-weight:700;font-size:1.2rem;margin-bottom:.3rem}
+  .post h2 a{color:var(--text);text-decoration:none}
+  .post h2 a:hover{color:var(--accent)}
+  .post .date{color:var(--subtle);font-size:.82rem;text-transform:uppercase;margin-bottom:.4rem}
+  .post .excerpt{color:var(--subtle);font-size:.92rem;line-height:1.7}
+  
+  footer{text-align:center;padding:2rem 0;color:var(--subtle);font-size:.82rem;border-top:1px solid var(--border);margin-top:3rem}
+</style>
+</head>
+<body>
+<div class="preview-banner">🔴 PREVIEW 01 — HOMEPAGE</div>
+
+<!-- ═══ VERSION A: Pendant centered, red TCM Way below, no decorative line ═══ -->
+<header>
+  <img src="/images/brand/logo-tcmway-header.png" class="brand-symbol" alt="TCM Way pendant">
+  <h1>TCM Way</h1>
+  <p>Ancient Wisdom, Told Warmly</p>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/start-here.html">Start Here</a>
+    <a href="/archive.html">Archive</a>
+    <a href="/podcast/">🎧 Podcast</a>
+    <a href="/about.html">About</a>
+  </nav>
+</header>
+
+<!-- Cards -->
+<section class="category-cards">
+  <a href="#"><div class="card-title">📚 Foundations</div><div class="card-desc">Qi · Yin-Yang · Five Elements · Diagnosis</div></a>
+  <a href="#"><div class="card-title">🛡️ Cold &amp; Defense</div><div class="card-desc">Wind-Cold · Fever · Body's Surface</div></a>
+  <a href="#"><div class="card-title">🔥 Heat &amp; Digestion</div><div class="card-desc">Internal Heat · Dampness · Fever</div></a>
+  <a href="#"><div class="card-title">⚖️ Balance &amp; Emotions</div><div class="card-desc">Stuck Qi · Liver · Emotions</div></a>
+</section>
+
+<!-- Posts -->
+<article class="post">
+  <h2><a href="#">Your Anxiety Is Not in Your Head</a></h2>
+  <div class="date">July 3, 2026</div>
+  <div class="excerpt">Your racing heart, the 3 AM wake-ups, the tightness in your chest — those are not just "in your head." Chinese medicine has been mapping the liver-emotion connection for 2,000 years.</div>
+</article>
+<article class="post">
+  <h2><a href="#">How a Cold Becomes Cancer (Over Years)</a></h2>
+  <div class="date">July 2, 2026</div>
+  <div class="excerpt">What if the cancer you fear today began as a cold you ignored ten years ago? The six-stage progression from wind-cold invasion to terminal illness.</div>
+</article>
+
+<footer>TCM Way © 2026 · Built with ancient wisdom</footer>
+</body>
+</html>
