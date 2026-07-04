@@ -7,7 +7,12 @@
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
     <lastBuildDate>Fri, 03 Jul 2026 00:00:00 +0800</lastBuildDate>
-    <generator>TCM Way</generator>
+    <image>
+  <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
+  <title>TCM Way</title>
+  <link>https://tcmway.net/</link>
+</image>
+<generator>TCM Way</generator>
 
                             <item>
       <title><![CDATA[How a Cold Becomes Cancer (Over Years)]]></title>
