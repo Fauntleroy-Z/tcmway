@@ -141,6 +141,10 @@
 
   @media(max-width:600px){.brand-symbol{width:120px}}
   @media(max-width:400px){.brand-symbol{width:100px}}
+
+  .ollie-take-badge{display:flex;align-items:center;gap:.5rem;margin:2.5rem 0 .8rem;padding-bottom:.6rem;border-bottom:2px solid var(--accent-warm)}
+  .ollie-take-badge img{width:22px;height:22px;flex-shrink:0}
+  .ollie-take-badge span{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-family:-apple-system,sans-serif;font-weight:600}
 </style>
 <script>
 var _hmt = _hmt || [];
@@ -321,7 +325,11 @@ var _hmt = _hmt || [];
   </table>
 
   <div class="comic-section" style="background: linear-gradient(135deg, #fef0e2 0%, #f5dcc4 100%); padding: 1.5rem; border-radius: 12px; text-align: center;">
-    <img class="comic-break" src="/images/comic-05-bw.png" loading="lazy" alt="Ollie the TCM Owl presenting the ancient body clock — your organs punch in and out on a 2,000-year-old schedule" style="max-width: 100%; border: 1px solid var(--border); border-radius: 4px;">
+    <div class="ollie-take-badge">
+  <img src="/images/brand/pendant-mini-40.png" alt="" width="22" height="22">
+  <span>Ollie's Take</span>
+</div>
+<img class="comic-break" src="/images/comic-05-bw.png" loading="lazy" alt="Ollie the TCM Owl presenting the ancient body clock — your organs punch in and out on a 2,000-year-old schedule" style="max-width: 100%; border: 1px solid var(--border); border-radius: 4px;">
     <p class="caption" style="color: #555; font-size: 0.85rem; font-style: italic; margin-top: 0.5rem; text-align: center;">Ollie's organs are unionized. Yours should be too.</p>
   </div>
 
