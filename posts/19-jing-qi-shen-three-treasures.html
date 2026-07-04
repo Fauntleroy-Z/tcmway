@@ -33,6 +33,7 @@
     --gold: #c9a84c;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
+.brand-symbol{display:block;margin:0 auto 1.2rem;width:130px;height:auto}
   body { font-family: Georgia, 'Times New Roman', serif; background: var(--bg); color: var(--text); line-height: 1.9; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
   header { text-align: center; padding: 2rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
   header h1 { font-size: 1.8rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
@@ -135,6 +136,9 @@
   }
 
   <link rel="stylesheet" href="/css/visual-hierarchy.css">
+
+  @media(max-width:600px){.brand-symbol{width:120px}}
+  @media(max-width:400px){.brand-symbol{width:100px}}
 </style>
 <script>
 var _hmt = _hmt || [];

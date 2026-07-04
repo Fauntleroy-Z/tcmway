@@ -17,7 +17,7 @@
 <meta name="description" content="Got a question for Ollie the TCM Owl? Drop him a line. He reads every email — seriously.">
 <meta property="og:title" content="Write to Ollie — TCM Way">
 <meta property="og:description" content="Got a question for Ollie the TCM Owl? Drop him a line. He reads every email.">
-<meta property="og:image" content="https://tcmway.net/images/logo-tcmway-header.png">
+<meta property="og:image" content="https://tcmway.net/images/brand/logo-tcmway-header.png">
 <meta property="og:url" content="https://tcmway.net/contact.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TCM Way">
@@ -34,6 +34,7 @@
     --gold: #c9a84c;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
+.brand-symbol{display:block;margin:0 auto 1.2rem;width:90px;height:auto}
   body {
     font-family: Georgia, 'Times New Roman', serif;
     background: var(--bg);
@@ -151,6 +152,9 @@
   blockquote::before { content: "\270E"; color: var(--accent); font-size: 1.2rem; position: absolute; left: 0.6rem; top: 0.9rem; }
   .warning { border-left-color: var(--accent) !important; }
   .email-box { border-color: var(--accent) !important; }
+
+  @media(max-width:600px){.brand-symbol{width:120px}}
+  @media(max-width:400px){.brand-symbol{width:100px}}
 </style>
 <script>
 var _hmt = _hmt || [];
@@ -166,7 +170,7 @@ var _hmt = _hmt || [];
 
 <header>
   <h1>TCM Way</h1>
-    <img src="/images/logo-tcmway-header.png" class="brand-symbol" alt="Ollie the TCM Owl — Screech Owl" style="display:block;margin:0 auto 1rem;width:80px;height:80px;">
+    <img src="/images/brand/logo-tcmway-header.png" class="brand-symbol" alt="TCM Way — yin-yang pendant" class="brand-symbol">
     <nav>
     <a href="/">Home</a>
     <a href="/start-here.html">Start Here</a>
@@ -206,7 +210,7 @@ var _hmt = _hmt || [];
 <p>Also, let's be honest: I'm a small blog. I don't have a comments section. When you write to me, you're not just leaving feedback — you're helping me understand what <em>you</em> want to know. That shapes what I write next.</p>
 
 <div class="email-box">
-  <p style="margin-bottom: 0.8rem; font-size: 1.1rem;"><img src="/images/logo-tcmway-header.png" alt="Ollie" style="width:28px;height:28px;vertical-align:middle;margin-right:6px;border-radius:50%;"> Drop Ollie a line:</p>
+  <p style="margin-bottom: 0.8rem; font-size: 1.1rem;"><img src="/images/brand/logo-tcmway-header.png" alt="Ollie" style="width:28px;height:28px;vertical-align:middle;margin-right:6px;border-radius:50%;"> Drop Ollie a line:</p>
   <a href="mailto:ollie@tcmway.net">ollie@tcmway.net</a>
   <p class="hint">I usually reply within 2–3 days. If you don't hear back, check your spam folder — new domain, we're still warming up the inbox.</p>
 </div>
