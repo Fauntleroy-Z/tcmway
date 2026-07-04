@@ -1,0 +1,129 @@
+{
+  "project": "Ollie's Corner Gallery Updates",
+  "cadence": "semi-monthly (1st & 15th)",
+  "base_dir": "/Users/a11/tcmway-blog",
+  "images_dir": "/Users/a11/tcmway-blog/images/brand/journeys",
+  "page": "/Users/a11/tcmway-blog/ollies-corner.html",
+  "git_remote": "origin",
+  "git_branch": "master",
+  "destinations": [
+    {
+      "id": 1,
+      "place": "The Mogao Caves of Dunhuang",
+      "era": "Tang Dynasty mural · Silk Road · 8th century",
+      "filename": "dunhuang.jpg",
+      "status": "completed",
+      "ollie_note": "A thousand Buddhas watched from the cave walls. I was just a small owl in the vast desert, but the pendant caught the same light that painted these cliffs gold."
+    },
+    {
+      "id": 2,
+      "place": "The Imperial Medical Academy of Chang'an",
+      "era": "Tang court painting · the year Sun Simiao finished Qian Jin Yao Fang · 652",
+      "filename": "changan.jpg",
+      "status": "pending",
+      "art_style": "Tang Dynasty court painting (工笔重彩), rich mineral pigments, gold leaf accents, symmetrical palace architecture, warm ochre and cinnabar tones",
+      "image_prompt": "A wise owl named Ollie wearing a visible yin-yang pendant on its chest, perched on a weathered stone medicine mortar filled with herbs. In the background: the grand Tang Dynasty Imperial Medical Academy (太医署) palace buildings with curved roofs and red pillars, and the silhouette of Zhongnan Mountain (终南山) in the distance. Tang court painting style (工笔重彩), rich mineral pigments, gold accents, ancient scroll aesthetic, warm amber and cinnabar tones. The pendant must be clearly visible. No humans visible. No eyebrows on the owl. Three-toed bird feet visible. Soft ancient Chinese atmosphere.",
+      "ollie_note": "The pharmacist looked up from his mortar. 'You're early,' he said. I wasn't. I'd been waiting fourteen centuries."
+    },
+    {
+      "id": 3,
+      "place": "The Memorial Temple of Zhang Zhongjing, Nanyang",
+      "era": "Han dynasty stone relief · the age of Shang Han Za Bing Lun · 3rd century",
+      "filename": "nanyang.jpg",
+      "status": "pending",
+      "art_style": "Han dynasty stone relief carving (汉画像石), monochromatic weathered stone texture, strong linear contours, ink-rubbing aesthetic, ancient tablet surface",
+      "image_prompt": "Ollie the owl wearing a yin-yang pendant on its chest, perched on a carved Han dynasty stone tablet with faint ancient Chinese medical text characters visible. Carved stone texture, monochromatic warm grey stone tones, weathered relief surface. Behind the owl: the silhouette of Zhang Zhongjing's memorial temple with Han dynasty architecture. Han stone relief style (汉画像石), strong lines, ancient carved aesthetic, ink-rubbing texture. The pendant must be clearly visible. No humans visible. No eyebrows on the owl. Three-toed bird feet.",
+      "ollie_note": "The stone remembered what the scrolls forgot. Six meridians. A thousand fevers. And one owl, holding still long enough to read the pulse of history."
+    },
+    {
+      "id": 4,
+      "place": "The Apothecary Market of Bozhou, Hua Tuo's Hometown",
+      "era": "Han silk painting style · the age of Ma Fei San · 2nd century",
+      "filename": "bozhou.jpg",
+      "status": "pending",
+      "art_style": "Han dynasty silk painting (帛画), flowing organic lines, warm earthen pigments, ethereal floating composition, mythological atmosphere",
+      "image_prompt": "Ollie the owl wearing a yin-yang pendant on its chest, perched among hanging bundles of drying herbs and medicine ingredients, with mortar and pestle nearby. Han dynasty silk painting style (帛画), flowing elegant lines, warm earthen tones, ethereal composition. Hint of five animals (五禽戏) movement forms as abstract swirling lines in the background. The pendant must be clearly visible on the owl's chest. No humans visible. No eyebrows on the owl. Three-toed bird feet.",
+      "ollie_note": "Hua Tuo mixed his powders. I mixed my metaphors. The tiger, the deer, the bear, the monkey, the crane — and one owl who arrived two thousand years late, but with excellent timing."
+    },
+    {
+      "id": 5,
+      "place": "The Daoist Sanctuary of Qingcheng Mountain",
+      "era": "Blue-green landscape painting · mist and pine · Tang dynasty hermitage",
+      "filename": "qingchengshan.jpg",
+      "status": "pending",
+      "art_style": "Blue-green landscape painting (青绿山水), layered misty mountains, pine trees, Daoist temple pavilions hidden in clouds, jade and azurite tones",
+      "image_prompt": "Ollie the owl wearing a yin-yang pendant on its chest, perched on a gnarled pine branch on Qingcheng Mountain. Misty peaks rise in the background, a small Daoist temple pavilion nestled among clouds and ancient pines. Blue-green landscape painting style (青绿山水), azurite and malachite tones, layered mist and mountain silhouettes, Tang dynasty hermitage atmosphere. The pendant must be clearly visible. No humans visible. No eyebrows on the owl. Three-toed bird feet. Serene, contemplative mood.",
+      "ollie_note": "The mountain didn't speak. Neither did I. That was the whole point. For three hundred years, a pine needle fell every autumn. I counted them all."
+    },
+    {
+      "id": 6,
+      "place": "The Millennial Medicine Market of Anguo",
+      "era": "Song dynasty genre painting · Along the River During Qingming · 11th century",
+      "filename": "anguo.jpg",
+      "status": "pending",
+      "art_style": "Song dynasty genre painting (风俗画), Along the River During Qingming style, bustling market scene, fine line drawing with subtle color washes, lively street life",
+      "image_prompt": "Ollie the owl wearing a yin-yang pendant on its chest, perched on a wooden apothecary cabinet with many small labelled drawers in a Song dynasty medicine market. Jars of dried herbs, scales, and medicine packets around. Song dynasty genre painting style (风俗画), fine brushwork, subtle warm color washes, lively marketplace atmosphere reminiscent of 'Along the River During Qingming'. Wooden shopfront with medicine signage. The pendant must be clearly visible. No humans visible. No eyebrows on the owl. Three-toed bird feet.",
+      "ollie_note": "'Grass becomes medicine only after passing through Anguo.' I watched a ginseng root change hands seven times before it even reached the pharmacist. By then, it had more stories than I did."
+    },
+    {
+      "id": 7,
+      "place": "The Han Tomb of Laoguanshan, Chengdu",
+      "era": "Han dynasty lacquer art · the buried medical library · 2nd century BCE",
+      "filename": "chengdu.jpg",
+      "status": "pending",
+      "art_style": "Han dynasty lacquer painting (漆画), deep red and black contrasts, gold inlay patterns, sleek flowing lines, Chu culture aesthetic",
+      "image_prompt": "Ollie the owl wearing a yin-yang pendant on its chest, perched beside ancient bamboo medical slips (竹简) partially unrolled, revealing faint characters. Nearby, a lacquered wooden figurine showing meridian lines (经穴漆人). Han dynasty lacquer art style, deep red lacquer and black contrasts, gold inlay patterns, Chu culture elegance. Underground tomb atmosphere with warm torchlight. The pendant must be clearly visible. No humans visible. No eyebrows on the owl. Three-toed bird feet.",
+      "ollie_note": "Two thousand years underground. Nine hundred twenty bamboo slips. One lacquered man with meridians painted on his skin. They buried medicine hoping it would wake up. It did."
+    },
+    {
+      "id": 8,
+      "place": "The Purple Cloud Temple of Wudang Mountain",
+      "era": "Ink wash painting · Daoist inner alchemy · Ming dynasty",
+      "filename": "wudang.jpg",
+      "status": "pending",
+      "art_style": "Ink wash painting (水墨写意), bold brushstrokes, mist-shrouded peaks, Daoist temple architecture, ethereal cloud and pine motifs, dynamic qi flow",
+      "image_prompt": "Ollie the owl wearing a yin-yang pendant on its chest, perched on the ridge of a Ming dynasty Daoist temple roof with curved eaves on Wudang Mountain. Misty peaks and pine trees below, clouds swirling around the mountain. Ink wash painting style (水墨写意), bold expressive brushwork, ethereal atmosphere, mist-shrouded peaks. The pendant must be clearly visible on the owl's chest. No humans visible. No eyebrows on the owl. Three-toed bird feet. Dynamic qi energy in the swirling clouds.",
+      "ollie_note": "Zhang Sanfeng watched a crane fight a snake and invented tai chi. I watched a cloud eat a mountain and invented patience. Same mountain. Different syllabus."
+    },
+    {
+      "id": 9,
+      "place": "The Men-Tsee-Khang of Lhasa",
+      "era": "Tibetan thangka painting · the Four Medical Tantras · 17th century",
+      "filename": "lhasa.jpg",
+      "status": "pending",
+      "art_style": "Tibetan thangka (唐卡), mineral pigments on cotton, gold detailing, intricate mandala geometry, sacred iconography, deep ultramarine and vermillion tones",
+      "image_prompt": "Ollie the owl wearing a yin-yang pendant on its chest, perched beside a partially unrolled Tibetan medical thangka showing the Tree of Physiology with its branches and leaves. Behind: the Potala Palace silhouette against a deep blue Himalayan sky. Tibetan thangka painting style, mineral pigments, gold leaf details, intricate sacred geometry, ultramarine and vermillion tones. The pendant must be clearly visible. No humans visible. No eyebrows on the owl. Three-toed bird feet.",
+      "ollie_note": "The Tibetan doctor showed me a tree with three roots, nine trunks, and forty-seven branches. Each leaf was a disease. Each flower was a cure. I was the owl who got lost in the canopy."
+    },
+    {
+      "id": 10,
+      "place": "The Registan of Samarkand",
+      "era": "Persian miniature · the Silk Road caravanserai · 14th century",
+      "filename": "samarkand.jpg",
+      "status": "pending",
+      "art_style": "Persian miniature painting, lapis lazuli blue tiles, gold geometric patterns, Timurid architecture, intricate floral borders, jewel-like colors",
+      "image_prompt": "Ollie the owl wearing a yin-yang pendant on its chest, perched on a silk merchant's scale amid sacks of spices, dried herbs, and medicine ingredients. Behind: the Registan madrasa with its dazzling lapis lazuli blue tilework and geometric patterns. Persian miniature painting style, jewel-like colors, gold leaf details, intricate floral borders, Timurid architectural splendor. The pendant must be clearly visible. No humans visible. No eyebrows on the owl. Three-toed bird feet.",
+      "ollie_note": "The merchant weighed saffron from Kashmir, rhubarb from Gansu, and my patience from having crossed an entire desert. All three were priceless."
+    },
+    {
+      "id": 11,
+      "place": "The Birthplace of Ibn Sina, Bukhara",
+      "era": "Islamic illuminated manuscript · the age of Al-Qanun fi al-Tibb · 11th century",
+      "filename": "bukhara.jpg",
+      "status": "pending",
+      "art_style": "Islamic illuminated manuscript, gold arabesque patterns, intricate geometric borders, blue and turquoise domes, Persian calligraphy, Sogdian architectural heritage",
+      "image_prompt": "Ollie the owl wearing a yin-yang pendant on its chest, perched on an open illuminated manuscript of Ibn Sina's Canon of Medicine (Al-Qanun), with beautiful Arabic calligraphy and gold arabesque borders. Behind: the blue-tiled domes and minarets of old Bukhara at dusk. Islamic illuminated manuscript style, gold leaf, turquoise and lapis lazuli, intricate geometric borders. The pendant must be clearly visible. No humans visible. No eyebrows on the owl. Three-toed bird feet.",
+      "ollie_note": "Ibn Sina wrote that the pulse has ten varieties. I counted mine against his list and came up with an eleventh. He would have wanted to know. But by then he'd been gone nine centuries."
+    },
+    {
+      "id": 12,
+      "place": "The House of Wisdom, Baghdad",
+      "era": "Abbasid golden age illumination · the Translation Movement · 9th century",
+      "filename": "baghdad.jpg",
+      "status": "pending",
+      "art_style": "Abbasid manuscript illumination, gold leaf on indigo, Kufic calligraphy, geometric star patterns, scholarly atmosphere, warm lamp-lit library interior",
+      "image_prompt": "Ollie the owl wearing a yin-yang pendant on its chest, perched on a stack of translated manuscripts (Greek, Persian, Indian, Chinese texts) in the great library of the House of Wisdom. Oil lamps casting warm light, shelves of scrolls receding into darkness. Abbasid manuscript illumination style, gold leaf on indigo, Kufic calligraphy borders, geometric star patterns, scholarly atmosphere. The pendant must be clearly visible. No humans visible. No eyebrows on the owl. Three-toed bird feet.",
+      "ollie_note": "Greek logic, Persian pharmacy, Indian surgery, Chinese pulse. All on one shelf. All in one room. I was the only one not being translated — but I was doing the most reading."
+    }
+  ]
+}
