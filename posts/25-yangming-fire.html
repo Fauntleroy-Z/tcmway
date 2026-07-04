@@ -63,6 +63,72 @@
 .post-nav { display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
 .post-nav a { color: var(--accent); text-decoration: none; font-size: 0.95rem; }
 .post-nav a:hover { text-decoration: underline; }
+
+  /* ── Visual Hierarchy (Phase A) ── */
+  .tl-dr {
+    background: var(--light);
+    border-left: 4px solid var(--accent-warm);
+    padding: 1rem 1.3rem;
+    margin: 1.5rem 0 2rem;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+    color: var(--text);
+    line-height: 1.7;
+  }
+  .tl-dr::before {
+    content: "TL;DR — 30 second read";
+    display: block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-warm);
+    margin-bottom: 0.5rem;
+    font-family: -apple-system, sans-serif;
+    font-weight: 600;
+  }
+  .key-concept {
+    border-bottom: 2px dotted var(--accent-warm);
+    cursor: help;
+  }
+  .section-alt {
+    background: #faf5ed;
+    padding: 1.8rem 2rem;
+    margin: 2rem -2rem;
+    border-radius: 8px;
+  }
+  @media (max-width: 600px) {
+    .section-alt { margin: 2rem -1rem; padding: 1.2rem 1rem; }
+  }
+  /* Pull quote */
+  article blockquote.pull {
+    border: none;
+    background: transparent;
+    font-size: 1.2rem;
+    color: var(--accent);
+    text-align: center;
+    padding: 2rem 2.5rem;
+    margin: 2.5rem 0;
+    line-height: 1.5;
+    font-style: italic;
+    position: relative;
+  }
+  article blockquote.pull::before {
+    content: "◑";
+    display: block;
+    font-size: 1.5rem;
+    color: var(--accent-warm);
+    margin-bottom: 0.8rem;
+    font-style: normal;
+  }
+  article blockquote.pull::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: var(--accent-warm);
+    margin: 0.8rem auto 0;
+  }
+
 </style>
   <link rel="canonical" href="https://tcmway.net/posts/25-yangming-fire.html">
 </head>
