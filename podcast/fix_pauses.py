@@ -6,7 +6,7 @@ Simpler and more reliable than massive filter_complex.
 import subprocess, sys, os, tempfile, shutil
 
 MIN_GAP = 0.6     # extend gaps shorter than this
-TARGET_GAP = 1.5  # target gap length
+TARGET_GAP = 1.0  # target gap length
 THRESH = -20      # dB
 DUR = 0.3         # min silence to detect
 
