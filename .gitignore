@@ -1,26 +1,23 @@
-# Credentials - NEVER commit
-.credentials.md
+# Generated / temp audio files
+podcast/*-body-*.mp3
+podcast/*-paced*.mp3
+podcast/*-fixed*.mp3
+podcast/*-raw*.mp3
+podcast/*-assembly*.mp3
+podcast/*-multilingual*.mp3
+podcast/*-test*.mp3
+podcast/final/
+podcast/bgm/
+podcast/__pycache__/
+podcast/gen_*.py
+podcast/post_process.py
+podcast/mix_bgm.py
+podcast/fix_pauses.py
+podcast/scripts/*review*
 
-# Private working files
-.topic-pool.md
+# Hermes
+.hermes/
 
-# OS files
+# System
 .DS_Store
 Thumbs.db
-
-# Editor files
-*.swp
-*.swo
-*~
-
-# Dependencies
-node_modules/
-package-lock.json
-package.json
-
-# Build/temp files
-_update_*.js _update_*.py _refine_*.js
-_analyze_*.py _analyze_*.txt _check_*.py _check_*.ps1
-_cam_ocr*.py _clean_disk.py _backup_*.py _auto_*.json
-_chk_*.py
-models/ollie-lora-v1.safetensors
