@@ -10,7 +10,7 @@
 | EP02 | Cold is never just a cold (warming vs fighting) | 11-cold-is-never-just-a-cold | ✅ 已发布 |
 | EP03 | Traffic jam inside your body (Qi stagnation) | 04-traffic-jam-inside-your-body | ✅ 已发布 |
 | EP04 | What is Qi | 03-qi-is-not-magic | ✅ 已发布 |
-| EP05 | Food temperature vs calories | — (synthesized) | 🔧 修复中 |
+| EP05 | Food temperature vs calories | 26-when-food-stops-being-food | ✅ 已发布 |
 
 ## 待选（按顺序）
 
