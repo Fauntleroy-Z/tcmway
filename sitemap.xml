@@ -218,8 +218,22 @@
 </url>
 
 <url>
-  <loc>https://tcmway.net/</loc>
+  <loc>https://tcmway.net/posts/31-how-a-cold-becomes-cancer.html</loc>
   <lastmod>2026-07-02</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://tcmway.net/posts/32-your-anxiety-is-not-in-your-head-understanding-the-liver-qi-connection.html</loc>
+  <lastmod>2026-07-03</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://tcmway.net/</loc>
+  <lastmod>2026-07-03</lastmod>
   <changefreq>daily</changefreq>
   <priority>1.0</priority>
 </url>
@@ -261,7 +275,7 @@
 
 <url>
   <loc>https://tcmway.net/podcast/</loc>
-  <lastmod>2026-07-01</lastmod>
+  <lastmod>2026-07-05</lastmod>
   <changefreq>weekly</changefreq>
   <priority>0.7</priority>
 </url>
