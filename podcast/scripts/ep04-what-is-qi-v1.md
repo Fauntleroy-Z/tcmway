@@ -1,3 +1,9 @@
+Hoo. Friends. [sound of feathers being fluffed — twice, because the first attempt did not look right]
+
+I was going to start with a big scholarly introduction. The kind with footnotes and everything. Then I fell asleep. When I woke up, I remembered: you do not need a lecture. You need to know what Qi actually IS. So here we are. No textbooks. Just the operating system your body has been running since before you were born. And me — a screech owl with a pendant, a habit of dozing off mid-sentence, and a lot of questions.
+
+[PAUSE]
+
 Cold hands in summer. That three PM crash where your brain just... stops. Getting every bug that goes around the office while the person next to you never sneezes. That sick, heavy feeling you cannot name but cannot shake.
 
 All of that? That's Qi. Or more precisely — that's Qi not working.
@@ -127,6 +133,8 @@ And here's the beautiful thing about Qi that I wish more people understood. You 
 [PAUSE]
 
 Thanks for listening. This was East & Inner — episode four.
+
+This podcast is for educational purposes only. It is not medical advice. If you have a health concern, please talk to a qualified practitioner.
 
 If this connected with you, join Ollie and me on Apple Podcasts — just search East & Inner. The full written article that inspired this episode — "Qi Isn't Magic: It's Your Body's OS" — is at tcmway.net.
 
