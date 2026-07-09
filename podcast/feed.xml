@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a screech owl with a yin-yang pendant and a lot of questions. New episodes every other week.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Sat, 05 Jul 2026 11:11:00 +0800</lastBuildDate>
+  <lastBuildDate>Wed, 09 Jul 2026 14:00:00 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -31,86 +31,74 @@
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
 
-  <!-- ===== EPISODE 5 ===== -->
+  <!-- ===== EP01 ===== -->
+  <item>
+    <title><![CDATA[Ep01: Yin &amp; Yang ≠ Good vs Evil]]></title>
+    <link>https://tcmway.net/podcast/ep01.mp3</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep01.mp3</guid>
+    <pubDate>Mon, 30 Jun 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[The biggest mistranslation in the history of wellness culture: Yin and Yang are NOT good and evil. Ollie walks you through the seesaw, the three rules nobody told you, and why you should stop driving nails through your internal balance.]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep01.mp3" length="20813997" type="audio/mpeg"/>
+    <itunes:duration>1300</itunes:duration>
+    <itunes:episode>1</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
+
+  <!-- ===== EP02 ===== -->
+  <item>
+    <title><![CDATA[Ep02: Stop Fighting, Start Warming]]></title>
+    <link>https://tcmway.net/podcast/ep02.mp3</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep02.mp3</guid>
+    <pubDate>Wed, 02 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[When a cold hits, your first instinct is to fight it. But Chinese medicine says that's exactly the wrong move. Discover the three warming herbs — Gui Zhi, Gan Jiang, and Fu Zi — and learn why your body doesn't need a warrior. It just needs a blanket.]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep02.mp3" length="18783547" type="audio/mpeg"/>
+    <itunes:duration>1173</itunes:duration>
+    <itunes:episode>2</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
+
+  <!-- ===== EP03 ===== -->
+  <item>
+    <title><![CDATA[Ep03: Traffic Jam — Why Your Emotions Get Stuck]]></title>
+    <link>https://tcmway.net/podcast/ep03.mp3</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep03.mp3</guid>
+    <pubDate>Wed, 02 Jul 2026 00:00:00 GMT</pubDate>
+    <description><![CDATA[You're stuck. Irritable. Everything feels like too much. Classical Chinese medicine calls this Liver Qi stagnation — your internal traffic is gridlocked. Ollie explains the highway inside your body, why emotions really do get stuck, and what Xiao Yao San has been doing about it for a thousand years.]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep03.mp3" length="19172667" type="audio/mpeg"/>
+    <itunes:duration>1198</itunes:duration>
+    <itunes:episode>3</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
+
+  <!-- ===== EP04 ===== -->
+  <item>
+    <title><![CDATA[Ep04: What Is Qi, Actually?]]></title>
+    <link>https://tcmway.net/podcast/ep04.mp3</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep04.mp3</guid>
+    <pubDate>Thu, 03 Jul 2026 03:38:00 +0800</pubDate>
+    <description><![CDATA[You've heard the word a thousand times. But what IS Qi, actually? Not the wellness-industry version — the real thing. Ollie explains the five functions of Qi, the four ways it goes wrong, and why your body has been trying to tell you something your whole life.]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep04.mp3" length="18946551" type="audio/mpeg"/>
+    <itunes:duration>1184</itunes:duration>
+    <itunes:episode>4</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
+
+  <!-- ===== EP05 ===== -->
   <item>
     <title><![CDATA[Ep05: Food Temperature — Why Your Body Doesn't Want That Salad]]></title>
     <link>https://tcmway.net/podcast/ep05.mp3</link>
     <guid isPermaLink="true">https://tcmway.net/podcast/ep05.mp3</guid>
     <pubDate>Sat, 05 Jul 2026 11:11:00 +0800</pubDate>
-    <description><![CDATA[
-      <p>Every wellness influencer tells you to eat more salads. But some bodies don't want cold food — they want warmth. Ollie explains the forgotten wisdom of food temperature, the digestive fire, and why Chinese medicine has been warning about cold foods for two thousand years.</p>
-    ]]></description>
+    <description><![CDATA[Every wellness influencer tells you to eat more salads. But some bodies don't want cold food — they want warmth. Ollie explains the forgotten wisdom of food temperature, the digestive fire, and why Chinese medicine has been warning about cold foods for two thousand years.]]></description>
     <enclosure url="https://tcmway.net/podcast/ep05.mp3" length="21690285" type="audio/mpeg"/>
-    <itunes:duration>22:35</itunes:duration>
+    <itunes:duration>1355</itunes:duration>
     <itunes:episode>5</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:author>Ollie</itunes:author>
-  </item>
-
-  <!-- ===== EPISODE 4 ===== -->
-      <item>
-      <title><![CDATA[Ep04: What Is Qi, Actually?]]></title>
-      <link>https://tcmway.net/podcast/ep04.mp3</link>
-      <guid isPermaLink="true">https://tcmway.net/podcast/ep04.mp3</guid>
-      <pubDate>Thu, 03 Jul 2026 03:38:00 +0800</pubDate>
-      <description><![CDATA[
-        <p>You've heard the word a thousand times. But what IS Qi, actually? Not the wellness-industry version — the real thing. Ollie explains the five functions of Qi, the four ways it goes wrong, and why your body has been trying to tell you something your whole life. Adapted from the TCM Way article "Qi Isn't Magic: It's Your Body's OS."</p>
-      ]]></description>
-      <enclosure url="https://tcmway.net/podcast/ep04.mp3" length="17624964" type="audio/mpeg"/>
-      <itunes:duration>18:21</itunes:duration>
-      <itunes:episode>4</itunes:episode>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:author>Ollie</itunes:author>
-    </item>
-
-<item>
-    <title>Yin &amp; Yang ≠ Good vs Evil</title>
-    <link>https://tcmway.net/posts/16-yin-yang-not-good-vs-evil.html</link>
-    <guid isPermaLink="false">east-inner-ep01-yin-yang</guid>
-    <pubDate>Mon, 30 Jun 2026 00:00:00 GMT</pubDate>
-    <description><![CDATA[The biggest mistranslation in the history of wellness culture: Yin and Yang are NOT good and evil. In this first episode, Ollie walks you through the seesaw, the three rules nobody told you, and why you should stop driving nails through your internal balance. Plus: what Huangdi Neijing actually says about dynamic equilibrium. Featuring real guqin music by High Mountains Flowing Water.]]></description>
-    <itunes:summary><![CDATA[Yin and Yang are not good and evil. Ollie explains the seesaw, the three rules, and why you should stop fighting your body and start listening to it. Featuring guqin music.]]></itunes:summary>
-    <itunes:duration>1259</itunes:duration>
-    <itunes:explicit>no</itunes:explicit>
-    <itunes:episodeType>full</itunes:episodeType>
-    <itunes:episode>1</itunes:episode>
-    <itunes:season>1</itunes:season>
-    <enclosure url="https://tcmway.net/podcast/ep01.mp3" length="20149020" type="audio/mpeg"/>
-    <itunes:image href="https://tcmway.net/podcast/cover.jpg"/>
-  </item>
-
-  <!-- ===== EPISODE 2 ===== -->
-  <item>
-    <title>Stop Fighting, Start Warming</title>
-    <link>https://tcmway.net/posts/21-stop-fighting-start-warming.html</link>
-    <guid isPermaLink="false">east-inner-ep02-stop-fighting</guid>
-    <pubDate>Wed, 02 Jul 2026 00:00:00 GMT</pubDate>
-    <description><![CDATA[When a cold hits, your first instinct is to fight it. But Chinese medicine says that's exactly the wrong move. Discover the three warming herbs — Gui Zhi, Gan Jiang, and Fu Zi — and learn why your body doesn't need a warrior. It just needs a blanket.]]></description>
-    <itunes:summary><![CDATA[Stop fighting colds. Start warming your body. Ollie explains the three warming herbs, the terrain theory, and why Gui Zhi Tang opens the Shanghan Lun. Featuring guqin music.]]></itunes:summary>
-    <itunes:duration>1100</itunes:duration>
-    <itunes:explicit>no</itunes:explicit>
-    <itunes:episodeType>full</itunes:episodeType>
-    <itunes:episode>2</itunes:episode>
-    <itunes:season>1</itunes:season>
-    <enclosure url="https://tcmway.net/podcast/ep02.mp3" length="17599887" type="audio/mpeg"/>
-    <itunes:image href="https://tcmway.net/podcast/cover.jpg"/>
-  </item>
-
-  <!-- ===== EPISODE 3 ===== -->
-  <item>
-    <title>Traffic Jam: Why Your Emotions Get Stuck</title>
-    <link>https://tcmway.net/posts/04-traffic-jam-inside-your-body.html</link>
-    <guid isPermaLink="false">east-inner-ep03-traffic-jam</guid>
-    <pubDate>Wed, 02 Jul 2026 00:00:00 GMT</pubDate>
-    <description><![CDATA[You're stuck. Irritable. Everything feels like too much. Classical Chinese medicine calls this Liver Qi stagnation — your internal traffic is gridlocked. Ollie explains the highway inside your body, why emotions really do get stuck, and what Xiao Yao San has been doing about it for a thousand years. Featuring guqin music.]]></description>
-    <itunes:summary><![CDATA[Feeling stuck and irritable? It might be Liver Qi stagnation. Ollie explains the traffic jam inside your body and what Chinese medicine has known for centuries.]]></itunes:summary>
-    <itunes:duration>1096</itunes:duration>
-    <itunes:explicit>no</itunes:explicit>
-    <itunes:episodeType>full</itunes:episodeType>
-    <itunes:episode>3</itunes:episode>
-    <itunes:season>1</itunes:season>
-    <enclosure url="https://tcmway.net/podcast/ep03.mp3" length="17537611" type="audio/mpeg"/>
-    <itunes:image href="https://tcmway.net/podcast/cover.jpg"/>
   </item>
 
 </channel>
