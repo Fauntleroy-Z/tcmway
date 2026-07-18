@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a screech owl with a yin-yang pendant and a lot of questions. New episodes every other week.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Fri, 17 Jul 2026 15:54:38 +0800</lastBuildDate>
+  <lastBuildDate>Fri, 18 Jul 2026 21:18:00 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -97,6 +97,20 @@
     <enclosure url="https://tcmway.net/podcast/ep05.mp3" length="21690285" type="audio/mpeg"/>
     <itunes:duration>1355</itunes:duration>
     <itunes:episode>5</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
+
+  <!-- ===== EP06 ===== -->
+  <item>
+    <title><![CDATA[Ep06: Fear Lives in Your Kidneys — The Emotion-Organ Map]]></title>
+    <link>https://tcmway.net/podcast/ep06.mp3</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep06.mp3</guid>
+    <pubDate>Fri, 18 Jul 2026 21:18:00 +0800</pubDate>
+    <description><![CDATA[Every emotion has an address in the body. Anger lives in the liver. Joy in the heart. And fear — deep, chronic, background fear — lives in the kidneys. Ollie shares the ancient Five Element organ-emotion map, a personal story about Kidney energy depletion, and why going to bed before 11 PM might be the most profound thing you can do for your fear.]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep06.mp3" length="29653203" type="audio/mpeg"/>
+    <itunes:duration>741</itunes:duration>
+    <itunes:episode>6</itunes:episode>
     <itunes:episodeType>full</itunes:episodeType>
     <itunes:author>Ollie</itunes:author>
   </item>
