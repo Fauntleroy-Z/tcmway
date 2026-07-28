@@ -1,20 +1,25 @@
-name: Auto-Update Archive & Counts
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [master]
-    paths:
-      - 'posts/**'
-      - 'regenerate-archive.py'
-      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  update:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -32,3 +37,15 @@ jobs:
           git add -A
           git diff --staged --quiet || git commit -m "auto: regenerate archive + category counts [skip ci]"
           git push
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
