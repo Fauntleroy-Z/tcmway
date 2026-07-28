@@ -67,7 +67,84 @@
 |---|------|------|------|
 | I01 | What TCM Can Learn From Sourdough | 发酵 vs 脾胃运化。微生物组 vs 肠道菌群 | |
 | I02 | The Physics Of Acupuncture (No, It's Not Magic) | 筋膜、神经、生物电。TCM 解释 vs 现代科学验证 | |
-| I03 | Why Chinese Grandmothers Were Right About Ginger Tea | 民间智慧背后的 TCM 逻辑 | |
+## 🆕 艾灸系列（DS01-DS05）— 生活化去神秘化
+
+> **风格**：懒兔子式轻松幽默 + 西方读者认知门槛为零。颠覆"烧草=原始"的刻板印象。
+
+| # | 标题 | 角度 | Ollie 漫画方向 |
+|:--:|------|------|------|
+| DS01 | The "Secret Smoke" Wall Street Traders Are Using | 华尔街精英 → 洛杉矶主妇，为什么白人开始在家"烧草" | Ollie 穿西服在健身房举哑铃，旁边冒烟 |
+| DS02 | Does "Burning Weeds" Actually Work? Let's Ask Science | 论文实证：《默沙东手册》收录、IBS 研究、热休克蛋白 | Ollie 戴眼镜查论文 |
+| DS03 | The 16th-Century Portuguese Man Who Discovered "Fire Therapy" | 传教士 João Rodrigues 第一次见艾灸的惊愕 → 跨文明认同 | Ollie 穿葡萄牙水手服 |
+| DS04 | Mugwort: From "Weed in My Backyard" to "Wellness Gold" | 欧洲遍地野艾草 → 东方神草。鼠尾草净化 vs 艾草灸 | Ollie 在花园拔草 |
+| DS05 | How to Explain Moxibustion to Your Scared Partner | 实操向：选品/安全/10分钟仪式/"不会把猫点着" | Ollie 给猫做艾灸 |
+
+> 素材：王祖贤开店、Equinox 数据、葡萄牙传教士史料、《默沙东手册》、IBS 对比研究
+
+## 🆕 N 系列 — 黄帝内经·素问 · 四季养生
+
+> **来源**：《素问·四气调神大论》（Chapter 2）。春生、夏长、秋收、冬藏——每个季节原文+解读+饮食/作息/运动/情绪建议。
+> **排期**：Jul 28 → Aug 6，每周二/四，两周四篇
+
+| # | 章节 | 经文 | 发布日期 |
+|:--:|------|------|------|
+| N01 | 春三月 | 此谓发陈。天地俱生，万物以荣。夜卧早起，广步于庭。 | Jul 28 周二 |
+| N02 | 夏三月 | 此谓蕃秀。天地气交，万物华实。夜卧早起，无厌于日。 | Jul 30 周四 |
+| N03 | 秋三月 | 此谓容平。天气以急，地气以明。早卧早起，与鸡俱兴。 | Aug 4 周二 |
+| N04 | 冬三月 | 此谓闭藏。水冰地坼，无扰乎阳。早卧晚起，必待日光。 | Aug 6 周四 |
+
+> 每篇结构：经文（中英对照）→ 现代解读 → 饮食建议 → 作息调整 → 运动准则 → 情绪调适 → Ollie 漫画。
+
+## 🆕 艾灸增量选题（M01-M04）
+
+> 补充 DS01-DS05，专注生活化/季节化/第一人称体验
+
+| # | 标题 | 角度 | 备赛 |
+|:--:|------|------|------|
+| M01 | Why Your Acupuncturist Hasn't Told You About Moxibustion | 艾灸是"针灸"被遗忘的另一半 | PubMed 2024-2026 |
+| M02 | Moxibustion vs. Your Heating Pad | 远红外+蒿草化学 vs 电热 | 懒兔子式医案 |
+| M03 | San Fu Tian: The Ancient "Summer Moxibustion Window" | 三伏灸黄金期（7/16-8/15）冬病夏治 | 🌡️ 现在可发！ |
+| M04 | I Bought a $12 Moxa Kit on Amazon | 第一人称体验——"我花$12试了艾灸" | 高互动 |
+
+## 🆕 太极拳系列（TC01-TC04）
+
+> **定位**：生物黑客 + 反 burnout + 名人效应。哈佛认证"motion is medicine"。HRV 优于冷浴，皮质醇低于冥想 App。
+
+| # | 标题 | 角度 | 素材 |
+|:--:|------|------|------|
+| TC01 | Tai Chi Is the New Biohack No One's Talking About | 量化自我：HRV↑ 皮质醇↓ 比 $5k 冷浴好用 | Harvard 500+ 研究 meta |
+| TC02 | Why Your HIIT Obsession Is Burning You Out | 以柔克刚：慢运动 ≠ 轻松，是神经复杂度 | Taoist 阴阳平衡 |
+| TC03 | Gisele, Tiger, and the Warriors All Ended Up Doing the Same Slow Dance | 名人连线：超模/拳王/NBA 冠军的交叉训练秘密 | Gisele Bündchen, Tiger Woods, Warriors |
+| TC04 | The Slow Movement That's Taking Over TikTok Fitness | Somatic movement / cozy cardio / 太极拳是 2000 年前的祖宗 | TikTok trend piece |
+
+> 关键术语：太极拳 tàijíquán · 站桩 zhàn zhuāng · 松 sōng · 以柔克刚 yǐ róu kè gāng
+
+## 🆕 道教文化系列（D01-D04）
+
+> **定位**：反神秘化。道 ≠ 宗教。古代系统思维 + 斯多葛对比。Carl Jung 背书。
+
+| # | 标题 | 角度 | 西方对标 |
+|:--:|------|------|------|
+| D01 | Wu Wei: The Ancient Productivity Hack That Tells You to Stop Trying | 无为 ≠ 懒惰，是 Flow State（Csikszentmihalyi）的 2000 年前版本 | 心流 / 反 hustle culture |
+| D02 | What Stoicism Gets Right — and What Daoism Does Better | 斯多葛 vs 道教对比：马可·奥勒留认真，庄子搞笑 | 庄周梦蝶 |
+| D03 | Ziran: The Chinese Concept of "Just Being Yourself" That Actually Works | 自然 vs performative authenticity——不用表演的真我 | 返璞归真 |
+| D04 | A Skeptic's Guide to Daoism: No Gods, No Incense, No BS | 直面西方怀疑论者：没有神、没有香、没有玄学 | 水之道 |
+
+> 关键术语：道 Dào · 无为 Wú Wéi · 自然 Zìrán · 德 Dé · 逍遥游 Xiāoyáo Yóu
+
+## 🆕 道德经系列（TTC01-TTC04）
+
+> **定位**：古人写的自我帮助书——81 章、5000 字、比 Netflix 一集短。诗歌，不是教条。
+
+| # | 标题 | 角度 | 金句 |
+|:--:|------|------|------|
+| TTC01 | The 2,500-Year-Old Book That Billionaires, Poets, and Philosophers All Quote | Ray Dalio + Ursula Le Guin + Alan Watts + 托尔斯泰 = 粉丝团 | 道可道，非常道 |
+| TTC02 | 6 Tao Te Ching Verses That Sound Like They Were Written for Your Burnout | 精选 6 句：上善若水 / 为道日损 / 知足者富 / 千里之行 | 上善若水 |
+| TTC03 | How to Read the Tao Te Ching Without Feeling Like a Philosophy Major | 实用阅读指南：译本选哪版？每天读一章？床头放一本 | Le Guin / Stephen Mitchell / Gia-Fu Feng |
+| TTC04 | The Tao Te Ching vs. Your To-Do List | 具体经文 vs 现代焦虑：决策瘫痪(Ch.48)、攀比文化(Ch.46)、过度规划(Ch.64) | 为学日益，为道日损 |
+
+> 关键术语：道德经 Dàodé Jīng · 老子 Lǎozǐ · 知足者富 zhī zú zhě fù
+
 
 ### 🏥 待拓展：体质调理系列（黄帝内经+伤寒论完结后）
 
