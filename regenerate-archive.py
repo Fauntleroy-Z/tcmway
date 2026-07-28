@@ -5,7 +5,7 @@ Run after every new article push. No hardcoded numbers.
 import os, re, glob, json
 from datetime import datetime
 
-BLOG = os.path.expanduser("~/tcmway-blog")
+BLOG = os.environ.get("GITHUB_WORKSPACE", os.path.expanduser("~/tcmway-blog"))
 POSTS_DIR = os.path.join(BLOG, "posts")
 CAT_DIR = os.path.join(BLOG, "category")
 
