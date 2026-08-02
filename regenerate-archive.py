@@ -123,6 +123,7 @@ def generate_archive(articles, cat_map):
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TCM Way">
 <meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://tcmway.net/archive.html">
 <style>
   :root{--bg:#fdf6ee;--text:#3b2a1a;--accent:#b83a2a;--accent-warm:#e8a87c;--light:#fef0e2;--border:#e8d5c0;--subtle:#8a6d54}
   *{margin:0;padding:0;box-sizing:border-box}
@@ -147,6 +148,9 @@ def generate_archive(articles, cat_map):
   .brand-symbol{display:block;margin:0 auto 1.2rem;width:110px;height:auto}
   @media(max-width:600px){body{padding:0 1rem 2rem}header{padding:2rem 0 1.5rem}header h1{font-size:1.8rem}}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"TCM Way","url":"https://tcmway.net/","description":"Ancient wisdom, modern life — classical Chinese medicine translated for the modern mind."},{"@type":"Organization","name":"TCM Way","url":"https://tcmway.net/","logo":"https://tcmway.net/images/brand/logo-tcmway-header.png"}]}
+</script>
 </head>
 <body>
 
