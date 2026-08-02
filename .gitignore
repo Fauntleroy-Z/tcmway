@@ -21,3 +21,7 @@ podcast/scripts/*review*
 # System
 .DS_Store
 Thumbs.db
+
+# Internal working docs (moved out of deployment 2026-08-02)
+/docs/
+/QUALITY_AUDIT_*.md
