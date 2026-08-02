@@ -22,7 +22,8 @@ CATEGORIES = {
             "17-five-elements-not", "18-your-body-is-a-kingdom", "19-jing-qi-shen",
             "33-how-ancient-china", "34-eat-with-the-sun", "35-the-season-your-body",
             "36-surviving-the-hottest", "37-move-like-water", "38-the-one-ingredient",
-            "39-what-tcm-can-learn"
+            "39-what-tcm-can-learn", "40-spring-neijing-reinvention",
+            "41-why-the-ancients-said"
         ]
     },
     "taiyang": {
