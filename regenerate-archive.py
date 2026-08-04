@@ -23,7 +23,7 @@ CATEGORIES = {
             "33-how-ancient-china", "34-eat-with-the-sun", "35-the-season-your-body",
             "36-surviving-the-hottest", "37-move-like-water", "38-the-one-ingredient",
             "39-what-tcm-can-learn", "40-spring-neijing-reinvention",
-            "41-why-the-ancients-said"
+            "41-why-the-ancients-said", "42-the-season-of-letting-go"
         ]
     },
     "taiyang": {
@@ -103,7 +103,8 @@ def assign_categories(articles):
     return cat_map, uncategorized
 
 # ─── Generate Archive ───
-def generate_archive(articles, cat_map):
+def generate_archive(articles, cat_map, uncategorized=None):
+    uncategorized = uncategorized or {}
     header = '''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -184,6 +185,15 @@ def generate_archive(articles, cat_map):
             body += f'  <li><span class="art-num">{num}</span><span class="art-info"><a href="/posts/{art["file"]}">{art["title"]}</a><br><span class="art-date">{art["date"]}</span></span></li>\n'
         body += '</ul>\n'
 
+    # Fallback: render any uncategorized articles so new posts never silently vanish
+    if uncategorized:
+        body += '<h2>More Articles</h2>\n'
+        body += '<ul class="article-list">\n'
+        for num in sorted(uncategorized):
+            art = articles[num]
+            body += f'  <li><span class="art-num">{num}</span><span class="art-info"><a href="/posts/{art["file"]}">{art["title"]}</a><br><span class="art-date">{art["date"]}</span></span></li>\n'
+        body += '</ul>\n'
+
     footer = '''
 <footer>
   <div style="text-align:center;padding-top:12px;border-top:1px solid #e8dcc8;">
@@ -253,7 +263,7 @@ def main():
             print(f"  #{num}: {art['title'][:60]}")
 
     # Generate archive
-    archive_html = generate_archive(articles, cat_map)
+    archive_html = generate_archive(articles, cat_map, uncategorized)
     with open(os.path.join(BLOG, "archive.html"), "w") as f:
         f.write(archive_html)
     print(f"\n✅ archive.html regenerated")
