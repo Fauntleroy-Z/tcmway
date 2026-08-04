@@ -8,6 +8,7 @@ The most common TCM mistake: thinking Yang is good and Yin is bad. A friend said
 Energetic warming-up episode. Ollie introduces the Five Elements framework visually, setting the tone for "Ancient Wisdom, Told Warmly."
 
 📖 Read the full post: https://tcmway.net/posts/01-yin-yang/
+▶️ Watch the Short: https://youtu.be/VrA3t_rLZ2s — "They Nailed the Seesaw Down" (30s)
 🎧 More episodes: https://tcmway.net/podcast/
 
 **Chapters:**
