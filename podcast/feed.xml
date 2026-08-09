@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a screech owl with a yin-yang pendant and a lot of questions. New episodes every other week.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Tue, 04 Aug 2026 00:00:00 +0800</lastBuildDate>
+  <lastBuildDate>Sun, 09 Aug 2026 00:00:00 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -30,6 +30,20 @@
     <itunes:name>Ollie</itunes:name>
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
+
+  <!-- ===== EP09 ===== -->
+  <item>
+    <title><![CDATA[Ep09: The Season of Letting Go — What the Neijing Knew About Autumn]]></title>
+    <link>https://tcmway.net/podcast/ep09.mp3</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep09.mp3</guid>
+    <pubDate>Sun, 09 Aug 2026 00:00:00 +0800</pubDate>
+    <description><![CDATA[The first cold morning of autumn always catches me off guard. But the Neijing has a radical prescription for this season: don't start up — let go. Discover why autumn belongs to Metal and the Lungs, why grief has its season, and why letting go is the most practical thing you can do before winter. Based on TCM Way blog #42.]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep09.mp3" length="19963028" type="audio/mpeg"/>
+    <itunes:duration>1247</itunes:duration>
+    <itunes:episode>9</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
 
   <!-- ===== EP08 ===== -->
   <item>
