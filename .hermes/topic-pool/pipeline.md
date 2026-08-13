@@ -101,9 +101,9 @@
 
 | # | 标题 | 角度 | 备赛 |
 |:--:|------|------|------|
-| M01 | Why Your Acupuncturist Hasn't Told You About Moxibustion | 艾灸是"针灸"被遗忘的另一半 | PubMed 2024-2026 |
+| M01 | Why Your Acupuncturist Hasn't Told You About Moxibustion | 艾灸是"针灸"被遗忘的另一半 | ✅ #46 已发布 (2026-08-13) |
 | M02 | Moxibustion vs. Your Heating Pad | 远红外+蒿草化学 vs 电热 | 懒兔子式医案 |
-| M03 | San Fu Tian: The Ancient "Summer Moxibustion Window" | 三伏灸黄金期（7/16-8/15）冬病夏治 | ✅ #45 写作中 (2026-08-11 大王确认选题) |
+| M03 | San Fu Tian: The Ancient "Summer Moxibustion Window" | 三伏灸黄金期（7/16-8/15）冬病夏治 | ✅ #45 已发布 (2026-08-11) |
 | M04 | I Bought a $12 Moxa Kit on Amazon | 第一人称体验——"我花$12试了艾灸" | 高互动 |
 
 ## 🆕 太极拳系列（TC01-TC04）
