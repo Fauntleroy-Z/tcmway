@@ -224,8 +224,11 @@ def update_homepage(cat_map, articles):
     # --- Hero card: update to latest article ---
     latest = max(articles.keys())
     art = articles[latest]
-    hero_pattern = r'(<a href="posts/)\d+(-[^"]*" class="hero-card">)'
-    html = re.sub(hero_pattern, rf'\g<1>{latest}\2', html)
+    # 2026-08-13 修复：旧逻辑只替换编号前缀（45→46），slug 保留旧文章的，
+    # 生成 46-san-fu-tian-... 幽灵链接（#45 实战#46 首页 Latest 404）。
+    # 改为整体替换为最新文章的完整文件名。
+    hero_pattern = r'(<a href=")posts/[^"]*(" class="hero-card">)'
+    html = re.sub(hero_pattern, rf'\g<1>posts/{art["file"]}\2', html)
     hero_title = r'(<div class="hero-title">)[^<]*(</div>)'
     html = re.sub(hero_title, rf'\g<1>{art["title"]}\2', html)
     hero_meta = r'(<div class="hero-meta">)[^<]*(</div>)'
