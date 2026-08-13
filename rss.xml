@@ -6,7 +6,7 @@
     <link>https://tcmway.net/</link>
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 00:00:00 +0800</lastBuildDate>
     <image>
   <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
   <title>TCM Way</title>
@@ -14,7 +14,14 @@
 </image>
 <generator>TCM Way</generator>
               <item>
-    <title>San Fu Tian: The Ancient "Summer Moxibustion Window" — and Why It's About to Close</title>
+                  <item>
+    <title>Why Your Acupuncturist Hasn't Told You About Moxibustion</title>
+    <link>https://tcmway.net/posts/46-why-your-acupuncturist-hasnt-told-you-about-moxibustion.html</link>
+    <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+    <guid>https://tcmway.net/posts/46-why-your-acupuncturist-hasnt-told-you-about-moxibustion.html</guid>
+    <description>The Chinese word for acupuncture translates to "needle and moxibustion." Moxibustion is the forgotten half of the medicine — and your clinic probably never mentions it. Here's why, and how to ask for it.</description>
+  </item>
+<title>San Fu Tian: The Ancient "Summer Moxibustion Window" — and Why It's About to Close</title>
     <link>https://tcmway.net/posts/45-san-fu-tian-summer-moxibustion-window.html</link>
     <pubDate>Tue, 11 Aug 2026 00:00:00 +0800</pubDate>
     <guid>https://tcmway.net/posts/45-san-fu-tian-summer-moxibustion-window.html</guid>
