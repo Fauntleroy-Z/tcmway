@@ -31,6 +31,20 @@
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
 
+  <!-- ===== EP10 ===== -->
+  <item>
+    <title><![CDATA[Ep10: Why Your Acupuncturist Hasn't Told You About Moxibustion]]></title>
+    <link>https://tcmway.net/podcast/ep10.mp3</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep10.mp3</guid>
+    <pubDate>Fri, 14 Aug 2026 20:13:00 +0800</pubDate>
+    <description><![CDATA[Acupuncture is only half of an ancient medicine. The other half is moxibustion — warming the body with a smoldering herb called mugwort. Why your acupuncturist probably never mentions it, what a session actually feels like, and what the classics and modern research say about it. Based on TCM Way blog #46.]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep10.mp3" length="21020883" type="audio/mpeg"/>
+    <itunes:duration>1314</itunes:duration>
+    <itunes:episode>10</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
+
   <!-- ===== EP09 ===== -->
   <item>
     <title><![CDATA[Ep09: The Season of Letting Go — What the Neijing Knew About Autumn]]></title>
