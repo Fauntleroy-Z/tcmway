@@ -30,6 +30,9 @@ jobs:
       - name: Regenerate archive + counts
         run: python3 regenerate-archive.py
 
+      - name: Assemble podcast audio parts
+        run: python3 podcast/scripts/assemble-parts.py
+
       - name: Commit auto-updates
         run: |
           git config user.name "github-actions[bot]"
