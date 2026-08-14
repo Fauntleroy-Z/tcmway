@@ -31,7 +31,10 @@ jobs:
         run: python3 regenerate-archive.py
 
       - name: Assemble podcast audio parts
-        run: python3 podcast/scripts/assemble-parts.py
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends ffmpeg
+          python3 podcast/scripts/assemble-parts.py
 
       - name: Commit auto-updates
         run: |
