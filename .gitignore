@@ -25,3 +25,5 @@ Thumbs.db
 # Internal working docs (moved out of deployment 2026-08-02)
 /docs/
 /QUALITY_AUDIT_*.md
+# Podcast episode audio is assembled from epNN.part*.mp3 at deploy time
+/podcast/ep10.mp3
