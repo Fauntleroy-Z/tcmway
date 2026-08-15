@@ -23,8 +23,7 @@ CATEGORIES = {
             "33-how-ancient-china", "34-eat-with-the-sun", "35-the-season-your-body",
             "36-surviving-the-hottest", "37-move-like-water", "38-the-one-ingredient",
             "39-what-tcm-can-learn", "40-spring-neijing-reinvention",
-            "41-why-the-ancients-said", "42-the-season-of-letting-go",
-            "44-li-qiu", "45-san-fu-tian", "46-why-your-acupuncturist"
+            "41-why-the-ancients-said", "42-the-season-of-letting-go"
         ]
     },
     "taiyang": {
