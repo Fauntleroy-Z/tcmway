@@ -12,10 +12,10 @@
 | S02 | The Six Layers of Defense | 六经辨证入门 | ⛔ 跳过：与 #09 语义重叠 |
 | S03 | Wind-Cold Is Not A Weather Report | 太阳病。恶寒、发热、脉浮。| ✅ #22 已发布 (2026-06-14) |
 | S04 | Your Fever Might Be Your Friend | 阳明病。高热、口渴、脉洪大。白虎汤思维 | ✅ #23 已发布 (2026-06-15) |
-| S05 | When Your Body Is Stuck Between Two Fires | 少阳病。寒热往来、口苦、胸胁苦满。小柴胡汤 | |
-| S06 | The Spleen Has A Cold. Your Doctor Called It "IBS" | 太阴病。腹满、自利、时腹痛。理中汤 | |
-| S07 | Why You're Tired In A Way Coffee Can't Fix | 少阴病。脉微细、但欲寐。四逆汤思维 | |
-| S08 | The Final Alarm Your Body Rings | 厥阴病。消渴、气上撞心。乌梅丸思维 | |
+| S05 | When Your Body Is Stuck Between Two Fires | 少阳病。寒热往来、口苦、胸胁苦满。小柴胡汤 | ✅ #24 已发布 (2026-06-17) |
+| S06 | The Spleen Has A Cold. Your Doctor Called It "IBS" | 太阴病。腹满、自利、时腹痛。理中汤 | ✅ #26 已发布 (标题改为 When Food Stops Being Food) |
+| S07 | Why You're Tired In A Way Coffee Can't Fix | 少阴病。脉微细、但欲寐。四逆汤思维 | ✅ #27 已发布 (标题改为 The Most Dangerous Quiet) |
+| S08 | The Final Alarm Your Body Rings | 厥阴病。消渴、气上撞心。乌梅丸思维 | ✅ #30 已发布 (标题改为 When the Body Reaches Its Last Line) |
 
 ## 🟡 中优先级：T 系列 — 日常养生
 
@@ -36,7 +36,7 @@
 |---|------|--------|:--:|------|------|
 | J01 | 小暑 | Minor Heat | Jul 7 | 暑热初起，心火易旺。清心茶饮 + 午休 | 文化：中国古人怎么在没有空调的情况下度夏 |
 | J02 | 大暑 | Major Heat | Jul 22 | 一年最热。防中暑 + 健脾祛湿。冬瓜薏米汤 | 文化：大暑船（浙江送暑民俗） |
-| J03 | 立秋 | Beginning of Autumn | Aug 7 | 秋燥初现。润肺：梨、百合、银耳 | 文化：贴秋膘（中国人在立秋为什么要吃肉） | ✅ #44 写作中 (2026-08-07 大王确认选题) |
+| J03 | 立秋 | Beginning of Autumn | Aug 7 | 秋燥初现。润肺：梨、百合、银耳 | 文化：贴秋膘（中国人在立秋为什么要吃肉） | ✅ #44 已发布 (2026-08-07) |
 | J04 | 处暑 | Limit of Heat | Aug 23 | 暑气消退，脾胃恢复期。少吃生冷 | 文化：处暑吃鸭子 |
 | J05 | 白露 | White Dew | Sep 7 | 昼夜温差大。防风防寒，泡脚开始 | 文化：白露茶——为什么这个时节的茶叶最好 |
 | J06 | 秋分 | Autumn Equinox | Sep 23 | 阴阳平衡日。秋燥伤肺，润燥为主 | 文化：秋分祭月——中秋节的前身 |
