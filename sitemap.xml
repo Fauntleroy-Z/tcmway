@@ -270,7 +270,13 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
+    <url>
+    <loc>https://tcmway.net/posts/47-moxibustion-vs-your-heating-pad.html</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+<url>
     <loc>https://tcmway.net/posts/33-how-ancient-china-survived-summer-without-air-conditioning.html</loc>
     <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
