@@ -75,21 +75,34 @@ def scan_articles():
             fn_counter += 1
             num = fn_counter
             display = f"FN{int(prefix[2:]):02d}"
+            is_note = True
         else:
             num = int(prefix)
             display = str(num)
+            is_note = False
         with open(f) as fh:
             html = fh.read()
         title = re.search(r'<h2>([^<]+)</h2>', html)
         date = re.search(r'class="meta">([^<]+)', html)
+        # 2026-08-19：正文词数（reading time 用，220 wpm）
+        mbody = re.search(r'<article>(.*?)</article>', html, re.S)
+        plain = re.sub(r'<[^>]+>', ' ', mbody.group(1) if mbody else html)
+        wc = len(plain.split())
         articles[num] = {
             "num": num,
             "display": display,
             "file": os.path.basename(f),
             "title": title.group(1) if title else "Untitled",
             "date": date.group(1).split("&")[0].strip() if date else "",
+            "wc": wc,
+            "is_note": is_note,
         }
     return articles
+
+
+def reading_time(wc: int) -> int:
+    """220 wpm 四舍五入取整，最低 1 分钟。"""
+    return max(1, round(wc / 220))
 
 # ─── Assign Categories ───
 def assign_categories(articles):
@@ -191,7 +204,8 @@ def generate_archive(articles, cat_map, uncategorized=None):
         body += '<ul class="article-list">\n'
         for num in nums:
             art = articles[num]
-            body += f'  <li><span class="art-num">{art.get("display", num)}</span><span class="art-info"><a href="/posts/{art["file"]}">{art["title"]}</a><br><span class="art-date">{art["date"]}</span></span></li>\n'
+            note_badge = ' <span class="note-badge">Field Note</span>' if art.get("is_note") else ''
+            body += f'  <li><span class="art-num">{art.get("display", num)}</span><span class="art-info"><a href="/posts/{art["file"]}">{art["title"]}</a>{note_badge}<br><span class="art-date">{art["date"]} &middot; {reading_time(art["wc"])} min read</span></span></li>\n'
         body += '</ul>\n'
 
     # Fallback: render any uncategorized articles so new posts never silently vanish
@@ -200,7 +214,8 @@ def generate_archive(articles, cat_map, uncategorized=None):
         body += '<ul class="article-list">\n'
         for num in sorted(uncategorized):
             art = articles[num]
-            body += f'  <li><span class="art-num">{art.get("display", num)}</span><span class="art-info"><a href="/posts/{art["file"]}">{art["title"]}</a><br><span class="art-date">{art["date"]}</span></span></li>\n'
+            note_badge = ' <span class="note-badge">Field Note</span>' if art.get("is_note") else ''
+            body += f'  <li><span class="art-num">{art.get("display", num)}</span><span class="art-info"><a href="/posts/{art["file"]}">{art["title"]}</a>{note_badge}<br><span class="art-date">{art["date"]} &middot; {reading_time(art["wc"])} min read</span></span></li>\n'
         body += '</ul>\n'
 
     footer = '''
@@ -241,13 +256,15 @@ def update_homepage(cat_map, articles):
     hero_title = r'(<div class="hero-title">)[^<]*(</div>)'
     html = re.sub(hero_title, rf'\g<1>{art["title"]}\2', html)
     hero_meta = r'(<div class="hero-meta">)[^<]*(</div>)'
-    html = re.sub(hero_meta, rf'\g<1>{art["date"]} &middot; By Ollie · Read →\2', html)
+    html = re.sub(hero_meta, rf'\g<1>{art["date"]} &middot; By Ollie &middot; {reading_time(art["wc"])} min read · Read →\2', html)
 
     # --- Recent posts: rebuild 5 most recent ---
     recent_nums = sorted(articles.keys(), reverse=True)[:5]
     recent_pattern = r'(<!-- ═══ RECENT POSTS ═══ -->\n<h2[^>]*>Recent Articles</h2>\n\n).*?(<div class="view-all">)'
     recent_html = '\n'.join([
-        f'<div class="post">\n  <h2><a href="posts/{articles[n]["file"]}"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">{articles[n]["title"]}</a></h2>\n  <div class="date">{articles[n]["date"]} &middot; By Ollie</div>\n  <div class="excerpt"><p></p></div>\n</div>'
+        (f'<div class="post">\n  <h2><a href="posts/{articles[n]["file"]}"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">{articles[n]["title"]}</a></h2>\n'
+         + ('  <span class="note-badge">Field Note</span>\n' if articles[n].get("is_note") else '')
+         + f'  <div class="date">{articles[n]["date"]} &middot; By Ollie &middot; {reading_time(articles[n]["wc"])} min read</div>\n  <div class="excerpt"><p></p></div>\n</div>')
         for n in recent_nums
     ])
     html = re.sub(recent_pattern, rf'\g<1>\n{recent_html}\n\n\2', html, count=1, flags=re.DOTALL)
