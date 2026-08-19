@@ -68,14 +68,23 @@ CATEGORIES = {
 # ─── Scan All Articles ───
 def scan_articles():
     articles = {}
+    fn_counter = 200  # FN 短文伪编号起始（不占长文编号，archive 显示 FN01/FN02...）
     for f in sorted(glob.glob(os.path.join(POSTS_DIR, "*-*.html"))):
-        num = int(os.path.basename(f).split("-")[0])
+        prefix = os.path.basename(f).split("-")[0]
+        if prefix.lower().startswith("fn"):
+            fn_counter += 1
+            num = fn_counter
+            display = f"FN{int(prefix[2:]):02d}"
+        else:
+            num = int(prefix)
+            display = str(num)
         with open(f) as fh:
             html = fh.read()
         title = re.search(r'<h2>([^<]+)</h2>', html)
         date = re.search(r'class="meta">([^<]+)', html)
         articles[num] = {
             "num": num,
+            "display": display,
             "file": os.path.basename(f),
             "title": title.group(1) if title else "Untitled",
             "date": date.group(1).split("&")[0].strip() if date else "",
@@ -182,7 +191,7 @@ def generate_archive(articles, cat_map, uncategorized=None):
         body += '<ul class="article-list">\n'
         for num in nums:
             art = articles[num]
-            body += f'  <li><span class="art-num">{num}</span><span class="art-info"><a href="/posts/{art["file"]}">{art["title"]}</a><br><span class="art-date">{art["date"]}</span></span></li>\n'
+            body += f'  <li><span class="art-num">{art.get("display", num)}</span><span class="art-info"><a href="/posts/{art["file"]}">{art["title"]}</a><br><span class="art-date">{art["date"]}</span></span></li>\n'
         body += '</ul>\n'
 
     # Fallback: render any uncategorized articles so new posts never silently vanish
@@ -191,7 +200,7 @@ def generate_archive(articles, cat_map, uncategorized=None):
         body += '<ul class="article-list">\n'
         for num in sorted(uncategorized):
             art = articles[num]
-            body += f'  <li><span class="art-num">{num}</span><span class="art-info"><a href="/posts/{art["file"]}">{art["title"]}</a><br><span class="art-date">{art["date"]}</span></span></li>\n'
+            body += f'  <li><span class="art-num">{art.get("display", num)}</span><span class="art-info"><a href="/posts/{art["file"]}">{art["title"]}</a><br><span class="art-date">{art["date"]}</span></span></li>\n'
         body += '</ul>\n'
 
     footer = '''
