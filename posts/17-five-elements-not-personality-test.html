@@ -35,8 +35,8 @@
 .brand-symbol{display:block;margin:0 auto 1.2rem;width:130px;height:auto}
   body { font-family: Georgia, 'Times New Roman', serif; background: var(--bg); color: var(--text); line-height: 1.9; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
   header { text-align: center; padding: 2rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
-  header h1 { font-size: 1.8rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
-  header h1::after { content: ""; display: block; width: 60%; height: 3px; margin: 6px auto 0; background: linear-gradient(90deg, transparent, #b83a2a 20%, #e8a87c 50%, #b83a2a 80%, transparent); border-radius: 2px; opacity: 0.7; }
+  header .brand-name { font-size: 1.8rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
+  header .brand-name::after { content: ""; display: block; width: 60%; height: 3px; margin: 6px auto 0; background: linear-gradient(90deg, transparent, #b83a2a 20%, #e8a87c 50%, #b83a2a 80%, transparent); border-radius: 2px; opacity: 0.7; }
   nav { margin-top: 1rem; }
   nav a { color: #555; text-decoration: none; margin: 0 0.8rem; font-size: 0.95rem; }
   nav a:hover { color: var(--accent); }
@@ -172,7 +172,7 @@ var _hmt = _hmt || [];
 
 <header>
     <img src="/images/brand/logo-tcmway-header.png?v=2" class="brand-symbol" alt="TCM Way — yin-yang pendant">
-  <h1>TCM Way</h1>
+  <p class="brand-name">TCM Way</p>
       <nav>
     <a href="/">Home</a>
     <a href="/start-here.html">Start Here</a>
@@ -184,7 +184,7 @@ var _hmt = _hmt || [];
 </header>
 
 <article>
-<h2>The Five Elements Are Not<br>a Personality Test</h2>
+<h1>The Five Elements Are Not<br>a Personality Test</h1>
 <div style="background:#fef0e2;border-left:4px solid #e8a87c;padding:0.9rem 1.2rem;margin:1.5rem 0;border-radius:0 6px 6px 0;font-size:0.95rem;">
   🎧 <strong>Prefer listening?</strong> This article is also <strong>EP06</strong> of the <a href="/podcast/#ep06" style="color:#b83a2a;">East &amp; Inner with Ollie</a> podcast — <a href="https://youtu.be/rOHzdWAGC3I" style="color:#b83a2a;">watch on YouTube</a>.
 </div>
@@ -218,7 +218,7 @@ var _hmt = _hmt || [];
   <img src="/images/brand/pendant-mini-40.png" alt="" width="22" height="22">
   <span>Ollie's Take</span>
 </div>
-<img class="comic-break" class="comic-img" src="/images/comic-17-bw.png" alt="The Five Elements as an Ecosystem — A 4-Panel Comic">
+<img class="comic-break" class="comic-img" src="/images/comic-17-bw.webp" width="800" height="800" alt="The Five Elements as an Ecosystem — A 4-Panel Comic">
     <div class="comic-captions">
       <p>▸ <strong>Panel 1:</strong> The BuzzFeed quiz trap — "Which element are you?" is the wrong question.</p>
       <p>▸ <strong>Panel 2:</strong> Your body is a garden, not a personality label — all five elements interconnected.</p>
@@ -417,7 +417,7 @@ var _hmt = _hmt || [];
   "description": "Wood, Fire, Earth, Metal, and Water are not identity badges. They're functional relationships — a 2,000-year-old systems theory of how your body works.",
   "author": { "@type": "Person", "name": "Ollie" },
   "datePublished": "2026-05-12",
-  "image": "https://tcmway.net/images/comic-17-bw.png",
+  "image": "https://tcmway.net/images/comic-17-bw.webp",
   "mainEntityOfPage": {
     "@type": "FAQPage",
     "mainEntity": [

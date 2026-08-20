@@ -35,12 +35,12 @@
 .brand-symbol{display:block;margin:0 auto 1.2rem;width:130px;height:auto}
   body { font-family: Georgia, 'Times New Roman', serif; background: var(--bg); color: var(--text); line-height: 1.9; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
   header { text-align: center; padding: 2rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
-  header h1 { font-size: 1.8rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
-  header h1::after { content: ""; display: block; width: 60%; height: 3px; margin: 6px auto 0; background: linear-gradient(90deg, transparent, #b83a2a 20%, #e8a87c 50%, #b83a2a 80%, transparent); border-radius: 2px; opacity: 0.7; }
+  header .brand-name { font-size: 1.8rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
+  header .brand-name::after { content: ""; display: block; width: 60%; height: 3px; margin: 6px auto 0; background: linear-gradient(90deg, transparent, #b83a2a 20%, #e8a87c 50%, #b83a2a 80%, transparent); border-radius: 2px; opacity: 0.7; }
   nav { margin-top: 1rem; }
   nav a { color: #555; text-decoration: none; margin: 0 0.8rem; font-size: 0.95rem; }
   nav a:hover { color: var(--accent); }
-  article h2, header h1, h2.page-title{font-size:2rem;font-weight:500;color:var(--accent);margin-bottom:1rem}
+  article h1, header .brand-name, h2.page-title{font-size:2rem;font-weight:500;color:var(--accent);margin-bottom:1rem}
   .meta { color: #555; font-size: 0.9rem; margin-bottom: 2rem; }
   h2 { font-weight: normal; color: var(--accent); margin: 2rem 0 1rem; font-size: 1.3rem; border-left: 4px solid var(--accent-warm); padding-left: 0.8rem; }
   p { margin-bottom: 1.3rem; }
@@ -143,7 +143,7 @@
 <body>
 <header>
     <img src="/images/brand/logo-tcmway-header.png" class="brand-symbol" alt="TCM Way — yin-yang pendant">
-  <h1>TCM Way</h1>
+  <p class="brand-name">TCM Way</p>
     <nav>
     <a href="/">Home</a>
     <a href="/start-here.html">Start Here</a>
@@ -154,7 +154,7 @@
   </nav>
 </header>
 <article>
-  <h2>Stop Fighting, Start Warming — Why Yang Tonics Are Not About Heat</h2>
+  <h1>Stop Fighting, Start Warming — Why Yang Tonics Are Not About Heat</h1>
 
   <div class="meta">June 18, 2026 &middot; By Ollie &middot; 10 min read</div>
   <div class="last-updated" style="color:var(--subtle);font-size:0.85rem;margin-top:0.3rem;">Last updated: June 18, 2026</div>
@@ -177,7 +177,7 @@
   <img src="/images/brand/pendant-mini-40.png" alt="" width="22" height="22">
   <span>Ollie's Take</span>
 </div>
-<img class="comic-break" src="/images/comic-28-bw.png" alt="Ollie the Screech Owl explains warming therapy — stop fighting symptoms, start warming the furnace" width="680" style="max-width:100%;" loading="lazy">
+<img class="comic-break" src="/images/comic-28-bw.webp" alt="Ollie the Screech Owl explains warming therapy — stop fighting symptoms, start warming the furnace" width="680" style="max-width:100%;" loading="lazy">
 
 <p>When the furnace is roaring, the house is warm and comfortable. The plumbing works, the air is fresh, and everything runs smoothly. This is a body with strong Yang Qi. You feel energetic, your digestion is strong, you have a healthy glow, and you can easily adapt to a chilly day.</p>
 
@@ -292,7 +292,7 @@
   "@type": "BlogPosting",
   "headline": "Stop Fighting, Start Warming — Why Yang Tonics Are Not About Heat",
   "description": "Modern medicine fights symptoms. TCM warms the furnace. Why chronic inflammation, fatigue, and cold are not battles to win but fires to rekindle.",
-  "image": "https://tcmway.net/images/comic-28-bw.png",
+  "image": "https://tcmway.net/images/comic-28-bw.webp",
   "datePublished": "2026-06-18",
   "author": { "@type": "Person", "name": "Ollie and The TCM Way Team" }
 }

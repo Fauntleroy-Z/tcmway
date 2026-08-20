@@ -35,8 +35,8 @@
 .brand-symbol{display:block;margin:0 auto 1.2rem;width:130px;height:auto}
   body { font-family: Georgia, 'Times New Roman', serif; background: var(--bg); color: var(--text); line-height: 1.9; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
   header { text-align: center; padding: 2rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
-  header h1 { font-size: 1.8rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
-  header h1::after { content: ""; display: block; width: 60%; height: 3px; margin: 6px auto 0; background: linear-gradient(90deg, transparent, #b83a2a 20%, #e8a87c 50%, #b83a2a 80%, transparent); border-radius: 2px; opacity: 0.7; }
+  header .brand-name { font-size: 1.8rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
+  header .brand-name::after { content: ""; display: block; width: 60%; height: 3px; margin: 6px auto 0; background: linear-gradient(90deg, transparent, #b83a2a 20%, #e8a87c 50%, #b83a2a 80%, transparent); border-radius: 2px; opacity: 0.7; }
   nav { margin-top: 1rem; }
   nav a { color: #555; text-decoration: none; margin: 0 0.8rem; font-size: 0.95rem; }
   nav a:hover { color: var(--accent); }
@@ -152,7 +152,7 @@ var _hmt = _hmt || [];
 
 <header>
     <img src="/images/brand/logo-tcmway-header.png" class="brand-symbol" alt="TCM Way — yin-yang pendant">
-  <h1>TCM Way</h1>
+  <p class="brand-name">TCM Way</p>
     <nav>
     <a href="/">Home</a>
     <a href="/start-here.html">Start Here</a>
@@ -164,7 +164,7 @@ var _hmt = _hmt || [];
 </header>
 
 <article>
-<h2>Yin & Yang &ne; Good vs Evil</h2>
+<h1>Yin & Yang &ne; Good vs Evil</h1>
 <div style="background:#fef0e2;border-left:4px solid #e8a87c;padding:0.9rem 1.2rem;margin:1.5rem 0;border-radius:0 6px 6px 0;font-size:0.95rem;">
   🎧 <strong>Prefer listening?</strong> This article is also <strong>EP01</strong> of the <a href="/podcast/#ep01" style="color:#b83a2a;">East &amp; Inner with Ollie</a> podcast — <a href="https://youtu.be/5RGpgaT4yTQ" style="color:#b83a2a;">watch on YouTube</a>.
 </div>
@@ -199,7 +199,7 @@ var _hmt = _hmt || [];
   <img src="/images/brand/pendant-mini-40.png" alt="" width="22" height="22">
   <span>Ollie's Take</span>
 </div>
-<img class="comic-break" src="/images/comic-16-bw.png" alt="The Yin Yang Seesaw — A 4-Panel Comic: (1) Balanced seesaw (2) Yang rises Yin falls (3) Yin rises Yang falls (4) X" width="680" style="max-width:100%;">
+<img class="comic-break" src="/images/comic-16-bw.webp" alt="The Yin Yang Seesaw — A 4-Panel Comic: (1) Balanced seesaw (2) Yang rises Yin falls (3) Yin rises Yang falls (4) X" width="680" style="max-width:100%;">
   <p class="caption" style="color: #555; font-size: 0.85rem; font-style: italic; margin-top: 0.5rem; text-align: center;">Yin and Yang aren't opponents on a scoreboard. They're a seesaw — and the point is to keep it moving.</p>
 
 <h2>The Textbook Definition vs. The Lived Reality</h2>
@@ -335,7 +335,7 @@ Yin and Yang are the Dao of Heaven and Earth, the fundamental principle governin
   "description": "Yin and Yang are not opponents on a scoreboard. The Huangdi Neijing describes them as a dynamic equilibrium — a seesaw that only works when both sides are free to move.",
   "author": { "@type": "Person", "name": "Ollie" },
   "datePublished": "2026-05-07",
-  "image": "https://tcmway.net/images/comic-16-bw.png",
+  "image": "https://tcmway.net/images/comic-16-bw.webp",
   "mainEntityOfPage": {
     "@type": "FAQPage",
     "mainEntity": [
