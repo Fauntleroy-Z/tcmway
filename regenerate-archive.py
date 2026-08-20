@@ -23,7 +23,8 @@ CATEGORIES = {
             "33-how-ancient-china", "34-eat-with-the-sun", "35-the-season-your-body",
             "36-surviving-the-hottest", "37-move-like-water", "38-the-one-ingredient",
             "39-what-tcm-can-learn", "40-spring-neijing-reinvention",
-            "41-why-the-ancients-said", "42-the-season-of-letting-go"
+            "41-why-the-ancients-said", "42-the-season-of-letting-go",
+            "48-what-are-meridians"
         ]
     },
     "taiyang": {
@@ -97,6 +98,10 @@ def scan_articles():
             "wc": wc,
             "is_note": is_note,
         }
+        try:
+            articles[num]["date_obj"] = datetime.strptime(articles[num]["date"], "%B %d, %Y")
+        except (ValueError, TypeError):
+            articles[num]["date_obj"] = datetime(1970, 1, 1)
     return articles
 
 
@@ -246,8 +251,10 @@ def update_homepage(cat_map, articles):
     total = len(articles)
 
     # --- Hero card: update to latest article ---
-    latest = max(articles.keys())
-    art = articles[latest]
+    # 2026-08-20 修复：FN 短文伪编号(200+) > 长文编号，按 max(key) 排序会把短文排在长文前面。
+    # 改为按发布日期排序（同日期按伪编号降序兜底）。
+    latest_art = max(articles.values(), key=lambda a: (a["date_obj"], a["num"]))
+    art = latest_art
     # 2026-08-13 修复：旧逻辑只替换编号前缀（45→46），slug 保留旧文章的，
     # 生成 46-san-fu-tian-... 幽灵链接（#45 实战#46 首页 Latest 404）。
     # 改为整体替换为最新文章的完整文件名。
@@ -259,7 +266,13 @@ def update_homepage(cat_map, articles):
     html = re.sub(hero_meta, rf'\g<1>{art["date"]} &middot; By Ollie &middot; {reading_time(art["wc"])} min read · Read →\2', html)
 
     # --- Recent posts: rebuild 5 most recent ---
-    recent_nums = sorted(articles.keys(), reverse=True)[:5]
+    recent_nums = [
+        a["num"] for a in sorted(
+            articles.values(),
+            key=lambda a: (a["date_obj"], a["num"]),
+            reverse=True,
+        )[:5]
+    ]
     recent_pattern = r'(<!-- ═══ RECENT POSTS ═══ -->\n<h2[^>]*>Recent Articles</h2>\n\n).*?(<div class="view-all">)'
     recent_html = '\n'.join([
         (f'<div class="post">\n  <h2><a href="posts/{articles[n]["file"]}"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">{articles[n]["title"]}</a></h2>\n'
