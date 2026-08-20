@@ -83,12 +83,27 @@ def scan_articles():
             is_note = False
         with open(f) as fh:
             html = fh.read()
-        title = re.search(r'<h2>([^<]+)</h2>', html)
+        # 2026-08-21：文章标题已从 h2 升为唯一 h1（5b65d71 起），优先取 article 内 h1
+        title = re.search(r'<article>.*?<h1>([^<]+)</h1>', html, re.S) or re.search(r'<h2>([^<]+)</h2>', html)
         date = re.search(r'class="meta">([^<]+)', html)
         # 2026-08-19：正文词数（reading time 用，220 wpm）
         mbody = re.search(r'<article>(.*?)</article>', html, re.S)
         plain = re.sub(r'<[^>]+>', ' ', mbody.group(1) if mbody else html)
         wc = len(plain.split())
+        # 2026-08-21：首页 excerpt 取文章正文开头文本（剔除 meta/last-updated，
+        # 兼容历史文章正文无 <p> 包裹的情况；截 150 字符）
+        excerpt = ""
+        if mbody:
+            body_txt = re.sub(
+                r'<div class="meta">.*?</div>|<div class="last-updated".*?</div>',
+                " ",
+                mbody.group(1),
+                flags=re.S,
+            )
+            body_txt = re.sub(r'<h1>.*?</h1>|<h2>.*?</h2>', " ", body_txt, flags=re.S)
+            body_txt = re.sub(r'<span class="note-badge">.*?</span>|<div class="ollie-take-badge">.*?</div>', " ", body_txt, flags=re.S)
+            body_txt = re.sub(r'<[^>]+>', " ", body_txt)
+            excerpt = re.sub(r'\s+', " ", body_txt).strip()[:150]
         articles[num] = {
             "num": num,
             "display": display,
@@ -96,6 +111,7 @@ def scan_articles():
             "title": title.group(1) if title else "Untitled",
             "date": date.group(1).split("&")[0].strip() if date else "",
             "wc": wc,
+            "excerpt": excerpt,
             "is_note": is_note,
         }
         try:
@@ -146,7 +162,7 @@ def generate_archive(articles, cat_map, uncategorized=None):
 <meta name="description" content="Browse all articles from TCM Way — articles on classical Chinese medicine, organized by category.">
 <meta property="og:title" content="All Articles — TCM Way">
 <meta property="og:description" content="Browse all articles from TCM Way, organized by category.">
-<meta property="og:image" content="https://tcmway.net/images/brand/logo-tcmway-header.png">
+<meta property="og:image" content="https://tcmway.net/images/brand/og-card.png">
 <meta property="og:url" content="https://tcmway.net/archive.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TCM Way">
@@ -264,6 +280,12 @@ def update_homepage(cat_map, articles):
     html = re.sub(hero_title, rf'\g<1>{art["title"]}\2', html)
     hero_meta = r'(<div class="hero-meta">)[^<]*(</div>)'
     html = re.sub(hero_meta, rf'\g<1>{art["date"]} &middot; By Ollie &middot; {reading_time(art["wc"])} min read · Read →\2', html)
+    if re.search(r'<div class="hero-excerpt">', html):
+        hero_excerpt = r'(<div class="hero-excerpt">)[^<]*(</div>)'
+        html = re.sub(hero_excerpt, rf'\g<1>{art["excerpt"]}\2', html, count=1)
+    else:
+        hero_excerpt = r'(<div class="hero-title">[^<]*</div>)(\s*)'
+        html = re.sub(hero_excerpt, rf'\g<1>\n    <div class="hero-excerpt">{art["excerpt"]}</div>\2', html, count=1)
 
     # --- Recent posts: rebuild 5 most recent ---
     recent_nums = [
@@ -275,9 +297,9 @@ def update_homepage(cat_map, articles):
     ]
     recent_pattern = r'(<!-- ═══ RECENT POSTS ═══ -->\n<h2[^>]*>Recent Articles</h2>\n\n).*?(<div class="view-all">)'
     recent_html = '\n'.join([
-        (f'<div class="post">\n  <h2><a href="posts/{articles[n]["file"]}"><img src="images/ollie-mini-80.png" class="mini-owl" alt="">{articles[n]["title"]}</a></h2>\n'
+        (f'<div class="post">\n  <h2><a href="posts/{articles[n]["file"]}"><img src="images/ollie-mini-80.png" width="80" height="80" class="mini-owl" alt="">{articles[n]["title"]}</a></h2>\n'
          + ('  <span class="note-badge">Field Note</span>\n' if articles[n].get("is_note") else '')
-         + f'  <div class="date">{articles[n]["date"]} &middot; By Ollie &middot; {reading_time(articles[n]["wc"])} min read</div>\n  <div class="excerpt"><p></p></div>\n</div>')
+         + f'  <div class="date">{articles[n]["date"]} &middot; By Ollie &middot; {reading_time(articles[n]["wc"])} min read</div>\n  <div class="excerpt"><p>{articles[n].get("excerpt", "")}</p></div>\n</div>')
         for n in recent_nums
     ])
     html = re.sub(recent_pattern, rf'\g<1>\n{recent_html}\n\n\2', html, count=1, flags=re.DOTALL)
