@@ -12,7 +12,7 @@
 <meta name="description" content="The same yin-yang pendant. The same owl. Reimagined through the brushstrokes of Kyoto, the stained glass of Notre-Dame, the geometry of Marrakech — and other worlds yet to come.">
 <meta property="og:title" content="One Pendant. A Thousand Journeys. — Ollie's Corner">
 <meta property="og:description" content="I've worn this pendant through ink and stone, across silk roads and stained-glass light. Let me show you what I saw. — Ollie">
-<meta property="og:image" content="https://tcmway.net/images/brand/logo-tcmway-header.png?v=2">
+<meta property="og:image" content="https://tcmway.net/images/brand/og-card.png">
 <meta property="og:url" content="https://tcmway.net/ollies-corner.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TCM Way">
@@ -29,8 +29,8 @@
   /* ── Header (brand standard) ── */
   header{text-align:center;padding:3rem 0 2rem;border-bottom:2px solid var(--border);margin-bottom:2.5rem;background:var(--bg)}
   .brand-symbol{display:block;margin:0 auto 1.2rem;width:110px;height:auto}
-  header h1{font-size:2.2rem;font-weight:700;letter-spacing:.08em;color:var(--accent);display:inline-block;position:relative}
-  header h1::after{content:"";position:absolute;bottom:-6px;left:5%;width:90%;height:3px;background:linear-gradient(90deg,transparent,var(--accent-warm),var(--accent),var(--accent-warm),transparent);border-radius:2px}
+  header .brand-name{font-size:2.2rem;font-weight:700;letter-spacing:.08em;color:var(--accent);display:inline-block;position:relative}
+  header .brand-name::after{content:"";position:absolute;bottom:-6px;left:5%;width:90%;height:3px;background:linear-gradient(90deg,transparent,var(--accent-warm),var(--accent),var(--accent-warm),transparent);border-radius:2px}
   header p.tagline{color:var(--subtle);font-style:italic;margin-top:.6rem;font-size:.95rem;letter-spacing:.02em}
   nav{margin-top:1.5rem}
   nav a{color:var(--subtle);text-decoration:none;margin:0 .8rem;font-size:.9rem;letter-spacing:.06em;transition:color .3s}
@@ -81,7 +81,7 @@
 
   @media(max-width:600px){
     .brand-symbol{width:100px}.hero h1{font-size:1.8rem}.hero{padding:3rem 1rem 2rem}
-    header{padding:2rem 0 1.5rem}header h1{font-size:1.8rem}
+    header{padding:2rem 0 1.5rem}header .brand-name{font-size:1.8rem}
     .ollie-speaks{padding:1.5rem 1rem;margin:0 1rem 2rem}
   }
   @media(max-width:400px){.brand-symbol{width:90px}}
@@ -99,14 +99,14 @@
   .download-links a:hover{background:var(--gold)}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"TCM Way","url":"https://tcmway.net/","description":"Ancient wisdom, modern life — classical Chinese medicine translated for the modern mind."},{"@type":"Organization","name":"TCM Way","url":"https://tcmway.net/","logo":"https://tcmway.net/images/brand/logo-tcmway-header.png"}]}
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"TCM Way","url":"https://tcmway.net/","description":"Ancient wisdom, modern life — classical Chinese medicine translated for the modern mind."},{"@type":"Organization","name":"TCM Way","url":"https://tcmway.net/","logo":"https://tcmway.net/images/brand/og-card.png"}]}
 </script>
 </head>
 <body>
 
 <header>
   <img src="/images/brand/logo-tcmway-header.png?v=2" class="brand-symbol" alt="TCM Way — yin-yang pendant">
-  <h1>TCM Way</h1>
+  <p class="brand-name">TCM Way</p>
   <p class="tagline">Ancient Wisdom, Told Warmly</p>
   <nav>
     <a href="/">Home</a>
