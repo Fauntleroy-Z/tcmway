@@ -31,6 +31,20 @@
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
 
+  <!-- ===== EP11 ===== -->
+  <item>
+    <title><![CDATA[Ep11: Li Qiu — Why the First Day of Autumn Makes the Chinese Reach for Pears]]></title>
+    <link>https://tcmway.net/podcast/ep11.mp3</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep11.mp3</guid>
+    <pubDate>Sun, 23 Aug 2026 10:05:00 +0800</pubDate>
+    <description><![CDATA[On a hot August day, the Chinese calendar says autumn has begun — and families are eating hearty meat on purpose. Why Li Qiu matters, how Autumn Dryness targets the Lungs, and why pears, lily bulb, and white fungus are the season's perfect answer. Includes the classic pear soup recipe. Based on TCM Way blog #44.]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep11.mp3" length="19428040" type="audio/mpeg"/>
+    <itunes:duration>1214</itunes:duration>
+    <itunes:episode>11</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
+
   <!-- ===== EP10 ===== -->
   <item>
     <title><![CDATA[Ep10: Why Your Acupuncturist Hasn't Told You About Moxibustion]]></title>
