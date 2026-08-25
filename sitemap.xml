@@ -2,79 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tcmway.net/</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://tcmway.net/start-here.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tcmway.net/archive.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tcmway.net/about.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tcmway.net/contact.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tcmway.net/disclaimer.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tcmway.net/privacy.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tcmway.net/ollies-corner.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tcmway.net/podcast/index.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://tcmway.net/category/foundations.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://tcmway.net/category/taiyang.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://tcmway.net/category/yangming.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://tcmway.net/category/shaoyang.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -254,7 +254,7 @@
   </url>
   <url>
     <loc>https://tcmway.net/posts/30-when-the-body-reaches-its-last-line.html</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -361,6 +361,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://tcmway.net/posts/49-chu-shu-autumn-dryness.html</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tcmway.net/posts/50-the-yellow-emperors-inner-classic.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://tcmway.net/posts/fn01-drink-more-hot-water.html</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -375,12 +387,6 @@
   <url>
     <loc>https://tcmway.net/posts/fn03-is-your-body-breaking-down-or-crying-for-help.html</loc>
     <lastmod>2026-08-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tcmway.net/posts/49-chu-shu-autumn-dryness.html</loc>
-    <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
