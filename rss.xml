@@ -6,13 +6,20 @@
     <link>https://tcmway.net/</link>
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Tue, 25 Aug 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 00:00:00 +0800</lastBuildDate>
     <image>
   <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
   <title>TCM Way</title>
   <link>https://tcmway.net/</link>
 </image>
 <generator>TCM Way</generator>
+  <item>
+    <title>The Physics of Acupuncture (No, It's Not Magic)</title>
+    <link>https://tcmway.net/posts/51-the-physics-of-acupuncture.html</link>
+    <pubDate>Tue, 01 Sep 2026 00:00:00 +0800</pubDate>
+    <guid>https://tcmway.net/posts/51-the-physics-of-acupuncture.html</guid>
+    <description>Thin needles, real physics: connective tissue winding, the body's own painkillers, adenosine, and brain scans — plus what the lab hasn't proven.</description>
+  </item>
   <item>
     <title>The Yellow Emperor's Inner Classic Isn't One Book. It's a Library.</title>
     <link>https://tcmway.net/posts/50-the-yellow-emperors-inner-classic.html</link>
