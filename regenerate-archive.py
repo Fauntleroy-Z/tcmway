@@ -118,6 +118,17 @@ def scan_articles():
             articles[num]["date_obj"] = datetime.strptime(articles[num]["date"], "%B %d, %Y")
         except (ValueError, TypeError):
             articles[num]["date_obj"] = datetime(1970, 1, 1)
+        # 2026-08-26 根除：未来日期（Asia/Shanghai）文章不进入任何索引，
+        # 防止未确认/未到发布日的文章被 deploy 带上线（#50/#51 事故复盘）
+        try:
+            from zoneinfo import ZoneInfo
+            _today = datetime.now(ZoneInfo("Asia/Shanghai")).date()
+        except Exception:
+            _today = datetime.now().date()
+        if articles[num]["date_obj"].date() > _today:
+            print(f"  ⏭ 跳过未来日期文章（未到发布日）: {os.path.basename(f)} ({articles[num]['date']})")
+            del articles[num]
+            continue
     return articles
 
 

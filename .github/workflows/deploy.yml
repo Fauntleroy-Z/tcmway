@@ -44,6 +44,37 @@ jobs:
           git diff --staged --quiet || git commit -m "auto: regenerate archive + category counts [skip ci]"
           git push
 
+      - name: Reject future-dated posts (发布日铁律)
+        run: |
+          python3 - <<'PY'
+          import glob, re
+          from datetime import date, datetime
+          from zoneinfo import ZoneInfo
+          today = datetime.now(ZoneInfo("Asia/Shanghai")).date()
+          bad = []
+          for f in sorted(glob.glob("posts/*.html")):
+              html = open(f, encoding="utf-8").read()
+              m = re.search(r'"datePublished":\s*"(\d{4}-\d{2}-\d{2})"', html)
+              if m:
+                  d = date.fromisoformat(m.group(1))
+              else:
+                  m2 = re.search(r'class="meta">([A-Z][a-z]+ \d{1,2}, \d{4})', html)
+                  if not m2:
+                      continue
+                  try:
+                      d = datetime.strptime(m2.group(1), "%B %d, %Y").date()
+                  except ValueError:
+                      continue
+              if d > today:
+                  bad.append((f, d.isoformat()))
+          if bad:
+              print("🔴 FUTURE-DATED POSTS BLOCK DEPLOY（未经主人确认不得上线）:")
+              for f, d in bad:
+                  print("   ", f, "datePublished=", d, "today=", today)
+              raise SystemExit(1)
+          print(f"✅ date gate OK (Asia/Shanghai today={today})")
+          PY
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
