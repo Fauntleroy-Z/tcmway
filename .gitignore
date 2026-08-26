@@ -15,6 +15,10 @@ podcast/mix_bgm.py
 podcast/fix_pauses.py
 podcast/scripts/*review*
 
+# 未确认发布暂存区（禁止提交；推送前必须移入 posts/ 并经主人确认）
+staging/
+__pycache__/
+
 # Hermes
 .hermes/
 

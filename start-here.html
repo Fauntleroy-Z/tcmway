@@ -13,11 +13,11 @@
 <meta charset="UTF-8">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Foundations — Start Here — TCM Way</title>
+<title>Start Here — TCM Way</title>
 <link rel="canonical" href="https://tcmway.net/start-here.html">
-<meta name="description" content="The Foundations reading map: three pillars — the six stages, the Yellow Emperor's Inner Classic, and Yin-Yang with the Five Elements. Start with the right articles, in the right order.">
-<meta property="og:title" content="Foundations — Start Here — TCM Way">
-<meta property="og:description" content="The Foundations reading map: three pillars of classical Chinese medicine, with a guided order for each.">
+<meta name="description" content="New to classical Chinese medicine? A guided reading path through TCM Way — from first concepts to deep understanding.">
+<meta property="og:title" content="Start Here — TCM Way">
+<meta property="og:description" content="A guided reading path through classical Chinese medicine — from first concepts to deep understanding.">
 <meta property="og:image" content="https://tcmway.net/images/brand/og-card.png">
 <meta property="og:url" content="https://tcmway.net/start-here.html">
 <meta property="og:type" content="website">
@@ -34,7 +34,7 @@
     --subtle: #8a6d54;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  .brand-symbol{display:block;margin:0 auto 1.2rem;width:110px;height:auto}
+.brand-symbol{display:block;margin:0 auto 1.2rem;width:110px;height:auto}
   body { font-family: Georgia, 'Times New Roman', serif; background: var(--bg); color: var(--text); line-height: 1.9; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
   header { text-align: center; padding: 2rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
   header h1 { font-size: 2rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
@@ -43,63 +43,63 @@
   nav a:hover, nav a.active { color: var(--accent); }
   nav a.active { font-weight: bold; }
   h2 { font-weight: normal; color: var(--accent); margin: 2rem 0 1rem; font-size: 1.4rem; border-left: 4px solid var(--accent-warm); padding-left: 0.8rem; }
-  h3 { font-weight: normal; color: var(--accent); margin: 0 0 0.3rem; font-size: 1.1rem; }
   p { margin-bottom: 1.2rem; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
+  /* Path section */
   .path-section { margin: 2rem 0 2.5rem; }
   .step {
     background: white;
     border: 1px solid var(--border);
     border-radius: 10px;
-    padding: 1.2rem 1.2rem 1.2rem 3rem;
-    margin: 0.8rem 0;
+    padding: 1.5rem 1.5rem 1.5rem 3rem;
+    margin: 1rem 0;
     position: relative;
   }
   .step .num {
     position: absolute;
-    top: 1.2rem; left: 0.9rem;
+    top: 1.5rem; left: 1rem;
     background: var(--accent);
     color: white;
-    width: 24px; height: 24px;
+    width: 26px; height: 26px;
     border-radius: 50%;
     text-align: center;
-    line-height: 24px;
-    font-size: 0.75rem;
+    line-height: 26px;
+    font-size: 0.8rem;
     font-weight: bold;
     font-family: -apple-system, sans-serif;
   }
-  .step .desc { color: var(--subtle); font-size: 0.9rem; margin: 0; }
-  .arrow { text-align: center; color: var(--accent-warm); font-size: 1.2rem; margin: -0.2rem 0; }
+  .step h3 { font-weight: normal; color: var(--accent); margin: 0 0 0.4rem; font-size: 1.1rem; }
+  .step .desc { color: var(--subtle); font-size: 0.92rem; margin: 0; }
+  .step .links { margin-top: 0.6rem; font-size: 0.9rem; }
 
-  .pillar { margin: 2.4rem 0; padding: 1.5rem 1.4rem; background: var(--light); border: 1px solid var(--border); border-radius: 12px; }
-  .pillar-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.6rem; }
-  .pillar-head .glyph { font-size: 1.3rem; }
-  .pillar-head h2 { margin: 0; border-left: none; padding-left: 0; font-size: 1.25rem; }
-  .pillar .lead { font-size: 0.92rem; color: var(--subtle); margin-bottom: 0.8rem; }
-  .reading-list { list-style: none; }
-  .reading-list li { padding: 0.45rem 0; border-bottom: 1px dashed var(--border); font-size: 0.94rem; }
-  .reading-list li:last-child { border-bottom: none; }
-  .reading-list .tag { color: var(--subtle); font-size: 0.82rem; }
+  /* Arrow between steps */
+  .arrow { text-align: center; color: var(--accent-warm); font-size: 1.3rem; margin: -0.3rem 0; }
 
+  /* Branch section */
+  .branch { margin: 2rem 0; }
+  .branch h2 { font-size: 1.1rem; margin-top: 3rem; }
   .branch-card {
     background: white;
     border: 1px solid var(--border);
     border-radius: 8px;
-    padding: 0.9rem 1.1rem;
-    margin: 0.7rem 0;
+    padding: 1rem 1.2rem;
+    margin: 0.8rem 0;
   }
-  .branch-card .hint { font-size: 0.84rem; color: var(--subtle); margin-top: 0.15rem; }
+  .branch-card strong { color: var(--text); font-weight: normal; }
+  .branch-card .hint { font-size: 0.85rem; color: var(--subtle); margin-top: 0.2rem; }
 
   footer { text-align: center; padding: 2rem 0; color: var(--subtle); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
   footer a { color: var(--accent); text-decoration: none; }
 
   @media (max-width: 500px) {
-    .step { padding: 1rem 1rem 1rem 2.4rem; }
-    .step .num { left: 0.55rem; top: 1rem; }
-    .pillar { padding: 1.2rem 1rem; }
+    .step { padding: 1.2rem 1rem 1.2rem 2.5rem; }
+    .step .num { left: 0.6rem; top: 1.2rem; }
   }
+
+  @media(max-width:600px){.brand-symbol{width:120px}}
+  @media(max-width:400px){.brand-symbol{width:100px}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"TCM Way","url":"https://tcmway.net/","description":"Ancient wisdom, modern life — classical Chinese medicine translated for the modern mind."},{"@type":"Organization","name":"TCM Way","url":"https://tcmway.net/","logo":"https://tcmway.net/images/brand/logo-tcmway-header.png"}]}
@@ -108,171 +108,105 @@
 <body>
 
 <header>
-  <img width="300" height="300" src="/images/brand/logo-tcmway-header.png" class="brand-symbol" alt="TCM Way — yin-yang pendant">
+    <img width="300" height="300" src="/images/brand/logo-tcmway-header.png" class="brand-symbol" alt="TCM Way — yin-yang pendant">
   <h1>TCM Way</h1>
-  <nav>
+    <nav>
     <a href="/">Home</a>
-    <a href="/start-here.html" class="active">Start Here</a>
+    <a href="/start-here.html">Start Here</a>
     <a href="/archive.html">Archive</a>
-    <a href="/podcast/">Podcast</a>
-    <a href="/ollies-corner.html">Ollie's Corner</a>
+    <a href="/podcast/">🎧 Podcast</a>
     <a href="/about.html">About</a>
   </nav>
 </header>
 
-<h2>Foundations: The Reading Map</h2>
+<h2>A Reading Path Through Classical Chinese Medicine</h2>
 
-<p>You don't need to read every article. You need the right ones, in the right order. Three pillars hold up this whole site — the six stages, the Yellow Emperor's Inner Classic, and Yin-Yang with the Five Elements. Pick a pillar and follow it top to bottom. Each link stands alone, and each one connects to the next.</p>
+<p>You don't need to read 24 articles. You need to read the right ones in the right order. This path takes you from <em>"What is Qi?"</em> to <em>"I understand how this system works"</em> in five articles. After that, follow the branches that interest you.</p>
 
-<!-- ═══ Quick path ═══ -->
+<!-- ═══ TIER 1: Entry ═══ -->
 <div class="path-section">
-  <h2 style="font-size:1.05rem; margin-top:0.5rem; border-left-color:var(--subtle);">⚡ The 30-Minute Start</h2>
-  <p style="font-size:0.9rem;color:var(--subtle);">In a hurry? Five articles give you the grammar of the whole system.</p>
+  <h2 style="font-size:1.05rem; margin-top:0.5rem; border-left-color:var(--subtle);">① Entry — Meet the Voice</h2>
 
   <div class="step">
     <div class="num">1</div>
     <h3>Why a 1,800-Year-Old Book Matters Now</h3>
-    <p class="desc">Who is behind this blog, and why classical Chinese medicine belongs in 2026.</p>
+    <p class="desc">Who is behind this blog, and why does classical Chinese medicine belong in 2026? The mission statement — and the confession.</p>
     <p class="links"><a href="/posts/01-why-i-share-tcm-with-the-west.html">Read →</a></p>
   </div>
-  <div class="arrow">↓</div>
+</div>
+
+<!-- ═══ TIER 2: Core Framework ═══ -->
+<div class="path-section">
+  <h2 style="font-size:1.05rem; margin-top:0.5rem; border-left-color:var(--subtle);">② Core — Learn the Framework</h2>
+
   <div class="step">
     <div class="num">2</div>
     <h3>Qi Isn't Magic — It's Your Body's Operating System</h3>
-    <p class="desc">The most misunderstood word in Chinese medicine. Everything else clicks after this.</p>
+    <p class="desc">The most misunderstood word in Chinese medicine. Once you understand Qi as functional energy rather than mystical force, everything else clicks.</p>
     <p class="links"><a href="/posts/03-qi-is-not-magic.html">Read →</a></p>
   </div>
+
   <div class="arrow">↓</div>
+
   <div class="step">
     <div class="num">3</div>
     <h3>Yin-Yang Is Not Good vs. Evil</h3>
-    <p class="desc">Balance, not battle — the simplest concept that Westerners most often get wrong.</p>
+    <p class="desc">It's balance, not battle. The simplest concept in Chinese medicine — and the one most Westerners get wrong.</p>
     <p class="links"><a href="/posts/16-yin-yang-not-good-vs-evil.html">Read →</a></p>
   </div>
+
   <div class="arrow">↓</div>
+
   <div class="step">
     <div class="num">4</div>
-    <h3>The Castle Inside You: Your Body's 6-Layer Defense</h3>
-    <p class="desc">The master framework. Everything else on this site orbits around it.</p>
+    <h3>6 Signs Your Body's Defense System Is Working</h3>
+    <p class="desc">This is the master framework: the Shanghan Lun's six-layer defense. Everything else on this site orbits around this.</p>
     <p class="links"><a href="/posts/09-six-layer-defense.html">Read →</a></p>
   </div>
-  <div class="arrow">↓</div>
+</div>
+
+<!-- ═══ TIER 3: Scholarship ═══ -->
+<div class="path-section">
+  <h2 style="font-size:1.05rem; margin-top:0.5rem; border-left-color:var(--subtle);">③ Trust — See the Scholarship</h2>
+
   <div class="step">
     <div class="num">5</div>
-    <h3>What Zhang Zhongjing Knew That Your Doctor Doesn't</h3>
-    <p class="desc">The second-century observer behind the Shanghan Lun — not a mystic, a careful watcher.</p>
+    <h3>What Zhang Zhongjing Knew That We Forgot</h3>
+    <p class="desc">The 2nd-century physician behind the Shanghan Lun. Not a mystic — a careful observer whose framework modern science is only now catching up to.</p>
     <p class="links"><a href="/posts/20-what-zhang-zhongjing-knew.html">Read →</a></p>
   </div>
 </div>
 
-<!-- ═══ Pillar 1 ═══ -->
-<div class="pillar">
-  <div class="pillar-head">
-    <span class="glyph">🏰</span>
-    <h2>① Six Stages · 六经辨证</h2>
+
+<!-- ═══ BRANCHES ═══ -->
+<h2>Where to Go Next</h2>
+
+<p>You now have the core framework. Follow the thread that draws you:</p>
+
+<div class="branch">
+  <div class="branch-card">
+    <a href="/category/taiyang.html"><strong>🛡️ Cold &amp; Defense</strong></a>
+    <p class="hint">Why wind makes you sick. What a fever really is. How your body's surface layer protects you. (Taiyang · 4 articles)</p>
   </div>
-  <p class="lead">The body as a six-layer castle. Watch how illness moves from surface to depth, and you can read any cold, fever, or fatigue the way the Shanghan Lun taught.</p>
-  <ol class="reading-list">
-    <li><a href="/posts/09-six-layer-defense.html">The Castle Inside You</a> <span class="tag">— the overview</span></li>
-    <li><a href="/posts/22-wind-cold-is-not-a-weather-report.html">Wind-Cold Is Not a Weather Report</a> <span class="tag">— 太阳 Taiyang · Cold &amp; Defense</span></li>
-    <li><a href="/posts/25-yangming-fire.html">When the Fire Won't Go Out</a> <span class="tag">— 阳明 Yangming · Heat &amp; Digestion</span></li>
-    <li><a href="/posts/23-your-fever-might-be-your-friend.html">Your Fever Might Be Your Friend</a> <span class="tag">— 少阳 Shaoyang · Balance &amp; Emotions</span></li>
-    <li><a href="/posts/26-when-food-stops-being-food.html">When Food Stops Being Food</a> <span class="tag">— 太阴 Taiyin · Digestion Collapses</span></li>
-    <li><a href="/posts/27-the-most-dangerous-quiet.html">The Most Dangerous Quiet</a> <span class="tag">— 少阴 Shaoyin · The Quiet Decline</span></li>
-    <li><a href="/posts/24-when-your-body-is-stuck-between-two-fires.html">Stuck Between Two Fires</a> &amp; <a href="/posts/30-when-the-body-reaches-its-last-line.html">The Last Line</a> <span class="tag">— 厥阴 Jueyin</span></li>
-    <li><a href="/posts/11-cold-is-never-just-a-cold.html">Cold Is Never Just a Cold</a> &amp; <a href="/posts/31-how-a-cold-becomes-cancer.html">How a Cold Becomes Cancer</a> <span class="tag">— transmission</span></li>
-    <li><a href="/posts/20-what-zhang-zhongjing-knew.html">What Zhang Zhongjing Knew</a> <span class="tag">— the author of the map</span></li>
-  </ol>
-</div>
 
-<!-- ═══ Pillar 2 ═══ -->
-<div class="pillar">
-  <div class="pillar-head">
-    <span class="glyph">📜</span>
-    <h2>② The Yellow Emperor's Inner Classic · 黄帝内经</h2>
+  <div class="branch-card">
+    <a href="/category/yangming.html"><strong>🔥 Heat &amp; Digestion</strong></a>
+    <p class="hint">What happens when the body runs hot. The connection between digestion, dampness, and energy. (Yangming · 3 articles)</p>
   </div>
-  <p class="lead">The root text: Suwen for theory, Lingshu for the map and the craft. Read the overview, then follow the ideas outward.</p>
-  <ol class="reading-list">
-    <li><a href="/posts/50-the-yellow-emperors-inner-classic.html">The Yellow Emperor's Inner Classic Isn't One Book. It's a Library.</a> <span class="tag">— the overview</span></li>
-    <li><a href="/posts/03-qi-is-not-magic.html">Qi Isn't Magic</a> <span class="tag">— the operating system</span></li>
-    <li><a href="/posts/16-yin-yang-not-good-vs-evil.html">Yin &amp; Yang ≠ Good vs Evil</a> <span class="tag">— the root of change</span></li>
-    <li><a href="/posts/17-five-elements-not-personality-test.html">Five Elements, Not a Personality Test</a> <span class="tag">— the map of connection</span></li>
-    <li><a href="/posts/18-your-body-is-a-kingdom.html">Your Body Is a Kingdom</a> <span class="tag">— the organ systems</span></li>
-    <li><a href="/posts/19-jing-qi-shen-three-treasures.html">Jing, Qi, Shen — The Three Treasures</a> <span class="tag">— essence, energy, spirit</span></li>
-    <li><a href="/posts/14-ten-questions-ancient-doctors-asked.html">Ten Questions Ancient Doctors Asked</a> &amp; <a href="/posts/15-your-tongue-knows-before-blood-test.html">Your Tongue Knows Before Your Blood Test</a> <span class="tag">— diagnosis</span></li>
-    <li><a href="/posts/48-what-are-meridians.html">Meridians Aren't Energy Lines. They're a 2,200-Year-Old Map.</a> <span class="tag">— the channels</span></li>
-    <li><a href="/posts/51-the-physics-of-acupuncture.html">The Physics of Acupuncture (No, It's Not Magic)</a> <span class="tag">— the Lingshu's craft, in the lab</span></li>
-  </ol>
-</div>
 
-<!-- ═══ Pillar 3 ═══ -->
-<div class="pillar">
-  <div class="pillar-head">
-    <span class="glyph">☯️</span>
-    <h2>③ Yin-Yang &amp; the Five Elements · 阴阳五行</h2>
+  <div class="branch-card">
+    <a href="/category/shaoyang.html"><strong>⚖️ Balance &amp; Emotions</strong></a>
+    <p class="hint">Stuck Qi. The Liver. Why emotions land in your body. The half-external-half-internal space. (Shaoyang · 5 articles)</p>
   </div>
-  <p class="lead">The grammar underneath every other article. Two ideas, learned once, that keep resurfacing everywhere else.</p>
-  <ol class="reading-list">
-    <li><a href="/posts/16-yin-yang-not-good-vs-evil.html">Yin &amp; Yang ≠ Good vs Evil</a> <span class="tag">— balance, not battle</span></li>
-    <li><a href="/posts/17-five-elements-not-personality-test.html">Five Elements, Not a Personality Test</a> <span class="tag">— wood, fire, earth, metal, water</span></li>
-    <li><a href="/posts/03-qi-is-not-magic.html">Qi Isn't Magic</a> <span class="tag">— the force those two describe</span></li>
-    <li><a href="/posts/18-your-body-is-a-kingdom.html">Your Body Is a Kingdom</a> <span class="tag">— the organs in element language</span></li>
-    <li><a href="/posts/19-jing-qi-shen-three-treasures.html">Jing, Qi, Shen</a> <span class="tag">— the three treasures</span></li>
-  </ol>
-</div>
 
-<!-- ═══ Branch cards ═══ -->
-<h2>Browse by Category</h2>
-<p style="font-size:0.92rem;color:var(--subtle);">Finished the foundations? The categories keep the rest of the site organized.</p>
-
-<div class="branch-card">
-  <a href="/category/six-stages.html"><strong>Six Stages · Overview &amp; Transmission</strong></a>
-  <p class="hint">The six-layer castle, how illness moves, and Zhang Zhongjing.</p>
-</div>
-<div class="branch-card">
-  <a href="/category/foundations.html"><strong>📚 Foundations</strong></a>
-  <p class="hint">Qi, Yin-Yang, Five Elements, diagnosis, meridians — the building blocks.</p>
-</div>
-<div class="branch-card">
-  <a href="/category/taiyang.html"><strong>🛡️ Taiyang · Cold &amp; Defense</strong></a>
-  <p class="hint">Wind-cold and the body's surface — the first line of defense.</p>
-</div>
-<div class="branch-card">
-  <a href="/category/yangming.html"><strong>🔥 Yangming · Heat &amp; Digestion</strong></a>
-  <p class="hint">Internal heat, dampness, and the digestive fire.</p>
-</div>
-<div class="branch-card">
-  <a href="/category/shaoyang.html"><strong>⚖️ Shaoyang · Balance &amp; Emotions</strong></a>
-  <p class="hint">Stuck Qi, the Liver, and the half-inside half-outside space.</p>
-</div>
-<div class="branch-card">
-  <a href="/category/taiyin.html"><strong>🌾 Taiyin · Digestion Collapses</strong></a>
-  <p class="hint">When food stops being food.</p>
-</div>
-<div class="branch-card">
-  <a href="/category/shaoyin.html"><strong>🌙 Shaoyin · The Quiet Decline</strong></a>
-  <p class="hint">Exhaustion, cold, and warming the fire.</p>
-</div>
-<div class="branch-card">
-  <a href="/category/jueyin.html"><strong>🐉 Jueyin · The Last Line</strong></a>
-  <p class="hint">Mixed heat and cold — the body's final line of defense.</p>
-</div>
-<div class="branch-card">
-  <a href="/category/seasons.html"><strong>🍂 Seasons &amp; Solar Terms</strong></a>
-  <p class="hint">Spring, summer, autumn, and the solar terms.</p>
-</div>
-<div class="branch-card">
-  <a href="/category/food-lifestyle.html"><strong>🥢 Food &amp; Daily Life</strong></a>
-  <p class="hint">Eating, moving, and living with the body's clock.</p>
-</div>
-<div class="branch-card">
-  <a href="/category/moxibustion.html"><strong>🔥 Moxibustion</strong></a>
-  <p class="hint">The warmer half of acupuncture: moxa and slow heat.</p>
+  <div class="branch-card">
+    <a href="/category/foundations.html"><strong>📚 Foundations</strong></a>
+    <p class="hint">Five Elements. Body clock. Diagnosis. The building blocks. (12 articles)</p>
+  </div>
 </div>
 
 <p style="margin-top:2rem; text-align:center; font-size:0.9rem; color:var(--subtle);">
-  Lost? Browse <a href="/archive.html">every article by category</a>.<br>
-  Questions? <a href="mailto:ollie@tcmway.net">Reply by email</a> — I read every message, and good questions become future articles.
+  Questions? <a href="mailto:ollie@tcmway.net">Reply by email</a>. I read every message — and good questions become future articles.
 </p>
 
 <footer>
