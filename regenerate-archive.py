@@ -9,118 +9,58 @@ BLOG = os.environ.get("GITHUB_WORKSPACE", os.path.expanduser("~/tcmway-blog"))
 POSTS_DIR = os.path.join(BLOG, "posts")
 CAT_DIR = os.path.join(BLOG, "category")
 
-# ─── Category Definitions（2026-08-25 Foundations 计划：六经齐全 + Foundations 纯化）───
+# ─── Category Definitions ───
 CATEGORIES = {
-    # 三大根基 · 基础概念中心：只留真·基础概念
     "foundations": {
         "name": "Foundations",
         "subtitle": "基础概念",
-        "desc": "Qi, Yin-Yang, Five Elements, diagnosis, meridians — the building blocks of classical Chinese medicine.",
+        "desc": "Qi, Yin-Yang, Five Elements, diagnosis — the building blocks of classical Chinese medicine.",
         "slugs": [
-            "01-why-i-share", "03-qi-is-not-magic", "07-six-signs-of-health",
-            "13-medicine-character", "14-ten-questions", "15-your-tongue-knows",
-            "16-yin-yang-not-good", "17-five-elements-not", "18-your-body-is-a-kingdom",
-            "19-jing-qi-shen", "48-what-are-meridians",
-            "50-the-yellow-emperors-inner-classic", "51-the-physics-of-acupuncture"
-        ]
-    },
-    # 六经：总览 + 传变 + 张仲景
-    "six-stages": {
-        "name": "Six Stages · Overview & Transmission",
-        "subtitle": "六经总览 · 传变",
-        "desc": "The master framework: the Shanghan Lun's six-layer defense, how illness moves between layers, and Zhang Zhongjing.",
-        "slugs": [
-            "09-six-layer-defense", "11-cold-is-never-just",
-            "20-what-zhang-zhongjing", "31-how-a-cold-becomes"
+            "01-why-i-share", "02-exhausted-after-sleep", "03-qi-is-not-magic",
+            "04-traffic-jam", "07-six-signs-of-health", "13-medicine-character",
+            "14-ten-questions", "15-your-tongue-knows", "16-yin-yang-not-good",
+            "17-five-elements-not", "18-your-body-is-a-kingdom", "19-jing-qi-shen",
+            "33-how-ancient-china", "34-eat-with-the-sun", "35-the-season-your-body",
+            "36-surviving-the-hottest", "37-move-like-water", "38-the-one-ingredient",
+            "39-what-tcm-can-learn", "40-spring-neijing-reinvention",
+            "41-why-the-ancients-said", "42-the-season-of-letting-go",
+            "48-what-are-meridians"
         ]
     },
     "taiyang": {
-        "name": "Taiyang · Cold & Defense",
-        "subtitle": "太阳 · 表证",
-        "desc": "Wind-cold, the body's surface — the first line of defense.",
+        "name": "Cold & Defense",
+        "subtitle": "太阳 · Taiyang",
+        "desc": "Wind-cold, fever, the body's surface — the first line of defense.",
         "slugs": [
-            "08-why-cold-hands", "22-wind-cold-is-not"
+            "08-why-cold-hands", "09-six-layer-defense", "11-cold-is-never-just",
+            "22-wind-cold-is-not"
         ]
     },
     "yangming": {
-        "name": "Yangming · Heat & Digestion",
-        "subtitle": "阳明 · 里热",
-        "desc": "Internal heat, dampness, digestion.",
+        "name": "Heat & Digestion",
+        "subtitle": "阳明 · Yangming",
+        "desc": "Internal Heat · Dampness · Fever",
         "slugs": [
-            "02-exhausted-after-sleep", "06-that-heavy-feeling", "25-yangming-fire"
+            "06-that-heavy-feeling", "23-your-fever-might", "25-yangming-fire"
         ]
     },
     "shaoyang": {
-        "name": "Shaoyang · Balance & Emotions",
-        "subtitle": "少阳 · 枢机",
-        "desc": "Stuck Qi, the Liver, emotions — the half-inside, half-outside space.",
+        "name": "Balance & Emotions",
+        "subtitle": "少阳 · Shaoyang",
+        "desc": "Stuck Qi · Liver · Emotions",
         "slugs": [
-            "04-traffic-jam", "05-body-clock", "10-stop-feeding", "12-liver-rules",
-            "21-stop-fighting-start-warming", "23-your-fever-might", "32-your-anxiety-is-not"
+            "05-body-clock", "10-stop-feeding", "12-liver-rules",
+            "21-stop-fighting-start-warming", "24-when-your-body", "32-your-anxiety-is-not"
         ]
     },
-    "taiyin": {
-        "name": "Taiyin · Digestion Collapses",
-        "subtitle": "太阴 · 里虚寒",
-        "desc": "When food stops being food — the digestion-focused stage.",
+    "six-stages": {
+        "name": "Six Stages Deep Dive",
+        "subtitle": "",
+        "desc": "",
         "slugs": [
-            "26-when-food-stops"
-        ]
-    },
-    "shaoyin": {
-        "name": "Shaoyin · The Quiet Decline",
-        "subtitle": "少阴 · 心肾",
-        "desc": "The deepest quiet: exhaustion, cold, and warming the fire.",
-        "slugs": [
-            "27-the-most-dangerous", "28-yang-tonics", "29-the-fire-inside"
-        ]
-    },
-    "jueyin": {
-        "name": "Jueyin · The Last Line",
-        "subtitle": "厥阴 · 寒热错杂",
-        "desc": "Mixed heat and cold — the body's final line of defense.",
-        "slugs": [
-            "24-when-your-body", "30-when-the-body-reaches"
-        ]
-    },
-    # 四季 · 节气
-    "seasons": {
-        "name": "Seasons & Solar Terms",
-        "subtitle": "四季 · 节气",
-        "desc": "Seasonal living: spring, summer, autumn, and the solar terms.",
-        "slugs": [
-            "33-how-ancient-china", "35-the-season-your-body", "36-surviving-the-hottest",
-            "40-spring-neijing", "41-why-the-ancients-said", "42-the-season-of-letting-go",
-            "44-li-qiu", "49-chu-shu"
-        ]
-    },
-    # 食疗 · 生活
-    "food-lifestyle": {
-        "name": "Food & Daily Life",
-        "subtitle": "食疗 · 生活",
-        "desc": "Eating, moving, and living with the body's own clock.",
-        "slugs": [
-            "34-eat-with-the-sun", "37-move-like-water", "38-the-one-ingredient",
-            "39-what-tcm-can-learn"
-        ]
-    },
-    # 艾灸
-    "moxibustion": {
-        "name": "Moxibustion",
-        "subtitle": "艾灸",
-        "desc": "The warmer half of acupuncture: moxa and the slow kind of heat.",
-        "slugs": [
-            "45-san-fu-tian", "46-why-your-acupuncturist", "47-moxibustion-vs"
-        ]
-    },
-    # 短文 Field Notes
-    "field-notes": {
-        "name": "Field Notes",
-        "subtitle": "短文",
-        "desc": "Short field notes on culture, season, and the body.",
-        "slugs": [
-            "fn01-drink-more-hot-water", "fn02-chu-shu-end-of-heat",
-            "fn03-is-your-body-breaking-down"
+            "20-what-zhang-zhongjing", "26-when-food-stops", "27-the-most-dangerous",
+            "28-yang-tonics", "29-the-fire-inside", "30-when-the-body-reaches",
+            "31-how-a-cold-becomes"
         ],
         "archive_only": True
     }
@@ -372,105 +312,6 @@ def update_homepage(cat_map, articles):
     return total
 
 # ─── Main ───
-def generate_category_pages(articles, cat_map):
-    """Render one page per visible category (archive_only 不生成独立页)。2026-08-25 新增。"""
-    nav = ('<nav>\n'
-           '    <a href="/">Home</a>\n'
-           '    <a href="/start-here.html">Start Here</a>\n'
-           '    <a href="/archive.html">Archive</a>\n'
-           '    <a href="/podcast/">Podcast</a>\n'
-           '    <a href="/ollies-corner.html">Ollie\'s Corner</a>\n'
-           '    <a href="/about.html">About</a>\n'
-           '  </nav>')
-    css = '''  :root {
-    --bg: #fdf6ee;
-    --text: #3b2a1a;
-    --accent: #b83a2a;
-    --accent-warm: #e8a87c;
-    --light: #fef0e2;
-    --border: #e8d5c0;
-    --subtle: #8a6d54;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  .brand-symbol{display:block;margin:0 auto 1.2rem;width:110px;height:auto}
-  body { font-family: Georgia, 'Times New Roman', serif; background: var(--bg); color: var(--text); line-height: 1.9; max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem; }
-  header { text-align: center; padding: 2rem 0 2rem; border-bottom: 1px solid var(--border); margin-bottom: 2.5rem; }
-  header h1 { font-size: 2rem; font-weight: normal; letter-spacing: 0.04em; color: var(--accent); }
-  nav { margin-top: 1rem; }
-  nav a { color: var(--subtle); text-decoration: none; margin: 0 0.6rem; font-size: 0.92rem; }
-  nav a:hover, nav a.active { color: var(--accent); }
-  nav a.active { font-weight: bold; }
-  h2 { font-weight: normal; color: var(--accent); margin: 2rem 0 1rem; font-size: 1.4rem; border-left: 4px solid var(--accent-warm); padding-left: 0.8rem; }
-  h3 { font-weight: normal; color: var(--accent); margin: 0 0 0.3rem; font-size: 1.15rem; }
-  p { margin-bottom: 1.2rem; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .card { background: white; border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem 1.5rem; margin: 1rem 0; }
-  .card .desc { color: var(--subtle); font-size: 0.92rem; margin: 0; }
-  .back { margin-top: 2rem; font-size: 0.95rem; }
-  footer { text-align: center; padding: 2rem 0; color: var(--subtle); font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
-  footer a { color: var(--accent); text-decoration: none; }
-  @media(max-width:600px){.brand-symbol{width:120px}}
-  @media(max-width:400px){.brand-symbol{width:100px}}'''
-    footer = ('<footer>\n'
-              '  <p>&copy; 2026 TCM Way. All illustrations and written content are copyrighted.</p>\n'
-              '  <p><a href="/disclaimer.html">Medical Disclaimer</a> &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/rss.xml">RSS</a></p>\n'
-              '  <div style="text-align:center;padding-top:12px;border-top:1px solid #e8dcc8;">\n'
-              '    <img width="300" height="300" src="/images/brand/logo-tcmway-header.png" alt="TCM Way" style="max-width:140px;width:100%;height:auto;vertical-align:middle;margin-right:6px;">\n'
-              '    <span style="color:#997a5c;font-size:0.85rem;">TCM Way &mdash; Ancient wisdom, modern life.</span>\n'
-              '  </div>\n'
-              '</footer>\n')
-    generated = 0
-    for cat, info in CATEGORIES.items():
-        if info.get("archive_only"):
-            continue
-        nums = sorted(cat_map.get(cat, []))
-        cards = ""
-        for num in nums:
-            art = articles[num]
-            cards += (f'    <div class="card">\n'
-                      f'      <h3><a href="/posts/{art["file"]}">{art["title"]}</a></h3>\n'
-                      f'      <p class="desc">{art.get("excerpt", "")} &middot; {art["date"]}</p>\n'
-                      f'    </div>\n')
-        if not cards:
-            cards = '    <p>Articles are on the way.</p>\n'
-        subtitle = info.get("subtitle", "")
-        subtitle_html = (f' <span style="font-size:0.7em;color:var(--subtle);font-weight:normal;">{subtitle}</span>'
-                         if subtitle else "")
-        html = ('<!DOCTYPE html>\n<html lang="en">\n<head>\n'
-                '<!-- Google tag (gtag.js) -->\n'
-                '<script async src="https://www.googletagmanager.com/gtag/js?id=G-G9S528TPWH"></script>\n'
-                '<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag(\'js\',new Date());gtag(\'config\',\'G-G9S528TPWH\');</script>\n'
-                '<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n'
-                f'<title>{info["name"]} — TCM Way</title>\n'
-                f'<link rel="canonical" href="https://tcmway.net/category/{cat}.html">\n'
-                '<link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon.png">\n'
-                f'<meta name="description" content="{info["desc"]}">\n'
-                f'<meta property="og:title" content="{info["name"]} — TCM Way">\n'
-                f'<meta property="og:description" content="{info["desc"]}">\n'
-                '<meta property="og:image" content="https://tcmway.net/images/brand/og-card.png">\n'
-                f'<meta property="og:url" content="https://tcmway.net/category/{cat}.html">\n'
-                '<meta property="og:type" content="website">\n<meta property="og:site_name" content="TCM Way">\n'
-                '<meta name="twitter:card" content="summary">\n'
-                f'<style>\n{css}\n</style>\n'
-                '<script type="application/ld+json">\n'
-                '{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"TCM Way","url":"https://tcmway.net/","description":"Ancient wisdom, modern life — classical Chinese medicine translated for the modern mind."},{"@type":"Organization","name":"TCM Way","url":"https://tcmway.net/","logo":"https://tcmway.net/images/brand/logo-tcmway-header.png"}]}\n'
-                '</script>\n</head>\n<body>\n'
-                '<header>\n  <img width="300" height="300" src="/images/brand/logo-tcmway-header.png" alt="TCM Way — yin-yang pendant" class="brand-symbol">\n'
-                '  <h1>TCM Way</h1>\n  ' + nav + '\n</header>\n'
-                f'<h2>{info["name"]}{subtitle_html}</h2>\n'
-                f'<p>{info["desc"]}</p>\n'
-                + cards +
-                '<p class="back">&larr; <a href="/start-here.html">Start Here</a> &middot; <a href="/archive.html">All articles</a></p>\n'
-                + footer +
-                '</body>\n</html>\n')
-        path = os.path.join(CAT_DIR, f"{cat}.html")
-        with open(path, "w") as f:
-            f.write(html)
-        generated += 1
-    print(f"✅ category pages regenerated: {generated}")
-
-
 def main():
     articles = scan_articles()
     cat_map, uncategorized = assign_categories(articles)
@@ -490,9 +331,6 @@ def main():
     with open(os.path.join(BLOG, "archive.html"), "w") as f:
         f.write(archive_html)
     print(f"\n✅ archive.html regenerated")
-
-    # Generate category pages (2026-08-25 Foundations 计划新增)
-    generate_category_pages(articles, cat_map)
 
     # Update homepage counts + hero + recent
     total = update_homepage(cat_map, articles)
