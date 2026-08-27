@@ -24,7 +24,10 @@ CATEGORIES = {
             "36-surviving-the-hottest", "37-move-like-water", "38-the-one-ingredient",
             "39-what-tcm-can-learn", "40-spring-neijing-reinvention",
             "41-why-the-ancients-said", "42-the-season-of-letting-go",
-            "48-what-are-meridians"
+            "44-li-qiu", "45-san-fu-tian", "46-why-your-acupuncturist",
+            "47-moxibustion-vs", "48-what-are-meridians", "49-chu-shu",
+            "50-the-yellow-emperors", "fn01-drink-more-hot-water",
+            "fn02-chu-shu-end-of-heat"
         ]
     },
     "taiyang": {
@@ -41,7 +44,8 @@ CATEGORIES = {
         "subtitle": "阳明 · Yangming",
         "desc": "Internal Heat · Dampness · Fever",
         "slugs": [
-            "06-that-heavy-feeling", "23-your-fever-might", "25-yangming-fire"
+            "06-that-heavy-feeling", "23-your-fever-might", "25-yangming-fire",
+            "fn04-shang-huo-the-fire"
         ]
     },
     "shaoyang": {
@@ -50,7 +54,8 @@ CATEGORIES = {
         "desc": "Stuck Qi · Liver · Emotions",
         "slugs": [
             "05-body-clock", "10-stop-feeding", "12-liver-rules",
-            "21-stop-fighting-start-warming", "24-when-your-body", "32-your-anxiety-is-not"
+            "21-stop-fighting-start-warming", "24-when-your-body", "32-your-anxiety-is-not",
+            "fn03-is-your-body-breaking-down"
         ]
     },
     "six-stages": {

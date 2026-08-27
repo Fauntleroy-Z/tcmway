@@ -6,13 +6,20 @@
     <link>https://tcmway.net/</link>
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 00:00:00 +0800</lastBuildDate>
     <image>
   <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
   <title>TCM Way</title>
   <link>https://tcmway.net/</link>
 </image>
 <generator>TCM Way</generator>
+  <item>
+    <title>The Yellow Emperor's Inner Classic Isn't One Book. It's a Library.</title>
+    <link>https://tcmway.net/posts/50-the-yellow-emperors-inner-classic.html</link>
+    <description>The Huangdi Neijing isn't one book or one author. It's a working library for an entire tradition: here's your map of the Suwen and the Lingshu, and where to start reading.</description>
+    <pubDate>Thu, 27 Aug 2026 00:00:00 +0800</pubDate>
+    <guid>https://tcmway.net/posts/50-the-yellow-emperors-inner-classic.html</guid>
+  </item>
   <item>
     <title>Shang Huo: The Fire That Isn't Really Fire</title>
     <link>https://tcmway.net/posts/fn04-shang-huo-the-fire-that-isnt-really-fire.html</link>
