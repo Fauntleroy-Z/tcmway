@@ -88,9 +88,20 @@ def scan_articles():
             is_note = False
         with open(f) as fh:
             html = fh.read()
-        # 2026-08-21：文章标题已从 h2 升为唯一 h1（5b65d71 起），优先取 article 内 h1
-        title = re.search(r'<article>.*?<h1>([^<]+)</h1>', html, re.S) or re.search(r'<h2>([^<]+)</h2>', html)
+        # 2026-08-27 修复：h1 内含 <br> 时旧正则 `([^<]+)` 匹配失败，
+        # 会回退取到第一个 h2（章节小标题），导致 archive 显示错误标题。
+        # 改以 <title> 标签为索引标题源（archive/RSS/分类页三者一致）；
+        # 无 <title> 时回退到 h1 去标签文本。
+        tmatch = re.search(r'<title>(.*) — TCM Way</title>', html, re.S)
+        if tmatch:
+            title = tmatch.group(1).strip()
+        else:
+            hmatch = re.search(r'<article>.*?<h1>(.*?)</h1>', html, re.S) or re.search(r'<h2>(.*?)</h2>', html)
+            title = re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', hmatch.group(1))).strip() if hmatch else "Untitled"
         date = re.search(r'class="meta">([^<]+)', html)
+        # 2026-08-27：分类页卡片 desc 复用文章 meta description（与手写卡片口径一致）
+        mdesc = re.search(r'<meta name="description" content="(.*?)">', html, re.S)
+        desc = mdesc.group(1).strip() if mdesc else ""
         # 2026-08-19：正文词数（reading time 用，220 wpm）
         mbody = re.search(r'<article>(.*?)</article>', html, re.S)
         plain = re.sub(r'<[^>]+>', ' ', mbody.group(1) if mbody else html)
@@ -113,10 +124,11 @@ def scan_articles():
             "num": num,
             "display": display,
             "file": os.path.basename(f),
-            "title": title.group(1) if title else "Untitled",
+            "title": title,
             "date": date.group(1).split("&")[0].strip() if date else "",
             "wc": wc,
             "excerpt": excerpt,
+            "desc": desc or excerpt,
             "is_note": is_note,
         }
         try:
@@ -327,6 +339,42 @@ def update_homepage(cat_map, articles):
         f.write(html)
     return total
 
+# ─── Update Category Pages ───
+def update_category_pages(cat_map, articles):
+    """只重建分类页的卡片区（2026-08-27 修复：分类页与 archive 不同步）。
+
+    页面骨架（title/meta/h2/intro/nav/footer）为精编内容，保持原样不动；
+    卡片区由 CATEGORIES + 各文章 meta description 确定性重建。
+    """
+    card_pat = re.compile(r'<div class="card">.*</div>\n(?=\s*<p class="back">)', re.S)
+    for cat, info in CATEGORIES.items():
+        if info.get("archive_only"):
+            continue
+        path = os.path.join(CAT_DIR, f"{cat}.html")
+        if not os.path.exists(path):
+            print(f"⚠️  分类页不存在，跳过: {cat}")
+            continue
+        with open(path, encoding="utf-8") as f:
+            html = f.read()
+        m = card_pat.search(html)
+        if not m:
+            print(f"⚠️  未找到卡片区，跳过: {cat}")
+            continue
+        nums = sorted(cat_map.get(cat, []))
+        cards = ""
+        for i, num in enumerate(nums):
+            art = articles[num]
+            desc = art.get("desc") or art.get("excerpt", "")
+            indent = "    " if i else ""
+            cards += (f'{indent}<div class="card">\n'
+                      f'      <h3><a href="/posts/{art["file"]}">{art["title"]}</a></h3>\n'
+                      f'      <p class="desc">{desc}</p>\n'
+                      f'    </div>\n')
+        new_html = html[:m.start()] + cards + html[m.end():]
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(new_html)
+        print(f"✅ category/{cat}.html 卡片区重建 — {len(nums)} cards")
+
 # ─── Main ───
 def main():
     articles = scan_articles()
@@ -351,6 +399,9 @@ def main():
     # Update homepage counts + hero + recent
     total = update_homepage(cat_map, articles)
     print(f"✅ index.html updated — {total} articles")
+
+    # Update category page cards (2026-08-27: keep category pages in sync with archive)
+    update_category_pages(cat_map, articles)
 
 if __name__ == "__main__":
     main()
