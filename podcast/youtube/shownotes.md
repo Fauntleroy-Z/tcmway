@@ -207,7 +207,7 @@ Energetic warming-up episode. Ollie introduces the Five Elements framework visua
 
 Subscribe on:
 🟢 Spotify: https://open.spotify.com/show/033MpqBAiWk5JSEcLh8lmH
-🎙 Apple Podcasts: https://podcasts.apple.com/us/podcast/east-inner-with-ollie/id6789068778
+🎙 Apple Podcasts: https://podcasts.apple.com/us/podcast/east-inner-with-ollie/id6792286913
 📡 RSS: https://tcmway.net/podcast/feed.xml
 🌐 Website: https://tcmway.net
 🟠 Medium: https://medium.com/@tcmway
