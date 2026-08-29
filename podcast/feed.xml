@@ -31,6 +31,20 @@
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
 
+  <!-- ===== EP12 ===== -->
+  <item>
+    <title><![CDATA[Ep12: Meridians Aren't Energy Lines. They're a 2,200-Year-Old Map.]]></title>
+    <link>https://tcmway.net/podcast/ep12.mp3</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep12.mp3</guid>
+    <pubDate>Sat, 29 Aug 2026 12:34:00 +0800</pubDate>
+    <description><![CDATA[The chart of lines on the body isn't a picture of energy pipes. It's a two-thousand-two-hundred-year-old map of how the body connects. What jing luo really means, the Mawangdui tomb texts, the subway-map way to read acupoints, and what modern science is finding along the same paths. Based on TCM Way blog #48.]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep12.mp3" length="20455802" type="audio/mpeg"/>
+    <itunes:duration>1278</itunes:duration>
+    <itunes:episode>12</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
+
   <!-- ===== EP11 ===== -->
   <item>
     <title><![CDATA[Ep11: Li Qiu — Why the First Day of Autumn Makes the Chinese Reach for Pears]]></title>
