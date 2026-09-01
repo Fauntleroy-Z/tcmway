@@ -376,6 +376,71 @@ def update_category_pages(cat_map, articles):
             f.write(new_html)
         print(f"✅ category/{cat}.html 卡片区重建 — {len(nums)} cards")
 
+
+def sync_rss(articles):
+    """2026-09-01：RSS 增量补全——发布新文章后 rss.xml 长期漏条目（#50/#51 两次手动补），
+    现自动对比 posts/ 与现有 guid，补缺失 item 并按日期倒序重排，更新 lastBuildDate。
+    现有 item 的描述保留原样，不覆盖手写内容。"""
+    rss_path = os.path.join(BLOG, "rss.xml")
+    if not os.path.exists(rss_path):
+        print("⚠️  rss.xml not found")
+        return
+    with open(rss_path, encoding="utf-8") as f:
+        rss = f.read()
+
+    head = rss
+    items = []
+    first = re.search(r'<item>.*?</item>', rss, re.DOTALL)
+    if first:
+        head = rss[:first.start()]
+        items = re.findall(r'<item>.*?</item>', rss, re.DOTALL)
+
+    def xml_escape(s):
+        return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    seen = set()
+    out_items = []
+
+    for art in sorted(articles.values(), key=lambda a: (a["date_obj"], a["num"]), reverse=True):
+        guid = f'https://tcmway.net/posts/{art["file"]}'
+        if guid in seen:
+            continue
+        seen.add(guid)
+        existing = next((it for it in items if f'<guid>{guid}</guid>' in it), None)
+        if existing:
+            out_items.append(existing)
+            continue
+        pd = art["date_obj"].strftime("%a, %d %b %Y 00:00:00 +0800")
+        desc = xml_escape(art.get("desc") or art.get("excerpt", "")).strip()
+        out_items.append(
+            f'  <item>\n'
+            f'    <title>{xml_escape(art["title"])}</title>\n'
+            f'    <link>{guid}</link>\n'
+            f'    <description>{desc}</description>\n'
+            f'    <pubDate>{pd}</pubDate>\n'
+            f'    <guid>{guid}</guid>\n'
+            f'  </item>'
+        )
+
+    # 防御性兜底：保留 posts/ 中已不存在的历史 item（不应发生）
+    for it in items:
+        g = re.search(r'<guid>(.*?)</guid>', it)
+        if g and g.group(1) not in seen:
+            seen.add(g.group(1))
+            out_items.append(it)
+
+    now = datetime.now().strftime("%a, %d %b %Y %H:%M:%S +0800")
+    head = re.sub(
+        r'<lastBuildDate>.*?</lastBuildDate>',
+        f'<lastBuildDate>{now}</lastBuildDate>',
+        head,
+        flags=re.S,
+    )
+    with open(rss_path, "w", encoding="utf-8") as f:
+        f.write(head + "\n".join(out_items) + "\n</channel>\n</rss>\n")
+    print(f"✅ rss.xml synced — {len(out_items)} items")
+
+
 # ─── Main ───
 def main():
     articles = scan_articles()
@@ -403,6 +468,9 @@ def main():
 
     # Update category page cards (2026-08-27: keep category pages in sync with archive)
     update_category_pages(cat_map, articles)
+
+    # 2026-09-01：RSS 增量补全（防发布漏条目）
+    sync_rss(articles)
 
 if __name__ == "__main__":
     main()
