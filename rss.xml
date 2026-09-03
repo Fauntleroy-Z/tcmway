@@ -6,7 +6,7 @@
     <link>https://tcmway.net/</link>
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Thu, 03 Sep 2026 14:47:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 22:36:54 +0800</lastBuildDate>
     <image>
   <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
   <title>TCM Way</title>
@@ -14,7 +14,14 @@
 </image>
 <generator>TCM Way</generator>
   
-  <item>
+    <item>
+    <title>The 800-Year-Old Chinese "Stretching" That's Beating Blood Pressure Meds?</title>
+    <link>https://tcmway.net/posts/52-baduanjin-and-blood-pressure.html</link>
+    <description>The BLESS trial in JACC is the first large randomized study of Baduanjin, the 800-year-old Chinese exercise, in people with high-normal blood pressure. Here's what it found.</description>
+    <pubDate>Thu, 03 Sep 2026 00:00:00 +0800</pubDate>
+    <guid>https://tcmway.net/posts/52-baduanjin-and-blood-pressure.html</guid>
+  </item>
+<item>
     <title>The Physics of Acupuncture (No, It's Not Magic)</title>
     <link>https://tcmway.net/posts/51-the-physics-of-acupuncture.html</link>
     <description>Thin needles, real physics: connective tissue winding, the body's own painkillers, adenosine, and brain scans — plus what the lab hasn't proven.</description>
