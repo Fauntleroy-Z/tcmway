@@ -429,7 +429,15 @@ def sync_rss(articles):
             seen.add(g.group(1))
             out_items.append(it)
 
-    now = datetime.now().strftime("%a, %d %b %Y %H:%M:%S +0800")
+    # 2026-09-05（防重犯）：lastBuildDate 用最新文章 pubDate（幂等）。
+    # 此前每次刷新为当前时间 → 本地 03:00 cron 与 GitHub Actions 双写 rss.xml 永远不一致，
+    # 曾致 9/4 三次 pin 的 pull --rebase --autostash 在 rss.xml 上残留冲突（UU）而全部失败。
+    # 内容不变时 lastBuildDate 不再变化，本地/云端 regenerate 输出一致。
+    if articles:
+        latest = sorted(articles.values(), key=lambda a: (a["date_obj"], a["num"]), reverse=True)[0]
+        now = latest["date_obj"].strftime("%a, %d %b %Y 00:00:00 +0800")
+    else:
+        now = datetime.now().strftime("%a, %d %b %Y %H:%M:%S +0800")
     head = re.sub(
         r'<lastBuildDate>.*?</lastBuildDate>',
         f'<lastBuildDate>{now}</lastBuildDate>',
