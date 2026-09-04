@@ -27,6 +27,7 @@ CATEGORIES = {
             "44-li-qiu", "45-san-fu-tian", "46-why-your-acupuncturist",
             "47-moxibustion-vs", "48-what-are-meridians", "49-chu-shu",
             "50-the-yellow-emperors", "51-the-physics-of-acupuncture",
+            "52-baduanjin-and-blood-pressure",
             "fn01-drink-more-hot-water",
             "fn02-chu-shu-end-of-heat"
         ]
