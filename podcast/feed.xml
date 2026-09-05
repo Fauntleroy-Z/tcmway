@@ -31,6 +31,20 @@
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
 
+  <!-- ===== EP13 ===== -->
+  <item>
+    <title><![CDATA[Ep13: The Yellow Emperor's Inner Classic Isn't One Book. It's a Library.]]></title>
+    <link>https://tcmway.net/podcast/ep13.mp3</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep13.mp3</guid>
+    <pubDate>Sat, 05 Sep 2026 19:09:00 +0800</pubDate>
+    <description><![CDATA[It's not one book by one author. It's a library — one hundred sixty-two chapters, two wings, and a conversation that's been running for two thousand years. Meet the Su Wen, the theory half, and the Ling Shu, the craft half, and learn the three honest ways to read the text that still runs Chinese medicine. Based on TCM Way blog #50. 📖 Read the blog article: https://tcmway.net/posts/50-the-yellow-emperors-inner-classic.html]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep13.mp3" length="19258349" type="audio/mpeg"/>
+    <itunes:duration>1204</itunes:duration>
+    <itunes:episode>13</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
+
   <!-- ===== EP12 ===== -->
   <item>
     <title><![CDATA[Ep12: Meridians Aren't Energy Lines. They're a 2,200-Year-Old Map.]]></title>
