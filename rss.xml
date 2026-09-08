@@ -6,7 +6,7 @@
     <link>https://tcmway.net/</link>
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Sat, 05 Sep 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 21:25:09 +0800</lastBuildDate>
     <image>
   <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
   <title>TCM Way</title>
@@ -14,7 +14,14 @@
 </image>
 <generator>TCM Way</generator>
   
-      <item>
+        <item>
+    <title>White Dew: The Morning the Grass Turns Silver</title>
+    <link>https://tcmway.net/posts/53-white-dew.html</link>
+    <description>White Dew (Bai Lu) is the day autumn's dryness turns from warm to cool — the morning the grass turns silver and, in the Chinese tradition, the lungs feel the shift first.</description>
+    <pubDate>Tue, 08 Sep 2026 00:00:00 +0800</pubDate>
+    <guid>https://tcmway.net/posts/53-white-dew.html</guid>
+  </item>
+<item>
     <title>Cupping Isn't Bruising. Those Purple Circles Are Something Else.</title>
     <link>https://tcmway.net/posts/fn05-cupping-isnt-bruising.html</link>
     <description>Those purple circles aren't bruises. They're the mark of suction, not impact. A short Field Note on cupping, sha, and why the tradition looks more intense than it feels.</description>
