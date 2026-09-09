@@ -6,7 +6,7 @@
     <link>https://tcmway.net/</link>
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Sep 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 21:33:37 +0800</lastBuildDate>
     <image>
   <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
   <title>TCM Way</title>
@@ -14,7 +14,14 @@
 </image>
 <generator>TCM Way</generator>
   
-        <item>
+          <item>
+    <title>Your Spice Rack Is Secretly a Chinese Medicine Cabinet</title>
+    <link>https://tcmway.net/posts/fn06-your-spice-rack.html</link>
+    <description>Ginger, cinnamon, star anise, Sichuan pepper: your spice rack is where the cooking pot meets the old Chinese herbal shelf. A short Field Note on yao shi tong yuan.</description>
+    <pubDate>Wed, 09 Sep 2026 00:00:00 +0800</pubDate>
+    <guid>https://tcmway.net/posts/fn06-your-spice-rack.html</guid>
+  </item>
+<item>
     <title>White Dew: The Morning the Grass Turns Silver</title>
     <link>https://tcmway.net/posts/53-white-dew.html</link>
     <description>White Dew (Bai Lu) is the day autumn's dryness turns from warm to cool — the morning the grass turns silver and, in the Chinese tradition, the lungs feel the shift first.</description>
