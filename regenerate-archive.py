@@ -27,9 +27,11 @@ CATEGORIES = {
             "44-li-qiu", "45-san-fu-tian", "46-why-your-acupuncturist",
             "47-moxibustion-vs", "48-what-are-meridians", "49-chu-shu",
             "50-the-yellow-emperors", "51-the-physics-of-acupuncture",
-            "52-baduanjin-and-blood-pressure",
+            "52-baduanjin-and-blood-pressure", "53-white-dew",
+            "54-reading-the-tongue",
             "fn01-drink-more-hot-water",
-            "fn02-chu-shu-end-of-heat"
+            "fn02-chu-shu-end-of-heat",
+            "fn05-cupping-isnt-bruising", "fn06-your-spice-rack"
         ]
     },
     "taiyang": {
