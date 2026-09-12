@@ -32,3 +32,11 @@ Thumbs.db
 /QUALITY_AUDIT_*.md
 # Podcast episode audio is assembled from epNN.part*.mp3 at deploy time
 /podcast/ep10.mp3
+
+# ==== 2026-09-12 体积止血（死重量已移出仓库到 ~/tcmway-repo-archive-20260912/）====
+images/social/
+podcast/youtube/
+_preview/
+_screenshots/
+assets/*.zip
+_site/

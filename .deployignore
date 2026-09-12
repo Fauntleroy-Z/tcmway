@@ -1,0 +1,39 @@
+# ==== 部署排除清单（2026-09-12 Shadow 建立）====
+# 目的：只发布站点文件到 tcmway.net；内部源码/文稿/素材一律不出网。
+# 用法（GitHub Actions）：rsync -a --exclude-from=.deployignore ./ _site/
+# 注意：llms.txt、robots.txt、IndexNow key 文件（*.txt）、feed.xml、rss.xml、sitemap.xml 必须保留。
+
+# 版本控制与工具
+.git/
+.github/
+node_modules/
+__pycache__/
+_site/
+scripts/
+cf-git-proxy/
+docs/
+
+# 内部草稿与未发布内容
+staging/
+_preview/
+_screenshots/
+.hermes/
+.workbuddy/
+.topic-pool.md
+.gitignore
+
+# 内部源码与文稿（任意层级）
+*.py
+*.md
+*.zip
+
+# 内部脚本与临时资产
+_refine_posts_b.js
+_update_posts_b.js
+_update_static_pages_b.js
+demo_tcm_comic.png
+demo_tcm_illustration.png
+
+# 播客内部资料：逐字稿 + YouTube 母带（epNN.mp3 音频保留发布）
+podcast/scripts/
+podcast/youtube/

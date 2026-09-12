@@ -78,10 +78,29 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Stage deploy files（内部文件不上线 + 体积红线自检）
+        run: |
+          rm -rf _site
+          mkdir -p _site
+          rsync -a --exclude-from=.deployignore ./ _site/
+          SIZE_MB=$(du -sm _site | cut -f1)
+          echo "📦 部署体积: ${SIZE_MB} MB / 1000 MB 红线"
+          if [ "$SIZE_MB" -gt 1000 ]; then
+            echo "🔴 部署体积超过红线，拒绝部署（请先清理大素材）"
+            exit 1
+          fi
+          LEAK=$(find _site \( -name '*.py' -o -name '*.md' -o -name '*.zip' \) | head -20)
+          if [ -n "$LEAK" ]; then
+            echo "🔴 检测到内部文件泄漏，拒绝部署："
+            echo "$LEAK"
+            exit 1
+          fi
+          echo "✅ 站点文件检查通过"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: '.'
+          path: '_site'
 
       - name: Deploy to GitHub Pages
         id: deployment

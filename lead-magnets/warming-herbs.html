@@ -34,12 +34,16 @@ footer a{color:#5c3a1e}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"TCM Way","url":"https://tcmway.net/","description":"Ancient wisdom, modern life — classical Chinese medicine translated for the modern mind."},{"@type":"Organization","name":"TCM Way","url":"https://tcmway.net/","logo":"https://tcmway.net/images/brand/logo-tcmway-header.png"}]}
 </script>
+<style>/* 2026-09-12 语义化标题层级：保持原视觉（Shadow） */
+h2.sec{font-weight:normal;font-size:1.05rem;margin:1.5rem 0 .5rem;border-left:0;padding-left:0;color:inherit}
+h3.sub{font-weight:normal;font-size:1rem;margin:1.25rem 0 .4rem;color:inherit}
+</style>
 </head>
 <body>
 <h1>🌿 3 Herbs for the First Sign of a Cold</h1>
 <p class="sub">Instead of fighting it — warm it out. Here are the three herbs, and exactly how to use them.</p>
 
-<div class="herb"><h3>1. Fresh Ginger (Sheng Jiang)</h3><p>Peel 3-4 slices. Boil 10 minutes. Add a spoon of brown sugar. Drink while hot, wrap yourself in a blanket, and sweat gently. Best when the cold is still on the surface — scratchy throat, stiff neck, slight chills.</p></div>
+<div class="herb"><h2 class="sec">1. Fresh Ginger (Sheng Jiang)</h2><p>Peel 3-4 slices. Boil 10 minutes. Add a spoon of brown sugar. Drink while hot, wrap yourself in a blanket, and sweat gently. Best when the cold is still on the surface — scratchy throat, stiff neck, slight chills.</p></div>
 <div class="herb"><h3>2. Cinnamon Bark (Rou Gui)</h3><p>Not the powder in your spice rack — the rolled bark. Simmer half a stick in water for 15 minutes. This one goes deeper — for when the cold has already moved past the surface and you feel it in your bones.</p></div>
 <div class="herb"><h3>3. Scallion White (Cong Bai)</h3><p>The white part of a scallion, chopped. Boil with ginger. Sounds like cooking. It is. This is the fastest-acting surface-warmer — releases the exterior, opens the pores. Good for the first 24 hours of a cold.</p></div>
 
@@ -48,7 +52,8 @@ footer a{color:#5c3a1e}
 <div class="form-box">
   <p>📩 Get the Complete Herb Guide</p>
   <form action="https://buttondown.email/api/emails/embed-subscribe/hsu" method="post" target="popupwindow">
-    <input type="email" name="email" placeholder="Your email address" required>
+    <label for="email" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Email address</label>
+    <input id="email" type="email" name="email" placeholder="Your email address" required>
     <input type="hidden" name="tag" value="warming-herbs">
     <button type="submit">Send It →</button>
   </form>

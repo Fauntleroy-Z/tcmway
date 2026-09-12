@@ -34,12 +34,16 @@ footer a{color:#5c3a1e}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"TCM Way","url":"https://tcmway.net/","description":"Ancient wisdom, modern life — classical Chinese medicine translated for the modern mind."},{"@type":"Organization","name":"TCM Way","url":"https://tcmway.net/","logo":"https://tcmway.net/images/brand/logo-tcmway-header.png"}]}
 </script>
+<style>/* 2026-09-12 语义化标题层级：保持原视觉（Shadow） */
+h2.sec{font-weight:normal;font-size:1.05rem;margin:1.5rem 0 .5rem;border-left:0;padding-left:0;color:inherit}
+h3.sub{font-weight:normal;font-size:1rem;margin:1.25rem 0 .4rem;color:inherit}
+</style>
 </head>
 <body>
 <h1>🏯 5 Ancient Summer Hacks That Still Work</h1>
 <p class="sub">How people survived 40°C summers without air conditioning. Five methods — tested for two thousand years.</p>
 
-<div class="hack"><h3>1. Morning Watermelon (with a pinch of salt)</h3><p>Watermelon clears Summer Heat — the TCM term for what builds up after days of high temperatures. A pinch of salt prevents the cooling from going too far and shocking the Spleen.</p></div>
+<div class="hack"><h2 class="sec">1. Morning Watermelon (with a pinch of salt)</h2><p>Watermelon clears Summer Heat — the TCM term for what builds up after days of high temperatures. A pinch of salt prevents the cooling from going too far and shocking the Spleen.</p></div>
 <div class="hack"><h3>2. The Afternoon Nap with a Bamboo Mat</h3><p>Summer belongs to the Heart — the Heart needs midday rest. 20 minutes, flat on a cool surface. Not lazy. Strategic.</p></div>
 <div class="hack"><h3>3. Mung Bean Soup, Not Iced Drinks</h3><p>Ice constricts. Mung beans cool gently from the inside — the same principle your car radiator uses. Cook until the beans split, drink the liquid, leave the beans.</p></div>
 <div class="hack"><h3>4. Feet in Cool Water Before Bed</h3><p>Heat rises in the evening. Cool water on the soles signals the entire body to release excess heat through the Kidney channel. 5 minutes before sleep.</p></div>
@@ -50,7 +54,8 @@ footer a{color:#5c3a1e}
 <div class="form-box">
   <p>📩 Get the Printable Cheat Sheet</p>
   <form action="https://buttondown.email/api/emails/embed-subscribe/hsu" method="post" target="popupwindow">
-    <input type="email" name="email" placeholder="Your email address" required>
+    <label for="email" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Email address</label>
+    <input id="email" type="email" name="email" placeholder="Your email address" required>
     <input type="hidden" name="tag" value="summer-hacks">
     <button type="submit">Send It →</button>
   </form>

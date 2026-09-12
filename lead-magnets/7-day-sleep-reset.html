@@ -65,7 +65,8 @@ footer a{color:#5c3a1e}
   <h2>Get the Free Guide</h2>
   <p>Delivered to your inbox. No spam. Ancient wisdom only.</p>
   <form action="https://buttondown.email/api/emails/embed-subscribe/hsu" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/hsu', 'popupwindow')">
-    <input type="email" name="email" placeholder="your@email.com" required><br>
+    <label for="email" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Email address</label>
+    <input id="email" type="email" name="email" placeholder="your@email.com" required><br>
     <input type="hidden" name="tag" value="sleep-reset">
     <button type="submit">Send Me the Guide →</button>
   </form>

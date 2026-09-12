@@ -34,13 +34,17 @@ footer a{color:#5c3a1e}
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"TCM Way","url":"https://tcmway.net/","description":"Ancient wisdom, modern life — classical Chinese medicine translated for the modern mind."},{"@type":"Organization","name":"TCM Way","url":"https://tcmway.net/","logo":"https://tcmway.net/images/brand/logo-tcmway-header.png"}]}
 </script>
+<style>/* 2026-09-12 语义化标题层级：保持原视觉（Shadow） */
+h2.sec{font-weight:normal;font-size:1.05rem;margin:1.5rem 0 .5rem;border-left:0;padding-left:0;color:inherit}
+h3.sub{font-weight:normal;font-size:1rem;margin:1.25rem 0 .4rem;color:inherit}
+</style>
 </head>
 <body>
 <h1>🖐️ Cold Hands Self-Check</h1>
 <p class="sub">Cold hands can mean poor circulation. Or it can mean your Kidney Yang is depleted. Here's how to tell the difference.</p>
 
 <div class="check">
-<h3 style="color:#5c3a1e">✅ Check what applies:</h3>
+<h2 style="color:#5c3a1e" class="sec">✅ Check what applies:</h2>
 <label><input type="checkbox"> My hands get cold even when the room is warm</label>
 <label><input type="checkbox"> My feet are cold too — especially at night</label>
 <label><input type="checkbox"> Exercise doesn't warm me up for long</label>
@@ -57,7 +61,8 @@ footer a{color:#5c3a1e}
 <div class="form-box">
   <p>📩 Get Your Cold Hands Guide + Warming Tips</p>
   <form action="https://buttondown.email/api/emails/embed-subscribe/hsu" method="post" target="popupwindow">
-    <input type="email" name="email" placeholder="Your email address" required>
+    <label for="email" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Email address</label>
+    <input id="email" type="email" name="email" placeholder="Your email address" required>
     <input type="hidden" name="tag" value="cold-hands">
     <button type="submit">Send It →</button>
   </form>
