@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a lifelong student of Chinese medicine who reads the classics so you don't have to. New episodes every other week.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Tue, 08 Sep 2026 22:47:00 +0800</lastBuildDate>
+  <lastBuildDate>Sat, 12 Sep 2026 10:34:00 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -30,6 +30,20 @@
     <itunes:name>Ollie</itunes:name>
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
+
+  <!-- ===== EP14 ===== -->
+  <item>
+    <title><![CDATA[Ep14: The Physics of Acupuncture (No, It's Not Magic)]]></title>
+    <link>https://tcmway.net/posts/51-the-physics-of-acupuncture.html</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep14.mp3</guid>
+    <pubDate>Sat, 12 Sep 2026 10:34:00 +0800</pubDate>
+    <description><![CDATA[What actually happens when a needle goes in? Not the philosophy — the physics. Collagen winding around the needle shaft, the body's own pain chemistry, adenosine in mice, brain scans that shift, and what the old texts called de qi. Real findings and real limits, side by side. Based on TCM Way blog #51. 📖 Read the blog article: https://tcmway.net/posts/51-the-physics-of-acupuncture.html]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep14.mp3" length="18365228" type="audio/mpeg"/>
+    <itunes:duration>1148</itunes:duration>
+    <itunes:episode>14</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
 
   <!-- ===== EP13 ===== -->
   <item>
