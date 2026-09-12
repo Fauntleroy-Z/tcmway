@@ -19,6 +19,7 @@ _preview/
 _screenshots/
 .hermes/
 .workbuddy/
+.claude/
 .topic-pool.md
 .gitignore
 
