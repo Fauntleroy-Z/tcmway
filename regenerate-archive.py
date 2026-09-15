@@ -29,6 +29,7 @@ CATEGORIES = {
             "50-the-yellow-emperors", "51-the-physics-of-acupuncture",
             "52-baduanjin-and-blood-pressure", "53-white-dew",
             "54-reading-the-tongue",
+            "55-he-gu-li4",
             "fn01-drink-more-hot-water",
             "fn02-chu-shu-end-of-heat",
             "fn05-cupping-isnt-bruising", "fn06-your-spice-rack"
