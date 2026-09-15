@@ -27,8 +27,19 @@ jobs:
         with:
           python-version: '3.11'
 
+      # 2026-09-15 防复发（#55 分类注册失守教训）：任何未注册进 CATEGORIES 的文章
+      # 会让 CI 重建时把它踢进 archive「More Articles」兜底节并移出分类页。
+      # 这里在重建前硬拦：未注册 = 部署失败，强制发布流程先补注册表。
+      - name: Verify every post is registered in the category map
+        run: python3 verify-category-registry.py
+
       - name: Regenerate archive + counts
         run: python3 regenerate-archive.py
+
+      # 2026-09-15：llms.txt 此前为 09-12 一次性生成，发布后从不刷新（#53/#54/#55/fn06 漏收）。
+      # 并入 CI 自动流程，与 archive/rss/sitemap 同批落库（由下方 auto-commit 提交）。
+      - name: Regenerate llms.txt
+        run: python3 gen_llms_txt.py
 
       - name: Assemble podcast audio parts
         run: |

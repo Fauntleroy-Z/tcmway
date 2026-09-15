@@ -33,8 +33,10 @@ Thumbs.db
 # Internal working docs (moved out of deployment 2026-08-02)
 /docs/
 /QUALITY_AUDIT_*.md
-# Podcast episode audio is assembled from epNN.part*.mp3 at deploy time
-/podcast/ep10.mp3
+# Podcast episode audio: committed directly (ep01–ep14). The CI step
+# "Assemble podcast audio parts" is retained for future parts-based episodes,
+# but no epNN.part*.mp3 exist today — ep10 was left out by the ignore line
+# below until 2026-09-15, which produced a live 404 on its feed enclosure.
 
 # ==== 2026-09-12 体积止血（死重量已移出仓库到 ~/tcmway-repo-archive-20260912/）====
 images/social/
