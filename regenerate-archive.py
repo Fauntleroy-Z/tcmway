@@ -32,7 +32,8 @@ CATEGORIES = {
             "55-he-gu-li4",
             "fn01-drink-more-hot-water",
             "fn02-chu-shu-end-of-heat",
-            "fn05-cupping-isnt-bruising", "fn06-your-spice-rack"
+            "fn05-cupping-isnt-bruising", "fn06-your-spice-rack",
+            "fn07-dont-zip-up-yet"
         ]
     },
     "taiyang": {
