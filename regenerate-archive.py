@@ -323,13 +323,16 @@ def update_homepage(cat_map, articles):
         hero_excerpt = r'(<div class="hero-title">[^<]*</div>)(\s*)'
         html = re.sub(hero_excerpt, rf'\g<1>\n    <div class="hero-excerpt">{art["excerpt"]}</div>\2', html, count=1)
 
-    # --- Recent posts: rebuild 5 most recent ---
+    # --- Recent posts: rebuild 5 most recent AFTER the hero ---
+    # 2026-09-17 修复（天昊 9/15–9/17 连续 3 日上报）：hero 卡已展示最新一篇，
+    # 原 [:5] 把 hero 自身重复列进 Recent，导致第 6 新文章永远没有入口。
+    # 按既定结构「Hero(最新1篇) + Recent 5(第2-6新)」改为 [1:6]。
     recent_nums = [
         a["num"] for a in sorted(
             articles.values(),
             key=lambda a: (a["date_obj"], a["num"]),
             reverse=True,
-        )[:5]
+        )[1:6]
     ]
     recent_pattern = r'(<!-- ═══ RECENT POSTS ═══ -->\n<h2[^>]*>Recent Articles</h2>\n\n).*?(<div class="view-all">)'
     recent_html = '\n'.join([
