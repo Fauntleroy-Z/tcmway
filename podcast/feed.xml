@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a lifelong student of Chinese medicine who reads the classics so you don't have to. New episodes every other week.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Sun, 13 Sep 2026 23:15:00 +0800</lastBuildDate>
+  <lastBuildDate>Sat, 19 Sep 2026 00:34:00 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -30,6 +30,20 @@
     <itunes:name>Ollie</itunes:name>
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
+
+  <!-- ===== EP15 ===== -->
+  <item>
+    <title><![CDATA[Ep15: Cupping Isn't Bruising. Those Purple Circles Are Something Else.]]></title>
+    <link>https://tcmway.net/posts/fn05-cupping-isnt-bruising.html</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep15.mp3</guid>
+    <pubDate>Sat, 19 Sep 2026 00:34:00 +0800</pubDate>
+    <description><![CDATA[The purple circles from the 2016 Olympics were not bruises from a blow. They were suction marks. What cupping actually is, how a session feels, what the tradition says about the marks, where else in the world suction therapy appears, and what the evidence and the risks really look like. Based on the TCM Way field note "Cupping Isn't Bruising." 📖 Read the article: https://tcmway.net/posts/fn05-cupping-isnt-bruising.html]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep15.mp3" length="18569132" type="audio/mpeg"/>
+    <itunes:duration>1160</itunes:duration>
+    <itunes:episode>15</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
 
   <!-- ===== EP14 ===== -->
   <item>
