@@ -55,10 +55,22 @@ def main():
 
     lines.append("## Articles")
     lines.append("")
+    def sort_key(path):
+        """确定性排序键：数字序列降序（近似发布先后）+ 文件名升序兜底。
+
+        兜底键不可省：fn01 与 01 的数字键同为 (1,)，7 组 fn/数字文章同键。
+        只用数字键时先后由 glob.glob() 的目录枚举顺序决定，而 APFS 与 CI 的
+        ext4 枚举顺序不同 → 每次部署重生成都会翻转几行 → 噪声 auto-commit
+        （2026-09-22 定位，9/15 起共 5 次）。文件名唯一，故加入兜底键后
+        结果与输入顺序无关。
+        """
+        base = os.path.basename(path)
+        nums = tuple(-int(x) for x in re.findall(r"\d+", base))
+        return (nums, base)
+
     posts = sorted(
         glob.glob(os.path.join(ROOT, "posts", "*.html")),
-        key=lambda p: [int(x) if x.isdigit() else 0 for x in re.findall(r"\d+", os.path.basename(p))],
-        reverse=True,
+        key=sort_key,
     )
     for p in posts:
         slug = os.path.basename(p)
