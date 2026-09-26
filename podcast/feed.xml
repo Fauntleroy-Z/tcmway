@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a lifelong student of Chinese medicine who reads the classics so you don't have to. New episodes every other week.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Sat, 19 Sep 2026 00:34:00 +0800</lastBuildDate>
+  <lastBuildDate>Sat, 26 Sep 2026 21:45:00 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -32,6 +32,19 @@
   </itunes:owner>
 
   <!-- ===== EP15 ===== -->
+  <item>
+    <title><![CDATA[Ep16: Gua Sha Isn't Just a Beauty Hack]]></title>
+    <link>https://tcmway.net/podcast/</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep16.mp3</guid>
+    <pubDate>Sat, 26 Sep 2026 21:45:00 +0800</pubDate>
+    <description><![CDATA[That little jade stone on a beauty shelf comes from a much older practice — one that raises red streaks on the skin on purpose. The scrape from a grandmother's kitchen spoon to a billion-view TikTok trend: what gua sha does to the skin, what the tradition reads in the marks, what the trials actually found, who should treat it with extra caution, and why the same streak can mean care to one family and harm to another.]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep16.mp3" length="20154668" type="audio/mpeg"/>
+    <itunes:duration>1259</itunes:duration>
+    <itunes:episode>16</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
+
   <item>
     <title><![CDATA[Ep15: Cupping Isn't Bruising. Those Purple Circles Are Something Else.]]></title>
     <link>https://tcmway.net/posts/fn05-cupping-isnt-bruising.html</link>
