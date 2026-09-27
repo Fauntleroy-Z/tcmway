@@ -31,6 +31,7 @@ CATEGORIES = {
             "54-reading-the-tongue",
             "55-he-gu-li4", "56-does-burning-weeds-work",
             "57-gui-zhi-cinnamon-twig", "58-why-grief-lives-in-your-lungs",
+            "59-gua-sha-isnt-just-a-beauty-hack",
             "fn01-drink-more-hot-water",
             "fn02-chu-shu-end-of-heat",
             "fn05-cupping-isnt-bruising", "fn06-your-spice-rack",
