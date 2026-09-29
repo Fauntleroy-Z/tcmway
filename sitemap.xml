@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-    <loc>https://tcmway.net/</loc>
-    <lastmod>2026-09-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
-
-<url>
     <loc>https://tcmway.net/posts/01-why-i-share-tcm-with-the-west.html</loc>
     <lastmod>2026-03-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -449,6 +442,13 @@
   </url>
 
 <url>
+    <loc>https://tcmway.net/posts/58-why-grief-lives-in-your-lungs.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
     <loc>https://tcmway.net/posts/59-gua-sha-isnt-just-a-beauty-hack.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>monthly</changefreq>
@@ -456,8 +456,8 @@
   </url>
 
 <url>
-    <loc>https://tcmway.net/posts/58-why-grief-lives-in-your-lungs.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <loc>https://tcmway.net/posts/60-the-8-extraordinary-vessels.html</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

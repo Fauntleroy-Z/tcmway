@@ -6,7 +6,7 @@
     <link>https://tcmway.net/</link>
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Sep 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0800</lastBuildDate>
     <image>
   <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
   <title>TCM Way</title>
@@ -14,7 +14,14 @@
 </image>
 <generator>TCM Way</generator>
   
-                    <item>
+                      <item>
+    <title>The 8 "Extraordinary" Vessels</title>
+    <link>https://tcmway.net/posts/60-the-8-extraordinary-vessels.html</link>
+    <description>Behind the twelve familiar channels sits an older layer: eight vessels that follow different rules. Where they came from, what each one does, and how practitioners bridge the two maps.</description>
+    <pubDate>Tue, 29 Sep 2026 00:00:00 +0800</pubDate>
+    <guid>https://tcmway.net/posts/60-the-8-extraordinary-vessels.html</guid>
+  </item>
+<item>
     <title>Gua Sha Isn't Just a Beauty Hack</title>
     <link>https://tcmway.net/posts/59-gua-sha-isnt-just-a-beauty-hack.html</link>
     <description>The jade stone on a beauty shelf and the soup spoon in a grandmother's drawer are the same practice. What gua sha does to the skin, what the tradition reads in the marks, what the trials found, and who should skip it.</description>
