@@ -33,6 +33,7 @@ CATEGORIES = {
             "57-gui-zhi-cinnamon-twig", "58-why-grief-lives-in-your-lungs",
             "59-gua-sha-isnt-just-a-beauty-hack",
             "60-the-8-extraordinary-vessels",
+            "61-are-you-wood-fire-earth-metal-or-water",
             "fn01-drink-more-hot-water",
             "fn02-chu-shu-end-of-heat",
             "fn05-cupping-isnt-bruising", "fn06-your-spice-rack",

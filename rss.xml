@@ -6,7 +6,7 @@
     <link>https://tcmway.net/</link>
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Sep 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0800</lastBuildDate>
     <image>
   <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
   <title>TCM Way</title>
@@ -14,7 +14,14 @@
 </image>
 <generator>TCM Way</generator>
   
-                      <item>
+                        <item>
+    <title>Are You Wood, Fire, Earth, Metal, or Water?</title>
+    <link>https://tcmway.net/posts/61-are-you-wood-fire-earth-metal-or-water.html</link>
+    <description>Two thousand years before the personality quiz, Chinese medicine sorted people into five body types — Wood, Fire, Earth, Metal, and Water — and read the body first. Where the typology came from, what each type looks like, and the limits the old text itself admits.</description>
+    <pubDate>Thu, 01 Oct 2026 00:00:00 +0800</pubDate>
+    <guid>https://tcmway.net/posts/61-are-you-wood-fire-earth-metal-or-water.html</guid>
+  </item>
+<item>
     <title>The 8 "Extraordinary" Vessels</title>
     <link>https://tcmway.net/posts/60-the-8-extraordinary-vessels.html</link>
     <description>Behind the twelve familiar channels sits an older layer: eight vessels that follow different rules. Where they came from, what each one does, and how practitioners bridge the two maps.</description>
