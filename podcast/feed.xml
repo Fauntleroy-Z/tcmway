@@ -9,10 +9,10 @@
 
   <title>East &amp; Inner with Ollie</title>
   <link>https://tcmway.net/podcast/</link>
-  <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a lifelong student of Chinese medicine who reads the classics so you don't have to. New episodes every other week.]]></description>
+  <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a lifelong student of Chinese medicine who reads the classics so you don't have to. New episodes weekly.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Sat, 26 Sep 2026 23:05:00 +0800</lastBuildDate>
+  <lastBuildDate>Sun, 04 Oct 2026 11:20:00 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -30,6 +30,20 @@
     <itunes:name>Ollie</itunes:name>
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
+
+  <!-- ===== EP17 ===== -->
+  <item>
+    <title><![CDATA[Ep17: Why Grief Lives in Your Lungs]]></title>
+    <link>https://tcmway.net/posts/58-why-grief-lives-in-your-lungs.html</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep17.mp3</guid>
+    <pubDate>Sun, 04 Oct 2026 11:20:00 +0800</pubDate>
+    <description><![CDATA[The chest tightens, the voice thins, the breath becomes work. Chinese medicine has a map for that — grief belongs to the Lungs. This episode follows the map from a kitchen table to the classical texts, through a novelist's dying poet, and into what modern medicine quietly agrees about: grief is not only mental. Based on the TCM Way article "Why Grief Lives in Your Lungs." 📖 Read the article: https://tcmway.net/posts/58-why-grief-lives-in-your-lungs.html]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep17.mp3" length="18796076" type="audio/mpeg"/>
+    <itunes:duration>1175</itunes:duration>
+    <itunes:episode>17</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
 
   <!-- ===== EP16 ===== -->
   <item>
