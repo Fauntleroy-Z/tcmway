@@ -52,6 +52,10 @@
 
 - **SOP 落盘**：修复工作流 + 客观判据 + 防复发固定句已追加进 `~/.hermes/skills/tcmway-comic-generation-sop/SKILL.md`（含本批次执行记录）。
 - **复核更正（2x 复查）**：#54-bw / #54-mid1 / #54-mid2 **无人类元素**（此前误读的"人影"= 黑色舌象图卡）；#55-bw 的手为「虎口取穴图卡」= 解剖图卡类（与舌象图/足部图/人体图卡同类，内容必需）→ 均不修改。
-- **排队修复（3 张，prompt 已备）**：comic-52-mid1-bw（P4 怒容）、comic-53-mid2-bw（P1/P2 严肃眼）、short-fn04-bw（V 眉怒容）。
-- **阻塞**：`bl image edit` 返回 `HTTP 400 (Arrearage)` —— 阿里云百炼账户欠费，所有图像生成/编辑接口不可用。
-- **恢复方法**：充值后运行交付包中的 `pending-fixes/run-pending.sh`（edit → 800 灰度 webp → BW 合规 → 人工验收 → 部署清单）。
+- **执行（充值恢复后，prompt 见交付包 pending-fixes/）**：
+  - comic-52-mid1-bw：P4 怒容 → 平静（wan2.7-image 一次通过）。
+  - comic-53-mid2-bw：P1/P2 眼睑重线软化，P3/P4 保持。
+  - short-fn04-bw：wan2.7-image 连续 4 次均无法清掉怒眉（模型把两道斜杠当耳簇延伸/眉弓保留）；改用 **qwen-image-2.0「纯删除」prompt 一次通过**，文字 "NI SHANG HUO LE" 与道具逐项核验无损。
+- **上线**：commit 2ecfc0c；CF 缓存 ×2；线上 md5 3/3 + plain URL 复核通过。
+- **至此 Ollie 一致性已知遗留项全部清零**（10-07 两轮合计修复 13 张）。
+- **附注**：账户欠费期间所有图像接口报 `HTTP 400 (Arrearage)`；充值恢复后接口即恢复。
