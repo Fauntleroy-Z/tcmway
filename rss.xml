@@ -6,7 +6,7 @@
     <link>https://tcmway.net/</link>
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 00:00:00 +0800</lastBuildDate>
     <image>
   <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
   <title>TCM Way</title>
@@ -14,7 +14,14 @@
 </image>
 <generator>TCM Way</generator>
   
-                          <item>
+                            <item>
+    <title>Overthinking Is a Spleen Problem</title>
+    <link>https://tcmway.net/posts/63-overthinking-is-a-spleen-problem.html</link>
+    <description>Why worry lands in the middle: the old Chinese map of overthinking, what si ze qi jie means, what gut-brain research adds, and the habits that help a loop settle.</description>
+    <pubDate>Thu, 08 Oct 2026 00:00:00 +0800</pubDate>
+    <guid>https://tcmway.net/posts/63-overthinking-is-a-spleen-problem.html</guid>
+  </item>
+<item>
     <title>How to Explain Moxibustion to Your Scared Partner</title>
     <link>https://tcmway.net/posts/62-how-to-explain-moxibustion-to-your-scared-partner.html</link>
     <description>A smoldering stick, a worried partner, and a very old practice. How to explain moxibustion honestly — the real fire risks, the smoke rules, the evidence, and the boring safety that makes it work at home.</description>

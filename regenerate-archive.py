@@ -35,6 +35,7 @@ CATEGORIES = {
             "60-the-8-extraordinary-vessels",
             "61-are-you-wood-fire-earth-metal-or-water",
             "62-how-to-explain-moxibustion",
+            "63-overthinking-is-a-spleen-problem",
             "fn01-drink-more-hot-water",
             "fn02-chu-shu-end-of-heat",
             "fn05-cupping-isnt-bruising", "fn06-your-spice-rack",
