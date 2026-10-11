@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a lifelong student of Chinese medicine who reads the classics so you don't have to. New episodes weekly.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Sun, 04 Oct 2026 11:20:00 +0800</lastBuildDate>
+  <lastBuildDate>Sun, 11 Oct 2026 10:35:00 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -30,6 +30,20 @@
     <itunes:name>Ollie</itunes:name>
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
+
+  <!-- ===== EP18 ===== -->
+  <item>
+    <title><![CDATA[Ep18: Overthinking Is a Spleen Problem]]></title>
+    <link>https://tcmway.net/posts/63-overthinking-is-a-spleen-problem.html</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep18.mp3</guid>
+    <pubDate>Sun, 11 Oct 2026 10:35:00 +0800</pubDate>
+    <description><![CDATA[One sentence from two in the afternoon, replayed for the ninth time at two in the morning. In the Chinese medical tradition, the loop that will not close settles in the middle of the body — thought knots the qi. This episode follows the map from the midnight table through the classical texts and the gut's own nervous system, and lands on something small: structure, not willpower. Based on the TCM Way article "Overthinking Is a Spleen Problem." 📖 Read the article: https://tcmway.net/posts/63-overthinking-is-a-spleen-problem.html]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep18.mp3" length="18855212" type="audio/mpeg"/>
+    <itunes:duration>1178</itunes:duration>
+    <itunes:episode>18</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
 
   <!-- ===== EP17 ===== -->
   <item>
