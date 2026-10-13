@@ -111,7 +111,12 @@ def scan_articles():
         else:
             hmatch = re.search(r'<article>.*?<h1>(.*?)</h1>', html, re.S) or re.search(r'<h2>(.*?)</h2>', html)
             title = re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', hmatch.group(1))).strip() if hmatch else "Untitled"
-        date = re.search(r'class="meta">([^<]+)', html)
+        # 2026-10-13 修复（GM 巡检）：部分旧文 meta 用字面 "·" 而非 &middot;，
+        # 旧解析 split("&")[0] 得到 "July 2, 2026 · By Ollie" → strptime 失败 →
+        # date_obj 兜底 1970-01-01，RSS/首页 Recent 排序错位（实测 7 篇：
+        # 08/09/10/20/21/22/33）。改为优先提取行首 "Month D, YYYY"，
+        # 顺带消灭 archive 卡片 "· By Ollie" 的显示不一致。
+        date = re.search(r'class="meta">\s*([A-Z][a-z]+ \d{1,2}, \d{4})', html) or re.search(r'class="meta">([^<]+)', html)
         # 2026-08-27：分类页卡片 desc 复用文章 meta description（与手写卡片口径一致）
         mdesc = re.search(r'<meta name="description" content="(.*?)">', html, re.S)
         desc = mdesc.group(1).strip() if mdesc else ""
@@ -147,6 +152,7 @@ def scan_articles():
         try:
             articles[num]["date_obj"] = datetime.strptime(articles[num]["date"], "%B %d, %Y")
         except (ValueError, TypeError):
+            print(f"  ⚠️  日期解析失败，按 1970-01-01 兜底（会错位 RSS/首页 Recent 排序）: {os.path.basename(f)} raw={articles[num]['date']!r}")
             articles[num]["date_obj"] = datetime(1970, 1, 1)
         # 2026-08-26 根除：未来日期（Asia/Shanghai）文章不进入任何索引，
         # 防止未确认/未到发布日的文章被 deploy 带上线（#50/#51 事故复盘）
