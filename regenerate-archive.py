@@ -431,6 +431,15 @@ def sync_rss(articles):
         seen.add(guid)
         existing = next((it for it in items if f'<guid>{guid}</guid>' in it), None)
         if existing:
+            # 2026-10-14（主人批准）：全站日期口径统一为「文章页日期」——
+            # 已存在条目保留描述等原样，但 pubDate 一律刷新为页面解析值
+            # （修 #31/#33/#34/#36/#59 五篇历史 RSS 与页面不一致；幂等：
+            #  页面日期不变时输出不变，本地 cron 与 GitHub Actions 双写不冲突）。
+            if art["date_obj"].year > 1970:
+                _pd = art["date_obj"].strftime("%a, %d %b %Y 00:00:00 +0800")
+                existing = re.sub(r'<pubDate>.*?</pubDate>',
+                                  f'<pubDate>{_pd}</pubDate>', existing,
+                                  count=1, flags=re.S)
             out_items.append(existing)
             continue
         pd = art["date_obj"].strftime("%a, %d %b %Y 00:00:00 +0800")
