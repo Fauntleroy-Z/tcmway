@@ -37,6 +37,7 @@ CATEGORIES = {
             "62-how-to-explain-moxibustion",
             "63-overthinking-is-a-spleen-problem",
             "64-shen-hun-po-tcm-map-of-the-mind",
+            "65-your-insomnia-has-a-type-a-tcm-field-guide",
             "fn01-drink-more-hot-water",
             "fn02-chu-shu-end-of-heat",
             "fn05-cupping-isnt-bruising", "fn06-your-spice-rack",
