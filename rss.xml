@@ -6,7 +6,7 @@
     <link>https://tcmway.net/</link>
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Oct 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 00:00:00 +0800</lastBuildDate>
     <image>
   <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
   <title>TCM Way</title>
@@ -14,7 +14,14 @@
 </image>
 <generator>TCM Way</generator>
   
-                                <item>
+                                  <item>
+    <title>Frost's Descent: The Last 15 Days of Autumn</title>
+    <link>https://tcmway.net/posts/67-frosts-descent-the-last-15-days-of-autumn.html</link>
+    <description>Frost's Descent, the eighteenth solar term, brings frost, dryness, seasonal signs, persimmons, and a traditional map of the body preparing for winter.</description>
+    <pubDate>Thu, 22 Oct 2026 00:00:00 +0800</pubDate>
+    <guid>https://tcmway.net/posts/67-frosts-descent-the-last-15-days-of-autumn.html</guid>
+  </item>
+<item>
     <title>What Classical Chinese Medicine Means by “Escorting Out” an Illness</title>
     <link>https://tcmway.net/posts/66-what-classical-chinese-medicine-means-by-escorting-out-an-illness.html</link>
     <description>How classical Chinese medicine used the metaphor of escorting illness out — and where the metaphor, history, and modern medicine must part ways.</description>
