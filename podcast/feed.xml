@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a lifelong student of Chinese medicine who reads the classics so you don't have to. New episodes weekly.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Sat, 17 Oct 2026 19:36:00 +0800</lastBuildDate>
+  <lastBuildDate>Sat, 24 Oct 2026 21:55:00 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -30,6 +30,20 @@
     <itunes:name>Ollie</itunes:name>
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
+
+  <!-- ===== EP20 ===== -->
+  <item>
+    <title><![CDATA[Ep20: The Six Doors of the Night]]></title>
+    <link>https://tcmway.net/posts/65-your-insomnia-has-a-type-a-tcm-field-guide.html</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep20.mp3</guid>
+    <pubDate>Sat, 24 Oct 2026 21:55:00 +0800</pubDate>
+    <description><![CDATA[Three people cannot sleep tonight — but their nights break in three completely different ways. One mind will not switch off. One body jolts awake at two in the morning. One person sleeps eight hours and still feels flattened. This episode uses the classical Chinese medicine image of six doors, plus two familiar side rooms, to build a practical field guide to sleepless nights. The point is not to diagnose yourself from the clock. It is to notice the hour, the sensation that wakes you, and how the morning feels — then bring a clearer description into a real medical conversation when sleep keeps disrupting your days. Based on the TCM Way article "Your Insomnia Has a Type — A TCM Field Guide." 📖 Read the article: https://tcmway.net/posts/65-your-insomnia-has-a-type-a-tcm-field-guide.html]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep20.mp3" length="19396652" type="audio/mpeg"/>
+    <itunes:duration>1212</itunes:duration>
+    <itunes:episode>20</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
 
   <!-- ===== EP19 ===== -->
   <item>
