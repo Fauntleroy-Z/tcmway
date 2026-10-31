@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a lifelong student of Chinese medicine who reads the classics so you don't have to. New episodes weekly.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Sat, 24 Oct 2026 21:55:00 +0800</lastBuildDate>
+  <lastBuildDate>Sat, 31 Oct 2026 11:42:14 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -30,6 +30,20 @@
     <itunes:name>Ollie</itunes:name>
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
+
+  <!-- ===== EP21 ===== -->
+  <item>
+    <title><![CDATA[Ep21: Cold Feet Aren't Just Bad Circulation]]></title>
+    <link>https://tcmway.net/posts/69-cold-feet-more-than-poor-circulation.html</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep21.mp3</guid>
+    <pubDate>Sat, 31 Oct 2026 11:42:14 +0800</pubDate>
+    <description><![CDATA[Your sweater feels warm, but your toes feel like cubes of river ice. Under a blanket, your chest warms while your heels stay cold. This episode uses a woodstove at the end of a hallway to explore Yang as the fire, Blood as the carrier, and Qi as the movement. Then it walks through five traditional patterns behind cold limbs, separates Yin deficiency and a simple weather chill from those patterns, and closes with a seven-day observation exercise plus the warning signs that need medical attention. Based on the TCM Way article "Cold Feet Are More Than Poor Circulation." 📖 Read the article: https://tcmway.net/posts/69-cold-feet-more-than-poor-circulation.html]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep21.mp3" length="19044140" type="audio/mpeg"/>
+    <itunes:duration>1190</itunes:duration>
+    <itunes:episode>21</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
 
   <!-- ===== EP20 ===== -->
   <item>
