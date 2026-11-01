@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fdf6ee">
+  <title>The 7-Day Kitchen Pharmacy — A Free Guide | TCM Way</title>
+  <meta name="description" content="Seven everyday ingredients. One five-minute ritual a day. A free 10-page guide to what tradition says, what evidence says, and when to skip.">
+  <link rel="canonical" href="https://tcmway.net/kitchen-pharmacy/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon.png">
+  <link rel="apple-touch-icon" href="/images/brand/logo-tcmway-header.png">
+  <meta property="og:title" content="The 7-Day Kitchen Pharmacy">
+  <meta property="og:description" content="Seven everyday ingredients. One small ritual a day. A free guide from TCM Way.">
+  <meta property="og:image" content="https://tcmway.net/images/brand/og-card.png">
+  <meta property="og:url" content="https://tcmway.net/kitchen-pharmacy/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TCM Way">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G9S528TPWH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G9S528TPWH');
+  </script>
+
+  <style>
+    :root {
+      --paper: #fdf6ee;
+      --paper-light: #fffaf3;
+      --ink: #3b2a1a;
+      --accent: #b83a2a;
+      --accent-deep: #8f2b20;
+      --amber: #e8a87c;
+      --muted: #7a5c45;
+      --line: #e4cfb8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 78% 11%, rgba(232, 168, 124, .30), transparent 31rem),
+        radial-gradient(circle at 6% 67%, rgba(184, 58, 42, .07), transparent 25rem),
+        var(--paper);
+      font-family: Georgia, 'Times New Roman', serif;
+      line-height: 1.65;
+    }
+    a { color: var(--accent); }
+    .shell { width: min(100% - 2rem, 760px); margin: 0 auto; }
+    header { padding: 1.25rem 0 0; }
+    .topline { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { display: inline-flex; align-items: center; gap: .7rem; color: var(--ink); text-decoration: none; }
+    .brand img { width: 54px; height: 54px; border: 2px solid var(--ink); border-radius: 50%; }
+    .brand strong { display: block; color: var(--accent); font-size: 1.05rem; letter-spacing: .13em; }
+    .brand span { display: block; color: var(--muted); font: .67rem/1.5 ui-monospace, Menlo, monospace; letter-spacing: .08em; text-transform: uppercase; }
+    .home-link { color: var(--muted); font: .78rem/1 ui-monospace, Menlo, monospace; text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: .3rem; }
+    main { padding: clamp(3rem, 10vw, 6rem) 0 3rem; }
+    .eyebrow { margin: 0 0 1rem; color: var(--accent); font: 700 .76rem/1.4 ui-monospace, Menlo, monospace; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { max-width: 680px; margin: 0; font-size: clamp(2.5rem, 9.3vw, 5.7rem); font-weight: 500; line-height: .98; letter-spacing: -.045em; }
+    .dek { max-width: 600px; margin: 1.4rem 0 0; color: var(--muted); font-size: clamp(1.04rem, 3.4vw, 1.25rem); line-height: 1.6; }
+    .proof { display: flex; flex-wrap: wrap; gap: .65rem 1.3rem; margin: 1.35rem 0 0; padding: 0; list-style: none; color: var(--muted); font: .76rem/1.5 ui-monospace, Menlo, monospace; letter-spacing: .02em; }
+    .proof li::before { content: "✓"; margin-right: .4rem; color: var(--accent); font-weight: 700; }
+    .capture {
+      position: relative;
+      margin: clamp(2.25rem, 7vw, 4rem) 0 0;
+      padding: clamp(1.3rem, 5vw, 2.2rem);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 4px 28px 4px 28px;
+      background: rgba(255, 250, 243, .92);
+      box-shadow: 14px 14px 0 rgba(184, 58, 42, .075);
+    }
+    .capture::before { content: ""; position: absolute; inset: 0 0 auto; height: 5px; background: var(--accent); }
+    .capture h2 { margin: 0; font-size: clamp(1.35rem, 4.8vw, 1.95rem); line-height: 1.2; }
+    .capture p { margin: .45rem 0 1.2rem; color: var(--muted); font-size: .94rem; }
+    form { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .6rem; }
+    label { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    input[type="email"] { width: 100%; min-height: 52px; padding: .8rem 1rem; color: var(--ink); border: 1px solid #cdb59c; border-radius: 7px; background: #fff; font: 1rem/1.2 Georgia, serif; }
+    input[type="email"]:focus { outline: 3px solid rgba(184, 58, 42, .18); border-color: var(--accent); }
+    button, .download {
+      min-height: 52px;
+      padding: .8rem 1.35rem;
+      border: 1px solid var(--accent);
+      border-radius: 7px;
+      color: #fff;
+      background: var(--accent);
+      font: 700 .82rem/1.2 ui-monospace, Menlo, monospace;
+      letter-spacing: .045em;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    button:hover, .download:hover { background: var(--accent-deep); }
+    .privacy { margin: .8rem 0 0 !important; font: .72rem/1.55 ui-monospace, Menlo, monospace !important; }
+    .direct-download { margin: 1.2rem 0 0; padding-top: 1.1rem; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .direct-download p { margin: 0; max-width: 340px; font-family: Georgia, serif; font-size: .88rem; }
+    .direct-download .download { min-height: 44px; flex: 0 0 auto; }
+    .section-title { margin: 3.5rem 0 0; color: var(--accent); font: 700 .76rem/1.4 ui-monospace, Menlo, monospace; letter-spacing: .14em; text-transform: uppercase; }
+    .section-title + h2 { margin: .6rem 0 1rem; font-size: clamp(1.8rem, 6vw, 3rem); line-height: 1.05; font-weight: 500; letter-spacing: -.03em; }
+    .contents { margin: 2rem 0 0; padding: 0; list-style: none; counter-reset: day; }
+    .contents li { counter-increment: day; display: grid; grid-template-columns: 2.6rem 1fr; gap: .9rem; padding: 1.15rem 0; border-top: 1px solid var(--line); }
+    .contents li::before { content: "0" counter(day); color: var(--accent); font: 700 .84rem/1.5 ui-monospace, Menlo, monospace; }
+    .contents strong { display: block; font-size: 1.03rem; line-height: 1.35; }
+    .contents span { display: block; margin-top: .25rem; color: var(--muted); font-size: .9rem; line-height: 1.55; }
+    .reading-note { padding: 1.25rem 1.35rem; border-left: 4px solid var(--amber); background: rgba(232, 168, 124, .12); font-size: .92rem; }
+    footer { padding: 2.75rem 0; color: var(--muted); font-size: .76rem; text-align: center; }
+    footer nav { display: flex; justify-content: center; flex-wrap: wrap; gap: .45rem 1rem; margin-top: .5rem; }
+    footer a { color: var(--muted); }
+    @media (max-width: 620px) {
+      form { grid-template-columns: 1fr; }
+      button { width: 100%; }
+      .direct-download { align-items: flex-start; flex-direction: column; }
+      .direct-download .download { width: 100%; }
+      .home-link { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell topline">
+      <a class="brand" href="/" aria-label="TCM Way home">
+        <img src="/images/brand/logo-tcmway-header.png" width="54" height="54" alt="">
+        <span><strong>TCM WAY</strong><span>Ancient wisdom · modern life</span></span>
+      </a>
+      <a class="home-link" href="/subscribe/">Prefer a reading list? Start here →</a>
+    </div>
+  </header>
+
+  <main class="shell">
+    <p class="eyebrow">Free guide · 10 pages</p>
+    <h1>A week in the kitchen pharmacy.</h1>
+    <p class="dek">Seven everyday ingredients. One five-minute ritual a day. What tradition says, what evidence says, and when to skip it — without buying a single supplement.</p>
+    <ul class="proof" aria-label="What is included">
+      <li>7 familiar ingredients</li>
+      <li>What tradition &amp; evidence say</li>
+      <li>10-page PDF · print friendly</li>
+    </ul>
+
+    <section class="capture" id="subscribe" aria-labelledby="capture-title">
+      <h2 id="capture-title">Send me the 7-Day guide</h2>
+      <p>Join Letters on classical Chinese medicine. One considered idea at a time.</p>
+      <form action="https://buttondown.com/api/emails/embed-subscribe/hsu" method="post">
+        <label for="email">Email address</label>
+        <input id="email" type="email" name="email" placeholder="you@email.com" autocomplete="email" required>
+        <input type="hidden" name="embed" value="1">
+        <input type="hidden" name="tag" value="kitchen-pharmacy">
+        <button type="submit">Subscribe &amp; get the guide</button>
+      </form>
+      <p class="privacy">By subscribing, you agree to receive TCM Way emails. Unsubscribe anytime.</p>
+      <div class="direct-download">
+        <p>Want the guide first? The PDF is ready now; the newsletter is the ongoing companion.</p>
+        <a class="download" id="download-pdf" href="/downloads/7-day-kitchen-pharmacy.pdf" type="application/pdf">Download the PDF</a>
+      </div>
+    </section>
+
+    <p class="section-title">What is inside</p>
+    <h2>One ingredient. One action. One honest note.</h2>
+    <p class="reading-note"><strong>Education, not treatment.</strong> Each page names what the tradition says, what the evidence actually supports, a five-minute kitchen ritual, and the situations where you should ask a clinician first.</p>
+    <ol class="contents">
+      <li><div><strong>Ginger · 生姜</strong><span>Warmth for the middle — and the nausea evidence, honestly.</span></div></li>
+      <li><div><strong>Pear · 梨</strong><span>The classic autumn answer to dryness — as food, not a cure.</span></div></li>
+      <li><div><strong>Dried tangerine peel · 陈皮</strong><span>What to do after a rich meal, and when to skip it.</span></div></li>
+      <li><div><strong>Red dates · 红枣</strong><span>A gentle kitchen habit — and why it is not an anaemia treatment.</span></div></li>
+      <li><div><strong>Cinnamon · 肉桂</strong><span>A pinch, not a spoonful; what the blood-sugar studies do and do not show.</span></div></li>
+      <li><div><strong>Hawthorn · 山楂</strong><span>The after-a-rich-meal berry — what it can and cannot do.</span></div></li>
+      <li><div><strong>Chrysanthemum · 菊花</strong><span>A gentle evening cup — and who should skip it.</span></div></li>
+    </ol>
+  </main>
+
+  <footer class="shell">
+    <p>© 2026 TCM Way. Educational content only. Not medical advice.</p>
+    <nav aria-label="Site information">
+      <a href="/disclaimer.html">Medical disclaimer</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/">Home</a>
+    </nav>
+  </footer>
+
+  <script>
+    (() => {
+      document.getElementById('download-pdf').addEventListener('click', () => {
+        if (typeof gtag === 'function') {
+          gtag('event', 'file_download', {
+            file_name: '7-day-kitchen-pharmacy.pdf',
+            link_url: '/downloads/7-day-kitchen-pharmacy.pdf'
+          });
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
