@@ -42,6 +42,7 @@ CATEGORIES = {
             "67-frosts-descent-the-last-15-days-of-autumn",
             "68-appetite-is-your-body-health-barometer",
             "69-cold-feet-more-than-poor-circulation",
+            "70-blood-is-not-just-red-liquid",
             "fn01-drink-more-hot-water",
             "fn02-chu-shu-end-of-heat",
             "fn05-cupping-isnt-bruising", "fn06-your-spice-rack",
