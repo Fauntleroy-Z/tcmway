@@ -6,7 +6,7 @@
     <link>https://tcmway.net/</link>
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Nov 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 00:00:00 +0800</lastBuildDate>
     <image>
   <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
   <title>TCM Way</title>
@@ -14,7 +14,14 @@
 </image>
 <generator>TCM Way</generator>
   
-                                        <item>
+                                          <item>
+    <title>Your Poop Is a Morning Report — TCM's Most Revealing Question</title>
+    <link>https://tcmway.net/posts/71-your-poop-is-a-morning-report.html</link>
+    <description>A cultural guide to what classical Chinese medicine asks about stool, what bowel patterns can suggest, and which warning signs need medical care.</description>
+    <pubDate>Thu, 05 Nov 2026 00:00:00 +0800</pubDate>
+    <guid>https://tcmway.net/posts/71-your-poop-is-a-morning-report.html</guid>
+  </item>
+<item>
     <title>Blood Is Not Just Red Liquid</title>
     <link>https://tcmway.net/posts/70-blood-is-not-just-red-liquid.html</link>
     <description>Explore TCM Blood (Xue): how it nourishes tissue, supports Shen and Hun, relates to Qi, and differs from a laboratory blood count.</description>
