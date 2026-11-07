@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a lifelong student of Chinese medicine who reads the classics so you don't have to. New episodes weekly.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Sat, 31 Oct 2026 11:42:14 +0800</lastBuildDate>
+  <lastBuildDate>Sat, 07 Nov 2026 15:28:00 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -30,6 +30,20 @@
     <itunes:name>Ollie</itunes:name>
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
+
+  <!-- ===== EP22 ===== -->
+  <item>
+    <title><![CDATA[Ep22: Appetite Is Your Body's Health Barometer]]></title>
+    <link>https://tcmway.net/posts/68-appetite-is-your-body-health-barometer.html</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep22.mp3</guid>
+    <pubDate>Sat, 07 Nov 2026 15:28:00 +0800</pubDate>
+    <description><![CDATA[Black coffee at seven can quiet an empty stomach for an hour. By three in the afternoon, your hands are shaking and you are hunting for anything that will stop the noise. This episode uses a small owl on an oak limb to examine appetite as a signal: the stomach as receiver, the spleen as transformer, and digestive warmth as part of a larger pattern. It walks through four traditional appetite patterns, separates stomach fire from yin deficiency, looks at stress, cravings, distracted eating, and a seven-day audit, then closes with the symptoms that deserve medical attention. Based on the TCM Way article "Appetite Is Your Body's Health Barometer." 📖 Read the article: https://tcmway.net/posts/68-appetite-is-your-body-health-barometer.html]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep22.mp3" length="18845612" type="audio/mpeg"/>
+    <itunes:duration>1178</itunes:duration>
+    <itunes:episode>22</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
 
   <!-- ===== EP21 ===== -->
   <item>
