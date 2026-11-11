@@ -3,6 +3,71 @@
  * Uses browser SpeechSynthesis API. Zero dependencies, zero cost.
  */
 (function () {
+  // ========== ANALYTICS ==========
+  function articleSlug() {
+    const match = window.location.pathname.match(/\/posts\/([^/]+)\.html$/);
+    return match ? match[1] : null;
+  }
+
+  function trackEvent(name, params) {
+    if (typeof gtag !== 'function') return;
+    gtag('event', name, {
+      article_slug: articleSlug(),
+      page_path: window.location.pathname,
+      ...params
+    });
+  }
+
+  function setupInteractionTracking() {
+    document.addEventListener('click', (event) => {
+      if (!(event.target instanceof Element)) return;
+      const link = event.target.closest('a');
+      if (!link) return;
+
+      const href = link.getAttribute('href') || '';
+      const linkUrl = link.href || href;
+
+      const isKitchenCta = link.matches('[data-cta="kitchen_pharmacy"]');
+      const isSubscribeLink = /(?:#subscribe|\/subscribe\/|\/kitchen-pharmacy\/)/i.test(linkUrl);
+      if (isKitchenCta || isSubscribeLink) {
+        trackEvent('newsletter_cta_click', {
+          cta_id: isKitchenCta ? 'kitchen_pharmacy' : 'subscribe',
+          cta_position: 'article',
+          link_url: linkUrl
+        });
+        return;
+      }
+
+      if (/\.pdf(?:$|\?)/i.test(href)) {
+        trackEvent('lead_magnet_download', {
+          file_name: href.split('/').pop().split('?')[0],
+          link_url: linkUrl
+        });
+        return;
+      }
+
+      if (link.closest('.related-posts')) {
+        trackEvent('related_article_click', {
+          cta_position: 'related_posts',
+          target_url: linkUrl
+        });
+        return;
+      }
+
+      let platform = null;
+      if (/twitter\.com\/intent\/tweet/i.test(href)) platform = 'twitter';
+      else if (/reddit\.com\/submit/i.test(href)) platform = 'reddit';
+      else if (/^mailto:\?subject=/i.test(href)) platform = 'email';
+
+      if (platform) {
+        trackEvent('share_click', {
+          platform,
+          link_url: linkUrl
+        });
+      }
+    });
+  }
+
   // ========== STYLES ==========
   const style = document.createElement('style');
   style.textContent = `
@@ -139,6 +204,7 @@
         speaking = true;
         btn.classList.add('playing');
         btn.innerHTML = '<span class="icon">⏸️</span><span class="label">Stop</span>';
+        trackEvent('listen_tts_start', { cta_position: 'article_header' });
       };
 
       utterance.onend = () => resetButton(btn);
@@ -161,6 +227,8 @@
 
   // ========== INIT ==========
   function init() {
+    setupInteractionTracking();
+
     // Handle voice loading (async on some browsers)
     const voices = speechSynthesis.getVoices();
     
