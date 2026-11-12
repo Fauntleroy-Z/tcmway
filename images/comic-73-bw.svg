@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <g id="owl-body">
+      <!-- identical Ollie body in every panel -->
+      <ellipse cx="160" cy="205" rx="42" ry="72" fill="none" stroke="#000" stroke-width="5"/>
+      <path d="M126 174 Q110 210 128 260 Q140 268 146 252" fill="none" stroke="#000" stroke-width="5"/>
+      <path d="M194 174 Q210 210 192 260 Q180 268 174 252" fill="none" stroke="#000" stroke-width="5"/>
+      <line x1="146" y1="274" x2="146" y2="308" stroke="#000" stroke-width="4"/>
+      <line x1="174" y1="274" x2="174" y2="308" stroke="#000" stroke-width="4"/>
+      <path d="M146 308 l-12 12 M146 308 l0 14 M146 308 l12 12" fill="none" stroke="#000" stroke-width="3"/>
+      <path d="M174 308 l-12 12 M174 308 l0 14 M174 308 l12 12" fill="none" stroke="#000" stroke-width="3"/>
+      <ellipse cx="160" cy="91" rx="58" ry="52" fill="none" stroke="#000" stroke-width="5"/>
+      <path d="M116 56 L104 16 L132 45 Z" fill="#000" stroke="#000" stroke-width="3"/>
+      <path d="M204 56 L216 16 L188 45 Z" fill="#000" stroke="#000" stroke-width="3"/>
+      <ellipse cx="160" cy="94" rx="46" ry="39" fill="none" stroke="#000" stroke-width="2"/>
+      <line x1="160" y1="135" x2="160" y2="169" stroke="#000" stroke-width="2"/>
+      <circle cx="160" cy="177" r="11" fill="#fff" stroke="#000" stroke-width="2"/>
+      <path d="M160 166 A11 11 0 0 1 160 188" fill="#000"/>
+      <circle cx="155" cy="173" r="3" fill="#fff"/>
+    </g>
+    <g id="neutral-eyes">
+      <circle cx="140" cy="91" r="10" fill="#000"/>
+      <circle cx="180" cy="91" r="10" fill="#000"/>
+      <circle cx="137" cy="87" r="3" fill="#fff"/>
+      <circle cx="177" cy="87" r="3" fill="#fff"/>
+    </g>
+    <g id="attentive-eyes">
+      <circle cx="140" cy="91" r="11" fill="#000" stroke="#fff" stroke-width="2"/>
+      <circle cx="180" cy="91" r="11" fill="#000" stroke="#fff" stroke-width="2"/>
+      <circle cx="137" cy="87" r="3" fill="#fff"/>
+      <circle cx="177" cy="87" r="3" fill="#fff"/>
+    </g>
+    <g id="thinking-eyes">
+      <circle cx="140" cy="91" r="9" fill="#000"/>
+      <circle cx="180" cy="91" r="9" fill="#000"/>
+      <circle cx="140" cy="91" r="4" fill="none" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="180" cy="91" r="4" fill="none" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="137" cy="87" r="2.5" fill="#fff"/>
+      <circle cx="177" cy="87" r="2.5" fill="#fff"/>
+    </g>
+    <g id="warm-eyes">
+      <circle cx="140" cy="91" r="10" fill="#000"/>
+      <circle cx="180" cy="91" r="10" fill="#000"/>
+      <circle cx="137" cy="87" r="3" fill="#fff"/>
+      <circle cx="177" cy="87" r="3" fill="#fff"/>
+      <path d="M124 112 Q160 125 196 112" fill="none" stroke="#000" stroke-width="2"/>
+    </g>
+  </defs>
+
+  <rect width="800" height="800" fill="#fff"/>
+
+  <!-- Panel 1 -->
+  <g>
+    <rect x="16" y="16" width="376" height="376" fill="#fff" stroke="#000" stroke-width="4"/>
+    <rect x="18" y="18" width="372" height="54" fill="#000"/>
+    <text x="34" y="54" fill="#fff" font-family="Georgia, serif" font-size="24" font-weight="bold">1. A QUIET EXAM</text>
+    <line x1="46" y1="324" x2="358" y2="324" stroke="#000" stroke-width="8"/>
+    <g transform="translate(46 88) scale(.62)">
+      <use href="#owl-body"/>
+      <use href="#neutral-eyes"/>
+      <path d="M147 112 L160 126 L173 112 Z" fill="#000"/>
+    </g>
+    <rect x="228" y="92" width="140" height="118" rx="24" fill="#fff" stroke="#000" stroke-width="3"/>
+    <path d="M244 202 L230 229 L266 210" fill="#fff" stroke="#000" stroke-width="3"/>
+    <text x="240" y="130" font-family="Georgia, serif" font-size="17">Three fingers</text>
+    <text x="240" y="154" font-family="Georgia, serif" font-size="17">start a</text>
+    <text x="240" y="178" font-family="Georgia, serif" font-size="17">question.</text>
+    <circle cx="282" cy="274" r="32" fill="none" stroke="#000" stroke-width="3"/>
+    <line x1="282" y1="274" x2="282" y2="252" stroke="#000" stroke-width="3"/>
+    <line x1="282" y1="274" x2="299" y2="283" stroke="#000" stroke-width="3"/>
+    <path d="M228 310 L250 310 L260 292 L274 318 L288 286 L300 310 L334 310" fill="none" stroke="#000" stroke-width="3"/>
+  </g>
+
+  <!-- Panel 2 -->
+  <g>
+    <rect x="408" y="16" width="376" height="376" fill="#fff" stroke="#000" stroke-width="4"/>
+    <rect x="410" y="18" width="372" height="54" fill="#000"/>
+    <text x="426" y="54" fill="#fff" font-family="Georgia, serif" font-size="24" font-weight="bold">2. TWO READERS</text>
+    <line x1="438" y1="324" x2="750" y2="324" stroke="#000" stroke-width="8"/>
+    <g transform="translate(438 88) scale(.62)">
+      <use href="#owl-body"/>
+      <use href="#attentive-eyes"/>
+      <path d="M147 112 L160 126 L173 112 Z" fill="#000"/>
+    </g>
+    <rect x="620" y="92" width="140" height="118" rx="24" fill="#fff" stroke="#000" stroke-width="3"/>
+    <path d="M636 202 L622 229 L658 210" fill="#fff" stroke="#000" stroke-width="3"/>
+    <text x="634" y="130" font-family="Georgia, serif" font-size="17">Same wrist.</text>
+    <text x="634" y="154" font-family="Georgia, serif" font-size="17">Different</text>
+    <text x="634" y="178" font-family="Georgia, serif" font-size="17">words.</text>
+    <rect x="628" y="254" width="56" height="58" fill="#fff" stroke="#000" stroke-width="3"/>
+    <rect x="698" y="254" width="56" height="58" fill="#fff" stroke="#000" stroke-width="3"/>
+    <text x="640" y="289" font-family="Georgia, serif" font-size="16">WIRY</text>
+    <text x="708" y="289" font-family="Georgia, serif" font-size="16">TAUT</text>
+  </g>
+
+  <!-- Panel 3 -->
+  <g>
+    <rect x="16" y="408" width="376" height="376" fill="#fff" stroke="#000" stroke-width="4"/>
+    <rect x="18" y="410" width="372" height="54" fill="#000"/>
+    <text x="34" y="446" fill="#fff" font-family="Georgia, serif" font-size="24" font-weight="bold">3. THE HARD PART</text>
+    <line x1="46" y1="716" x2="358" y2="716" stroke="#000" stroke-width="8"/>
+    <g transform="translate(46 480) scale(.62)">
+      <use href="#owl-body"/>
+      <use href="#thinking-eyes"/>
+      <path d="M147 112 L160 126 L173 112 Z" fill="#000"/>
+    </g>
+    <rect x="228" y="484" width="140" height="118" rx="24" fill="#fff" stroke="#000" stroke-width="3"/>
+    <path d="M244 594 L230 621 L266 602" fill="#fff" stroke="#000" stroke-width="3"/>
+    <text x="240" y="522" font-family="Georgia, serif" font-size="17">Agreement</text>
+    <text x="240" y="546" font-family="Georgia, serif" font-size="17">can be</text>
+    <text x="240" y="570" font-family="Georgia, serif" font-size="17">modest.</text>
+    <path d="M238 666 L266 666 L266 636 L294 636 L294 650 L322 650 L322 620 L350 620" fill="none" stroke="#000" stroke-width="3"/>
+    <line x1="238" y1="666" x2="350" y2="666" stroke="#000" stroke-width="3"/>
+  </g>
+
+  <!-- Panel 4 -->
+  <g>
+    <rect x="408" y="408" width="376" height="376" fill="#fff" stroke="#000" stroke-width="4"/>
+    <rect x="410" y="410" width="372" height="54" fill="#000"/>
+    <text x="426" y="446" fill="#fff" font-family="Georgia, serif" font-size="24" font-weight="bold">4. READ IN CONTEXT</text>
+    <line x1="438" y1="716" x2="750" y2="716" stroke="#000" stroke-width="8"/>
+    <g transform="translate(438 480) scale(.62)">
+      <use href="#owl-body"/>
+      <use href="#warm-eyes"/>
+      <path d="M147 112 L160 126 L173 112 Z" fill="#000"/>
+    </g>
+    <rect x="620" y="484" width="140" height="118" rx="24" fill="#fff" stroke="#000" stroke-width="3"/>
+    <path d="M636 594 L622 621 L658 602" fill="#fff" stroke="#000" stroke-width="3"/>
+    <text x="634" y="514" font-family="Georgia, serif" font-size="17">Ask what</text>
+    <text x="634" y="538" font-family="Georgia, serif" font-size="17">the whole</text>
+    <text x="634" y="562" font-family="Georgia, serif" font-size="17">person shows.</text>
+    <g font-family="Georgia, serif" font-size="12" text-anchor="middle">
+      <circle cx="646" cy="650" r="22" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="646" y="678">LOOK</text>
+      <circle cx="698" cy="650" r="22" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="698" y="678">ASK</text>
+      <circle cx="750" cy="650" r="22" fill="#fff" stroke="#000" stroke-width="2"/>
+      <text x="750" y="678">LISTEN</text>
+    </g>
+    <text x="646" y="657" font-family="Georgia, serif" font-size="16">EYE</text>
+    <text x="698" y="657" font-family="Georgia, serif" font-size="16">?</text>
+    <path d="M738 652 Q750 638 762 652" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>
