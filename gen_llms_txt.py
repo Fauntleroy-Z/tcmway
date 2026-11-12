@@ -49,6 +49,7 @@ def main():
     lines.append("- [TCM Way home](https://tcmway.net/): Site home and latest articles.")
     lines.append("- [Archive](https://tcmway.net/archive.html): Full article archive.")
     lines.append("- [Sleep and Energy reading path](https://tcmway.net/sleep-energy.html): A guided path through TCM ideas about broken sleep, the body clock, restorative rest, long-term energy, and medical warning signs.")
+    lines.append("- [Cold and Circulation reading path](https://tcmway.net/cold-circulation.html): A guided path through TCM ideas about cold hands, cold feet, warmth, circulation, long-term energy, and medical warning signs.")
     lines.append("- [Podcast — East & Inner with Ollie](https://tcmway.net/podcast/): Audio podcast,")
     lines.append("  one episode per blog article, plus an RSS feed at /podcast/feed.xml.")
     lines.append("- [About](https://tcmway.net/about.html): What TCM Way is and who writes it.")
