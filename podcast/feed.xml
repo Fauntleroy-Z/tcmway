@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a lifelong student of Chinese medicine who reads the classics so you don't have to. New episodes weekly.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Sat, 07 Nov 2026 15:28:00 +0800</lastBuildDate>
+  <lastBuildDate>Sat, 14 Nov 2026 18:20:29 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -30,6 +30,20 @@
     <itunes:name>Ollie</itunes:name>
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
+
+  <!-- ===== EP23 ===== -->
+  <item>
+    <title><![CDATA[Ep23: Blood and the Mind]]></title>
+    <link>https://tcmway.net/posts/70-blood-is-not-just-red-liquid.html</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep23.mp3</guid>
+    <pubDate>Sat, 14 Nov 2026 18:20:29 +0800</pubDate>
+    <description><![CDATA[A normal blood count can sit beside fatigue, dry eyes, restless sleep, a late period, and a two-thirty waking. This episode separates laboratory blood from the traditional map of Xue, follows the Heart-Shen and Liver-ethereal soul connection, traces the classical Blood formation relay, and compares Blood Deficiency, Stasis, and Heat. It also examines why one waking time cannot establish a pattern, why iron should not be taken on a guess, the warning signs that need medical care, and a seven-day observation exercise. Based on the TCM Way article "Blood Is Not Just Red Liquid." 📖 Read the article: https://tcmway.net/posts/70-blood-is-not-just-red-liquid.html]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep23.mp3" length="20460716" type="audio/mpeg"/>
+    <itunes:duration>1279</itunes:duration>
+    <itunes:episode>23</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
 
   <!-- ===== EP22 ===== -->
   <item>
