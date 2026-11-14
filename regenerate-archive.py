@@ -110,6 +110,15 @@ def scan_articles():
             is_note = False
         with open(f) as fh:
             html = fh.read()
+        # Trust gate: noindex pages stay publicly accessible for transparency,
+        # but must not be re-added to archive, categories, homepage, or RSS.
+        if re.search(
+            r'<meta\s+name=["\']robots["\']\s+content=["\'][^"\']*\bnoindex\b',
+            html,
+            re.I,
+        ):
+            print(f"  ⏭ 跳过编辑复审中的 noindex 文章: {os.path.basename(f)}")
+            continue
         # 2026-08-27 修复：h1 内含 <br> 时旧正则 `([^<]+)` 匹配失败，
         # 会回退取到第一个 h2（章节小标题），导致 archive 显示错误标题。
         # 改以 <title> 标签为索引标题源（archive/RSS/分类页三者一致）；
@@ -432,6 +441,16 @@ def sync_rss(articles):
 
     seen = set()
     out_items = []
+    noindex_guids = set()
+    for p in glob.glob(os.path.join(POSTS_DIR, "*.html")):
+        with open(p, encoding="utf-8") as f:
+            html = f.read()
+        if re.search(
+            r'<meta\s+name=["\']robots["\']\s+content=["\'][^"\']*\bnoindex\b',
+            html,
+            re.I,
+        ):
+            noindex_guids.add(f'https://tcmway.net/posts/{os.path.basename(p)}')
 
     for art in sorted(articles.values(), key=lambda a: (a["date_obj"], a["num"]), reverse=True):
         guid = f'https://tcmway.net/posts/{art["file"]}'
@@ -466,7 +485,7 @@ def sync_rss(articles):
     # 防御性兜底：保留 posts/ 中已不存在的历史 item（不应发生）
     for it in items:
         g = re.search(r'<guid>(.*?)</guid>', it)
-        if g and g.group(1) not in seen:
+        if g and g.group(1) not in seen and g.group(1) not in noindex_guids:
             seen.add(g.group(1))
             out_items.append(it)
 

@@ -16,6 +16,7 @@
 - [Podcast — East & Inner with Ollie](https://tcmway.net/podcast/): Audio podcast,
   one episode per blog article, plus an RSS feed at /podcast/feed.xml.
 - [About](https://tcmway.net/about.html): What TCM Way is and who writes it.
+- [Editorial Policy](https://tcmway.net/editorial-policy.html): Authorship, source standards, AI use, corrections, independence, and medical boundaries.
 
 ## Articles
 
@@ -60,7 +61,6 @@
 - [Eat With The Sun: The TCM Clock For Food](https://tcmway.net/posts/34-eat-with-the-sun-the-tcm-clock-for-food.html): TCM's Meridian Clock says each organ has a 2-hour peak window — and eating in sync with it could be the simplest energy hack you've never tr
 - [How Ancient China Survived Summer Without AC](https://tcmway.net/posts/33-how-ancient-china-survived-summer-without-air-conditioning.html): On Xiaoshu (Minor Heat): how ancient China organized summer around the body — mung bean soup, midday naps, and heat lessons that still work.
 - [Your Anxiety Is Not in Your Head — The Liver Qi Link](https://tcmway.net/posts/32-your-anxiety-is-not-in-your-head-understanding-the-liver-qi-connection.html): Why your anxiety keeps coming back. The TCM Liver Qi Stagnation explanation — from chest tightness to PMS to 3 AM insomnia.
-- [How a Cold Becomes Cancer (Over Years)](https://tcmway.net/posts/31-how-a-cold-becomes-cancer.html): How a cold suppressed at the surface becomes cancer decades later. The Shanghan Lun six-stage map.
 - [When the Body Reaches Its Last Line — The Jueyin Stage](https://tcmway.net/posts/30-when-the-body-reaches-its-last-line.html): Hot flashes and ice-cold feet? Wired but exhausted? The Jueyin stage explains why your body feels like civil war — and what an old formula c
 - [The Fire Inside You Is Going Out](https://tcmway.net/posts/29-the-fire-inside-you-is-going-out.html): Always cold, bone-tired, and told everything is normal? TCM Life Gate Fire explains why your body pilot light is flickering
 - [Why Yang Tonics Are Not About Heat](https://tcmway.net/posts/28-yang-tonics-not-about-heat.html): Modern medicine fights symptoms. TCM warms the furnace. Why chronic inflammation, fatigue, and cold are not battles to win but fires to reki
@@ -83,7 +83,6 @@
 - [It's Just a Cold — Why That Sentence Is Dangerous](https://tcmway.net/posts/11-cold-is-never-just-a-cold.html): Everyone says 'it's just a cold' and pops a pill. Chinese medicine sees a pathogen marching through your defenses — and it doesn't forget wh
 - [Stop Feeding What You're Trying to Fight](https://tcmway.net/posts/10-stop-feeding-what-you-fight.html): You spend $50 a month on vitamins. Chinese medicine asks: who else are you feeding? The insight that nutrition doesn't pick sides — and what
 - [The Castle Inside You: Your Body's 6-Layer Defense](https://tcmway.net/posts/09-six-layer-defense.html): Your body doesn't just 'get sick.' It fights through six layers of defense, like an ancient castle. The map changes how you read every cold 
-- [Why Your Cold Hands Are Warning You](https://tcmway.net/posts/08-why-cold-hands-warn-you.html): Cold hands aren't just 'poor circulation.' In TCM, they're an early warning system — and the most important cancer prevention sign you alrea
 - [6 Signs You're Actually Healthy — Beyond Lab Results](https://tcmway.net/posts/07-six-signs-of-health.html): Your bloodwork came back 'normal.' So why do you still feel off? TCM's six health standards can catch problems years before any lab test.
 - [Don't Zip Up Yet: The Old Chinese Rule for Autumn](https://tcmway.net/posts/fn07-dont-zip-up-yet.html): The old Chinese rule for early autumn: chun wu qiu dong — don't rush into the heavy coat. A Field Note on layers and the season of gathering
 - [That Heavy Feeling in Your Limbs? It's Not Laziness](https://tcmway.net/posts/06-that-heavy-feeling-its-not-laziness.html): Your arms feel like lead. You've been called lazy your whole life. TCM says it's not willpower — it's your Spleen asking for help, not judgm

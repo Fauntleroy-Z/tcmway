@@ -57,13 +57,6 @@
   </url>
 
 <url>
-    <loc>https://tcmway.net/posts/08-why-cold-hands-warn-you.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
     <loc>https://tcmway.net/posts/09-six-layer-defense.html</loc>
     <lastmod>2026-04-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -206,13 +199,6 @@
 <url>
     <loc>https://tcmway.net/posts/29-the-fire-inside-you-is-going-out.html</loc>
     <lastmod>2026-06-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/posts/31-how-a-cold-becomes-cancer.html</loc>
-    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -562,9 +548,16 @@
 
 <url>
     <loc>https://tcmway.net/about.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+<url>
+    <loc>https://tcmway.net/editorial-policy.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 <url>

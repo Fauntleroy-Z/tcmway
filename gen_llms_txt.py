@@ -56,6 +56,7 @@ def main():
     lines.append("- [Podcast — East & Inner with Ollie](https://tcmway.net/podcast/): Audio podcast,")
     lines.append("  one episode per blog article, plus an RSS feed at /podcast/feed.xml.")
     lines.append("- [About](https://tcmway.net/about.html): What TCM Way is and who writes it.")
+    lines.append("- [Editorial Policy](https://tcmway.net/editorial-policy.html): Authorship, source standards, AI use, corrections, independence, and medical boundaries.")
     lines.append("")
 
     lines.append("## Articles")
@@ -77,7 +78,17 @@ def main():
         glob.glob(os.path.join(ROOT, "posts", "*.html")),
         key=sort_key,
     )
+    discoverable_posts = []
     for p in posts:
+        with open(p, encoding="utf-8") as f:
+            source = f.read()
+        if re.search(
+            r'<meta\s+name=["\']robots["\']\s+content=["\'][^"\']*\bnoindex\b',
+            source,
+            re.I,
+        ):
+            continue
+        discoverable_posts.append(p)
         slug = os.path.basename(p)
         t = title_of(p)
         d = desc_of(p)
@@ -89,7 +100,7 @@ def main():
     out = os.path.join(ROOT, "llms.txt")
     with open(out, "w", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
-    print(f"llms.txt 生成完成：{len(posts)} 篇文章")
+    print(f"llms.txt 生成完成：{len(discoverable_posts)} 篇可索引文章（跳过 noindex）")
 
 
 if __name__ == "__main__":
