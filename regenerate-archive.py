@@ -355,16 +355,15 @@ def update_homepage(cat_map, articles):
         hero_excerpt = r'(<div class="hero-title">[^<]*</div>)(\s*)'
         html = re.sub(hero_excerpt, rf'\g<1>\n    <div class="hero-excerpt">{art["excerpt"]}</div>\2', html, count=1)
 
-    # --- Recent posts: rebuild 5 most recent, including the hero article ---
-    # 现行发布门禁（G4）要求最新文章同时出现在 Hero 与 Recent。
-    # 2026-10-27 修复：旧 [1:6] 会在 CI 重建时把首页最新文章入口移除，
-    # 导致本地 G4 PASS，但部署后的首页只剩 Hero 一处。
+    # --- Recent posts: rebuild the next 5 after the hero ---
+    # The hero owns the latest article. Recent must start at #2 so the same
+    # article never appears twice on the homepage.
     recent_nums = [
         a["num"] for a in sorted(
             articles.values(),
             key=lambda a: (a["date_obj"], a["num"]),
             reverse=True,
-        )[:5]
+        )[1:6]
     ]
     recent_pattern = r'(<!-- ═══ RECENT POSTS ═══ -->\n<h2[^>]*>Recent Articles</h2>\n\n).*?(<div class="view-all">)'
     recent_html = '\n'.join([
