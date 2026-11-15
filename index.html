@@ -12,7 +12,7 @@
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-G9S528TPWH');</script>
 
 <meta charset="UTF-8">
-<meta name="p:domain_verify" content="bb7223a30fb9fe953d5a2f7068a3e9c3"/>
+<meta name="p:domain_verify" content="bb7223a30fb9fe953d5a2f7068a3e9c3">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/brand/favicon.png">
 <title>TCM Way — Ancient Wisdom, Told Warmly</title>
@@ -89,6 +89,18 @@
     margin-bottom: 0.4rem;
   }
 
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"TCM Way","url":"https://tcmway.net/","description":"Ancient wisdom, modern life — classical Chinese medicine translated for the modern mind."},{"@type":"Organization","name":"TCM Way","url":"https://tcmway.net/","logo":"https://tcmway.net/images/brand/logo-tcmway-header.png"}]}
@@ -111,7 +123,8 @@
 </header>
 
 <!-- ═══ CATEGORY CARDS ═══ -->
-<section class="category-cards">
+<section class="category-cards" aria-labelledby="category-heading">
+  <h2 id="category-heading" class="sr-only">Explore TCM Way by theme</h2>
   <a href="/category/foundations.html">
     <div class="card-title">Foundations</div>
     <div class="card-desc">Qi · Yin-Yang · Five Elements · Diagnosis</div>
@@ -160,7 +173,7 @@
 
 <section aria-labelledby="recently-revised" style="margin:0 0 2.5rem;padding:1.25rem 1.4rem;background:#fffaf5;border:1px solid var(--border);border-left:5px solid var(--accent);border-radius:8px">
   <p style="margin:0 0 .35rem;color:var(--accent);font-family:-apple-system,sans-serif;font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase">Recently revised</p>
-  <h2 style="margin:0 0 .45rem;font-size:1.15rem;line-height:1.45"><a href="posts/08-why-cold-hands-warn-you.html" style="color:var(--text);text-decoration:none">Cold Hands: What TCM Notices — and What It Cannot Tell You</a></h2>
+  <h2 id="recently-revised" style="margin:0 0 .45rem;font-size:1.15rem;line-height:1.45"><a href="posts/08-why-cold-hands-warn-you.html" style="color:var(--text);text-decoration:none">Cold Hands: What TCM Notices — and What It Cannot Tell You</a></h2>
   <p style="margin:0;color:var(--subtle);font-size:.92rem;line-height:1.7">This early article has been substantially rewritten to separate a traditional pattern inquiry from medical diagnosis and to state clearly when cold hands need medical assessment.</p>
 </section>
 
@@ -199,7 +212,8 @@
 </div>
 
 <!-- ═══ SUBSCRIBE ═══ -->
-<section class="subscribe-box">
+<section class="subscribe-box" aria-labelledby="newsletter-heading">
+  <h2 id="newsletter-heading" class="sr-only">Subscribe to Letters from TCM Way</h2>
   <p style="font-size:.85rem;color:var(--subtle);margin-bottom:.3rem">✉️ Letters from TCM Way</p>
   <p style="font-size:1.05rem;margin-bottom:.8rem"><strong>Letters on classical Chinese medicine,</strong> delivered to your inbox.</p>
   <p style="font-size:.88rem;color:var(--subtle);margin-bottom:1.2rem">No spam. No hype. Just one carefully written letter at a time.</p>
