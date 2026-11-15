@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
     <loc>https://tcmway.net/</loc>
-    <lastmod>2026-11-14</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -52,6 +52,13 @@
 <url>
     <loc>https://tcmway.net/posts/07-six-signs-of-health.html</loc>
     <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+<url>
+    <loc>https://tcmway.net/posts/08-why-cold-hands-warn-you.html</loc>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -547,20 +554,6 @@
   </url>
 
 <url>
-    <loc>https://tcmway.net/about.html</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/editorial-policy.html</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-<url>
     <loc>https://tcmway.net/archive.html</loc>
     <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -631,20 +624,6 @@
   </url>
 
 <url>
-    <loc>https://tcmway.net/start-here.html</loc>
-    <lastmod>2026-11-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-<url>
-    <loc>https://tcmway.net/sleep-energy.html</loc>
-    <lastmod>2026-11-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-<url>
     <loc>https://tcmway.net/cold-circulation.html</loc>
     <lastmod>2026-11-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -659,6 +638,27 @@
   </url>
 
 <url>
+    <loc>https://tcmway.net/sleep-energy.html</loc>
+    <lastmod>2026-11-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<url>
+    <loc>https://tcmway.net/about.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<url>
+    <loc>https://tcmway.net/editorial-policy.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+<url>
     <loc>https://tcmway.net/mind-emotion.html</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -669,6 +669,13 @@
     <loc>https://tcmway.net/read-your-body.html</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+<url>
+    <loc>https://tcmway.net/start-here.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
