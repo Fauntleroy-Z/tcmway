@@ -47,6 +47,7 @@ CATEGORIES = {
             "72-the-kidney-essence-bank",
             "73-at-the-wrist-tcm-pulse-reading",
             "74-minor-snow",
+            "75-the-six-channels-are-not-a-disease-timeline",
             "fn01-drink-more-hot-water",
             "fn02-chu-shu-end-of-heat",
             "fn05-cupping-isnt-bruising", "fn06-your-spice-rack",

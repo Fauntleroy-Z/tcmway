@@ -6,7 +6,7 @@
     <link>https://tcmway.net/</link>
     <atom:link href="https://tcmway.net/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Nov 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 00:00:00 +0800</lastBuildDate>
     <image>
   <url>https://tcmway.net/images/brand/logo-tcmway-header.png</url>
   <title>TCM Way</title>
@@ -14,7 +14,14 @@
 </image>
 <generator>TCM Way</generator>
   
-                                              <item>
+                                                <item>
+    <title>The Six Channels Are Not a Disease Timeline</title>
+    <link>https://tcmway.net/posts/75-the-six-channels-are-not-a-disease-timeline.html</link>
+    <description>What the six channels in the Shang Han Lun are, how patterns combine and shift, and why they cannot predict modern disease.</description>
+    <pubDate>Tue, 17 Nov 2026 00:00:00 +0800</pubDate>
+    <guid>https://tcmway.net/posts/75-the-six-channels-are-not-a-disease-timeline.html</guid>
+  </item>
+<item>
     <title>Minor Snow: The Old Calendar's Quiet Turn Toward Winter</title>
     <link>https://tcmway.net/posts/74-minor-snow.html</link>
     <description>What Minor Snow means in the traditional calendar, from solar longitude and seasonal storage to TCM's winter metaphor and its medical limits.</description>
