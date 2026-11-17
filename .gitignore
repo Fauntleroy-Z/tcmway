@@ -45,3 +45,6 @@ _preview/
 _screenshots/
 assets/*.zip
 _site/
+
+# 漫游图审稿暂存（2026-11-17：7.9MB 未审图，禁止进生产仓库）
+images/brand/journeys/_bailian-review/
