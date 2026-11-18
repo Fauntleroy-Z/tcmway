@@ -46,3 +46,15 @@ images/pins/
 podcast/assets/bgm/
 podcast/fixed-disclaimer.mp3
 podcast/fixed-outro.mp3
+
+# 零站内引用的素材源图与审阅副本（2026-11-19 Shadow 增加；站点引用的是
+# webp/生产版 .jpg/.png，以下为社交源图、节气源 PNG、百炼审阅副本与未使用源图，
+# 本地保留供社交/Pinterest/设计工作流使用，不出网）
+images/ollie-promo/
+images/solar-terms/
+images/brand/journeys/_bailian-review/
+images/brand/pendant-pure.png
+images/ollie-v3-standard.png
+images/podcast-cover.png
+images/podcast-cover.jpg
+images/short-chushu-bw.png
