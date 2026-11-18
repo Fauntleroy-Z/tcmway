@@ -262,6 +262,7 @@ def generate_archive(articles, cat_map, uncategorized=None):
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"TCM Way","url":"https://tcmway.net/","description":"Ancient wisdom, modern life — classical Chinese medicine translated for the modern mind."},{"@type":"Organization","name":"TCM Way","url":"https://tcmway.net/","logo":"https://tcmway.net/images/brand/logo-tcmway-header.png"}]}
 </script>
+<link rel="stylesheet" href="/css/mobile-accessibility.css?v=20261118-a11y">
 </head>
 <body>
 
@@ -277,6 +278,8 @@ def generate_archive(articles, cat_map, uncategorized=None):
     <a href="/about.html">About</a>
   </nav>
 </header>
+
+<main id="main-content">
 
 <p style="text-align:center;color:var(--subtle);margin-bottom:1.5rem">''' + str(len(articles)) + ''' articles · Browse by category or scroll through all</p>
 '''
@@ -307,6 +310,7 @@ def generate_archive(articles, cat_map, uncategorized=None):
         body += '</ul>\n'
 
     footer = '''
+</main>
 <footer>
   <p>&copy; 2026 TCM Way. All illustrations and written content are copyrighted.</p>
   <p><a href="/disclaimer.html">Medical Disclaimer</a> &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/rss.xml">RSS</a></p>

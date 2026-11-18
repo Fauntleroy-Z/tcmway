@@ -36,6 +36,9 @@ jobs:
       - name: Regenerate archive + counts
         run: python3 regenerate-archive.py
 
+      - name: Verify mobile accessibility migration is complete
+        run: python3 scripts/mobile-a11y-migrate.py --check
+
       # 2026-09-15：llms.txt 此前为 09-12 一次性生成，发布后从不刷新（#53/#54/#55/fn06 漏收）。
       # 并入 CI 自动流程，与 archive/rss/sitemap 同批落库（由下方 auto-commit 提交）。
       - name: Regenerate llms.txt
