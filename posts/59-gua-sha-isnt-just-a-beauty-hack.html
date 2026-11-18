@@ -49,6 +49,7 @@
   footer a{color:var(--accent);text-decoration:none}
   @media(max-width:600px){body{padding:0 1rem 2rem}header{padding:2rem 0 1.5rem}header .brand-name{font-size:1.5rem}article h1{font-size:1.6rem}}
 </style>
+<link rel="stylesheet" href="/css/mobile-accessibility.css?v=20261118-a11y">
 </head>
 <body>
 
@@ -64,6 +65,8 @@
     <a href="/about.html">About</a>
   </nav>
 </header>
+<main id="main-content">
+
 
 <article>
   <div class="meta">September 27, 2026 &middot; By Ollie &middot; 11 min read</div>
@@ -82,7 +85,7 @@
 <p>Ollie watched from a cupboard top, one ear tuft angled toward the spoon. He looked sleepy enough to approve of anything that started after breakfast.</p>
 
 <figure class="featured-figure">
-<img class="comic-break" src="/images/comic-59-bw.webp" width="800" height="800" alt="Ollie the screech owl and gua sha: the kitchen spoon, the old tools and texts, the scrape on oiled skin, and the modern jade stone, in four panels" loading="lazy">
+<img class="comic-break" src="/images/comic-59-bw.webp" width="800" height="800" alt="Ollie the screech owl and gua sha: the kitchen spoon, the old tools and texts, the scrape on oiled skin, and the modern jade stone, in four panels" loading="eager" fetchpriority="high">
   <figcaption>The kitchen spoon, the old lineage, the tissue under the scrape, and the wall between the clinic and the vanity.</figcaption>
 </figure>
 
@@ -241,11 +244,13 @@
 <!-- SHARE -->
   <p style="color:#555;font-size:0.9rem;margin-bottom:2rem;">Share on <a href="https://twitter.com/intent/tweet?url=https://tcmway.net/posts/59-gua-sha-isnt-just-a-beauty-hack.html" style="color:var(--accent);">Twitter</a> · <a href="https://reddit.com/submit?url=https://tcmway.net/posts/59-gua-sha-isnt-just-a-beauty-hack.html" style="color:var(--accent);">Reddit</a> · <a href="mailto:?subject=Gua%20Sha%20Isn%27t%20a%20Beauty%20Hack&body=https://tcmway.net/posts/59-gua-sha-isnt-just-a-beauty-hack.html" style="color:var(--accent);">Email</a></p>
 
+
+</main>
 <footer>
   <p>&copy; 2026 TCM Way &middot; <a href="/disclaimer.html">Medical Disclaimer</a> &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/rss.xml">RSS</a></p>
 </footer>
 
-<script src="/js/listen.js?v=20261111-analytics"></script>
+<script src="/js/listen.js?v=20261118-a11y"></script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",

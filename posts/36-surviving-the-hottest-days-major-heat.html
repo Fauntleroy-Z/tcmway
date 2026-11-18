@@ -71,6 +71,7 @@
     .brand-symbol { width: 100px; }
   }
 </style>
+<link rel="stylesheet" href="/css/mobile-accessibility.css?v=20261118-a11y">
 </head>
 <body>
 
@@ -86,6 +87,8 @@
     <a href="/about.html">About</a>
   </nav>
 </header>
+<main id="main-content">
+
 
 <article>
 <h1>Surviving the Hottest Days on Earth: What Ancient China Knew About Major Heat (大暑)</h1>
@@ -229,7 +232,7 @@
   <img src="/images/brand/pendant-mini-40.png" alt="" width="22" height="22">
   <span>Ollie's Take</span>
 </div>
-<img class="comic-break" src="/images/comic-36-bw.webp" width="800" height="800" alt="Ollie the screech owl survives Major Heat with winter melon and coix seed soup" loading="lazy">
+<img class="comic-break" src="/images/comic-36-bw.webp" width="800" height="800" alt="Ollie the screech owl survives Major Heat with winter melon and coix seed soup" loading="eager" fetchpriority="high">
 
 <p><em>"The thermometer says 40°C, but your Spleen says 'please, no more ice.' Listen to the Spleen. It's been doing this for thousands of years longer than your refrigerator."</em></p>
 <h2>FAQ</h2>
@@ -338,8 +341,10 @@
 }
 </script>
 
-<script src="/js/listen.js?v=20261111-analytics"></script>
+<script src="/js/listen.js?v=20261118-a11y"></script>
 
+
+</main>
 <footer>
   <p>&copy; 2026 TCM Way &middot; <a href="/disclaimer.html">Medical Disclaimer</a> &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/rss.xml">RSS</a></p>
 </footer>

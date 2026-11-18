@@ -1,0 +1,97 @@
+/*
+ * Shared mobile accessibility corrections.
+ * Loaded after each page's inline styles so these tokens and focus cues
+ * override older page-level copies without changing article content.
+ */
+:root {
+  --subtle: #705840 !important;
+  --muted: #705840 !important;
+}
+
+main {
+  display: block;
+}
+
+/* Decorative apricot remains in borders and rules; text uses a darker tone. */
+.card-count,
+.hero-meta,
+.tl-dr::before {
+  color: #93452b !important;
+}
+
+footer span[style*="color:#997a5c"] {
+  color: var(--subtle) !important;
+}
+
+.listen-tts-btn .hint {
+  color: #93452b !important;
+  opacity: 1 !important;
+}
+
+/* Legacy lead-magnet and podcast templates still contain hard-coded colours. */
+main .sub,
+main .form-box p,
+main .privacy,
+main .ollie,
+footer p,
+main nav a,
+main .tagline,
+main h2.sec,
+main .ep-info .date {
+  color: var(--subtle) !important;
+}
+
+main .ep-num {
+  color: #8a4e2d !important;
+}
+
+main .btn-spotify {
+  background: #0b6b2e !important;
+}
+
+main .btn-youtube {
+  background: #b00000 !important;
+}
+
+main .confirm-card .note a {
+  color: #93452b !important;
+  text-decoration: underline !important;
+}
+
+/* Links inside prose need a non-colour cue as well as sufficient contrast. */
+main p a:not([data-cta]):not(.button):not(.button-link),
+.medical-disclaimer a {
+  text-decoration: underline !important;
+  text-underline-offset: 0.15em;
+}
+
+/* The old 70% footer opacity reduced an otherwise compliant text colour. */
+[style*="opacity:.7"],
+[style*="opacity: 0.7"] {
+  opacity: 1 !important;
+}
+
+.view-all a:hover,
+footer a:hover {
+  color: #93452b !important;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #93452b;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

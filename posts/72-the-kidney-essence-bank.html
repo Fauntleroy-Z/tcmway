@@ -48,6 +48,7 @@
   footer a{color:var(--accent);text-decoration:none}
   @media(max-width:600px){body{padding:0 1rem 2rem}header{padding:2rem 0 1.5rem}header .brand-name{font-size:1.5rem}article h1{font-size:1.6rem}}
 </style>
+<link rel="stylesheet" href="/css/mobile-accessibility.css?v=20261118-a11y">
 </head>
 <body>
 
@@ -63,6 +64,8 @@
     <a href="/about.html">About</a>
   </nav>
 </header>
+<main id="main-content">
+
 
 <article>
 <h1>The Kidney Essence Bank: Why TCM Treats Vitality as a Long-Term Reserve</h1>
@@ -81,7 +84,7 @@
 </div>
 
 <figure class="featured-figure">
-<img class="comic-break" src="/images/comic-72-bw.webp" alt="Ollie the screech owl explains Kidney Essence through the long view, inherited and acquired nourishment, laboratory limits, and winter rest" width="800" height="800" loading="lazy">
+<img class="comic-break" src="/images/comic-72-bw.webp" alt="Ollie the screech owl explains Kidney Essence through the long view, inherited and acquired nourishment, laboratory limits, and winter rest" width="800" height="800" loading="eager" fetchpriority="high">
 <figcaption>Kidney Essence is a traditional idea about long-term reserve, not a number on a lab report.</figcaption>
 </figure>
 
@@ -250,11 +253,13 @@
 <!-- SHARE -->
   <p style="color:#555;font-size:0.9rem;margin-bottom:2rem;">Share on <a href="https://twitter.com/intent/tweet?url=https://tcmway.net/posts/72-the-kidney-essence-bank.html" style="color:var(--accent);">Twitter</a> · <a href="https://reddit.com/submit?url=https://tcmway.net/posts/72-the-kidney-essence-bank.html" style="color:var(--accent);">Reddit</a> · <a href="mailto:?subject=The%20Kidney%20Essence%20Bank%3A%20Why%20TCM%20Treats%20Vitality%20as%20a%20Long-Term%20Reserve&body=https://tcmway.net/posts/72-the-kidney-essence-bank.html" style="color:var(--accent);">Email</a></p>
 
+
+</main>
 <footer>
   <p>&copy; 2026 TCM Way &middot; <a href="/disclaimer.html">Medical Disclaimer</a> &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/rss.xml">RSS</a></p>
 </footer>
 
-<script src="/js/listen.js?v=20261111-analytics"></script>
+<script src="/js/listen.js?v=20261118-a11y"></script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",

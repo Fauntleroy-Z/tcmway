@@ -47,6 +47,7 @@
   footer a{color:var(--accent);text-decoration:none}
   @media(max-width:600px){body{padding:0 1rem 2rem}header{padding:2rem 0 1.5rem}header .brand-name{font-size:1.5rem}article h1{font-size:1.6rem}}
 </style>
+<link rel="stylesheet" href="/css/mobile-accessibility.css?v=20261118-a11y">
 </head>
 <body>
 
@@ -62,6 +63,8 @@
     <a href="/about.html">About</a>
   </nav>
 </header>
+<main id="main-content">
+
 
 <article>
   <div class="meta">August 7, 2026 &middot; By Ollie &middot; 10 min read</div>
@@ -108,7 +111,7 @@ The ancient medical text, the <a href="/posts/42-the-season-of-letting-go-autumn
 </div>
 
 <figure class="featured-figure">
-  <img class="comic-break" src="/images/comic-44-bw.webp" width="800" height="800" alt="Ollie the screech owl welcomes Li Qiu — the first pear, the fattening feast, and the first cool evening" loading="lazy">
+  <img class="comic-break" src="/images/comic-44-bw.webp" width="800" height="800" alt="Ollie the screech owl welcomes Li Qiu — the first pear, the fattening feast, and the first cool evening" loading="eager" fetchpriority="high">
   <figcaption>Li Qiu arrives — the first pear, the fattening feast, and the first cool evening.</figcaption>
 </figure>
 
@@ -216,6 +219,8 @@ So as you go about your day, even if it’s hot and sticky, take a moment. Notic
 <!-- SHARE -->
   <p style="color:#555;font-size:0.9rem;margin-bottom:2rem;">Share on <a href="https://twitter.com/intent/tweet?url=https://tcmway.net/posts/44-li-qiu-beginning-of-autumn-pears.html" style="color:var(--accent);">Twitter</a> · <a href="https://reddit.com/submit?url=https://tcmway.net/posts/44-li-qiu-beginning-of-autumn-pears.html" style="color:var(--accent);">Reddit</a> · <a href="mailto:?subject=Eat%20With%20The%20Sun%3A%20The%20TCM%20Clock%20For%20Food&body=https://tcmway.net/posts/44-li-qiu-beginning-of-autumn-pears.html" style="color:var(--accent);">Email</a></p>
 
+
+</main>
 <footer>
   <p>&copy; 2026 TCM Way &middot; <a href="/disclaimer.html">Medical Disclaimer</a> &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/rss.xml">RSS</a></p>
 </footer>
@@ -264,6 +269,6 @@ So as you go about your day, even if it’s hot and sticky, take a moment. Notic
   ]
 }
 </script>
-<script src="/js/listen.js?v=20261111-analytics"></script>
+<script src="/js/listen.js?v=20261118-a11y"></script>
 </body>
 </html>

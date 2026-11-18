@@ -48,6 +48,7 @@
   footer a{color:var(--accent);text-decoration:none}
   @media(max-width:600px){body{padding:0 1rem 2rem}header{padding:2rem 0 1.5rem}header .brand-name{font-size:1.5rem}article h1{font-size:1.6rem}}
 </style>
+<link rel="stylesheet" href="/css/mobile-accessibility.css?v=20261118-a11y">
 </head>
 <body>
 
@@ -63,6 +64,8 @@
     <a href="/about.html">About</a>
   </nav>
 </header>
+<main id="main-content">
+
 
 <article>
   <div class="meta">October 1, 2026 &middot; By Ollie &middot; 11 min read</div>
@@ -81,7 +84,7 @@
 <p>Ollie, our resident screech owl, once watched me take one of those quizzes. He blinked twice, then went back to arranging his feathers — which I have chosen to interpret as a review.</p>
 
 <figure class="featured-figure">
-<img class="comic-break" src="/images/comic-61-bw.webp" width="800" height="800" alt="Ollie the screech owl and the five-pattern map: five phase symbols, three body builds, a seasonal dial, and a mirror, in four panels" loading="lazy">
+<img class="comic-break" src="/images/comic-61-bw.webp" width="800" height="800" alt="Ollie the screech owl and the five-pattern map: five phase symbols, three body builds, a seasonal dial, and a mirror, in four panels" loading="eager" fetchpriority="high">
   <figcaption>Five patterns, the seasons around them, and a mirror — the old typology at a glance.</figcaption>
 </figure>
 
@@ -237,11 +240,13 @@
 <!-- SHARE -->
   <p style="color:#555;font-size:0.9rem;margin-bottom:2rem;">Share on <a href="https://twitter.com/intent/tweet?url=https://tcmway.net/posts/61-are-you-wood-fire-earth-metal-or-water.html" style="color:var(--accent);">Twitter</a> · <a href="https://reddit.com/submit?url=https://tcmway.net/posts/61-are-you-wood-fire-earth-metal-or-water.html" style="color:var(--accent);">Reddit</a> · <a href="mailto:?subject=Are%20You%20Wood%2C%20Fire%2C%20Earth%2C%20Metal%2C%20or%20Water%3F&body=https://tcmway.net/posts/61-are-you-wood-fire-earth-metal-or-water.html" style="color:var(--accent);">Email</a></p>
 
+
+</main>
 <footer>
   <p>&copy; 2026 TCM Way &middot; <a href="/disclaimer.html">Medical Disclaimer</a> &middot; <a href="/privacy.html">Privacy</a> &middot; <a href="/contact.html">Contact</a> &middot; <a href="/rss.xml">RSS</a></p>
 </footer>
 
-<script src="/js/listen.js?v=20261111-analytics"></script>
+<script src="/js/listen.js?v=20261118-a11y"></script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "BlogPosting",

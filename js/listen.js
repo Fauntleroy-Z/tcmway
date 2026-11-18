@@ -115,7 +115,8 @@
     const btn = document.createElement('button');
     btn.className = 'listen-tts-btn';
     btn.innerHTML = '<span class="icon">🔊</span><span class="label">Listen</span><span class="hint">· TTS</span>';
-    btn.setAttribute('aria-label', 'Listen to this article with text-to-speech');
+    btn.setAttribute('aria-label', 'Listen · TTS: read this article aloud');
+    btn.setAttribute('aria-pressed', 'false');
     btn.setAttribute('title', 'Click to listen · Click again to stop');
     return btn;
   }
@@ -204,6 +205,8 @@
         speaking = true;
         btn.classList.add('playing');
         btn.innerHTML = '<span class="icon">⏸️</span><span class="label">Stop</span>';
+        btn.setAttribute('aria-label', 'Stop reading this article aloud');
+        btn.setAttribute('aria-pressed', 'true');
         trackEvent('listen_tts_start', { cta_position: 'article_header' });
       };
 
@@ -222,6 +225,8 @@
       speaking = false;
       b.classList.remove('playing');
       b.innerHTML = '<span class="icon">🔊</span><span class="label">Listen</span><span class="hint">· TTS</span>';
+      b.setAttribute('aria-label', 'Listen · TTS: read this article aloud');
+      b.setAttribute('aria-pressed', 'false');
     }
   }
 
