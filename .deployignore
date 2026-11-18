@@ -38,3 +38,11 @@ demo_tcm_illustration.png
 # 播客内部资料：逐字稿 + YouTube 母带（epNN.mp3 音频保留发布）
 podcast/scripts/
 podcast/youtube/
+
+# 内部素材与来源资产（2026-11-19 Shadow 增加；站内 HTML/XML/CSS/JS 零引用，
+# 本地保留供 Pinterest/社交/播客制作使用，不出网）
+images/_backup_before_crop/
+images/pins/
+podcast/assets/bgm/
+podcast/fixed-disclaimer.mp3
+podcast/fixed-outro.mp3
