@@ -4,6 +4,7 @@ Run after every new article push. No hardcoded numbers.
 """
 import os, re, glob, json
 from datetime import datetime
+from xml.sax.saxutils import escape as xml_escape
 
 BLOG = os.environ.get("GITHUB_WORKSPACE", os.path.expanduser("~/tcmway-blog"))
 POSTS_DIR = os.path.join(BLOG, "posts")
@@ -515,6 +516,55 @@ def sync_rss(articles):
     print(f"✅ rss.xml synced — {len(out_items)} items")
 
 
+def sync_sitemap(articles, sitemap_path=None):
+    """Keep sitemap article URLs in sync with the noindex-aware scan.
+
+    Static pages retain their existing order and metadata. Article entries are
+    rebuilt deterministically in stable article-number order so local runs and
+    GitHub Actions produce the same file.
+    """
+    path = sitemap_path or os.path.join(BLOG, "sitemap.xml")
+    if not os.path.exists(path):
+        print("⚠️  sitemap.xml not found")
+        return
+    with open(path, encoding="utf-8") as f:
+        sitemap = f.read()
+
+    header_match = re.search(r'(<\?xml.*?<urlset[^>]*>)', sitemap, re.S)
+    if not header_match or "</urlset>" not in sitemap:
+        print("⚠️  sitemap.xml has an unexpected root structure; skipped")
+        return
+
+    static_blocks = []
+    for block in re.findall(r'  <url>.*?  </url>', sitemap, re.S):
+        loc_match = re.search(r'<loc>(.*?)</loc>', block, re.S)
+        if loc_match and "/posts/" not in loc_match.group(1):
+            static_blocks.append(block.rstrip())
+
+    post_blocks = []
+    for art in sorted(articles.values(), key=lambda a: a["num"]):
+        loc = f'https://tcmway.net/posts/{art["file"]}'
+        lastmod = art["date_obj"].strftime("%Y-%m-%d")
+        post_blocks.append(
+            "  <url>\n"
+            f"    <loc>{xml_escape(loc)}</loc>\n"
+            f"    <lastmod>{lastmod}</lastmod>\n"
+            "    <changefreq>monthly</changefreq>\n"
+            "    <priority>0.8</priority>\n"
+            "  </url>"
+        )
+
+    rebuilt = header_match.group(1) + "\n"
+    rebuilt += "\n".join(static_blocks + post_blocks)
+    rebuilt += "\n</urlset>\n"
+    if rebuilt != sitemap:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(rebuilt)
+        print(f"✅ sitemap.xml synced — {len(static_blocks)} static + {len(post_blocks)} posts")
+    else:
+        print(f"✅ sitemap.xml already synced — {len(static_blocks)} static + {len(post_blocks)} posts")
+
+
 # ─── Main ───
 def main():
     articles = scan_articles()
@@ -545,6 +595,7 @@ def main():
 
     # 2026-09-01：RSS 增量补全（防发布漏条目）
     sync_rss(articles)
+    sync_sitemap(articles)
 
 if __name__ == "__main__":
     main()
