@@ -30,6 +30,11 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
+# Local secrets (never commit)
+.env
+.env.*
+!.env.example
+
 # Internal working docs (moved out of deployment 2026-08-02)
 /docs/
 /QUALITY_AUDIT_*.md
