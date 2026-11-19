@@ -58,3 +58,13 @@ images/ollie-v3-standard.png
 images/podcast-cover.png
 images/podcast-cover.jpg
 images/short-chushu-bw.png
+
+# 已转 WebP 的旅程插画与头像 PNG（2026-11-20 Shadow；站点引用 .webp 版本，
+# 原 PNG 本地保留供重新编码/回滚，不出网）
+images/brand/journeys/bloomsbury.png
+images/brand/journeys/kyoto.png
+images/brand/journeys/lascaux.png
+images/brand/journeys/marrakech.png
+images/brand/journeys/notredame.png
+images/brand/journeys/silkroad.png
+images/ollie-warm-v3.png
