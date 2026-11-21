@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a lifelong student of Chinese medicine who reads the classics so you don't have to. New episodes weekly.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Sat, 14 Nov 2026 18:20:29 +0800</lastBuildDate>
+  <lastBuildDate>Sat, 21 Nov 2026 16:26:00 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -30,6 +30,20 @@
     <itunes:name>Ollie</itunes:name>
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
+
+  <!-- ===== EP24 ===== -->
+  <item>
+    <title><![CDATA[Ep24: The Wrist: What a Pulse Can and Cannot Tell You]]></title>
+    <link>https://tcmway.net/posts/73-at-the-wrist-tcm-pulse-reading.html</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep24.mp3</guid>
+    <pubDate>Sat, 21 Nov 2026 16:26:00 +0800</pubDate>
+    <description><![CDATA[An old palace story turns a pulse into theater: a silk thread is tied to a table leg, and the famous reader announces that the royal person is made of wood. The joke points to a deeper question. What can three fingers actually notice at the wrist? This episode explores the front, middle, and rear positions, changing pressure and poetic pulse qualities, the classical debate over where to read the pulse, and Li Shizhen's place for touch inside the four examinations. It also examines modern reliability research, the difference between agreement and accuracy, everyday situations such as coffee and stairs, clear safety limits, and a seven-day observation exercise. Based on the TCM Way article "At the Wrist: What TCM Pulse Reading Can and Cannot Tell You." 📖 Read the article: https://tcmway.net/posts/73-at-the-wrist-tcm-pulse-reading.html]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep24.mp3" length="20009132" type="audio/mpeg"/>
+    <itunes:duration>1251</itunes:duration>
+    <itunes:episode>24</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
 
   <!-- ===== EP23 ===== -->
   <item>
