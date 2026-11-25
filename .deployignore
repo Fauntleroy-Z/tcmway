@@ -68,3 +68,12 @@ images/brand/journeys/marrakech.png
 images/brand/journeys/notredame.png
 images/brand/journeys/silkroad.png
 images/ollie-warm-v3.png
+
+# 零站内引用的遗留壁纸与临时截图（2026-11-26 Shadow；Ollie's Corner 现行
+# 周更壁纸为 images/ollie-corner/wallpapers/ollie-*-w47.png，以下 assets/
+# 与 images/wallpapers/ 为旧风格变体与临时/用户截图，站内 HTML/CSS/JS/XML
+# 零引用，本地保留供设计/回滚，不出网）
+assets/wallpapers/
+assets/user-screenshot.jpg
+assets/tmp-screenshot.jpg
+images/wallpapers/
