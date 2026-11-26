@@ -49,7 +49,6 @@ CATEGORIES = {
             "73-at-the-wrist-tcm-pulse-reading",
             "74-minor-snow",
             "75-the-six-channels-are-not-a-disease-timeline",
-            "76-taiyang-and-wei-qi",
             "fn01-drink-more-hot-water",
             "fn02-chu-shu-end-of-heat",
             "fn05-cupping-isnt-bruising", "fn06-your-spice-rack",
@@ -62,7 +61,7 @@ CATEGORIES = {
         "desc": "Wind-cold, fever, the body's surface — the first line of defense.",
         "slugs": [
             "08-why-cold-hands", "09-six-layer-defense", "11-cold-is-never-just",
-            "22-wind-cold-is-not"
+            "22-wind-cold-is-not", "76-taiyang-and-wei-qi"
         ]
     },
     "yangming": {
@@ -71,7 +70,7 @@ CATEGORIES = {
         "desc": "Internal Heat · Dampness · Fever",
         "slugs": [
             "06-that-heavy-feeling", "23-your-fever-might", "25-yangming-fire",
-            "fn04-shang-huo-the-fire"
+            "fn04-shang-huo-the-fire", "77-yangming-heat-digestion-foundations"
         ]
     },
     "shaoyang": {
