@@ -97,6 +97,31 @@ CATEGORIES = {
 }
 
 # ─── Scan All Articles ───
+def sitemap_modified_date(html, published_date, today):
+    """Use the article's declared revision date when it is valid."""
+    for block in re.findall(
+        r'<script\b[^>]*\btype=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+        html,
+        re.I | re.S,
+    ):
+        try:
+            schema = json.loads(block)
+        except json.JSONDecodeError:
+            continue
+        if not isinstance(schema, dict) or schema.get("@type") not in ("Article", "BlogPosting"):
+            continue
+        raw_date = schema.get("dateModified")
+        if not isinstance(raw_date, str):
+            continue
+        try:
+            modified_date = datetime.fromisoformat(raw_date.replace("Z", "+00:00")).date()
+        except ValueError:
+            continue
+        if published_date <= modified_date <= today:
+            return modified_date
+    return published_date
+
+
 def scan_articles():
     articles = {}
     fn_counter = 200  # FN 短文伪编号起始（不占长文编号，archive 显示 FN01/FN02...）
@@ -186,6 +211,9 @@ def scan_articles():
             print(f"  ⏭ 跳过未来日期文章（未到发布日）: {os.path.basename(f)} ({articles[num]['date']})")
             del articles[num]
             continue
+        articles[num]["sitemap_lastmod"] = sitemap_modified_date(
+            html, articles[num]["date_obj"].date(), _today
+        )
     return articles
 
 
@@ -543,7 +571,7 @@ def sync_sitemap(articles, sitemap_path=None):
     post_blocks = []
     for art in sorted(articles.values(), key=lambda a: a["num"]):
         loc = f'https://tcmway.net/posts/{art["file"]}'
-        lastmod = art["date_obj"].strftime("%Y-%m-%d")
+        lastmod = art["sitemap_lastmod"].isoformat()
         post_blocks.append(
             "  <url>\n"
             f"    <loc>{xml_escape(loc)}</loc>\n"
