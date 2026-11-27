@@ -291,9 +291,10 @@ def generate_archive(articles, cat_map, uncategorized=None):
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"TCM Way","url":"https://tcmway.net/","description":"Ancient wisdom, modern life — classical Chinese medicine translated for the modern mind."},{"@type":"Organization","name":"TCM Way","url":"https://tcmway.net/","logo":"https://tcmway.net/images/brand/logo-tcmway-header.png"}]}
 </script>
-<link rel="stylesheet" href="/css/mobile-accessibility.css?v=20261118-a11y">
+<link rel="stylesheet" href="/css/mobile-accessibility.css?v=20261128-skip-link">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 
 <header>
   <img src="/images/brand/logo-tcmway-header.png" width="300" height="300" class="brand-symbol" alt="TCM Way">
@@ -308,7 +309,7 @@ def generate_archive(articles, cat_map, uncategorized=None):
   </nav>
 </header>
 
-<main id="main-content">
+<main id="main-content" tabindex="-1">
 
 <p style="text-align:center;color:var(--subtle);margin-bottom:1.5rem">''' + str(len(articles)) + ''' articles · Browse by category or scroll through all</p>
 '''

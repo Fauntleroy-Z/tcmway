@@ -12,6 +12,22 @@ main {
   display: block;
 }
 
+.skip-link {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  padding: 0.5rem 0.75rem;
+  background: #fff;
+  color: #3b2a1a;
+  text-decoration: underline;
+  clip-path: inset(50%);
+}
+
+.skip-link:focus {
+  clip-path: none;
+}
+
 /* Decorative apricot remains in borders and rules; text uses a darker tone. */
 .card-count,
 .hero-meta,
