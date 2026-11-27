@@ -27,12 +27,13 @@
       const href = link.getAttribute('href') || '';
       const linkUrl = link.href || href;
 
+      const hubCta = link.getAttribute('data-hub-cta');
       const isKitchenCta = link.matches('[data-cta="kitchen_pharmacy"]');
       const isSubscribeLink = /(?:#subscribe|\/subscribe\/|\/kitchen-pharmacy\/)/i.test(linkUrl);
-      if (isKitchenCta || isSubscribeLink) {
+      if (hubCta || isKitchenCta || isSubscribeLink) {
         trackEvent('newsletter_cta_click', {
-          cta_id: isKitchenCta ? 'kitchen_pharmacy' : 'subscribe',
-          cta_position: 'article',
+          cta_id: hubCta || (isKitchenCta ? 'kitchen_pharmacy' : 'subscribe'),
+          cta_position: hubCta ? 'hub' : 'article',
           link_url: linkUrl
         });
         return;

@@ -4,7 +4,7 @@
 This migration is intentionally idempotent. It:
 1. wraps page content in a single <main id="main-content"> landmark;
 2. loads /css/mobile-accessibility.css after inline page styles;
-3. bumps all listen.js cache keys to the current accessibility build.
+3. sets listen.js cache keys for the accessibility and Hub CTA releases.
 
 Usage:
   python3 scripts/mobile-a11y-migrate.py --check
@@ -21,6 +21,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CSS_LINK = '<link rel="stylesheet" href="/css/mobile-accessibility.css?v=20261118-a11y">'
 LISTEN_VERSION = "20261118-a11y"
+HUB_LISTEN_VERSION = "20261128-hub-cta"
 
 BODY_RE = re.compile(r"<body\b[^>]*>", re.IGNORECASE)
 BODY_END_RE = re.compile(r"</body\s*>", re.IGNORECASE)
@@ -68,16 +69,18 @@ def migrate_html(path: Path, text: str) -> tuple[str, list[str]]:
         text = text[:head_end.start()] + CSS_LINK + "\n" + text[head_end.start():]
         changes.append("css")
 
+    listen_version = HUB_LISTEN_VERSION if ' data-hub-cta="' in text else LISTEN_VERSION
+
     def replace_listen(match: re.Match[str]) -> str:
-        if match.group(2) == LISTEN_VERSION:
+        if match.group(2) == listen_version:
             return match.group(0)
-        return match.group(1) + LISTEN_VERSION
+        return match.group(1) + listen_version
 
     bumped, _ = LISTEN_RE.subn(replace_listen, text)
     count = sum(
         1
         for match in LISTEN_RE.finditer(text)
-        if match.group(2) != LISTEN_VERSION
+        if match.group(2) != listen_version
     )
     if count:
         text = bumped
