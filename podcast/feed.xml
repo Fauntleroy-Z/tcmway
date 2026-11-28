@@ -12,7 +12,7 @@
   <description><![CDATA[Classical Chinese medicine, translated for the modern ear. No jargon. No mysticism. Just the real stuff — from the Huangdi Neijing to your morning coffee. Hosted by Ollie, a lifelong student of Chinese medicine who reads the classics so you don't have to. New episodes weekly.]]></description>
   <language>en-us</language>
   <copyright>© 2026 TCM Way</copyright>
-  <lastBuildDate>Sat, 21 Nov 2026 16:26:00 +0800</lastBuildDate>
+  <lastBuildDate>Sat, 28 Nov 2026 11:01:10 +0800</lastBuildDate>
   <generator>East &amp; Inner Studio</generator>
 
   <itunes:author>Ollie</itunes:author>
@@ -30,6 +30,20 @@
     <itunes:name>Ollie</itunes:name>
     <itunes:email>ollie@tcmway.net</itunes:email>
   </itunes:owner>
+
+  <!-- ===== EP25 ===== -->
+  <item>
+    <title><![CDATA[Ep25: The Body’s Surface]]></title>
+    <link>https://tcmway.net/posts/76-taiyang-and-wei-qi.html</link>
+    <guid isPermaLink="true">https://tcmway.net/podcast/ep25.mp3</guid>
+    <pubDate>Sat, 28 Nov 2026 11:01:10 +0800</pubDate>
+    <description><![CDATA[One traveler at a station door wants a scarf back. Another barely feels the draft. What would an early reader of Chinese medicine notice about their collars, their skin, and the timing of the chill? Ollie reads two Taiyang passages from the Discussion of Cold Damage and follows one small difference between them: whether sweat had already appeared. Along the way, he explains what Wei Qi meant to those readers and where that vocabulary reaches its limits. Read the article: https://tcmway.net/posts/76-taiyang-and-wei-qi.html]]></description>
+    <enclosure url="https://tcmway.net/podcast/ep25.mp3" length="18252716" type="audio/mpeg"/>
+    <itunes:duration>1141</itunes:duration>
+    <itunes:episode>25</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Ollie</itunes:author>
+  </item>
 
   <!-- ===== EP24 ===== -->
   <item>
